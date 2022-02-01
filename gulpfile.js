@@ -34,10 +34,10 @@ var paths = {
             dest: './public'
         },
         html: {
-            dir: './html/*.html',
+            dir: './html/**/*.html',
             files: './html/**/*.html',
             dest: './public',
-            cleanHtml: './public/*.html',
+            cleanHtml: './public/**/*.html',
         },
         js: {
             dir: './js',
