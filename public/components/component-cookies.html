@@ -15,7 +15,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Source+Serif+Pro:ital@0;1&display=swap" rel="stylesheet">
-        <!--Prism css snippets-->
+        <!--Prism css for code snippets-->
         <link rel="stylesheet" href="../assets/vendor/node_modules/css/prism-tomorrow.css">
         <!-- Main CSS -->
         <link href="../assets/css/theme.min.css" rel="stylesheet">
@@ -35,12 +35,9 @@
             <nav class="navbar navbar-expand-lg navbar-light navbar-link-white">
                 <div class="container position-relative">
                     <a class="navbar-brand" href="../index.html">
-                        <!--
                         <img src="../assets/img/logo/logo.svg" alt="" class="img-fluid navbar-brand-sticky">
                         <img src="../assets/img/logo/logo-white.svg" alt="" class="img-fluid navbar-brand-transparent">
-                        -->
-                        <span class="text-white fs-1">ALMG</span>
-                      </a>
+                    </a>
 
                     <div class="d-flex align-items-center navbar-no-collapse-items order-lg-last">
                         <button class="navbar-toggler order-last" type="button" data-bs-toggle="collapse"
@@ -391,12 +388,12 @@
                                             <ol class="breadcrumb">
                                                 <li class="breadcrumb-item"><a href="#">Home</a></li>
                                                 <li class="breadcrumb-item active">Components</li>
-                                                <li class="breadcrumb-item active" aria-current="page">Accordion</li>
+                                                <li class="breadcrumb-item active" aria-current="page">Cookies</li>
                                             </ol>
                                         </div>
                                     </nav>
                                     <h1 class="mb-0 display-4">
-                                        Accordion
+                                        Cookies cards
                                     </h1>
                                 </div>
                             </div>
@@ -406,261 +403,113 @@
             </section>
 
 
-            <section class="position-relative">
+            <section class="position-relative" id="next">
                 <div class="container py-9 py-lg-11">
-                    <div class="row">
-                        <div class="col-md-8 mx-auto">
-                            <div class="d-flex align-items-center justify-content-center mb-4">
-                                <h4 class="mb-0 me-2 me-lg-4">Default</h4>
-                                <span class="border-top d-block flex-grow-1 border-light"></span>
-                            </div>
-                            <div class="accordion" id="accordionExample">
-                                <!--accordion item-->
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingOne">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#collapseOne" aria-expanded="true"
-                                            aria-controls="collapseOne">
-                                            Accordion Item #1
-                                        </button>
-                                    </h2>
-                                    <div id="collapseOne" class="accordion-collapse collapse show"
-                                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            <strong>This is the first item's accordion body.</strong> It is hidden by
-                                            default, until the collapse plugin adds the appropriate classes that we use
-                                            to style each element. These classes control the overall appearance, as well
-                                            as the showing and hiding via CSS transitions. You can modify any of this
-                                            with custom CSS or overriding our default variables. It's also worth noting
-                                            that just about any HTML can go within the <code>.accordion-body</code>,
-                                            though the transition does limit overflow.
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--accordion item-->
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingTwo">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                                            aria-expanded="false" aria-controls="collapseTwo">
-                                            Accordion Item #2
-                                        </button>
-                                    </h2>
-                                    <div id="collapseTwo" class="accordion-collapse collapse"
-                                        aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            <strong>This is the second item's accordion body.</strong> It is hidden by
-                                            default, until the collapse plugin adds the appropriate classes that we use
-                                            to style each element. These classes control the overall appearance, as well
-                                            as the showing and hiding via CSS transitions. You can modify any of this
-                                            with custom CSS or overriding our default variables. It's also worth noting
-                                            that just about any HTML can go within the <code>.accordion-body</code>,
-                                            though the transition does limit overflow.
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--accordion item-->
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingThree">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
-                                            aria-expanded="false" aria-controls="collapseThree">
-                                            Accordion Item #3
-                                        </button>
-                                    </h2>
-                                    <div id="collapseThree" class="accordion-collapse collapse"
-                                        aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            <strong>This is the third item's accordion body.</strong> It is hidden by
-                                            default, until the collapse plugin adds the appropriate classes that we use
-                                            to style each element. These classes control the overall appearance, as well
-                                            as the showing and hiding via CSS transitions. You can modify any of this
-                                            with custom CSS or overriding our default variables. It's also worth noting
-                                            that just about any HTML can go within the <code>.accordion-body</code>,
-                                            though the transition does limit overflow.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="position-relative bg-light">
-                <div class="container py-9 py-lg-11">
-                    <div class="row">
-                        <div class="col-md-8 mx-auto">
+                    <h5 class="mb-4">Component #1</h5>
 
-                            <div class="d-flex align-items-center justify-content-center mb-4">
-                                <h4 class="mb-0 me-2 me-lg-4">Custom Accordions</h4>
-                                <span class="border-top d-block flex-grow-1"></span>
+                    <!--Cookies card-->
+                    <div class="alert alert-light py-5 px-4 px-lg-5 py-lg-7 shadow-lg">
+                        <div class="d-flex align-items-lg-center flex-column flex-md flex-md-row">
+                            <div class="flex-grow-1">
+                                <h4 class="mb-4">Cookies</h4>
+                                <p class="mb-lg-0 mb-5 w-lg-80">
+                                    We use cookies to offer a better browsing experience. Cookies enhance site
+                                    navigation, analyze site usage,
+                                    and assist in our marketing efforts. By clicking <strong>Accept.</strong> you agree
+                                    to the storing of
+                                    cookies on your device. To refuse all non-required cookies, click on Decline.
+                                </p>
                             </div>
-                             <!--Custom accordion-->
-                            <div class="accordion accordion-custom" id="accordionCustomExample">
-                                <!--accordion item-->
-                                <div class="accordion-item mb-3">
-                                     <!--accordion header-->
-                                    <h2 class="accordion-header" id="headingCustomOne">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#collapseCustomOne" aria-expanded="true"
-                                            aria-controls="collapseCustomOne">
-                                            Custom Accordion Item #1
-                                        </button>
-                                    </h2>
-                                     <!--accordion detail-->
-                                    <div id="collapseCustomOne" class="accordion-collapse collapse show"
-                                        aria-labelledby="headingCustomOne" data-bs-parent="#accordionCustomExample">
-                                        <div class="accordion-body">
-                                            <strong>This is the first item's accordion body.</strong> It is hidden by
-                                            default, until the collapse plugin adds the appropriate classes that we use
-                                            to style each element. These classes control the overall appearance, as well
-                                            as the showing and hiding via CSS transitions. You can modify any of this
-                                            with custom CSS or overriding our default variables. It's also worth noting
-                                            that just about any HTML can go within the <code>.accordion-body</code>,
-                                            though the transition does limit overflow.
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--accordion item-->
-                                <div class="accordion-item mb-3">
-                                     <!--accordion header-->
-                                    <h2 class="accordion-header" id="headingCustomTwo">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseCustomTwo"
-                                            aria-expanded="false" aria-controls="collapseCustomTwo">
-                                            Custom Accordion Item #2
-                                        </button>
-                                    </h2>
-                                     <!--accordion details-->
-                                    <div id="collapseCustomTwo" class="accordion-collapse collapse"
-                                        aria-labelledby="headingCustomTwo" data-bs-parent="#accordionCustomExample">
-                                        <div class="accordion-body">
-                                            <strong>This is the second item's accordion body.</strong> It is hidden by
-                                            default, until the collapse plugin adds the appropriate classes that we use
-                                            to style each element. These classes control the overall appearance, as well
-                                            as the showing and hiding via CSS transitions. You can modify any of this
-                                            with custom CSS or overriding our default variables. It's also worth noting
-                                            that just about any HTML can go within the <code>.accordion-body</code>,
-                                            though the transition does limit overflow.
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--accordion item-->
-                                <div class="accordion-item">
-                                     <!--accordion header-->
-                                    <h2 class="accordion-header" id="headingCustomThree">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseCustomThree"
-                                            aria-expanded="false" aria-controls="collapseCustomThree">
-                                            Custom Accordion Item #3
-                                        </button>
-                                    </h2>
-                                     <!--accordion details-->
-                                    <div id="collapseCustomThree" class="accordion-collapse collapse"
-                                        aria-labelledby="headingCustomThree" data-bs-parent="#accordionCustomExample">
-                                        <div class="accordion-body">
-                                            <strong>This is the third item's accordion body.</strong> It is hidden by
-                                            default, until the collapse plugin adds the appropriate classes that we use
-                                            to style each element. These classes control the overall appearance, as well
-                                            as the showing and hiding via CSS transitions. You can modify any of this
-                                            with custom CSS or overriding our default variables. It's also worth noting
-                                            that just about any HTML can go within the <code>.accordion-body</code>,
-                                            though the transition does limit overflow.
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="flex-shrink-0 text-lg-center">
+                                <button type="button" class="btn me-2 me-lg-0 mb-lg-3 btn-outline-secondary rounded-pill" data-bs-dismiss="alert">Decline</button>
+                                <br class="d-none d-lg-block">
+                                <a href="#!" class="btn btn-outline-primary rounded-pill">Accept</a>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="container pt-5 pb-9 pb-lg-11">
-                    
-                            <!--///////////CODE SNIPPET FOR CUSTOM ACCORIONS-->
-                            <div class="position-relative" style="max-height: 75vh; overflow-y: auto;">
-                                <!--Copy clipboard button-->
-                                <button
-                                    class="btn btn-sm position-absolute rounded-3 end-0 top-0 z-index-1 mt-2 me-2 btn-primary copy-link"
-                                    data-clipboard-target="#copyCodeCustomAccordion1" data-clipboard-action="copy" id="copyCodeCustomAccordion1-1">Copy code</button>
-<pre id="copyCodeCustomAccordion1" class="language-markup" data-lang="html">
-<code>
-    &lt;!--Custom accordion-->
-    &lt;div class="accordion accordion-custom" id="accordionCustomExample">
-      &lt;!--accordion item-->
-      &lt;div class="accordion-item mb-3">
-           &lt;!--accordion header-->
-          &lt;h2 class="accordion-header" id="headingCustomOne">
-              &lt;button class="accordion-button" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseCustomOne" aria-expanded="true"
-                  aria-controls="collapseCustomOne">
-                  Custom Accordion Item #1
-              &lt;/button>
-          &lt;/h2>
-           &lt;!--accordion detail-->
-          &lt;div id="collapseCustomOne" class="accordion-collapse collapse show"
-              aria-labelledby="headingCustomOne" data-bs-parent="#accordionCustomExample">
-              &lt;div class="accordion-body">
-                  &lt;strong>This is the first item's accordion body.&lt;/strong> It is hidden by
-                  default, until the collapse plugin adds the appropriate classes that we use
-                  to style each element. These classes control the overall appearance, as well
-                  as the showing and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It's also worth noting
-                  that just about any HTML can go within the &lt;code>.accordion-body&lt;/code>,
-                  though the transition does limit overflow.
-              &lt;/div>
-          &lt;/div>
+                    <!--//////////////////SNIPPETS:BEGIN////////////////-->
+                    <div class="position-relative">
+                        <button
+                            class="btn btn-sm position-absolute end-0 top-0 me-3 mt-3 z-index-1 btn-primary copy-link"
+                            data-clipboard-target="#copyCookiesHtml1" data-clipboard-action="copy"
+                            id="copyCookiesHtml1-1">Copy code</button>
+                        <pre id="copyCookiesHtml1" class="language-markup" data-lang="html">
+        <code>
+&lt;!--Cookies card-->
+&lt;div class="alert alert-light py-5 px-4 px-lg-5 py-lg-7 shadow-lg">
+   &lt;div class="d-flex align-items-lg-center flex-column flex-md flex-md-row">
+     &lt;div class="flex-grow-1">
+       &lt;h4 class="mb-4">Cookies&lt;/h4>
+       &lt;p class="mb-5 mb-lg-0 w-lg-80">
+         We use cookies to offer a better browsing experience. Cookies enhance site navigation, analyze site usage,
+         and assist in our marketing efforts. By clicking &lt;strong>Accept.&lt;/strong> you agree to the storing of 
+         cookies on your device. To refuse all non-required cookies, click on Decline.
+        &lt;/p>
       &lt;/div>
-      &lt;!--accordion item-->
-      &lt;div class="accordion-item mb-3">
-           &lt;!--accordion header-->
-          &lt;h2 class="accordion-header" id="headingCustomTwo">
-              &lt;button class="accordion-button collapsed" type="button"
-                  data-bs-toggle="collapse" data-bs-target="#collapseCustomTwo"
-                  aria-expanded="false" aria-controls="collapseCustomTwo">
-                  Custom Accordion Item #2
-              &lt;/button>
-          &lt;/h2>
-           &lt;!--accordion details-->
-          &lt;div id="collapseCustomTwo" class="accordion-collapse collapse"
-              aria-labelledby="headingCustomTwo" data-bs-parent="#accordionCustomExample">
-              &lt;div class="accordion-body">
-                  &lt;strong>This is the second item's accordion body.&lt;/strong> It is hidden by
-                  default, until the collapse plugin adds the appropriate classes that we use
-                  to style each element. These classes control the overall appearance, as well
-                  as the showing and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It's also worth noting
-                  that just about any HTML can go within the &lt;code>.accordion-body&lt;/code>,
-                  though the transition does limit overflow.
-              &lt;/div>
-          &lt;/div>
-      &lt;/div>
-      &lt;!--accordion item-->
-      &lt;div class="accordion-item">
-           &lt;!--accordion header-->
-          &lt;h2 class="accordion-header" id="headingCustomThree">
-              &lt;button class="accordion-button collapsed" type="button"
-                  data-bs-toggle="collapse" data-bs-target="#collapseCustomThree"
-                  aria-expanded="false" aria-controls="collapseCustomThree">
-                  Custom Accordion Item #3
-              &lt;/button>
-          &lt;/h2>
-           &lt;!--accordion details-->
-          &lt;div id="collapseCustomThree" class="accordion-collapse collapse"
-              aria-labelledby="headingCustomThree" data-bs-parent="#accordionCustomExample">
-              &lt;div class="accordion-body">
-                  &lt;strong>This is the third item's accordion body.&lt;/strong> It is hidden by
-                  default, until the collapse plugin adds the appropriate classes that we use
-                  to style each element. These classes control the overall appearance, as well
-                  as the showing and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It's also worth noting
-                  that just about any HTML can go within the &lt;code>.accordion-body&lt;/code>,
-                  though the transition does limit overflow.
-              &lt;/div>
-          &lt;/div>
+      &lt;div class="flex-shrink-0 text-lg-center">
+            &lt;button type="button" class="btn me-2 me-lg-0 mb-lg-3 btn-outline-secondary rounded-pill" data-bs-dismiss="alert">Decline&lt;/button>
+            &lt;br class="d-none d-lg-block">
+            &lt;a href="#!" class="btn btn-outline-primary rounded-pill">Accept&lt;/a>
       &lt;/div>
   &lt;/div>
-</code></pre>
+&lt;/div>
+</code>
+</pre>
+                    </div>
+                    <!--//////////////////SNIPPETS:END////////////////-->
+                </div>
+                </div>
+            </section>
+            <section class="position-relative" id="next">
+                <div class="container py-9 py-lg-11">
+                    <h5 class="mb-4">Component #2</h5>
+
+                    <!--Cookies card-->
+                    <div class="alert bg-secondary text-white border-0 rounded-0 shadow-lg px-lg-5 px-4 py-5">
+                        <div class="d-flex flex-column">
+                            <div class="flex-grow-1">
+                                <h4 class="mb-3">Cookies</h4>
+                                <p class="mb-5 w-lg-80">
+                                    We use cookies to offer a better browsing experience. Cookies enhance site
+                                    navigation, analyze site usage,
+                                    and assist in our marketing efforts. By clicking <strong>Accept.</strong> you agree
+                                    to the storing of
+                                    cookies on your device. To refuse all non-required cookies, click on Decline.
+                                </p>
+                                <button type="button" class="btn me-2 btn-outline-gray-200 rounded-pill" data-bs-dismiss="alert">Decline</button>
+                                <a href="#!" class="btn btn-outline-white rounded-pill">Accept</a>
                             </div>
-                            <!--///////////CODE SNIPPET END-->
+
+                        </div>
+                    </div>
+                    <!--//////////////////SNIPPETS:BEGIN////////////////-->
+                    <div class="position-relative">
+                        <button
+                            class="btn btn-sm position-absolute end-0 top-0 me-3 mt-3 z-index-1 btn-primary copy-link"
+                            data-clipboard-target="#copyCookiesHtml2" data-clipboard-action="copy"
+                            id="copyCookiesHtml2-2">Copy code</button>
+                        <pre id="copyCookiesHtml2" class="language-markup" data-lang="html">
+        <code>
+&lt;!--Cookies card-->
+&lt;div class="alert bg-secondary text-white border-0 shadow-lg px-lg-5 px-4 py-5">
+   &lt;div class="d-flex flex-column">
+      &lt;div class="flex-grow-1">
+       &lt;h4 class="mb-3">Cookies&lt;/h4>
+        &lt;p class="mb-5 w-lg-80">
+          We use cookies to offer a better browsing experience. Cookies enhance site navigation, analyze site usage,
+          and assist in our marketing efforts. By clicking &lt;strong>Accept.&lt;/strong> you agree to the storing of 
+          cookies on your device. To refuse all non-required cookies, click on Decline.
+        &lt;/p>
+        &lt;button type="button" class="btn me-2 btn-outline-gray-200 rounded-pill" data-bs-dismiss="alert">Decline&lt;/button>
+        &lt;a href="#!" class="btn btn-outline-white rounded-pill">Accept&lt;/a>
+      &lt;/div>
+  &lt;/div>
+&lt;/div>
+</code>
+</pre>
+                    </div>
+                    <!--//////////////////SNIPPETS:END////////////////-->
+                </div>
                 </div>
             </section>
             <section class="bg-gradient-secondary text-white position-relative">
@@ -830,6 +679,7 @@
         <a href="#" class="toTop">
             <i class="bx bxs-up-arrow"></i>
         </a>
+
         <!-- scripts -->
         <script src="../assets/js/theme.bundle.js"></script>
         <!--Copy to clipboard + prismJs-->
@@ -858,7 +708,6 @@
             }
 
         </script>
-
     </body>
 
 </html>

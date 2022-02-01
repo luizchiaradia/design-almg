@@ -35,12 +35,9 @@
             <nav class="navbar navbar-expand-lg navbar-light navbar-link-white">
                 <div class="container position-relative">
                     <a class="navbar-brand" href="../index.html">
-                        <!--
                         <img src="../assets/img/logo/logo.svg" alt="" class="img-fluid navbar-brand-sticky">
                         <img src="../assets/img/logo/logo-white.svg" alt="" class="img-fluid navbar-brand-transparent">
-                        -->
-                        <span class="text-white fs-1">ALMG</span>
-                      </a>
+                    </a>
 
                     <div class="d-flex align-items-center navbar-no-collapse-items order-lg-last">
                         <button class="navbar-toggler order-last" type="button" data-bs-toggle="collapse"
@@ -391,12 +388,12 @@
                                             <ol class="breadcrumb">
                                                 <li class="breadcrumb-item"><a href="#">Home</a></li>
                                                 <li class="breadcrumb-item active">Components</li>
-                                                <li class="breadcrumb-item active" aria-current="page">Accordion</li>
+                                                <li class="breadcrumb-item active" aria-current="page">Avatar</li>
                                             </ol>
                                         </div>
                                     </nav>
                                     <h1 class="mb-0 display-4">
-                                        Accordion
+                                        Avatars
                                     </h1>
                                 </div>
                             </div>
@@ -406,261 +403,236 @@
             </section>
 
 
-            <section class="position-relative">
-                <div class="container py-9 py-lg-11">
+            <section class="position-relative" id="next">
+                <div class="container py-9 py-lg-11 position-relative z-index-1">
                     <div class="row">
-                        <div class="col-md-8 mx-auto">
-                            <div class="d-flex align-items-center justify-content-center mb-4">
-                                <h4 class="mb-0 me-2 me-lg-4">Default</h4>
-                                <span class="border-top d-block flex-grow-1 border-light"></span>
-                            </div>
-                            <div class="accordion" id="accordionExample">
-                                <!--accordion item-->
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingOne">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#collapseOne" aria-expanded="true"
-                                            aria-controls="collapseOne">
-                                            Accordion Item #1
-                                        </button>
-                                    </h2>
-                                    <div id="collapseOne" class="accordion-collapse collapse show"
-                                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            <strong>This is the first item's accordion body.</strong> It is hidden by
-                                            default, until the collapse plugin adds the appropriate classes that we use
-                                            to style each element. These classes control the overall appearance, as well
-                                            as the showing and hiding via CSS transitions. You can modify any of this
-                                            with custom CSS or overriding our default variables. It's also worth noting
-                                            that just about any HTML can go within the <code>.accordion-body</code>,
-                                            though the transition does limit overflow.
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--accordion item-->
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingTwo">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                                            aria-expanded="false" aria-controls="collapseTwo">
-                                            Accordion Item #2
-                                        </button>
-                                    </h2>
-                                    <div id="collapseTwo" class="accordion-collapse collapse"
-                                        aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            <strong>This is the second item's accordion body.</strong> It is hidden by
-                                            default, until the collapse plugin adds the appropriate classes that we use
-                                            to style each element. These classes control the overall appearance, as well
-                                            as the showing and hiding via CSS transitions. You can modify any of this
-                                            with custom CSS or overriding our default variables. It's also worth noting
-                                            that just about any HTML can go within the <code>.accordion-body</code>,
-                                            though the transition does limit overflow.
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--accordion item-->
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingThree">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
-                                            aria-expanded="false" aria-controls="collapseThree">
-                                            Accordion Item #3
-                                        </button>
-                                    </h2>
-                                    <div id="collapseThree" class="accordion-collapse collapse"
-                                        aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            <strong>This is the third item's accordion body.</strong> It is hidden by
-                                            default, until the collapse plugin adds the appropriate classes that we use
-                                            to style each element. These classes control the overall appearance, as well
-                                            as the showing and hiding via CSS transitions. You can modify any of this
-                                            with custom CSS or overriding our default variables. It's also worth noting
-                                            that just about any HTML can go within the <code>.accordion-body</code>,
-                                            though the transition does limit overflow.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="position-relative bg-light">
-                <div class="container py-9 py-lg-11">
-                    <div class="row">
-                        <div class="col-md-8 mx-auto">
-
-                            <div class="d-flex align-items-center justify-content-center mb-4">
-                                <h4 class="mb-0 me-2 me-lg-4">Custom Accordions</h4>
+                        <div class="col-md-10 mx-auto">
+                            <div class="d-flex align-items-center justify-content-center mb-4 pt-4">
+                                <h6 class="mb-0 me-2 me-lg-4">Avatar sizing</h6>
                                 <span class="border-top d-block flex-grow-1"></span>
                             </div>
-                             <!--Custom accordion-->
-                            <div class="accordion accordion-custom" id="accordionCustomExample">
-                                <!--accordion item-->
-                                <div class="accordion-item mb-3">
-                                     <!--accordion header-->
-                                    <h2 class="accordion-header" id="headingCustomOne">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#collapseCustomOne" aria-expanded="true"
-                                            aria-controls="collapseCustomOne">
-                                            Custom Accordion Item #1
-                                        </button>
-                                    </h2>
-                                     <!--accordion detail-->
-                                    <div id="collapseCustomOne" class="accordion-collapse collapse show"
-                                        aria-labelledby="headingCustomOne" data-bs-parent="#accordionCustomExample">
-                                        <div class="accordion-body">
-                                            <strong>This is the first item's accordion body.</strong> It is hidden by
-                                            default, until the collapse plugin adds the appropriate classes that we use
-                                            to style each element. These classes control the overall appearance, as well
-                                            as the showing and hiding via CSS transitions. You can modify any of this
-                                            with custom CSS or overriding our default variables. It's also worth noting
-                                            that just about any HTML can go within the <code>.accordion-body</code>,
-                                            though the transition does limit overflow.
-                                        </div>
-                                    </div>
+                            <div class="d-flex flex-wrap align-items-center">
+                                <!--xs-->
+                                <div class="avatar-item me-2 mb-2">
+                                    <img src="../assets/img/avatar/1.jpg" alt="" class="avatar rounded-circle xs">
                                 </div>
-                                <!--accordion item-->
-                                <div class="accordion-item mb-3">
-                                     <!--accordion header-->
-                                    <h2 class="accordion-header" id="headingCustomTwo">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseCustomTwo"
-                                            aria-expanded="false" aria-controls="collapseCustomTwo">
-                                            Custom Accordion Item #2
-                                        </button>
-                                    </h2>
-                                     <!--accordion details-->
-                                    <div id="collapseCustomTwo" class="accordion-collapse collapse"
-                                        aria-labelledby="headingCustomTwo" data-bs-parent="#accordionCustomExample">
-                                        <div class="accordion-body">
-                                            <strong>This is the second item's accordion body.</strong> It is hidden by
-                                            default, until the collapse plugin adds the appropriate classes that we use
-                                            to style each element. These classes control the overall appearance, as well
-                                            as the showing and hiding via CSS transitions. You can modify any of this
-                                            with custom CSS or overriding our default variables. It's also worth noting
-                                            that just about any HTML can go within the <code>.accordion-body</code>,
-                                            though the transition does limit overflow.
-                                        </div>
-                                    </div>
+
+                                <!--sm-->
+                                <div class="avatar-item me-2 mb-2">
+                                    <img src="../assets/img/avatar/2.jpg" alt="" class="avatar rounded-circle sm">
                                 </div>
-                                <!--accordion item-->
-                                <div class="accordion-item">
-                                     <!--accordion header-->
-                                    <h2 class="accordion-header" id="headingCustomThree">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseCustomThree"
-                                            aria-expanded="false" aria-controls="collapseCustomThree">
-                                            Custom Accordion Item #3
-                                        </button>
-                                    </h2>
-                                     <!--accordion details-->
-                                    <div id="collapseCustomThree" class="accordion-collapse collapse"
-                                        aria-labelledby="headingCustomThree" data-bs-parent="#accordionCustomExample">
-                                        <div class="accordion-body">
-                                            <strong>This is the third item's accordion body.</strong> It is hidden by
-                                            default, until the collapse plugin adds the appropriate classes that we use
-                                            to style each element. These classes control the overall appearance, as well
-                                            as the showing and hiding via CSS transitions. You can modify any of this
-                                            with custom CSS or overriding our default variables. It's also worth noting
-                                            that just about any HTML can go within the <code>.accordion-body</code>,
-                                            though the transition does limit overflow.
-                                        </div>
-                                    </div>
+
+                                <!--default-->
+                                <div class="avatar-item me-2 mb-2">
+                                    <img src="../assets/img/avatar/3.jpg" alt="" class="avatar rounded-circle">
+                                </div>
+
+                                <!--lg-->
+                                <div class="avatar-item me-2 mb-2">
+                                    <img src="../assets/img/avatar/4.jpg" alt="" class="avatar rounded-circle lg">
+                                </div>
+
+                                <!--xl-->
+                                <div class="avatar-item me-2 mb-2">
+                                    <img src="../assets/img/avatar/5.jpg" alt="" class="avatar rounded-circle xl">
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="container pt-5 pb-9 pb-lg-11">
-                    
-                            <!--///////////CODE SNIPPET FOR CUSTOM ACCORIONS-->
-                            <div class="position-relative" style="max-height: 75vh; overflow-y: auto;">
+                            <!--///////////CODE SNIPPET-->
+                            <div class="position-relative mb-5">
                                 <!--Copy clipboard button-->
                                 <button
-                                    class="btn btn-sm position-absolute rounded-3 end-0 top-0 z-index-1 mt-2 me-2 btn-primary copy-link"
-                                    data-clipboard-target="#copyCodeCustomAccordion1" data-clipboard-action="copy" id="copyCodeCustomAccordion1-1">Copy code</button>
-<pre id="copyCodeCustomAccordion1" class="language-markup" data-lang="html">
-<code>
-    &lt;!--Custom accordion-->
-    &lt;div class="accordion accordion-custom" id="accordionCustomExample">
-      &lt;!--accordion item-->
-      &lt;div class="accordion-item mb-3">
-           &lt;!--accordion header-->
-          &lt;h2 class="accordion-header" id="headingCustomOne">
-              &lt;button class="accordion-button" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseCustomOne" aria-expanded="true"
-                  aria-controls="collapseCustomOne">
-                  Custom Accordion Item #1
-              &lt;/button>
-          &lt;/h2>
-           &lt;!--accordion detail-->
-          &lt;div id="collapseCustomOne" class="accordion-collapse collapse show"
-              aria-labelledby="headingCustomOne" data-bs-parent="#accordionCustomExample">
-              &lt;div class="accordion-body">
-                  &lt;strong>This is the first item's accordion body.&lt;/strong> It is hidden by
-                  default, until the collapse plugin adds the appropriate classes that we use
-                  to style each element. These classes control the overall appearance, as well
-                  as the showing and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It's also worth noting
-                  that just about any HTML can go within the &lt;code>.accordion-body&lt;/code>,
-                  though the transition does limit overflow.
-              &lt;/div>
-          &lt;/div>
-      &lt;/div>
-      &lt;!--accordion item-->
-      &lt;div class="accordion-item mb-3">
-           &lt;!--accordion header-->
-          &lt;h2 class="accordion-header" id="headingCustomTwo">
-              &lt;button class="accordion-button collapsed" type="button"
-                  data-bs-toggle="collapse" data-bs-target="#collapseCustomTwo"
-                  aria-expanded="false" aria-controls="collapseCustomTwo">
-                  Custom Accordion Item #2
-              &lt;/button>
-          &lt;/h2>
-           &lt;!--accordion details-->
-          &lt;div id="collapseCustomTwo" class="accordion-collapse collapse"
-              aria-labelledby="headingCustomTwo" data-bs-parent="#accordionCustomExample">
-              &lt;div class="accordion-body">
-                  &lt;strong>This is the second item's accordion body.&lt;/strong> It is hidden by
-                  default, until the collapse plugin adds the appropriate classes that we use
-                  to style each element. These classes control the overall appearance, as well
-                  as the showing and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It's also worth noting
-                  that just about any HTML can go within the &lt;code>.accordion-body&lt;/code>,
-                  though the transition does limit overflow.
-              &lt;/div>
-          &lt;/div>
-      &lt;/div>
-      &lt;!--accordion item-->
-      &lt;div class="accordion-item">
-           &lt;!--accordion header-->
-          &lt;h2 class="accordion-header" id="headingCustomThree">
-              &lt;button class="accordion-button collapsed" type="button"
-                  data-bs-toggle="collapse" data-bs-target="#collapseCustomThree"
-                  aria-expanded="false" aria-controls="collapseCustomThree">
-                  Custom Accordion Item #3
-              &lt;/button>
-          &lt;/h2>
-           &lt;!--accordion details-->
-          &lt;div id="collapseCustomThree" class="accordion-collapse collapse"
-              aria-labelledby="headingCustomThree" data-bs-parent="#accordionCustomExample">
-              &lt;div class="accordion-body">
-                  &lt;strong>This is the third item's accordion body.&lt;/strong> It is hidden by
-                  default, until the collapse plugin adds the appropriate classes that we use
-                  to style each element. These classes control the overall appearance, as well
-                  as the showing and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It's also worth noting
-                  that just about any HTML can go within the &lt;code>.accordion-body&lt;/code>,
-                  though the transition does limit overflow.
-              &lt;/div>
-          &lt;/div>
-      &lt;/div>
-  &lt;/div>
-</code></pre>
+                                    class="btn btn-sm position-absolute rounded-0 end-0 top-0 z-index-1 mt-2 me-2 btn-primary copy-link"
+                                    data-clipboard-target="#copyAvatarSize" data-clipboard-action="copy"
+                                    id="copyAvatarSize-1">Copy code</button>
+                                <pre id="copyAvatarSize" class="language-markup" data-lang="html">
+ <code>
+    &lt;!--xs-->
+    &lt;div class="avatar-item me-2 mb-2">
+        &lt;img src="../assets/img/avatar/1.jpg" alt="" class="avatar rounded-circle xs">
+    &lt;/div>
+    
+     &lt;!--sm-->
+    &lt;div class="avatar-item me-2 mb-2">
+        &lt;img src="../assets/img/avatar/2.jpg" alt="" class="avatar rounded-circle sm">
+    &lt;/div>
+    
+     &lt;!--default-->
+    &lt;div class="avatar-item me-2 mb-2">
+        &lt;img src="../assets/img/avatar/3.jpg" alt="" class="avatar rounded-circle">
+    &lt;/div>
+    
+     &lt;!--lg-->
+    &lt;div class="avatar-item me-2 mb-2">
+        &lt;img src="../assets/img/avatar/4.jpg" alt="" class="avatar rounded-circle lg">
+    &lt;/div>
+    
+     &lt;!--xl-->
+    &lt;div class="avatar-item me-2 mb-2">
+        &lt;img src="../assets/img/avatar/5.jpg" alt="" class="avatar rounded-circle xl">
+    &lt;/div>
+ </code>
+</pre>
                             </div>
                             <!--///////////CODE SNIPPET END-->
+                            <hr class="my-7">
+                            <div class="d-flex align-items-center justify-content-center mb-4 pt-4">
+                                <h6 class="mb-0 me-2 me-lg-4">Initials</h6>
+                                <span class="border-top d-block flex-grow-1 border-light"></span>
+                            </div>
+                            <div class="d-flex mb-4 flex-wrap align-items-center">
+                                <div class="avatar rounded-circle bg-primary text-white flex-center">
+                                    JD
+                                </div>
+                            </div>
+                            <!--///////////CODE SNIPPET-->
+                            <div class="position-relative mb-5">
+                                <!--Copy clipboard button-->
+                                <button
+                                    class="btn btn-sm position-absolute rounded-0 end-0 top-0 z-index-1 mt-2 me-2 btn-primary copy-link"
+                                    data-clipboard-target="#copyAvatarInitial" data-clipboard-action="copy"
+                                    id="copyAvatarInitial-2">Copy code</button>
+                                <pre id="copyAvatarInitial" class="language-markup" data-lang="html">
+<code>
+    &lt;!--Update the size using xs,sm,lg,xl utility classes-->
+    &lt;div class="avatar rounded-circle bg-primary text-white flex-center">
+        JD
+    &lt;/div>
+</code>
+</pre>
+                            </div>
+                            <!--///////////CODE SNIPPET END-->
+                            <hr class="my-7">
+                            <div class="d-flex align-items-center justify-content-center mb-4 pt-4">
+                                <h6 class="mb-0 me-2 me-lg-4">Status</h6>
+                                <span class="border-top d-block flex-grow-1 border-light"></span>
+                            </div>
+                            <div class="d-flex flex-wrap mb-4 align-items-center">
+
+                                <!--Offline-->
+                                <div class="avatar-status lg off rounded-pill flex-center me-2 mb-2">
+                                    <img src="../assets/img/avatar/4.jpg" alt="" class="avatar">
+                                </div>
+
+                                <!--Online-->
+                                <div class="avatar-status lg on rounded-pill flex-center me-2 mb-2">
+                                    <img src="../assets/img/avatar/4.jpg" alt="" class="avatar">
+                                </div>
+
+                                <!--Away-->
+                                <div class="avatar-status lg away rounded-pill flex-center me-2 mb-2">
+                                    <img src="../assets/img/avatar/4.jpg" alt="" class="avatar">
+                                </div>
+
+                                <!--Do not dusturb-->
+                                <div class="avatar-status lg dnd rounded-pill flex-center me-2 mb-2">
+                                    <img src="../assets/img/avatar/4.jpg" alt="" class="avatar">
+                                </div>
+                            </div>
+                            <!--///////////CODE SNIPPET-->
+                            <div class="position-relative mb-5">
+                                <!--Copy clipboard button-->
+                                <button
+                                    class="btn btn-sm position-absolute rounded-0 end-0 top-0 z-index-1 mt-2 me-2 btn-primary copy-link"
+                                    data-clipboard-target="#copyAvatarStatus" data-clipboard-action="copy"
+                                    id="copyAvatarStatus-3">Copy code</button>
+                                <pre id="copyAvatarStatus" class="language-markup" data-lang="html">
+<code>
+    &lt;!--Offline-->
+    &lt;div class="avatar-status lg off rounded-pill flex-center me-2 mb-2">
+       &lt;img src="../assets/img/avatar/4.jpg" alt="" class="avatar">
+   &lt;/div>
+   
+   &lt;!--Online-->
+   &lt;div class="avatar-status lg on rounded-pill flex-center me-2 mb-2">
+       &lt;img src="../assets/img/avatar/4.jpg" alt="" class="avatar">
+   &lt;/div>
+   
+   &lt;!--Away-->
+   &lt;div class="avatar-status lg away rounded-pill flex-center me-2 mb-2">
+       &lt;img src="../assets/img/avatar/4.jpg" alt="" class="avatar">
+   &lt;/div>
+   
+   &lt;!--Do not dusturb-->
+   &lt;div class="avatar-status lg dnd rounded-pill flex-center me-2 mb-2">
+       &lt;img src="../assets/img/avatar/4.jpg" alt="" class="avatar">
+   &lt;/div>
+</code>
+</pre>
+                            </div>
+                            <!--///////////CODE SNIPPET END-->
+                            <hr class="my-7">
+                            <div class="d-flex align-items-center justify-content-center mb-4 pt-4">
+                                <h6 class="mb-0 me-2 me-lg-4">Group</h6>
+                                <span class="border-top d-block flex-grow-1 border-light"></span>
+                            </div>
+                            <!--Avatar group default-->
+                            <div class="avatar-group mb-4">
+
+                                 <!--Avatar group item-->
+                                <div
+                                    class="avatar-group-item avatar rounded-circle overflow-hidden border border-2 border-white shadow">
+                                    <img src="../assets/img/avatar/1.jpg" alt="" class="img-fluid avatar">
+                                </div>
+
+                                 <!--Avatar group item-->
+                                <div
+                                    class="avatar-group-item avatar rounded-circle overflow-hidden border border-2 border-white shadow">
+                                    <img src="../assets/img/avatar/11.jpg" alt="" class="img-fluid avatar">
+                                </div>
+
+                                 <!--Avatar group item-->
+                                <div
+                                    class="avatar-group-item avatar rounded-circle overflow-hidden border border-2 border-white shadow">
+                                    <img src="../assets/img/avatar/12.jpg" alt="" class="img-fluid avatar">
+                                </div>
+
+                                 <!--Avatar group item-->
+                                <div
+                                    class="avatar-group-item avatar fs-5 bg-secondary text-white border border-2 border-white shadow flex-center rounded-circle overflow-hidden">
+                                    <i class="bx bx-plus"></i>
+                                </div>
+                            </div>
+                                <!--///////////CODE SNIPPET-->
+                                <div class="position-relative mb-5">
+                                    <!--Copy clipboard button-->
+                                    <button
+                                        class="btn btn-sm position-absolute rounded-0 end-0 top-0 z-index-1 mt-2 me-2 btn-primary copy-link"
+                                        data-clipboard-target="#copyAvatarGroup" data-clipboard-action="copy"
+                                        id="copyAvatarGroup-4">Copy code</button>
+<pre id="copyAvatarGroup" class="language-markup" data-lang="html">
+<code>
+        &lt;!--Avatar group default-->
+        &lt;div class="avatar-group">
+            &lt;!--Avatar group item-->
+           &lt;div class="avatar-group-item avatar rounded-circle overflow-hidden border border-2
+                border-white shadow">
+               &lt;img src="../assets/img/avatar/1.jpg" alt="" class="img-fluid avatar">
+           &lt;/div>
+        
+            &lt;!--Avatar group item-->
+           &lt;div class="avatar-group-item avatar rounded-circle overflow-hidden border border-2
+                border-white shadow">
+               &lt;img src="../assets/img/avatar/11.jpg" alt="" class="img-fluid avatar">
+           &lt;/div>
+        
+            &lt;!--Avatar group item-->
+           &lt;div class="avatar-group-item avatar rounded-circle overflow-hidden border border-2
+                border-white shadow">
+               &lt;img src="../assets/img/avatar/12.jpg" alt="" class="img-fluid avatar">
+           &lt;/div>
+        
+            &lt;!--Avatar group item-->
+           &lt;div class="avatar-group-item avatar fs-5 bg-secondary text-white border border-2
+                border-white shadow flex-center rounded-circle overflow-hidden">
+               &lt;i class="bx bx-plus">&lt;/i>
+           &lt;/div>
+        &lt;/div>
+</code>
+</pre>
+                                </div>
+                                <!--///////////CODE SNIPPET END-->
+                        </div>
+                    </div>
                 </div>
             </section>
             <section class="bg-gradient-secondary text-white position-relative">
@@ -832,6 +804,8 @@
         </a>
         <!-- scripts -->
         <script src="../assets/js/theme.bundle.js"></script>
+
+
         <!--Copy to clipboard + prismJs-->
         <script src="../assets/vendor/node_modules/js/prism.js"></script>
         <script src="../assets/vendor/node_modules/js/clipboard.min.js"></script>
@@ -858,7 +832,6 @@
             }
 
         </script>
-
     </body>
 
 </html>

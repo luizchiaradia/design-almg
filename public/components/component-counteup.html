@@ -35,12 +35,9 @@
             <nav class="navbar navbar-expand-lg navbar-light navbar-link-white">
                 <div class="container position-relative">
                     <a class="navbar-brand" href="../index.html">
-                        <!--
                         <img src="../assets/img/logo/logo.svg" alt="" class="img-fluid navbar-brand-sticky">
                         <img src="../assets/img/logo/logo-white.svg" alt="" class="img-fluid navbar-brand-transparent">
-                        -->
-                        <span class="text-white fs-1">ALMG</span>
-                      </a>
+                    </a>
 
                     <div class="d-flex align-items-center navbar-no-collapse-items order-lg-last">
                         <button class="navbar-toggler order-last" type="button" data-bs-toggle="collapse"
@@ -391,12 +388,12 @@
                                             <ol class="breadcrumb">
                                                 <li class="breadcrumb-item"><a href="#">Home</a></li>
                                                 <li class="breadcrumb-item active">Components</li>
-                                                <li class="breadcrumb-item active" aria-current="page">Accordion</li>
+                                                <li class="breadcrumb-item active" aria-current="page">Countup</li>
                                             </ol>
                                         </div>
                                     </nav>
                                     <h1 class="mb-0 display-4">
-                                        Accordion
+                                        Countup
                                     </h1>
                                 </div>
                             </div>
@@ -409,258 +406,159 @@
             <section class="position-relative">
                 <div class="container py-9 py-lg-11">
                     <div class="row">
-                        <div class="col-md-8 mx-auto">
-                            <div class="d-flex align-items-center justify-content-center mb-4">
-                                <h4 class="mb-0 me-2 me-lg-4">Default</h4>
-                                <span class="border-top d-block flex-grow-1 border-light"></span>
-                            </div>
-                            <div class="accordion" id="accordionExample">
-                                <!--accordion item-->
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingOne">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#collapseOne" aria-expanded="true"
-                                            aria-controls="collapseOne">
-                                            Accordion Item #1
-                                        </button>
-                                    </h2>
-                                    <div id="collapseOne" class="accordion-collapse collapse show"
-                                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            <strong>This is the first item's accordion body.</strong> It is hidden by
-                                            default, until the collapse plugin adds the appropriate classes that we use
-                                            to style each element. These classes control the overall appearance, as well
-                                            as the showing and hiding via CSS transitions. You can modify any of this
-                                            with custom CSS or overriding our default variables. It's also worth noting
-                                            that just about any HTML can go within the <code>.accordion-body</code>,
-                                            though the transition does limit overflow.
-                                        </div>
-                                    </div>
+                        <div class="col-lg-10 mx-auto">
+                            <div class="p-4 shadow-lg mb-5">
+                                <div class="d-flex align-items-center mb-4">
+                                    <h6 class="mb-0 me-3">Basic</h6>
+                                    <div class="flex-grow-1 border-bottom border-light"></div>
                                 </div>
-                                <!--accordion item-->
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingTwo">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                                            aria-expanded="false" aria-controls="collapseTwo">
-                                            Accordion Item #2
-                                        </button>
-                                    </h2>
-                                    <div id="collapseTwo" class="accordion-collapse collapse"
-                                        aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            <strong>This is the second item's accordion body.</strong> It is hidden by
-                                            default, until the collapse plugin adds the appropriate classes that we use
-                                            to style each element. These classes control the overall appearance, as well
-                                            as the showing and hiding via CSS transitions. You can modify any of this
-                                            with custom CSS or overriding our default variables. It's also worth noting
-                                            that just about any HTML can go within the <code>.accordion-body</code>,
-                                            though the transition does limit overflow.
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--accordion item-->
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingThree">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
-                                            aria-expanded="false" aria-controls="collapseThree">
-                                            Accordion Item #3
-                                        </button>
-                                    </h2>
-                                    <div id="collapseThree" class="accordion-collapse collapse"
-                                        aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            <strong>This is the third item's accordion body.</strong> It is hidden by
-                                            default, until the collapse plugin adds the appropriate classes that we use
-                                            to style each element. These classes control the overall appearance, as well
-                                            as the showing and hiding via CSS transitions. You can modify any of this
-                                            with custom CSS or overriding our default variables. It's also worth noting
-                                            that just about any HTML can go within the <code>.accordion-body</code>,
-                                            though the transition does limit overflow.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="position-relative bg-light">
-                <div class="container py-9 py-lg-11">
-                    <div class="row">
-                        <div class="col-md-8 mx-auto">
+                                <!--Countup-->
+                                <h2 data-countup='{"startVal": 0}' data-to="927" data-aos data-aos-id="countup:in"
+                                    class="display-4 fw-normal text-primary">0</h2>
+                                <!--text-->
+                                <div class="text-muted">Projects Complete</div>
 
-                            <div class="d-flex align-items-center justify-content-center mb-4">
-                                <h4 class="mb-0 me-2 me-lg-4">Custom Accordions</h4>
-                                <span class="border-top d-block flex-grow-1"></span>
+                                <!--//////////Code Snippets start///////////////-->
+                                <div class="position-relative mt-5">
+                                    <!--Copy clipboard button-->
+                                    <button
+                                        class="btn btn-sm position-absolute rounded-0 end-0 top-0 z-index-1 mt-2 me-2 btn-primary copy-link"
+                                        data-clipboard-target="#copyCountupBasic" data-clipboard-action="copy"
+                                        id="copyCountupBasic-1">Copy code</button>
+                                    <pre id="copyCountupBasic" class="language-markup" data-lang="html">
+<code>
+&lt;!--Countup-->
+&lt;h2 data-countup='{"startVal": 0}' data-to="927" data-aos data-aos-id="countup:in"
+    class="display-4 fw-normal text-primary">0&lt;/h2>
+    &lt;!--text-->
+&lt;div class="text-muted">Projects Complete&lt;/div>
+</code>
+</pre>
+                                </div>
+                                <!--//////////Code Snippets end///////////////-->
                             </div>
-                             <!--Custom accordion-->
-                            <div class="accordion accordion-custom" id="accordionCustomExample">
-                                <!--accordion item-->
-                                <div class="accordion-item mb-3">
-                                     <!--accordion header-->
-                                    <h2 class="accordion-header" id="headingCustomOne">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#collapseCustomOne" aria-expanded="true"
-                                            aria-controls="collapseCustomOne">
-                                            Custom Accordion Item #1
-                                        </button>
-                                    </h2>
-                                     <!--accordion detail-->
-                                    <div id="collapseCustomOne" class="accordion-collapse collapse show"
-                                        aria-labelledby="headingCustomOne" data-bs-parent="#accordionCustomExample">
-                                        <div class="accordion-body">
-                                            <strong>This is the first item's accordion body.</strong> It is hidden by
-                                            default, until the collapse plugin adds the appropriate classes that we use
-                                            to style each element. These classes control the overall appearance, as well
-                                            as the showing and hiding via CSS transitions. You can modify any of this
-                                            with custom CSS or overriding our default variables. It's also worth noting
-                                            that just about any HTML can go within the <code>.accordion-body</code>,
-                                            though the transition does limit overflow.
-                                        </div>
-                                    </div>
+                            <div class="p-4 shadow-lg mb-5">
+                                <div class="d-flex align-items-center mb-4">
+                                    <h6 class="mb-0 me-3">Separator</h6>
+                                    <div class="flex-grow-1 border-bottom border-light"></div>
                                 </div>
-                                <!--accordion item-->
-                                <div class="accordion-item mb-3">
-                                     <!--accordion header-->
-                                    <h2 class="accordion-header" id="headingCustomTwo">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseCustomTwo"
-                                            aria-expanded="false" aria-controls="collapseCustomTwo">
-                                            Custom Accordion Item #2
-                                        </button>
-                                    </h2>
-                                     <!--accordion details-->
-                                    <div id="collapseCustomTwo" class="accordion-collapse collapse"
-                                        aria-labelledby="headingCustomTwo" data-bs-parent="#accordionCustomExample">
-                                        <div class="accordion-body">
-                                            <strong>This is the second item's accordion body.</strong> It is hidden by
-                                            default, until the collapse plugin adds the appropriate classes that we use
-                                            to style each element. These classes control the overall appearance, as well
-                                            as the showing and hiding via CSS transitions. You can modify any of this
-                                            with custom CSS or overriding our default variables. It's also worth noting
-                                            that just about any HTML can go within the <code>.accordion-body</code>,
-                                            though the transition does limit overflow.
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--accordion item-->
-                                <div class="accordion-item">
-                                     <!--accordion header-->
-                                    <h2 class="accordion-header" id="headingCustomThree">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseCustomThree"
-                                            aria-expanded="false" aria-controls="collapseCustomThree">
-                                            Custom Accordion Item #3
-                                        </button>
-                                    </h2>
-                                     <!--accordion details-->
-                                    <div id="collapseCustomThree" class="accordion-collapse collapse"
-                                        aria-labelledby="headingCustomThree" data-bs-parent="#accordionCustomExample">
-                                        <div class="accordion-body">
-                                            <strong>This is the third item's accordion body.</strong> It is hidden by
-                                            default, until the collapse plugin adds the appropriate classes that we use
-                                            to style each element. These classes control the overall appearance, as well
-                                            as the showing and hiding via CSS transitions. You can modify any of this
-                                            with custom CSS or overriding our default variables. It's also worth noting
-                                            that just about any HTML can go within the <code>.accordion-body</code>,
-                                            though the transition does limit overflow.
-                                        </div>
-                                    </div>
-                                </div>
+                                <!--Countup-->
+                                <h2 data-countup='{"startVal": 0}' data-to="2730" data-aos data-aos-once="false" data-aos-id="countup:in"
+                                    class="display-4 fw-normal text-primary">0</h2>
+                                <!--Text-->
+                                <div class="text-muted">Projects Complete</div>
+<!--//////////Code Snippets start///////////////-->
+<div class="position-relative mt-5">
+    <!--Copy clipboard button-->
+    <button
+        class="btn btn-sm position-absolute rounded-0 end-0 top-0 z-index-1 mt-2 me-2 btn-primary copy-link"
+        data-clipboard-target="#copyCountupSep" data-clipboard-action="copy"
+        id="copyCountupSep-2">Copy code</button>
+    <pre id="copyCountupSep" class="language-markup" data-lang="html">
+<code>
+&lt;!--Countup-->
+&lt;h2 data-countup='{"startVal": 0}' data-to="2730" data-aos data-aos-once="false" data-aos-id="countup:in"
+class="display-4 fw-normal text-primary">0&lt;/h2>
+&lt;!--text-->
+&lt;div class="text-muted">Projects Complete&lt;/div>
+</code>
+</pre>
+</div>
+<!--//////////Code Snippets end///////////////-->
                             </div>
+                            <div class="p-4 shadow-lg mb-5">
+                                <div class="d-flex align-items-center mb-4">
+                                    <h6 class="mb-0 me-3">Decimal</h6>
+                                    <div class="flex-grow-1 border-bottom border-light"></div>
+                                </div>
+                                <!--Countup-->
+                                <h2 data-countup='{"startVal": 0,"decimalPlaces":"2"}' data-to="39.48" data-aos=""
+                                    data-aos-id="countup:in" class="display-4 fw-normal text-primary">0</h2>
+                                    <!--Text-->
+                                <div class="text-muted">Miles travel</div>
+                                <!--//////////Code Snippets start///////////////-->
+<div class="position-relative mt-5">
+    <!--Copy clipboard button-->
+    <button
+        class="btn btn-sm position-absolute rounded-0 end-0 top-0 z-index-1 mt-2 me-2 btn-primary copy-link"
+        data-clipboard-target="#copyCountupDec" data-clipboard-action="copy"
+        id="copyCountupDec-3">Copy code</button>
+    <pre id="copyCountupDec" class="language-markup" data-lang="html">
+<code>
+&lt;!--Countup-->
+&lt;h2 data-countup='{"startVal": 0,"decimalPlaces":"2"}' data-to="39.48" data-aos=""
+data-aos-id="countup:in" class="display-4 fw-normal text-primary">0&lt;/h2>
+&lt;!--text-->
+&lt;div class="text-muted">Miles travel&lt;/div>
+</code>
+</pre>
+</div>
+<!--//////////Code Snippets end///////////////-->
+                            </div>
+                            <div class="p-4 shadow-lg mb-5">
+                                <div class="d-flex align-items-center mb-4">
+                                    <h6 class="mb-0 me-3">Prefix</h6>
+                                    <div class="flex-grow-1 border-bottom border-light"></div>
+                                </div>
+                                <!--Countup-->
+                                <h2 data-countup='{"startVal": 0,"prefix":"+"}' data-to="21" data-aos=""
+                                    data-aos-id="countup:in" class="display-4 fw-normal text-primary"></h2>
+                                    <!--Text-->
+                                <div class="text-muted">Years of experience</div>
+                                                                <!--//////////Code Snippets start///////////////-->
+<div class="position-relative mt-5">
+    <!--Copy clipboard button-->
+    <button
+        class="btn btn-sm position-absolute rounded-0 end-0 top-0 z-index-1 mt-2 me-2 btn-primary copy-link"
+        data-clipboard-target="#copyCountupPrefix" data-clipboard-action="copy"
+        id="copyCountupPrefix-4">Copy code</button>
+    <pre id="copyCountupPrefix" class="language-markup" data-lang="html">
+<code>
+&lt;!--Countup-->
+&lt;h2 data-countup='{"startVal": 0,"prefix":"+"}' data-to="21" data-aos=""
+data-aos-id="countup:in" class="display-4 fw-normal text-primary">0&lt;/h2>
+&lt;!--text-->
+&lt;div class="text-muted">Years of experience&lt;/div>
+</code>
+</pre>
+</div>
+<!--//////////Code Snippets end///////////////-->
+                            </div>
+                            <div class="p-4 shadow-lg mb-5">
+                                <div class="d-flex align-items-center mb-4">
+                                    <h6 class="mb-0 me-3">Suffix</h6>
+                                    <div class="flex-grow-1 border-bottom border-light"></div>
+                                </div>
+                                <!--Countup-->
+                                <h2 data-countup='{"startVal": 0,"suffix":"$"}' data-to="78919" data-aos
+                                    data-aos-id="countup:in" class="display-4 fw-normal text-primary"></h2>
+                                    <!--Text-->
+                                <div class="text-muted">Earnings last month</div>
+<!--//////////Code Snippets start///////////////-->
+<div class="position-relative mt-5">
+    <!--Copy clipboard button-->
+    <button
+        class="btn btn-sm position-absolute rounded-0 end-0 top-0 z-index-1 mt-2 me-2 btn-primary copy-link"
+        data-clipboard-target="#copyCountupSuffix" data-clipboard-action="copy"
+        id="copyCountupSuffix-5">Copy code</button>
+    <pre id="copyCountupSuffix" class="language-markup" data-lang="html">
+<code>
+&lt;!--Countup-->
+&lt;h2 data-countup='{"startVal": 0,"suffix":"$"}' data-to="21" data-aos=""
+data-aos-id="countup:in" class="display-4 fw-normal text-primary">0&lt;/h2>
+&lt;!--text-->
+&lt;div class="text-muted">Earnings last month&lt;/div>
+</code>
+</pre>
+</div>
+<!--//////////Code Snippets end///////////////-->
+                            </div>
+                            <p class="mb-0 pt-9">
+                                Plugin documentation <a href="https://inorganik.github.io/countUp.js/"
+                                    class=" lh-1 link-underline fw-semibold" target="_blank">Plugin Documentation</a>
+                            </p>
                         </div>
                     </div>
-                </div>
-                <div class="container pt-5 pb-9 pb-lg-11">
-                    
-                            <!--///////////CODE SNIPPET FOR CUSTOM ACCORIONS-->
-                            <div class="position-relative" style="max-height: 75vh; overflow-y: auto;">
-                                <!--Copy clipboard button-->
-                                <button
-                                    class="btn btn-sm position-absolute rounded-3 end-0 top-0 z-index-1 mt-2 me-2 btn-primary copy-link"
-                                    data-clipboard-target="#copyCodeCustomAccordion1" data-clipboard-action="copy" id="copyCodeCustomAccordion1-1">Copy code</button>
-<pre id="copyCodeCustomAccordion1" class="language-markup" data-lang="html">
-<code>
-    &lt;!--Custom accordion-->
-    &lt;div class="accordion accordion-custom" id="accordionCustomExample">
-      &lt;!--accordion item-->
-      &lt;div class="accordion-item mb-3">
-           &lt;!--accordion header-->
-          &lt;h2 class="accordion-header" id="headingCustomOne">
-              &lt;button class="accordion-button" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseCustomOne" aria-expanded="true"
-                  aria-controls="collapseCustomOne">
-                  Custom Accordion Item #1
-              &lt;/button>
-          &lt;/h2>
-           &lt;!--accordion detail-->
-          &lt;div id="collapseCustomOne" class="accordion-collapse collapse show"
-              aria-labelledby="headingCustomOne" data-bs-parent="#accordionCustomExample">
-              &lt;div class="accordion-body">
-                  &lt;strong>This is the first item's accordion body.&lt;/strong> It is hidden by
-                  default, until the collapse plugin adds the appropriate classes that we use
-                  to style each element. These classes control the overall appearance, as well
-                  as the showing and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It's also worth noting
-                  that just about any HTML can go within the &lt;code>.accordion-body&lt;/code>,
-                  though the transition does limit overflow.
-              &lt;/div>
-          &lt;/div>
-      &lt;/div>
-      &lt;!--accordion item-->
-      &lt;div class="accordion-item mb-3">
-           &lt;!--accordion header-->
-          &lt;h2 class="accordion-header" id="headingCustomTwo">
-              &lt;button class="accordion-button collapsed" type="button"
-                  data-bs-toggle="collapse" data-bs-target="#collapseCustomTwo"
-                  aria-expanded="false" aria-controls="collapseCustomTwo">
-                  Custom Accordion Item #2
-              &lt;/button>
-          &lt;/h2>
-           &lt;!--accordion details-->
-          &lt;div id="collapseCustomTwo" class="accordion-collapse collapse"
-              aria-labelledby="headingCustomTwo" data-bs-parent="#accordionCustomExample">
-              &lt;div class="accordion-body">
-                  &lt;strong>This is the second item's accordion body.&lt;/strong> It is hidden by
-                  default, until the collapse plugin adds the appropriate classes that we use
-                  to style each element. These classes control the overall appearance, as well
-                  as the showing and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It's also worth noting
-                  that just about any HTML can go within the &lt;code>.accordion-body&lt;/code>,
-                  though the transition does limit overflow.
-              &lt;/div>
-          &lt;/div>
-      &lt;/div>
-      &lt;!--accordion item-->
-      &lt;div class="accordion-item">
-           &lt;!--accordion header-->
-          &lt;h2 class="accordion-header" id="headingCustomThree">
-              &lt;button class="accordion-button collapsed" type="button"
-                  data-bs-toggle="collapse" data-bs-target="#collapseCustomThree"
-                  aria-expanded="false" aria-controls="collapseCustomThree">
-                  Custom Accordion Item #3
-              &lt;/button>
-          &lt;/h2>
-           &lt;!--accordion details-->
-          &lt;div id="collapseCustomThree" class="accordion-collapse collapse"
-              aria-labelledby="headingCustomThree" data-bs-parent="#accordionCustomExample">
-              &lt;div class="accordion-body">
-                  &lt;strong>This is the third item's accordion body.&lt;/strong> It is hidden by
-                  default, until the collapse plugin adds the appropriate classes that we use
-                  to style each element. These classes control the overall appearance, as well
-                  as the showing and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It's also worth noting
-                  that just about any HTML can go within the &lt;code>.accordion-body&lt;/code>,
-                  though the transition does limit overflow.
-              &lt;/div>
-          &lt;/div>
-      &lt;/div>
-  &lt;/div>
-</code></pre>
-                            </div>
-                            <!--///////////CODE SNIPPET END-->
                 </div>
             </section>
             <section class="bg-gradient-secondary text-white position-relative">
@@ -832,6 +730,7 @@
         </a>
         <!-- scripts -->
         <script src="../assets/js/theme.bundle.js"></script>
+
         <!--Copy to clipboard + prismJs-->
         <script src="../assets/vendor/node_modules/js/prism.js"></script>
         <script src="../assets/vendor/node_modules/js/clipboard.min.js"></script>
@@ -858,7 +757,6 @@
             }
 
         </script>
-
     </body>
 
 </html>

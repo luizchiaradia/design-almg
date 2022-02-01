@@ -6,6 +6,9 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" href="../assets/img/favicon.ico" type="image/ico">
+
+        <!--Swiper slider css-->
+        <link href="../assets/vendor/node_modules/css/swiper-bundle.min.css" rel="stylesheet">
         <!--Box Icons-->
         <link rel="stylesheet" href="/assets/fonts/boxicons/css/boxicons.min.css">
 
@@ -15,8 +18,6 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Source+Serif+Pro:ital@0;1&display=swap" rel="stylesheet">
-        <!--Prism css snippets-->
-        <link rel="stylesheet" href="../assets/vendor/node_modules/css/prism-tomorrow.css">
         <!-- Main CSS -->
         <link href="../assets/css/theme.min.css" rel="stylesheet">
 
@@ -35,13 +36,9 @@
             <nav class="navbar navbar-expand-lg navbar-light navbar-link-white">
                 <div class="container position-relative">
                     <a class="navbar-brand" href="../index.html">
-                        <!--
                         <img src="../assets/img/logo/logo.svg" alt="" class="img-fluid navbar-brand-sticky">
                         <img src="../assets/img/logo/logo-white.svg" alt="" class="img-fluid navbar-brand-transparent">
-                        -->
-                        <span class="text-white fs-1">ALMG</span>
-                      </a>
-
+                    </a>
                     <div class="d-flex align-items-center navbar-no-collapse-items order-lg-last">
                         <button class="navbar-toggler order-last" type="button" data-bs-toggle="collapse"
                             data-bs-target="#mainNavbarTheme" aria-controls="mainNavbarTheme" aria-expanded="false"
@@ -391,12 +388,13 @@
                                             <ol class="breadcrumb">
                                                 <li class="breadcrumb-item"><a href="#">Home</a></li>
                                                 <li class="breadcrumb-item active">Components</li>
-                                                <li class="breadcrumb-item active" aria-current="page">Accordion</li>
+                                                <li class="breadcrumb-item active" aria-current="page">Swiper Slider
+                                                </li>
                                             </ol>
                                         </div>
                                     </nav>
                                     <h1 class="mb-0 display-4">
-                                        Accordion
+                                        Swiper slider
                                     </h1>
                                 </div>
                             </div>
@@ -406,264 +404,538 @@
             </section>
 
 
-            <section class="position-relative">
+            <section class="position-relative overflow-hidden">
                 <div class="container py-9 py-lg-11">
-                    <div class="row">
-                        <div class="col-md-8 mx-auto">
-                            <div class="d-flex align-items-center justify-content-center mb-4">
-                                <h4 class="mb-0 me-2 me-lg-4">Default</h4>
-                                <span class="border-top d-block flex-grow-1 border-light"></span>
-                            </div>
-                            <div class="accordion" id="accordionExample">
-                                <!--accordion item-->
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingOne">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#collapseOne" aria-expanded="true"
-                                            aria-controls="collapseOne">
-                                            Accordion Item #1
-                                        </button>
-                                    </h2>
-                                    <div id="collapseOne" class="accordion-collapse collapse show"
-                                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            <strong>This is the first item's accordion body.</strong> It is hidden by
-                                            default, until the collapse plugin adds the appropriate classes that we use
-                                            to style each element. These classes control the overall appearance, as well
-                                            as the showing and hiding via CSS transitions. You can modify any of this
-                                            with custom CSS or overriding our default variables. It's also worth noting
-                                            that just about any HTML can go within the <code>.accordion-body</code>,
-                                            though the transition does limit overflow.
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--accordion item-->
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingTwo">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                                            aria-expanded="false" aria-controls="collapseTwo">
-                                            Accordion Item #2
-                                        </button>
-                                    </h2>
-                                    <div id="collapseTwo" class="accordion-collapse collapse"
-                                        aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            <strong>This is the second item's accordion body.</strong> It is hidden by
-                                            default, until the collapse plugin adds the appropriate classes that we use
-                                            to style each element. These classes control the overall appearance, as well
-                                            as the showing and hiding via CSS transitions. You can modify any of this
-                                            with custom CSS or overriding our default variables. It's also worth noting
-                                            that just about any HTML can go within the <code>.accordion-body</code>,
-                                            though the transition does limit overflow.
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--accordion item-->
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingThree">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
-                                            aria-expanded="false" aria-controls="collapseThree">
-                                            Accordion Item #3
-                                        </button>
-                                    </h2>
-                                    <div id="collapseThree" class="accordion-collapse collapse"
-                                        aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            <strong>This is the third item's accordion body.</strong> It is hidden by
-                                            default, until the collapse plugin adds the appropriate classes that we use
-                                            to style each element. These classes control the overall appearance, as well
-                                            as the showing and hiding via CSS transitions. You can modify any of this
-                                            with custom CSS or overriding our default variables. It's also worth noting
-                                            that just about any HTML can go within the <code>.accordion-body</code>,
-                                            though the transition does limit overflow.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="alert alert-success mb-7">
+                        plugin documentation - <a href="https://swiperjs.com/" target="_blank" class="alert-link">SwiperJs</a>
                     </div>
-                </div>
-            </section>
-            <section class="position-relative bg-light">
-                <div class="container py-9 py-lg-11">
-                    <div class="row">
-                        <div class="col-md-8 mx-auto">
+                    <h5 class="mb-5">Single Item</h5>
+                    <!-- Swiper -->
+                    <div class="swiper swiper-1 position-relative">
+                        <div class="swiper-wrapper">
 
-                            <div class="d-flex align-items-center justify-content-center mb-4">
-                                <h4 class="mb-0 me-2 me-lg-4">Custom Accordions</h4>
-                                <span class="border-top d-block flex-grow-1"></span>
+                            <!--Slide item-->
+                            <div class="swiper-slide">
+                                <div
+                                    class="vh-75 d-flex w-100 bg-success text-white align-items-center justify-content-center">
+                                    Slide 1
+                                </div>
                             </div>
-                             <!--Custom accordion-->
-                            <div class="accordion accordion-custom" id="accordionCustomExample">
-                                <!--accordion item-->
-                                <div class="accordion-item mb-3">
-                                     <!--accordion header-->
-                                    <h2 class="accordion-header" id="headingCustomOne">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#collapseCustomOne" aria-expanded="true"
-                                            aria-controls="collapseCustomOne">
-                                            Custom Accordion Item #1
-                                        </button>
-                                    </h2>
-                                     <!--accordion detail-->
-                                    <div id="collapseCustomOne" class="accordion-collapse collapse show"
-                                        aria-labelledby="headingCustomOne" data-bs-parent="#accordionCustomExample">
-                                        <div class="accordion-body">
-                                            <strong>This is the first item's accordion body.</strong> It is hidden by
-                                            default, until the collapse plugin adds the appropriate classes that we use
-                                            to style each element. These classes control the overall appearance, as well
-                                            as the showing and hiding via CSS transitions. You can modify any of this
-                                            with custom CSS or overriding our default variables. It's also worth noting
-                                            that just about any HTML can go within the <code>.accordion-body</code>,
-                                            though the transition does limit overflow.
-                                        </div>
-                                    </div>
+
+                            <!--Slide item-->
+                            <div class="swiper-slide">
+                                <div
+                                    class="vh-75 d-flex w-100 bg-danger text-white align-items-center justify-content-center">
+                                    Slide 2
                                 </div>
-                                <!--accordion item-->
-                                <div class="accordion-item mb-3">
-                                     <!--accordion header-->
-                                    <h2 class="accordion-header" id="headingCustomTwo">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseCustomTwo"
-                                            aria-expanded="false" aria-controls="collapseCustomTwo">
-                                            Custom Accordion Item #2
-                                        </button>
-                                    </h2>
-                                     <!--accordion details-->
-                                    <div id="collapseCustomTwo" class="accordion-collapse collapse"
-                                        aria-labelledby="headingCustomTwo" data-bs-parent="#accordionCustomExample">
-                                        <div class="accordion-body">
-                                            <strong>This is the second item's accordion body.</strong> It is hidden by
-                                            default, until the collapse plugin adds the appropriate classes that we use
-                                            to style each element. These classes control the overall appearance, as well
-                                            as the showing and hiding via CSS transitions. You can modify any of this
-                                            with custom CSS or overriding our default variables. It's also worth noting
-                                            that just about any HTML can go within the <code>.accordion-body</code>,
-                                            though the transition does limit overflow.
-                                        </div>
-                                    </div>
+                            </div>
+
+                            <!--Slide item-->
+                            <div class="swiper-slide">
+                                <div
+                                    class="vh-75 d-flex w-100 bg-primary text-white align-items-center justify-content-center">
+                                    Slide 3
                                 </div>
-                                <!--accordion item-->
-                                <div class="accordion-item">
-                                     <!--accordion header-->
-                                    <h2 class="accordion-header" id="headingCustomThree">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseCustomThree"
-                                            aria-expanded="false" aria-controls="collapseCustomThree">
-                                            Custom Accordion Item #3
-                                        </button>
-                                    </h2>
-                                     <!--accordion details-->
-                                    <div id="collapseCustomThree" class="accordion-collapse collapse"
-                                        aria-labelledby="headingCustomThree" data-bs-parent="#accordionCustomExample">
-                                        <div class="accordion-body">
-                                            <strong>This is the third item's accordion body.</strong> It is hidden by
-                                            default, until the collapse plugin adds the appropriate classes that we use
-                                            to style each element. These classes control the overall appearance, as well
-                                            as the showing and hiding via CSS transitions. You can modify any of this
-                                            with custom CSS or overriding our default variables. It's also worth noting
-                                            that just about any HTML can go within the <code>.accordion-body</code>,
-                                            though the transition does limit overflow.
-                                        </div>
-                                    </div>
+                            </div>
+
+                            <!--Slide item-->
+                            <div class="swiper-slide">
+                                <div
+                                    class="vh-75 d-flex w-100 bg-info text-white align-items-center justify-content-center">
+                                    Slide 4
                                 </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="position-relative overflow-hidden">
+                <div class="container py-9 py-lg-11">
+                    <h5 class="mb-5">2 Items per view + (overflow-visible)</h5>
+                    <!-- Swiper -->
+                    <div class="swiper swiper-2 position-relative overflow-visible">
+                        <div class="swiper-wrapper">
+
+                            <!--Slide item-->
+                            <div class="swiper-slide">
+                                <div
+                                    class="vh-75 d-flex w-100 bg-success text-white align-items-center justify-content-center">
+                                    Slide 1
+                                </div>
+                            </div>
+
+                            <!--Slide item-->
+                            <div class="swiper-slide">
+                                <div
+                                    class="vh-75 d-flex w-100 bg-danger text-white align-items-center justify-content-center">
+                                    Slide 2
+                                </div>
+                            </div>
+
+                            <!--Slide item-->
+                            <div class="swiper-slide">
+                                <div
+                                    class="vh-75 d-flex w-100 bg-primary text-white align-items-center justify-content-center">
+                                    Slide 3
+                                </div>
+                            </div>
+
+                            <!--Slide item-->
+                            <div class="swiper-slide">
+                                <div
+                                    class="vh-75 d-flex w-100 bg-info text-white align-items-center justify-content-center">
+                                    Slide 4
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="position-relative overflow-hidden">
+                <div class="container py-9 py-lg-11">
+                    <h5 class="mb-5">3 Items per view + (Responsive breakpoints)</h5>
+                    <!-- Swiper -->
+                    <div class="swiper swiper-3 overflow-visible position-relative">
+                        <div class="swiper-wrapper">
+
+                            <!--Slide item-->
+                            <div class="swiper-slide">
+                                <div
+                                    class="vh-75 d-flex w-100 bg-success text-white align-items-center justify-content-center">
+                                    Slide 1
+                                </div>
+                            </div>
+
+                            <!--Slide item-->
+                            <div class="swiper-slide">
+                                <div
+                                    class="vh-75 d-flex w-100 bg-danger text-white align-items-center justify-content-center">
+                                    Slide 2
+                                </div>
+                            </div>
+
+                            <!--Slide item-->
+                            <div class="swiper-slide">
+                                <div
+                                    class="vh-75 d-flex w-100 bg-primary text-white align-items-center justify-content-center">
+                                    Slide 3
+                                </div>
+                            </div>
+
+                            <!--Slide item-->
+                            <div class="swiper-slide">
+                                <div
+                                    class="vh-75 d-flex w-100 bg-info text-white align-items-center justify-content-center">
+                                    Slide 4
+                                </div>
+                            </div>
+
+                            <!--Slide item-->
+                            <div class="swiper-slide">
+                                <div
+                                    class="vh-75 d-flex w-100 bg-warning text-white align-items-center justify-content-center">
+                                    Slide 5
+                                </div>
+                            </div>
+
+                            <!--Slide item-->
+                            <div class="swiper-slide">
+                                <div
+                                    class="vh-75 d-flex w-100 bg-secondary text-white align-items-center justify-content-center">
+                                    Slide 6
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="position-relative overflow-hidden">
+                <div class="container py-9 py-lg-11">
+                    <h5 class="mb-5">Coverflow</h5>
+                    <!-- Swiper -->
+                    <div class="swiper swiper-flow position-relative overflow-visible">
+                        <div class="swiper-wrapper">
+
+                            <!--Slide item-->
+                            <div class="swiper-slide">
+                                <div
+                                    class="vh-75 d-flex w-100 bg-success text-white align-items-center justify-content-center">
+                                    Slide 1
+                                </div>
+                            </div>
+
+                            <!--Slide item-->
+                            <div class="swiper-slide">
+                                <div
+                                    class="vh-75 d-flex w-100 bg-danger text-white align-items-center justify-content-center">
+                                    Slide 2
+                                </div>
+                            </div>
+
+                            <!--Slide item-->
+                            <div class="swiper-slide">
+                                <div
+                                    class="vh-75 d-flex w-100 bg-primary text-white align-items-center justify-content-center">
+                                    Slide 3
+                                </div>
+                            </div>
+
+                            <!--Slide item-->
+                            <div class="swiper-slide">
+                                <div
+                                    class="vh-75 d-flex w-100 bg-info text-white align-items-center justify-content-center">
+                                    Slide 4
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="position-relative overflow-hidden">
+                <div class="container py-9 py-lg-11">
+                    <h5 class="mb-5">Fade effect</h5>
+                    <!-- Swiper -->
+                    <div class="swiper swiper-fade position-relative overflow-visible">
+                        <div class="swiper-wrapper">
+
+                            <!--Slide item-->
+                            <div class="swiper-slide">
+                                <div
+                                    class="vh-75 d-flex w-100 bg-success text-white align-items-center justify-content-center">
+                                    Slide 1
+                                </div>
+                            </div>
+
+                            <!--Slide item-->
+                            <div class="swiper-slide">
+                                <div
+                                    class="vh-75 d-flex w-100 bg-danger text-white align-items-center justify-content-center">
+                                    Slide 2
+                                </div>
+                            </div>
+
+                            <!--Slide item-->
+                            <div class="swiper-slide">
+                                <div
+                                    class="vh-75 d-flex w-100 bg-primary text-white align-items-center justify-content-center">
+                                    Slide 3
+                                </div>
+                            </div>
+
+                            <!--Slide item-->
+                            <div class="swiper-slide">
+                                <div
+                                    class="vh-75 d-flex w-100 bg-info text-white align-items-center justify-content-center">
+                                    Slide 4
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="position-relative overflow-hidden">
+                <div class="container w-lg-50 py-9 py-lg-11">
+                    <h5 class="mb-5">Cards effect</h5>
+                    <!-- Swiper -->
+                    <div class="swiper swiper-cards position-relative overflow-visible">
+                        <div class="swiper-wrapper">
+
+                            <!--Slide item-->
+                            <div class="swiper-slide bg-light shadow-lg rounded-4">
+                                <div class="vh-75 d-flex w-100 align-items-center justify-content-center">
+                                    Slide 1
+                                </div>
+                            </div>
+
+                            <!--Slide item-->
+                            <div class="swiper-slide bg-light shadow-lg rounded-4">
+                                <div class="vh-75 d-flex w-100 align-items-center justify-content-center">
+                                    Slide 2
+                                </div>
+                            </div>
+
+                            <!--Slide item-->
+                            <div class="swiper-slide bg-light shadow-lg rounded-4">
+                                <div class="vh-75 d-flex w-100 align-items-center justify-content-center">
+                                    Slide 3
+                                </div>
+                            </div>
+
+                            <!--Slide item-->
+                            <div class="swiper-slide bg-light shadow-lg rounded-4">
+                                <div class="vh-75 d-flex w-100 align-items-center justify-content-center">
+                                    Slide 4
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="position-relative overflow-hidden">
+                <div class="container w-lg-60 py-9 py-lg-11">
+                    <h5 class="mb-5">Thumbs</h5>
+                    <div class="swiper overflow-visible swiper-thumbs-main">
+                        <div class="swiper-wrapper text-center mb-7">
+                            <div class="swiper-slide py-6 px-4 bg-white rounded-4 shadow-lg">
+                                <p class="fs-4 font-serif">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. At elementum eu facilisis sed odio.
+                                    Vestibulum sed arcu non odio euismod. Id diam maecenas ultricies mi eget mauris
+                                    pharetra et ultrices. Viverra suspendisse potenti nullam ac tortor vitae purus. Ut
+                                    tellus elementum sagittis vitae et. Elementum nibh tellus molestie nunc non blandit
+                                    massa.
+                                </p>
+
+                                <h5 class="mb-0">Username</h5>
+                                <small class="text-muted">Position</small>
+                            </div>
+                            <div class="swiper-slide py-6 px-4 bg-white rounded-4 shadow-lg">
+                                <p class="fs-4 font-serif">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. At elementum eu facilisis sed odio.
+                                    Vestibulum sed arcu non odio euismod. Id diam maecenas ultricies mi eget mauris
+                                    pharetra et ultrices. Viverra suspendisse potenti nullam ac tortor vitae purus. Ut
+                                    tellus elementum sagittis vitae et. Elementum nibh tellus molestie nunc non blandit
+                                    massa.
+                                </p>
+                                <h5 class="mb-0">Username</h5>
+                                <small class="text-muted">Position</small>
+                            </div>
+                            <div class="swiper-slide py-6 px-4 bg-white rounded-4 shadow-lg">
+                                <p class="fs-4 font-serif">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. At elementum eu facilisis sed odio.
+                                    Vestibulum sed arcu non odio euismod. Id diam maecenas ultricies mi eget mauris
+                                    pharetra et ultrices. Viverra suspendisse potenti nullam ac tortor vitae purus. Ut
+                                    tellus elementum sagittis vitae et. Elementum nibh tellus molestie nunc non blandit
+                                    massa.
+                                </p>
+                                <h5 class="mb-0">Username</h5>
+                                <small class="text-muted">Position</small>
+                            </div>
+                            <div class="swiper-slide py-6 px-4 bg-white rounded-4 shadow-lg">
+                                <p class="fs-4 font-serif">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. At elementum eu facilisis sed odio.
+                                    Vestibulum sed arcu non odio euismod. Id diam maecenas ultricies mi eget mauris
+                                    pharetra et ultrices. Viverra suspendisse potenti nullam ac tortor vitae purus. Ut
+                                    tellus elementum sagittis vitae et. Elementum nibh tellus molestie nunc non blandit
+                                    massa.
+                                </p>
+                                <h5 class="mb-0">Username</h5>
+                                <small class="text-muted">Position</small>
+                            </div>
+                            <div class="swiper-slide py-6 px-4 bg-white rounded-4 shadow-lg">
+                                <p class="fs-4 font-serif">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. At elementum eu facilisis sed odio.
+                                    Vestibulum sed arcu non odio euismod. Id diam maecenas ultricies mi eget mauris
+                                    pharetra et ultrices. Viverra suspendisse potenti nullam ac tortor vitae purus. Ut
+                                    tellus elementum sagittis vitae et. Elementum nibh tellus molestie nunc non blandit
+                                    massa.
+                                </p>
+                                <h5 class="mb-0">Username</h5>
+                                <small class="text-muted">Position</small>
+                            </div>
+                            <div class="swiper-slide py-6 px-4 bg-white rounded-4 shadow-lg">
+                                <p class="fs-4 font-serif">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. At elementum eu facilisis sed odio.
+                                    Vestibulum sed arcu non odio euismod. Id diam maecenas ultricies mi eget mauris
+                                    pharetra et ultrices. Viverra suspendisse potenti nullam ac tortor vitae purus. Ut
+                                    tellus elementum sagittis vitae et. Elementum nibh tellus molestie nunc non blandit
+                                    massa.
+                                </p>
+                                <h5 class="mb-0">Username</h5>
+                                <small class="text-muted">Position</small>
+                            </div>
+                            <div class="swiper-slide py-6 px-4 bg-white rounded-4 shadow-lg">
+                                <p class="fs-4 font-serif">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. At elementum eu facilisis sed odio.
+                                    Vestibulum sed arcu non odio euismod. Id diam maecenas ultricies mi eget mauris
+                                    pharetra et ultrices. Viverra suspendisse potenti nullam ac tortor vitae purus. Ut
+                                    tellus elementum sagittis vitae et. Elementum nibh tellus molestie nunc non blandit
+                                    massa.
+                                </p>
+                                <h5 class="mb-0">Username</h5>
+                                <small class="text-muted">Position</small>
+                            </div>
+                            <div class="swiper-slide py-6 px-4 bg-white rounded-4 shadow-lg">
+                                <p class="fs-4 font-serif">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. At elementum eu facilisis sed odio.
+                                    Vestibulum sed arcu non odio euismod. Id diam maecenas ultricies mi eget mauris
+                                    pharetra et ultrices. Viverra suspendisse potenti nullam ac tortor vitae purus. Ut
+                                    tellus elementum sagittis vitae et. Elementum nibh tellus molestie nunc non blandit
+                                    massa.
+                                </p>
+                                <h5 class="mb-0">Username</h5>
+                                <small class="text-muted">Position</small>
+                            </div>
+                            <div class="swiper-slide py-6 px-4 bg-white rounded-4 shadow-lg">
+                                <p class="fs-4 font-serif">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. At elementum eu facilisis sed odio.
+                                    Vestibulum sed arcu non odio euismod. Id diam maecenas ultricies mi eget mauris
+                                    pharetra et ultrices. Viverra suspendisse potenti nullam ac tortor vitae purus. Ut
+                                    tellus elementum sagittis vitae et. Elementum nibh tellus molestie nunc non blandit
+                                    massa.
+                                </p>
+                                <h5 class="mb-0">Username</h5>
+                                <small class="text-muted">Position</small>
+                            </div>
+                            <div class="swiper-slide py-6 px-4 bg-white rounded-4 shadow-lg">
+                                <p class="fs-4 font-serif">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. At elementum eu facilisis sed odio.
+                                    Vestibulum sed arcu non odio euismod. Id diam maecenas ultricies mi eget mauris
+                                    pharetra et ultrices. Viverra suspendisse potenti nullam ac tortor vitae purus. Ut
+                                    tellus elementum sagittis vitae et. Elementum nibh tellus molestie nunc non blandit
+                                    massa.
+                                </p>
+                                <h5 class="mb-0">Username</h5>
+                                <small class="text-muted">Position</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-container overflow-hidden swiper-thumbs-thumbnails">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img class="img-fluid rounded-circle" src="../assets/img/avatar/1.jpg">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="img-fluid rounded-circle" src="../assets/img/avatar/2.jpg">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="img-fluid rounded-circle" src="../assets/img/avatar/3.jpg">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="img-fluid rounded-circle" src="../assets/img/avatar/4.jpg">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="img-fluid rounded-circle" src="../assets/img/avatar/5.jpg">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="img-fluid rounded-circle" src="../assets/img/avatar/6.jpg">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="img-fluid rounded-circle" src="../assets/img/avatar/7.jpg">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="img-fluid rounded-circle" src="../assets/img/avatar/8.jpg">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="img-fluid rounded-circle" src="../assets/img/avatar/9.jpg">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="img-fluid rounded-circle" src="../assets/img/avatar/10.jpg">
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="container pt-5 pb-9 pb-lg-11">
-                    
-                            <!--///////////CODE SNIPPET FOR CUSTOM ACCORIONS-->
-                            <div class="position-relative" style="max-height: 75vh; overflow-y: auto;">
-                                <!--Copy clipboard button-->
-                                <button
-                                    class="btn btn-sm position-absolute rounded-3 end-0 top-0 z-index-1 mt-2 me-2 btn-primary copy-link"
-                                    data-clipboard-target="#copyCodeCustomAccordion1" data-clipboard-action="copy" id="copyCodeCustomAccordion1-1">Copy code</button>
-<pre id="copyCodeCustomAccordion1" class="language-markup" data-lang="html">
-<code>
-    &lt;!--Custom accordion-->
-    &lt;div class="accordion accordion-custom" id="accordionCustomExample">
-      &lt;!--accordion item-->
-      &lt;div class="accordion-item mb-3">
-           &lt;!--accordion header-->
-          &lt;h2 class="accordion-header" id="headingCustomOne">
-              &lt;button class="accordion-button" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseCustomOne" aria-expanded="true"
-                  aria-controls="collapseCustomOne">
-                  Custom Accordion Item #1
-              &lt;/button>
-          &lt;/h2>
-           &lt;!--accordion detail-->
-          &lt;div id="collapseCustomOne" class="accordion-collapse collapse show"
-              aria-labelledby="headingCustomOne" data-bs-parent="#accordionCustomExample">
-              &lt;div class="accordion-body">
-                  &lt;strong>This is the first item's accordion body.&lt;/strong> It is hidden by
-                  default, until the collapse plugin adds the appropriate classes that we use
-                  to style each element. These classes control the overall appearance, as well
-                  as the showing and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It's also worth noting
-                  that just about any HTML can go within the &lt;code>.accordion-body&lt;/code>,
-                  though the transition does limit overflow.
-              &lt;/div>
-          &lt;/div>
-      &lt;/div>
-      &lt;!--accordion item-->
-      &lt;div class="accordion-item mb-3">
-           &lt;!--accordion header-->
-          &lt;h2 class="accordion-header" id="headingCustomTwo">
-              &lt;button class="accordion-button collapsed" type="button"
-                  data-bs-toggle="collapse" data-bs-target="#collapseCustomTwo"
-                  aria-expanded="false" aria-controls="collapseCustomTwo">
-                  Custom Accordion Item #2
-              &lt;/button>
-          &lt;/h2>
-           &lt;!--accordion details-->
-          &lt;div id="collapseCustomTwo" class="accordion-collapse collapse"
-              aria-labelledby="headingCustomTwo" data-bs-parent="#accordionCustomExample">
-              &lt;div class="accordion-body">
-                  &lt;strong>This is the second item's accordion body.&lt;/strong> It is hidden by
-                  default, until the collapse plugin adds the appropriate classes that we use
-                  to style each element. These classes control the overall appearance, as well
-                  as the showing and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It's also worth noting
-                  that just about any HTML can go within the &lt;code>.accordion-body&lt;/code>,
-                  though the transition does limit overflow.
-              &lt;/div>
-          &lt;/div>
-      &lt;/div>
-      &lt;!--accordion item-->
-      &lt;div class="accordion-item">
-           &lt;!--accordion header-->
-          &lt;h2 class="accordion-header" id="headingCustomThree">
-              &lt;button class="accordion-button collapsed" type="button"
-                  data-bs-toggle="collapse" data-bs-target="#collapseCustomThree"
-                  aria-expanded="false" aria-controls="collapseCustomThree">
-                  Custom Accordion Item #3
-              &lt;/button>
-          &lt;/h2>
-           &lt;!--accordion details-->
-          &lt;div id="collapseCustomThree" class="accordion-collapse collapse"
-              aria-labelledby="headingCustomThree" data-bs-parent="#accordionCustomExample">
-              &lt;div class="accordion-body">
-                  &lt;strong>This is the third item's accordion body.&lt;/strong> It is hidden by
-                  default, until the collapse plugin adds the appropriate classes that we use
-                  to style each element. These classes control the overall appearance, as well
-                  as the showing and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It's also worth noting
-                  that just about any HTML can go within the &lt;code>.accordion-body&lt;/code>,
-                  though the transition does limit overflow.
-              &lt;/div>
-          &lt;/div>
-      &lt;/div>
-  &lt;/div>
-</code></pre>
+            </section>
+
+            <section class="position-relative overflow-hidden">
+                <div class="container-fluid py-9 py-lg-11">
+                    <h5 class="mb-5">Time line progress bar</h5>
+                    <!-- Swiper Main Slider -->
+                    <div class="swiper-progress-main overflow-hidden swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <!-- Devices -->
+                                <div>
+                                    <img class="img-fluid"
+                                        src="../assets/img/backgrounds/bg3.jpg"
+                                        alt="Image Description">
+                                </div>
+                                <!-- End Devices -->
                             </div>
-                            <!--///////////CODE SNIPPET END-->
+
+                            <div class="swiper-slide">
+                                <!-- Devices -->
+                                <div>
+                                    <img class="img-fluid"
+                                        src="../assets/img/backgrounds/bg6.jpg"
+                                        alt="Image Description">
+                                </div>
+                                <!-- End Devices -->
+                            </div>
+
+                            <div class="swiper-slide">
+                                <!-- Devices -->
+                                <div>
+                                    <img class="img-fluid"
+                                        src="../assets/img/backgrounds/bg7.jpg"
+                                        alt="Image Description">
+                                </div>
+                                <!-- End Devices -->
+                            </div>
+                        </div>
+                        <div class="swiper-button-next bg-white rounded-0"></div>
+                        <div class="swiper-button-prev bg-white rounded-0"></div>
+                    </div>
+                    <!-- End Swiper Main Slider -->
+
+                    <!-- Swiper Thumbs Slider -->
+                    <div class="progress-swiper-thumbs pt-3 swiper-container">
+                        <div class="swiper-wrapper">
+                            <!-- Slide -->
+                            <div class="swiper-slide swiper-pagination-progress">
+                                <div class="swiper-pagination-progress-bar mb-2">
+                                    <div class="swiper-pagination-progress-inner swiper-pagination-progress-bar-inner">
+                                    </div>
+                                </div>
+                                <span class="small">Discover the new way of website building</span>
+                            </div>
+                            <!-- End Slide -->
+
+                            <!-- Slide -->
+                            <div class="swiper-slide swiper-pagination-progress">
+                                <div class="swiper-pagination-progress-bar mb-2">
+                                    <div class="swiper-pagination-progress-inner swiper-pagination-progress-bar-inner">
+                                    </div>
+                                </div>
+                                <span class="small">One of the best bootstrap theme on planet</span>
+                            </div>
+                            <!-- End Slide -->
+
+                            <!-- Slide -->
+                            <div class="swiper-slide swiper-pagination-progress">
+                                <div class="swiper-pagination-progress-bar mb-2">
+                                    <div class="swiper-pagination-progress-inner swiper-pagination-progress-bar-inner">
+                                    </div>
+                                </div>
+                                <span class="small">Countless features give you a freedom</span>
+                            </div>
+                            <!-- End Slide -->
+                        </div>
+                    </div>
+                    <!-- End Swiper Thumbs Slider -->
+                </div>
                 </div>
             </section>
-            <section class="bg-gradient-secondary text-white position-relative">
+
+            <section class="bg-shade-primary text-white position-relative">
                 <svg class="position-absolute top-0 start-0 text-white w-50 h-auto w-lg-80" width="136" height="76"
                     viewBox="0 0 136 76" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-opacity=".1"
@@ -690,6 +962,7 @@
                 </div> <!-- / .container -->
             </section>
         </main>
+
 
         <!--Footer Start-->
 
@@ -832,33 +1105,149 @@
         </a>
         <!-- scripts -->
         <script src="../assets/js/theme.bundle.js"></script>
-        <!--Copy to clipboard + prismJs-->
-        <script src="../assets/vendor/node_modules/js/prism.js"></script>
-        <script src="../assets/vendor/node_modules/js/clipboard.min.js"></script>
-        <script>
-            /* Clipboard JS - Copy code button */
-            var cl = document.querySelector('.copy-link');
-            if (typeof !!cl && (cl) != 'undefined' && cl != null) {
-                var cle = document.querySelectorAll('.copy-link');
-                cle.forEach(el => {
-                    el.addEventListener("click", function () {
-                        var theButton = this;
-                        var copyId = this.getAttribute('id');
-                        var clipboard = new ClipboardJS('#' + copyId);
 
-                        clipboard.on('success', function (e) {
-                            e.clearSelection();
-                            theButton.innerHTML = 'Copied!';
-                            setTimeout(function () {
-                                theButton.innerHTML = 'Copy code';
-                            }, 5000);
-                        });
-                    });
-                });
+        <!--swiper script-->
+        <script src="../assets/vendor/node_modules/js/swiper-bundle.min.js"></script>
+
+        <script>
+            var swiper = new Swiper(".swiper-1", {
+                slidesPerView: 1,
+                spaceBetween: 16,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+
+            var swiper2 = new Swiper(".swiper-2", {
+                slidesPerView: 2,
+                spaceBetween: 8,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+            var swiper2 = new Swiper(".swiper-3", {
+                slidesPerView: 1,
+                spaceBetween: 8,
+                centerSlides: true,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                breakpoints: {
+                    640: {
+                        slidesPerView: 2,
+                        spaceBetween: 20,
+                    },
+                    768: {
+                        slidesPerView: 3,
+                        spaceBetween: 40,
+                    }
+                },
+            });
+            var swiperFlow = new Swiper('.swiper-flow', {
+                effect: 'coverflow',
+                coverflowEffect: {
+                    rotate: 60,
+                    slideShadows: false,
+                },
+            });
+            var swiperFade = new Swiper('.swiper-fade', {
+                effect: 'fade',
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                fadeEffect: {
+                    crossFade: true
+                },
+            });
+            var swiperFade = new Swiper('.swiper-cards', {
+                effect: "cards",
+                grabCursor: true,
+                cardsEffect: {
+                    slideShadows: false,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                }
+            });
+
+            //Thumbnails Demo
+            var swiperThumb = new Swiper(".swiper-thumbs-thumbnails", {
+                freeMode: true,
+                watchSlidesVisibility: true,
+                watchSlidesProgress: true,
+                history: false,
+                breakpoints: {
+                    480: {
+                        slidesPerView: 4,
+                        spaceBetween: 16,
+                    },
+                    768: {
+                        slidesPerView: 5,
+                        spaceBetween: 10,
+                    },
+                    1024: {
+                        slidesPerView: 6,
+                        spaceBetween: 12,
+                    },
             }
+            });
+            var swiperThumbsMain = new Swiper(".swiper-thumbs-main", {
+                spaceBetween: 16,
+                loop:true,
+                thumbs: {
+                    swiper: swiperThumb,
+                },
+            });
+
+            //Timeline progressbar 
+            var sliderThumbs = new Swiper('.progress-swiper-thumbs', {
+                watchSlidesVisibility: true,
+                watchSlidesProgress: true,
+                history: false,
+                breakpoints: {
+                    480: {
+                        slidesPerView: 2,
+                        spaceBetween: 16,
+                    },
+                    768: {
+                        slidesPerView: 3,
+                        spaceBetween: 16,
+                    },
+                    1024: {
+                        slidesPerView: 3,
+                        spaceBetween: 16,
+                    },
+                },
+                on: {
+                    'afterInit': function (swiper) {
+                        swiper.el.querySelectorAll('.swiper-pagination-progress-inner')
+                            .forEach($progress => $progress.style.transitionDuration =
+                                `${swiper.params.autoplay.delay}ms`)
+                    }
+                }
+            });
+
+            var sliderMain = new Swiper('.swiper-progress-main', {
+                loop: true,
+                autoplay:{
+                    delay:3000,
+                    disableOnInteraction:false,
+                },
+                thumbs: {
+                    swiper: sliderThumbs
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            })
 
         </script>
-
     </body>
 
 </html>

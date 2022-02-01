@@ -35,12 +35,9 @@
             <nav class="navbar navbar-expand-lg navbar-light navbar-link-white">
                 <div class="container position-relative">
                     <a class="navbar-brand" href="../index.html">
-                        <!--
                         <img src="../assets/img/logo/logo.svg" alt="" class="img-fluid navbar-brand-sticky">
                         <img src="../assets/img/logo/logo-white.svg" alt="" class="img-fluid navbar-brand-transparent">
-                        -->
-                        <span class="text-white fs-1">ALMG</span>
-                      </a>
+                    </a>
 
                     <div class="d-flex align-items-center navbar-no-collapse-items order-lg-last">
                         <button class="navbar-toggler order-last" type="button" data-bs-toggle="collapse"
@@ -391,12 +388,12 @@
                                             <ol class="breadcrumb">
                                                 <li class="breadcrumb-item"><a href="#">Home</a></li>
                                                 <li class="breadcrumb-item active">Components</li>
-                                                <li class="breadcrumb-item active" aria-current="page">Accordion</li>
+                                                <li class="breadcrumb-item active" aria-current="page">Utility classess</li>
                                             </ol>
                                         </div>
                                     </nav>
                                     <h1 class="mb-0 display-4">
-                                        Accordion
+                                     Utility classess
                                     </h1>
                                 </div>
                             </div>
@@ -406,291 +403,189 @@
             </section>
 
 
-            <section class="position-relative">
+            <section class="position-relative bg-gradient-light">
                 <div class="container py-9 py-lg-11">
-                    <div class="row">
-                        <div class="col-md-8 mx-auto">
-                            <div class="d-flex align-items-center justify-content-center mb-4">
-                                <h4 class="mb-0 me-2 me-lg-4">Default</h4>
-                                <span class="border-top d-block flex-grow-1 border-light"></span>
-                            </div>
-                            <div class="accordion" id="accordionExample">
-                                <!--accordion item-->
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingOne">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#collapseOne" aria-expanded="true"
-                                            aria-controls="collapseOne">
-                                            Accordion Item #1
-                                        </button>
-                                    </h2>
-                                    <div id="collapseOne" class="accordion-collapse collapse show"
-                                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            <strong>This is the first item's accordion body.</strong> It is hidden by
-                                            default, until the collapse plugin adds the appropriate classes that we use
-                                            to style each element. These classes control the overall appearance, as well
-                                            as the showing and hiding via CSS transitions. You can modify any of this
-                                            with custom CSS or overriding our default variables. It's also worth noting
-                                            that just about any HTML can go within the <code>.accordion-body</code>,
-                                            though the transition does limit overflow.
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--accordion item-->
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingTwo">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                                            aria-expanded="false" aria-controls="collapseTwo">
-                                            Accordion Item #2
-                                        </button>
-                                    </h2>
-                                    <div id="collapseTwo" class="accordion-collapse collapse"
-                                        aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            <strong>This is the second item's accordion body.</strong> It is hidden by
-                                            default, until the collapse plugin adds the appropriate classes that we use
-                                            to style each element. These classes control the overall appearance, as well
-                                            as the showing and hiding via CSS transitions. You can modify any of this
-                                            with custom CSS or overriding our default variables. It's also worth noting
-                                            that just about any HTML can go within the <code>.accordion-body</code>,
-                                            though the transition does limit overflow.
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--accordion item-->
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingThree">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
-                                            aria-expanded="false" aria-controls="collapseThree">
-                                            Accordion Item #3
-                                        </button>
-                                    </h2>
-                                    <div id="collapseThree" class="accordion-collapse collapse"
-                                        aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            <strong>This is the third item's accordion body.</strong> It is hidden by
-                                            default, until the collapse plugin adds the appropriate classes that we use
-                                            to style each element. These classes control the overall appearance, as well
-                                            as the showing and hiding via CSS transitions. You can modify any of this
-                                            with custom CSS or overriding our default variables. It's also worth noting
-                                            that just about any HTML can go within the <code>.accordion-body</code>,
-                                            though the transition does limit overflow.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <p class="w-lg-60">For faster mobile-friendly and responsive development, Bootstrap includes dozens of utility classes for showing, hiding, aligning, and spacing content.</p>
+                    <a target="_blank" href="https://getbootstrap.com/docs/5.0/utilities/api/" class="btn btn-primary">Bootstrap utilities</a>
+                <div class="table-responsive mt-7">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th style="width: 120px;">Class</th>
+                                <th style="width: 200px;">Description</th>
+                                <th style="width: 300px;">Options</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>w-#</code></td>
+                                <td class="small">Width for component in %</td>
+                                <td>
+                                    <code>.w-10</code> <code>.w-20</code> <code>.w-25</code>
+                                     <code>.w-30</code> <code>.w-40</code> <code>.w-50</code>
+                                     <code>.w-60</code> <code>.w-70</code> <code>.w-75</code>
+                                     <code>.w-80</code> <code>.w-90</code> <code>.w-100</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><code>h-#</code></td>
+                                <td class="small">Height for component in %</td>
+                                <td>
+                                    <code>.h-10</code> <code>.h-20</code> <code>.h-25</code>
+                                     <code>.h-30</code> <code>.h-40</code> <code>.h-50</code>
+                                     <code>.h-60</code> <code>.h-70</code> <code>.h-75</code>
+                                     <code>.h-80</code> <code>.h-90</code> <code>.h-100</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><code>vh-#</code></td>
+                                <td class="small">Viewport Height for component in %</td>
+                                <td>
+                                    <code>.vh-0</code> <code>.vh-25</code>
+                                     <code>.vh-50</code> <code>.h-75</code> <code>.vh-100</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><code>width-#x</code></td>
+                                <td class="small">Width for component in REM</td>
+                                <td>
+                                    <code>.width-1x</code> <code>.width-2x</code> <code>.width-3x</code>
+                                     <code>.width-4x</code> <code>.width-5x</code> <code>.width-5x</code>
+                                     <code>.width-6x</code> <code>.width-7x</code> <code>.width-8x</code>
+                                     <code>.width-9x</code> <code>.width-10x</code> <code>.width-11x</code>
+                                     <code>.width-12x</code> <code>.width-13x</code> <code>.width-14x</code>
+                                     <code>.width-15x</code> <code>.width-16x</code> <code>.width-17x</code>
+                                     <code>.width-18x</code> <code>.width-19x</code> <code>.width-20x</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><code>height-#x</code></td>
+                                <td class="small">Height for component in REM</td>
+                                <td>
+                                    <code>.height-1x</code> <code>.height-2x</code> <code>.height-3x</code>
+                                     <code>.height-4x</code> <code>.height-5x</code> <code>.height-5x</code>
+                                     <code>.height-6x</code> <code>.height-7x</code> <code>.height-8x</code>
+                                     <code>.height-9x</code> <code>.height-10x</code> <code>.height-11x</code>
+                                     <code>.height-12x</code> <code>.height-13x</code> <code>.height-14x</code>
+                                     <code>.height-15x</code> <code>.height-16x</code> <code>.height-17x</code>
+                                     <code>.height-18x</code> <code>.height-19x</code> <code>.height-2xx</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><code>flip-</code></td>
+                                <td class="small">Flip component vertical / Horizontal</td>
+                                <td>
+                                    <code>.flip-y</code> <code>.flip-x</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><code>z-index-#</code></td>
+                                <td class="small">Set z-index for component</td>
+                                <td>
+                                    <code>.z-index-1</code> <code>.z-index-2</code> 
+                                    <code>.z-index-3</code> <code>.z-index-4</code> 
+                                    <code>.z-index-5</code> <code>.z-index-fixed</code> 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><code>z-index-n#</code></td>
+                                <td class="small">Set Negetive z-index for component</td>
+                                <td>
+                                    <code>.z-index-n1</code> <code>.z-index-n2</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><code>rounded-#</code></td>
+                                <td class="small">Set corner radius for component</td>
+                                <td>
+                                    <code>.rounded-1</code> <code>.rounded-2</code> <code>.rounded-3</code> 
+                                    <code>.rounded-4</code> <code>.rounded-block</code> <code>.rounded-blob</code>
+                                    <code>.rounded-pill</code> <code>.rounded-circle</code>  
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><code>rounded-top-#</code></td>
+                                <td class="small">Set top corner radius for component</td>
+                                <td>
+                                    <code>.rounded-top-[0,1,2,3,4,xl,block,pill,circle]</code><br>
+                                    <code>.rounded-top-start-[0, 1,2,3,4,xl,block,pill,circle]</code><br>
+                                    <code>.rounded-top-end-[0,1,2,3,4,xl,block,pill,circle]</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><code>rounded-bottom-#</code></td>
+                                <td class="small">Set bottom corner radius for component</td>
+                                <td>
+                                    <code>.rounded-bottom-[0,1,2,3,4,xl,block,pill,circle]</code><br>
+                                    <code>.rounded-bottom-start-[0, 1,2,3,4,xl,block,pill,circle]</code><br>
+                                    <code>.rounded-bottom-end-[0,1,2,3,4,xl,block,pill,circle]</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><code>shadow-#</code></td>
+                                <td class="small">Set box-shadow for component</td>
+                                <td>
+                                    <code>.shadow-sm</code> 
+                                    <code>.shadow</code> 
+                                    <code>.shadow-lg</code> 
+                                    <code>.shadow-xl</code> 
+                                    <code>.shadow-3d</code> 
+                                    <code>.shadow-none</code> 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><code>hover-shadow-#</code></td>
+                                <td class="small">Set box-shadow on hover for component</td>
+                                <td>
+                                    <code>.hover-shadow-sm</code> 
+                                    <code>.hover-shadow</code> 
+                                    <code>.hover-shadow-lg</code> 
+                                    <code>.hover-shadow-xl</code> 
+                                    <code>.hover-shadow-3d</code> 
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td><code>hover-lift-#</code></td>
+                                <td class="small">Translate 3d on hover</td>
+                                <td>
+                                    <code>.hover-lift</code> <code>.hover-lift-lg</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><code>bg-tint-#</code></td>
+                                <td class="small">Lighted background color for component</td>
+                                <td>
+                                    <code>.bg-tint-primary</code> <code>.bg-tint-info</code> <code>.bg-tint-success</code>
+                                    <code>.bg-tint-danger</code> <code>.bg-tint-warning</code> <code>.bg-tint-gray-200</code>
+                                    <code>.bg-tint-gray-800</code> <code>.bg-tint-secondary</code> <code>.bg-tint-light</code>
+                                    <code>.bg-tint-dark</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><code>bg-shade-#</code></td>
+                                <td class="small">Darken background color for component</td>
+                                <td>
+                                    <code>.bg-shade-primary</code> <code>.bg-shade-info</code> <code>.bg-shade-success</code>
+                                    <code>.bg-shade-danger</code> <code>.bg-shade-warning</code> <code>.bg-shade-gray-200</code>
+                                    <code>.bg-shade-gray-800</code> <code>.bg-shade-secondary</code> <code>.bg-shade-light</code>
+                                    <code>.bg-shade-dark</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><code>bg-gradient-#</code></td>
+                                <td class="small">Gradient background color for component</td>
+                                <td>
+                                    <code>.bg-gradient-primary</code> <code>.bg-gradient-secondary</code> <code>.bg-gradient-light</code>
+                                    <code>.bg-gradient-dark</code> <code>.bg-gradient-white</code> <code>.bg-gradient-tint</code>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-            </section>
-            <section class="position-relative bg-light">
-                <div class="container py-9 py-lg-11">
-                    <div class="row">
-                        <div class="col-md-8 mx-auto">
-
-                            <div class="d-flex align-items-center justify-content-center mb-4">
-                                <h4 class="mb-0 me-2 me-lg-4">Custom Accordions</h4>
-                                <span class="border-top d-block flex-grow-1"></span>
-                            </div>
-                             <!--Custom accordion-->
-                            <div class="accordion accordion-custom" id="accordionCustomExample">
-                                <!--accordion item-->
-                                <div class="accordion-item mb-3">
-                                     <!--accordion header-->
-                                    <h2 class="accordion-header" id="headingCustomOne">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#collapseCustomOne" aria-expanded="true"
-                                            aria-controls="collapseCustomOne">
-                                            Custom Accordion Item #1
-                                        </button>
-                                    </h2>
-                                     <!--accordion detail-->
-                                    <div id="collapseCustomOne" class="accordion-collapse collapse show"
-                                        aria-labelledby="headingCustomOne" data-bs-parent="#accordionCustomExample">
-                                        <div class="accordion-body">
-                                            <strong>This is the first item's accordion body.</strong> It is hidden by
-                                            default, until the collapse plugin adds the appropriate classes that we use
-                                            to style each element. These classes control the overall appearance, as well
-                                            as the showing and hiding via CSS transitions. You can modify any of this
-                                            with custom CSS or overriding our default variables. It's also worth noting
-                                            that just about any HTML can go within the <code>.accordion-body</code>,
-                                            though the transition does limit overflow.
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--accordion item-->
-                                <div class="accordion-item mb-3">
-                                     <!--accordion header-->
-                                    <h2 class="accordion-header" id="headingCustomTwo">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseCustomTwo"
-                                            aria-expanded="false" aria-controls="collapseCustomTwo">
-                                            Custom Accordion Item #2
-                                        </button>
-                                    </h2>
-                                     <!--accordion details-->
-                                    <div id="collapseCustomTwo" class="accordion-collapse collapse"
-                                        aria-labelledby="headingCustomTwo" data-bs-parent="#accordionCustomExample">
-                                        <div class="accordion-body">
-                                            <strong>This is the second item's accordion body.</strong> It is hidden by
-                                            default, until the collapse plugin adds the appropriate classes that we use
-                                            to style each element. These classes control the overall appearance, as well
-                                            as the showing and hiding via CSS transitions. You can modify any of this
-                                            with custom CSS or overriding our default variables. It's also worth noting
-                                            that just about any HTML can go within the <code>.accordion-body</code>,
-                                            though the transition does limit overflow.
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--accordion item-->
-                                <div class="accordion-item">
-                                     <!--accordion header-->
-                                    <h2 class="accordion-header" id="headingCustomThree">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseCustomThree"
-                                            aria-expanded="false" aria-controls="collapseCustomThree">
-                                            Custom Accordion Item #3
-                                        </button>
-                                    </h2>
-                                     <!--accordion details-->
-                                    <div id="collapseCustomThree" class="accordion-collapse collapse"
-                                        aria-labelledby="headingCustomThree" data-bs-parent="#accordionCustomExample">
-                                        <div class="accordion-body">
-                                            <strong>This is the third item's accordion body.</strong> It is hidden by
-                                            default, until the collapse plugin adds the appropriate classes that we use
-                                            to style each element. These classes control the overall appearance, as well
-                                            as the showing and hiding via CSS transitions. You can modify any of this
-                                            with custom CSS or overriding our default variables. It's also worth noting
-                                            that just about any HTML can go within the <code>.accordion-body</code>,
-                                            though the transition does limit overflow.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
-                <div class="container pt-5 pb-9 pb-lg-11">
-                    
-                            <!--///////////CODE SNIPPET FOR CUSTOM ACCORIONS-->
-                            <div class="position-relative" style="max-height: 75vh; overflow-y: auto;">
-                                <!--Copy clipboard button-->
-                                <button
-                                    class="btn btn-sm position-absolute rounded-3 end-0 top-0 z-index-1 mt-2 me-2 btn-primary copy-link"
-                                    data-clipboard-target="#copyCodeCustomAccordion1" data-clipboard-action="copy" id="copyCodeCustomAccordion1-1">Copy code</button>
-<pre id="copyCodeCustomAccordion1" class="language-markup" data-lang="html">
-<code>
-    &lt;!--Custom accordion-->
-    &lt;div class="accordion accordion-custom" id="accordionCustomExample">
-      &lt;!--accordion item-->
-      &lt;div class="accordion-item mb-3">
-           &lt;!--accordion header-->
-          &lt;h2 class="accordion-header" id="headingCustomOne">
-              &lt;button class="accordion-button" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseCustomOne" aria-expanded="true"
-                  aria-controls="collapseCustomOne">
-                  Custom Accordion Item #1
-              &lt;/button>
-          &lt;/h2>
-           &lt;!--accordion detail-->
-          &lt;div id="collapseCustomOne" class="accordion-collapse collapse show"
-              aria-labelledby="headingCustomOne" data-bs-parent="#accordionCustomExample">
-              &lt;div class="accordion-body">
-                  &lt;strong>This is the first item's accordion body.&lt;/strong> It is hidden by
-                  default, until the collapse plugin adds the appropriate classes that we use
-                  to style each element. These classes control the overall appearance, as well
-                  as the showing and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It's also worth noting
-                  that just about any HTML can go within the &lt;code>.accordion-body&lt;/code>,
-                  though the transition does limit overflow.
-              &lt;/div>
-          &lt;/div>
-      &lt;/div>
-      &lt;!--accordion item-->
-      &lt;div class="accordion-item mb-3">
-           &lt;!--accordion header-->
-          &lt;h2 class="accordion-header" id="headingCustomTwo">
-              &lt;button class="accordion-button collapsed" type="button"
-                  data-bs-toggle="collapse" data-bs-target="#collapseCustomTwo"
-                  aria-expanded="false" aria-controls="collapseCustomTwo">
-                  Custom Accordion Item #2
-              &lt;/button>
-          &lt;/h2>
-           &lt;!--accordion details-->
-          &lt;div id="collapseCustomTwo" class="accordion-collapse collapse"
-              aria-labelledby="headingCustomTwo" data-bs-parent="#accordionCustomExample">
-              &lt;div class="accordion-body">
-                  &lt;strong>This is the second item's accordion body.&lt;/strong> It is hidden by
-                  default, until the collapse plugin adds the appropriate classes that we use
-                  to style each element. These classes control the overall appearance, as well
-                  as the showing and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It's also worth noting
-                  that just about any HTML can go within the &lt;code>.accordion-body&lt;/code>,
-                  though the transition does limit overflow.
-              &lt;/div>
-          &lt;/div>
-      &lt;/div>
-      &lt;!--accordion item-->
-      &lt;div class="accordion-item">
-           &lt;!--accordion header-->
-          &lt;h2 class="accordion-header" id="headingCustomThree">
-              &lt;button class="accordion-button collapsed" type="button"
-                  data-bs-toggle="collapse" data-bs-target="#collapseCustomThree"
-                  aria-expanded="false" aria-controls="collapseCustomThree">
-                  Custom Accordion Item #3
-              &lt;/button>
-          &lt;/h2>
-           &lt;!--accordion details-->
-          &lt;div id="collapseCustomThree" class="accordion-collapse collapse"
-              aria-labelledby="headingCustomThree" data-bs-parent="#accordionCustomExample">
-              &lt;div class="accordion-body">
-                  &lt;strong>This is the third item's accordion body.&lt;/strong> It is hidden by
-                  default, until the collapse plugin adds the appropriate classes that we use
-                  to style each element. These classes control the overall appearance, as well
-                  as the showing and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It's also worth noting
-                  that just about any HTML can go within the &lt;code>.accordion-body&lt;/code>,
-                  though the transition does limit overflow.
-              &lt;/div>
-          &lt;/div>
-      &lt;/div>
-  &lt;/div>
-</code></pre>
-                            </div>
-                            <!--///////////CODE SNIPPET END-->
-                </div>
-            </section>
-            <section class="bg-gradient-secondary text-white position-relative">
-                <svg class="position-absolute top-0 start-0 text-white w-50 h-auto w-lg-80" width="136" height="76"
-                    viewBox="0 0 136 76" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-opacity=".1"
-                        d="M136 -28C136 -14.3425 133.31 -0.818782 128.083 11.7991C122.857 24.4169 115.196 35.8818 105.539 45.5391C95.8818 55.1964 84.4169 62.857 71.7991 68.0835C59.1812 73.31 45.6575 76 32 76C18.3425 76 4.81878 73.31 -7.79908 68.0835C-20.4169 62.857 -31.8818 55.1964 -41.5391 45.5391C-51.1964 35.8818 -58.857 24.4169 -64.0835 11.7991C-69.31 -0.818789 -72 -14.3425 -72 -28L136 -28Z"
-                        fill="currentColor" />
-                </svg>
-                <div class="container py-9 py-lg-11 position-relative z-index-1">
-                    <div class="row align-items-center justify-content-center">
-                        <div class="col-md-10 col-lg-8 col-xl-7 text-center mx-auto">
-                            <h2 class="mb-4 display-4" data-aos="fade-up">
-                                Let's start building stunning websites
-                            </h2>
-                            <p class="mb-5 px-lg-5" data-aos="fade-up" data-aos-delay="100">
-                                Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing
-                                industries for previewing layouts and visual mockups.
-                            </p>
-                            <div data-aos="fade-up">
-                                <a href="#!" class="btn btn-primary btn-lg">Purchase a
-                                    license</a>
-                            </div>
-                        </div>
-                        <!--End Col-->
-                    </div> <!-- / .row -->
-                </div> <!-- / .container -->
             </section>
         </main>
-
         <!--Footer Start-->
 
         <footer id="footer" class="bg-white position-relative">
@@ -826,39 +721,40 @@
         </footer>
 
 
+
         <!-- begin Back to Top button -->
         <a href="#" class="toTop">
             <i class="bx bxs-up-arrow"></i>
         </a>
         <!-- scripts -->
         <script src="../assets/js/theme.bundle.js"></script>
-        <!--Copy to clipboard + prismJs-->
-        <script src="../assets/vendor/node_modules/js/prism.js"></script>
-        <script src="../assets/vendor/node_modules/js/clipboard.min.js"></script>
-        <script>
-            /* Clipboard JS - Copy code button */
-            var cl = document.querySelector('.copy-link');
-            if (typeof !!cl && (cl) != 'undefined' && cl != null) {
-                var cle = document.querySelectorAll('.copy-link');
-                cle.forEach(el => {
-                    el.addEventListener("click", function () {
-                        var theButton = this;
-                        var copyId = this.getAttribute('id');
-                        var clipboard = new ClipboardJS('#' + copyId);
 
-                        clipboard.on('success', function (e) {
-                            e.clearSelection();
-                            theButton.innerHTML = 'Copied!';
-                            setTimeout(function () {
-                                theButton.innerHTML = 'Copy code';
-                            }, 5000);
+                <!--Copy to clipboard + prismJs-->
+                <script src="../assets/vendor/node_modules/js/prism.js"></script>
+                <script src="../assets/vendor/node_modules/js/clipboard.min.js"></script>
+                <script>
+                    /* Clipboard JS - Copy code button */
+                    var cl = document.querySelector('.copy-link');
+                    if (typeof !!cl && (cl) != 'undefined' && cl != null) {
+                        var cle = document.querySelectorAll('.copy-link');
+                        cle.forEach(el => {
+                            el.addEventListener("click", function () {
+                                var theButton = this;
+                                var copyId = this.getAttribute('id');
+                                var clipboard = new ClipboardJS('#' + copyId);
+        
+                                clipboard.on('success', function (e) {
+                                    e.clearSelection();
+                                    theButton.innerHTML = 'Copied!';
+                                    setTimeout(function () {
+                                        theButton.innerHTML = 'Copy code';
+                                    }, 5000);
+                                });
+                            });
                         });
-                    });
-                });
-            }
-
-        </script>
-
+                    }
+        
+                </script>
     </body>
 
 </html>

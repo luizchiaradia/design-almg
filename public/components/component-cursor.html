@@ -15,7 +15,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Source+Serif+Pro:ital@0;1&display=swap" rel="stylesheet">
-        <!--Prism css snippets-->
+        <!--Prism css for code snippets-->
         <link rel="stylesheet" href="../assets/vendor/node_modules/css/prism-tomorrow.css">
         <!-- Main CSS -->
         <link href="../assets/css/theme.min.css" rel="stylesheet">
@@ -35,12 +35,9 @@
             <nav class="navbar navbar-expand-lg navbar-light navbar-link-white">
                 <div class="container position-relative">
                     <a class="navbar-brand" href="../index.html">
-                        <!--
                         <img src="../assets/img/logo/logo.svg" alt="" class="img-fluid navbar-brand-sticky">
                         <img src="../assets/img/logo/logo-white.svg" alt="" class="img-fluid navbar-brand-transparent">
-                        -->
-                        <span class="text-white fs-1">ALMG</span>
-                      </a>
+                    </a>
 
                     <div class="d-flex align-items-center navbar-no-collapse-items order-lg-last">
                         <button class="navbar-toggler order-last" type="button" data-bs-toggle="collapse"
@@ -391,12 +388,12 @@
                                             <ol class="breadcrumb">
                                                 <li class="breadcrumb-item"><a href="#">Home</a></li>
                                                 <li class="breadcrumb-item active">Components</li>
-                                                <li class="breadcrumb-item active" aria-current="page">Accordion</li>
+                                                <li class="breadcrumb-item active" aria-current="page">Cursor</li>
                                             </ol>
                                         </div>
                                     </nav>
                                     <h1 class="mb-0 display-4">
-                                        Accordion
+                                       Animated cursor
                                     </h1>
                                 </div>
                             </div>
@@ -406,261 +403,126 @@
             </section>
 
 
-            <section class="position-relative">
+            <section class="position-relative" id="next">
                 <div class="container py-9 py-lg-11">
-                    <div class="row">
-                        <div class="col-md-8 mx-auto">
-                            <div class="d-flex align-items-center justify-content-center mb-4">
-                                <h4 class="mb-0 me-2 me-lg-4">Default</h4>
-                                <span class="border-top d-block flex-grow-1 border-light"></span>
-                            </div>
-                            <div class="accordion" id="accordionExample">
-                                <!--accordion item-->
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingOne">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#collapseOne" aria-expanded="true"
-                                            aria-controls="collapseOne">
-                                            Accordion Item #1
-                                        </button>
-                                    </h2>
-                                    <div id="collapseOne" class="accordion-collapse collapse show"
-                                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            <strong>This is the first item's accordion body.</strong> It is hidden by
-                                            default, until the collapse plugin adds the appropriate classes that we use
-                                            to style each element. These classes control the overall appearance, as well
-                                            as the showing and hiding via CSS transitions. You can modify any of this
-                                            with custom CSS or overriding our default variables. It's also worth noting
-                                            that just about any HTML can go within the <code>.accordion-body</code>,
-                                            though the transition does limit overflow.
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--accordion item-->
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingTwo">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                                            aria-expanded="false" aria-controls="collapseTwo">
-                                            Accordion Item #2
-                                        </button>
-                                    </h2>
-                                    <div id="collapseTwo" class="accordion-collapse collapse"
-                                        aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            <strong>This is the second item's accordion body.</strong> It is hidden by
-                                            default, until the collapse plugin adds the appropriate classes that we use
-                                            to style each element. These classes control the overall appearance, as well
-                                            as the showing and hiding via CSS transitions. You can modify any of this
-                                            with custom CSS or overriding our default variables. It's also worth noting
-                                            that just about any HTML can go within the <code>.accordion-body</code>,
-                                            though the transition does limit overflow.
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--accordion item-->
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingThree">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
-                                            aria-expanded="false" aria-controls="collapseThree">
-                                            Accordion Item #3
-                                        </button>
-                                    </h2>
-                                    <div id="collapseThree" class="accordion-collapse collapse"
-                                        aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            <strong>This is the third item's accordion body.</strong> It is hidden by
-                                            default, until the collapse plugin adds the appropriate classes that we use
-                                            to style each element. These classes control the overall appearance, as well
-                                            as the showing and hiding via CSS transitions. You can modify any of this
-                                            with custom CSS or overriding our default variables. It's also worth noting
-                                            that just about any HTML can go within the <code>.accordion-body</code>,
-                                            though the transition does limit overflow.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="alert alert-success">
+                        Checkout the cursor pointer. This is a <a href="#" class="alert-link">Cursor link</a>, Which change the cursor size
                     </div>
-                </div>
-            </section>
-            <section class="position-relative bg-light">
-                <div class="container py-9 py-lg-11">
-                    <div class="row">
-                        <div class="col-md-8 mx-auto">
-
-                            <div class="d-flex align-items-center justify-content-center mb-4">
-                                <h4 class="mb-0 me-2 me-lg-4">Custom Accordions</h4>
-                                <span class="border-top d-block flex-grow-1"></span>
-                            </div>
-                             <!--Custom accordion-->
-                            <div class="accordion accordion-custom" id="accordionCustomExample">
-                                <!--accordion item-->
-                                <div class="accordion-item mb-3">
-                                     <!--accordion header-->
-                                    <h2 class="accordion-header" id="headingCustomOne">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#collapseCustomOne" aria-expanded="true"
-                                            aria-controls="collapseCustomOne">
-                                            Custom Accordion Item #1
-                                        </button>
-                                    </h2>
-                                     <!--accordion detail-->
-                                    <div id="collapseCustomOne" class="accordion-collapse collapse show"
-                                        aria-labelledby="headingCustomOne" data-bs-parent="#accordionCustomExample">
-                                        <div class="accordion-body">
-                                            <strong>This is the first item's accordion body.</strong> It is hidden by
-                                            default, until the collapse plugin adds the appropriate classes that we use
-                                            to style each element. These classes control the overall appearance, as well
-                                            as the showing and hiding via CSS transitions. You can modify any of this
-                                            with custom CSS or overriding our default variables. It's also worth noting
-                                            that just about any HTML can go within the <code>.accordion-body</code>,
-                                            though the transition does limit overflow.
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--accordion item-->
-                                <div class="accordion-item mb-3">
-                                     <!--accordion header-->
-                                    <h2 class="accordion-header" id="headingCustomTwo">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseCustomTwo"
-                                            aria-expanded="false" aria-controls="collapseCustomTwo">
-                                            Custom Accordion Item #2
-                                        </button>
-                                    </h2>
-                                     <!--accordion details-->
-                                    <div id="collapseCustomTwo" class="accordion-collapse collapse"
-                                        aria-labelledby="headingCustomTwo" data-bs-parent="#accordionCustomExample">
-                                        <div class="accordion-body">
-                                            <strong>This is the second item's accordion body.</strong> It is hidden by
-                                            default, until the collapse plugin adds the appropriate classes that we use
-                                            to style each element. These classes control the overall appearance, as well
-                                            as the showing and hiding via CSS transitions. You can modify any of this
-                                            with custom CSS or overriding our default variables. It's also worth noting
-                                            that just about any HTML can go within the <code>.accordion-body</code>,
-                                            though the transition does limit overflow.
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--accordion item-->
-                                <div class="accordion-item">
-                                     <!--accordion header-->
-                                    <h2 class="accordion-header" id="headingCustomThree">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseCustomThree"
-                                            aria-expanded="false" aria-controls="collapseCustomThree">
-                                            Custom Accordion Item #3
-                                        </button>
-                                    </h2>
-                                     <!--accordion details-->
-                                    <div id="collapseCustomThree" class="accordion-collapse collapse"
-                                        aria-labelledby="headingCustomThree" data-bs-parent="#accordionCustomExample">
-                                        <div class="accordion-body">
-                                            <strong>This is the third item's accordion body.</strong> It is hidden by
-                                            default, until the collapse plugin adds the appropriate classes that we use
-                                            to style each element. These classes control the overall appearance, as well
-                                            as the showing and hiding via CSS transitions. You can modify any of this
-                                            with custom CSS or overriding our default variables. It's also worth noting
-                                            that just about any HTML can go within the <code>.accordion-body</code>,
-                                            though the transition does limit overflow.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="container pt-5 pb-9 pb-lg-11">
-                    
-                            <!--///////////CODE SNIPPET FOR CUSTOM ACCORIONS-->
-                            <div class="position-relative" style="max-height: 75vh; overflow-y: auto;">
-                                <!--Copy clipboard button-->
+                    <!--//////////////////SNIPPETS:BEGIN////////////////-->
+                    <nav class="nav-tabs nav">
+                        <a href="#tabMain" data-bs-toggle="tab" class="nav-link active">HTML</a>
+                        <a href="#tabCss" data-bs-toggle="tab" class="nav-link">Css</a>
+                        <a href="#tabJs" data-bs-toggle="tab" class="nav-link">Js</a>
+                    </nav>
+                    <div class="tab-content">
+                        <!--Element Main code-->
+                        <div class="tab-pane fade show active" id="tabMain">
+                            <div class="position-relative">
                                 <button
-                                    class="btn btn-sm position-absolute rounded-3 end-0 top-0 z-index-1 mt-2 me-2 btn-primary copy-link"
-                                    data-clipboard-target="#copyCodeCustomAccordion1" data-clipboard-action="copy" id="copyCodeCustomAccordion1-1">Copy code</button>
-<pre id="copyCodeCustomAccordion1" class="language-markup" data-lang="html">
-<code>
-    &lt;!--Custom accordion-->
-    &lt;div class="accordion accordion-custom" id="accordionCustomExample">
-      &lt;!--accordion item-->
-      &lt;div class="accordion-item mb-3">
-           &lt;!--accordion header-->
-          &lt;h2 class="accordion-header" id="headingCustomOne">
-              &lt;button class="accordion-button" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseCustomOne" aria-expanded="true"
-                  aria-controls="collapseCustomOne">
-                  Custom Accordion Item #1
-              &lt;/button>
-          &lt;/h2>
-           &lt;!--accordion detail-->
-          &lt;div id="collapseCustomOne" class="accordion-collapse collapse show"
-              aria-labelledby="headingCustomOne" data-bs-parent="#accordionCustomExample">
-              &lt;div class="accordion-body">
-                  &lt;strong>This is the first item's accordion body.&lt;/strong> It is hidden by
-                  default, until the collapse plugin adds the appropriate classes that we use
-                  to style each element. These classes control the overall appearance, as well
-                  as the showing and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It's also worth noting
-                  that just about any HTML can go within the &lt;code>.accordion-body&lt;/code>,
-                  though the transition does limit overflow.
-              &lt;/div>
-          &lt;/div>
-      &lt;/div>
-      &lt;!--accordion item-->
-      &lt;div class="accordion-item mb-3">
-           &lt;!--accordion header-->
-          &lt;h2 class="accordion-header" id="headingCustomTwo">
-              &lt;button class="accordion-button collapsed" type="button"
-                  data-bs-toggle="collapse" data-bs-target="#collapseCustomTwo"
-                  aria-expanded="false" aria-controls="collapseCustomTwo">
-                  Custom Accordion Item #2
-              &lt;/button>
-          &lt;/h2>
-           &lt;!--accordion details-->
-          &lt;div id="collapseCustomTwo" class="accordion-collapse collapse"
-              aria-labelledby="headingCustomTwo" data-bs-parent="#accordionCustomExample">
-              &lt;div class="accordion-body">
-                  &lt;strong>This is the second item's accordion body.&lt;/strong> It is hidden by
-                  default, until the collapse plugin adds the appropriate classes that we use
-                  to style each element. These classes control the overall appearance, as well
-                  as the showing and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It's also worth noting
-                  that just about any HTML can go within the &lt;code>.accordion-body&lt;/code>,
-                  though the transition does limit overflow.
-              &lt;/div>
-          &lt;/div>
-      &lt;/div>
-      &lt;!--accordion item-->
-      &lt;div class="accordion-item">
-           &lt;!--accordion header-->
-          &lt;h2 class="accordion-header" id="headingCustomThree">
-              &lt;button class="accordion-button collapsed" type="button"
-                  data-bs-toggle="collapse" data-bs-target="#collapseCustomThree"
-                  aria-expanded="false" aria-controls="collapseCustomThree">
-                  Custom Accordion Item #3
-              &lt;/button>
-          &lt;/h2>
-           &lt;!--accordion details-->
-          &lt;div id="collapseCustomThree" class="accordion-collapse collapse"
-              aria-labelledby="headingCustomThree" data-bs-parent="#accordionCustomExample">
-              &lt;div class="accordion-body">
-                  &lt;strong>This is the third item's accordion body.&lt;/strong> It is hidden by
-                  default, until the collapse plugin adds the appropriate classes that we use
-                  to style each element. These classes control the overall appearance, as well
-                  as the showing and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It's also worth noting
-                  that just about any HTML can go within the &lt;code>.accordion-body&lt;/code>,
-                  though the transition does limit overflow.
-              &lt;/div>
-          &lt;/div>
-      &lt;/div>
-  &lt;/div>
-</code></pre>
+                                    class="btn btn-sm position-absolute end-0 top-0 me-3 mt-3 z-index-1 btn-primary copy-link"
+                                    data-clipboard-target="#copyHTML1" data-clipboard-action="copy" id="copyHTML1-1">Copy code</button>
+                                <pre id="copyHTML1" class="language-markup" data-lang="html">
+                <code>
+&lt;!--cursor-->
+&lt;div class="cursor">
+  &lt;div class="cursor__inner">&lt;/div>
+&lt;/div>
+</code>
+</pre>
                             </div>
-                            <!--///////////CODE SNIPPET END-->
+                        </div>
+                        <!--Element Css-->
+                        <div class="tab-pane fade" id="tabCss">
+                            <div class="position-relative">
+                                <button
+                                    class="btn btn-sm position-absolute end-0 top-0 me-3 mt-3 z-index-1 btn-primary copy-link"
+                                    data-clipboard-target="#copyCss1" data-clipboard-action="copy" id="copyCss1-2">Copy code</button>
+                                <pre id="copyCss1" class="language-markup" data-lang="html">
+                <code>
+  &lt;!-- Bootstrap + Vendor + Theme -->
+  &lt;link href="../assets/css/theme.min.css" rel="stylesheet">
+</code>
+</pre>
+                            </div>
+                        </div>
+
+                        <!--Element JS-->
+                        <div class="tab-pane fade" id="tabJs">
+                            <div class="position-relative" style="max-height: 70vh; overflow-y: auto;">
+                                <button
+                                    class="btn btn-sm position-absolute end-0 top-0 me-3 mt-3 z-index-1 btn-primary copy-link"
+                                    data-clipboard-target="#copyJs1" data-clipboard-action="copy" id="copyJs1-3">Copy code</button>
+                                <pre id="copyJs1" class="language-markup" data-lang="html">
+                <code>
+  &lt;!-- Bootstrap + Vendor + Theme -->
+  &lt;script src="../assets/css/theme.bundle.js">&lt;/script>
+  &lt;!-- Cursor Js -->
+  &lt;script src="../assets/vendor/node_modules/js/gsap.min.js">&lt;/script>
+  &lt;script>
+    //cursor
+    var element = document.querySelector('.cursor');
+    let mouse = { x: 0, y: 0 };
+    window.addEventListener('mousemove', ev => mouse = getMousePos(ev));
+    const lerp = (a, b, n) => (1 - n) * a + n * b;
+    const getMousePos = e => {
+        return {
+            x: e.clientX,
+            y: e.clientY
+        };
+    };
+    class Cursor {
+        constructor(el) {
+            this.DOM = { el: el };
+            this.DOM.el.style.opacity = 0;
+            this.bounds = this.DOM.el.getBoundingClientRect();
+            this.renderedStyles = {
+                tx: { previous: 0, current: 0, amt: 0.2 },
+                ty: { previous: 0, current: 0, amt: 0.2 },
+                scale: { previous: 1, current: 1, amt: 0.2 },
+                opacity: { previous: 1, current: 1, amt: 0.2 }
+            };
+            this.onMouseMoveEv = () => {
+                this.renderedStyles.tx.previous = this.renderedStyles.tx.current = mouse.x - this.bounds.width / 2;
+                this.renderedStyles.ty.previous = this.renderedStyles.ty.previous = mouse.y - this.bounds.height / 2;
+                gsap.to(this.DOM.el, { duration: 0.9, ease: 'Power3.easeOut', opacity: 1 });
+                requestAnimationFrame(() => this.render());
+                window.removeEventListener('mousemove', this.onMouseMoveEv);
+            };
+            window.addEventListener('mousemove', this.onMouseMoveEv);
+        }
+        enter() {
+            element.classList.add('cHover');
+        }
+        leave() {
+            this.renderedStyles['scale'].current = 1;
+            this.renderedStyles['opacity'].current = 1;
+            element.classList.remove('cHover');
+        }
+        render() {
+            this.renderedStyles['tx'].current = mouse.x - this.bounds.width / 2;
+            this.renderedStyles['ty'].current = mouse.y - this.bounds.height / 2;
+
+            for (const key in this.renderedStyles) {
+                this.renderedStyles[key].previous = lerp(this.renderedStyles[key].previous, this.renderedStyles[key].current, this.renderedStyles[key].amt);
+            }
+            this.DOM.el.style.transform = `translateX(${(this.renderedStyles['tx'].previous)}px) translateY(${this.renderedStyles['ty'].previous}px) scale(${this.renderedStyles['scale'].previous})`;
+            this.DOM.el.style.opacity = this.renderedStyles['opacity'].previous;
+            requestAnimationFrame(() => this.render());
+        }
+    }
+    const cursor = new Cursor(document.querySelector('.cursor'));
+    [...document.querySelectorAll('a,.btn')].forEach(link => {
+        link.addEventListener('mouseenter', () => cursor.enter());
+        link.addEventListener('mouseleave', () => cursor.leave());
+    });
+&lt;/script>
+</code>
+</pre>
+                            </div>
+                        </div>
+                    </div>
+                    <!--//////////////////SNIPPETS:END////////////////-->
+                </div>
                 </div>
             </section>
             <section class="bg-gradient-secondary text-white position-relative">
@@ -830,35 +692,99 @@
         <a href="#" class="toTop">
             <i class="bx bxs-up-arrow"></i>
         </a>
+        <!--cursor-->
+        <div class="cursor">
+            <div class="cursor__inner"></div>
+        </div>
         <!-- scripts -->
         <script src="../assets/js/theme.bundle.js"></script>
+
+
+ <!--Cursor script-->
+ <script src="../assets/vendor/node_modules/js/gsap.min.js"></script>
+ <script>
+     //cursor
+     var element = document.querySelector('.cursor');
+     let mouse = { x: 0, y: 0 };
+     window.addEventListener('mousemove', ev => mouse = getMousePos(ev));
+     const lerp = (a, b, n) => (1 - n) * a + n * b;
+     const getMousePos = e => {
+         return {
+             x: e.clientX,
+             y: e.clientY
+         };
+     };
+     class Cursor {
+         constructor(el) {
+             this.DOM = { el: el };
+             this.DOM.el.style.opacity = 0;
+             this.bounds = this.DOM.el.getBoundingClientRect();
+             this.renderedStyles = {
+                 tx: { previous: 0, current: 0, amt: 0.2 },
+                 ty: { previous: 0, current: 0, amt: 0.2 },
+                 scale: { previous: 1, current: 1, amt: 0.2 },
+                 opacity: { previous: 1, current: 1, amt: 0.2 }
+             };
+             this.onMouseMoveEv = () => {
+                 this.renderedStyles.tx.previous = this.renderedStyles.tx.current = mouse.x - this.bounds.width / 2;
+                 this.renderedStyles.ty.previous = this.renderedStyles.ty.previous = mouse.y - this.bounds.height / 2;
+                 gsap.to(this.DOM.el, { duration: 0.9, ease: 'Power3.easeOut', opacity: 1 });
+                 requestAnimationFrame(() => this.render());
+                 window.removeEventListener('mousemove', this.onMouseMoveEv);
+             };
+             window.addEventListener('mousemove', this.onMouseMoveEv);
+         }
+         enter() {
+             element.classList.add('cHover');
+         }
+         leave() {
+             this.renderedStyles['scale'].current = 1;
+             this.renderedStyles['opacity'].current = 1;
+             element.classList.remove('cHover');
+         }
+         render() {
+             this.renderedStyles['tx'].current = mouse.x - this.bounds.width / 2;
+             this.renderedStyles['ty'].current = mouse.y - this.bounds.height / 2;
+
+             for (const key in this.renderedStyles) {
+                 this.renderedStyles[key].previous = lerp(this.renderedStyles[key].previous, this.renderedStyles[key].current, this.renderedStyles[key].amt);
+             }
+             this.DOM.el.style.transform = `translateX(${(this.renderedStyles['tx'].previous)}px) translateY(${this.renderedStyles['ty'].previous}px) scale(${this.renderedStyles['scale'].previous})`;
+             this.DOM.el.style.opacity = this.renderedStyles['opacity'].previous;
+             requestAnimationFrame(() => this.render());
+         }
+     }
+     const cursor = new Cursor(document.querySelector('.cursor'));
+     [...document.querySelectorAll('a,.btn')].forEach(link => {
+         link.addEventListener('mouseenter', () => cursor.enter());
+         link.addEventListener('mouseleave', () => cursor.leave());
+     });
+ </script>
         <!--Copy to clipboard + prismJs-->
-        <script src="../assets/vendor/node_modules/js/prism.js"></script>
-        <script src="../assets/vendor/node_modules/js/clipboard.min.js"></script>
-        <script>
-            /* Clipboard JS - Copy code button */
-            var cl = document.querySelector('.copy-link');
-            if (typeof !!cl && (cl) != 'undefined' && cl != null) {
-                var cle = document.querySelectorAll('.copy-link');
-                cle.forEach(el => {
-                    el.addEventListener("click", function () {
-                        var theButton = this;
-                        var copyId = this.getAttribute('id');
-                        var clipboard = new ClipboardJS('#' + copyId);
+ <script src="../assets/vendor/node_modules/js/prism.js"></script>
+ <script src="../assets/vendor/node_modules/js/clipboard.min.js"></script>
+ <script>
+     /* Clipboard JS - Copy code button */
+     var cl = document.querySelector('.copy-link');
+     if (typeof !!cl && (cl) != 'undefined' && cl != null) {
+         var cle = document.querySelectorAll('.copy-link');
+         cle.forEach(el => {
+             el.addEventListener("click", function () {
+                 var theButton = this;
+                 var copyId = this.getAttribute('id');
+                 var clipboard = new ClipboardJS('#' + copyId);
 
-                        clipboard.on('success', function (e) {
-                            e.clearSelection();
-                            theButton.innerHTML = 'Copied!';
-                            setTimeout(function () {
-                                theButton.innerHTML = 'Copy code';
-                            }, 5000);
-                        });
-                    });
-                });
-            }
-
-        </script>
-
+                 clipboard.on('success', function (e) {
+                     e.clearSelection();
+                     theButton.innerHTML = 'Copied!';
+                     setTimeout(function () {
+                         theButton.innerHTML = 'Copy code';
+                     }, 5000);
+                 });
+             });
+         });
+     }
+ </script>
     </body>
 
 </html>

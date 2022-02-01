@@ -15,8 +15,6 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Source+Serif+Pro:ital@0;1&display=swap" rel="stylesheet">
-        <!--Prism css snippets-->
-        <link rel="stylesheet" href="../assets/vendor/node_modules/css/prism-tomorrow.css">
         <!-- Main CSS -->
         <link href="../assets/css/theme.min.css" rel="stylesheet">
 
@@ -35,13 +33,9 @@
             <nav class="navbar navbar-expand-lg navbar-light navbar-link-white">
                 <div class="container position-relative">
                     <a class="navbar-brand" href="../index.html">
-                        <!--
                         <img src="../assets/img/logo/logo.svg" alt="" class="img-fluid navbar-brand-sticky">
                         <img src="../assets/img/logo/logo-white.svg" alt="" class="img-fluid navbar-brand-transparent">
-                        -->
-                        <span class="text-white fs-1">ALMG</span>
-                      </a>
-
+                    </a>
                     <div class="d-flex align-items-center navbar-no-collapse-items order-lg-last">
                         <button class="navbar-toggler order-last" type="button" data-bs-toggle="collapse"
                             data-bs-target="#mainNavbarTheme" aria-controls="mainNavbarTheme" aria-expanded="false"
@@ -378,10 +372,11 @@
             </nav>
         </header>
         <!--Main content-->
+
         <main>
             <!--page-hero-->
             <section class="bg-dark text-white position-relative">
-                <div class="container pt-14 pb-9 pb-lg-11 position-relative z-index-1">
+                <div class="container pt-11 pt-lg-15 pb-8 position-relative z-index-1">
                     <div class="row pt-lg-9 pb-lg-5 align-items-center justify-content-center text-center">
                         <div class="col-lg-10 col-xl-7 z-index-2">
                             <div class="position-relative">
@@ -391,12 +386,12 @@
                                             <ol class="breadcrumb">
                                                 <li class="breadcrumb-item"><a href="#">Home</a></li>
                                                 <li class="breadcrumb-item active">Components</li>
-                                                <li class="breadcrumb-item active" aria-current="page">Accordion</li>
+                                                <li class="breadcrumb-item active" aria-current="page">Toast</li>
                                             </ol>
                                         </div>
                                     </nav>
                                     <h1 class="mb-0 display-4">
-                                        Accordion
+                                        Toast
                                     </h1>
                                 </div>
                             </div>
@@ -405,292 +400,344 @@
                 </div>
             </section>
 
-
             <section class="position-relative">
                 <div class="container py-9 py-lg-11">
-                    <div class="row">
-                        <div class="col-md-8 mx-auto">
-                            <div class="d-flex align-items-center justify-content-center mb-4">
-                                <h4 class="mb-0 me-2 me-lg-4">Default</h4>
-                                <span class="border-top d-block flex-grow-1 border-light"></span>
+                    <div class="position-relative px-lg-12 px-xl-15">
+                        <!--Toast demo example-->
+                        <div class="d-flex align-items-center justify-content-center mb-4">
+                            <h6 class="mb-0 me-2 me-lg-4">Default</h6>
+                            <span class="border-top d-block flex-grow-1 border-light"></span>
+                        </div>
+                        <p class="small text-muted">The following example is the basic default example of bootstrap
+                            toast</p>
+                        <!--Toast-item-->
+                        <div class="position-relative">
+                            <!-- Then put toasts within -->
+                            <div class="toast fade show" data-bs-autohide="false" role="alert" aria-live="polite"
+                                aria-atomic="true" data-bs-delay="10000">
+                                <div class="toast-header">
+                                    <img src="../assets/img/brands/Blogger.svg" class="rounded width-2x height-2x me-2" alt="...">
+                                    <strong class="me-auto">Toast top left</strong>
+                                    <small class="text-muted">Just now</small>
+                                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close">
+                                        <i class="bx bx-x"></i>
+                                    </button>
+                                </div>
+                                <div class="toast-body">
+                                    Hello, world! This is a toast message.
+                                </div>
                             </div>
-                            <div class="accordion" id="accordionExample">
-                                <!--accordion item-->
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingOne">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#collapseOne" aria-expanded="true"
-                                            aria-controls="collapseOne">
-                                            Accordion Item #1
-                                        </button>
-                                    </h2>
-                                    <div id="collapseOne" class="accordion-collapse collapse show"
-                                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            <strong>This is the first item's accordion body.</strong> It is hidden by
-                                            default, until the collapse plugin adds the appropriate classes that we use
-                                            to style each element. These classes control the overall appearance, as well
-                                            as the showing and hiding via CSS transitions. You can modify any of this
-                                            with custom CSS or overriding our default variables. It's also worth noting
-                                            that just about any HTML can go within the <code>.accordion-body</code>,
-                                            though the transition does limit overflow.
-                                        </div>
-                                    </div>
+                        </div>
+                        <hr class="my-5">
+                        <!--Toast demo example-->
+                        <div class="d-flex align-items-center justify-content-center mb-4">
+                            <h6 class="mb-0 me-2 me-lg-4">Dark</h6>
+                            <span class="border-top d-block flex-grow-1 border-light"></span>
+                        </div>
+                        <p class="small text-muted">Toast dark - You can handle backgrounds by change this class [] -
+                            <code>[.bg-dark] .text-white</code></p>
+                        <!--Toast-item-->
+                        <div class="position-relative">
+                            <!-- Then put toasts within -->
+                            <div class="toast fade show bg-dark text-white border-dark" data-bs-autohide="false"
+                                role="alert" aria-live="polite" aria-atomic="true" data-bs-delay="10000">
+                                <div class="toast-header text-white bg-secondary border-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="me-2 bx bx-bootstrap-fill" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M4.002 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4h-8zm1.06 12h3.475c1.804 0 2.888-.908 2.888-2.396 0-1.102-.761-1.916-1.904-2.034v-.1c.832-.14 1.482-.93 1.482-1.816 0-1.3-.955-2.11-2.542-2.11H5.062V12zm1.313-4.875V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762h1.898c1.184 0 1.81-.48 1.81-1.377 0-.885-.65-1.348-1.886-1.348H6.375v2.725z" />
+                                    </svg>
+                                    <strong class="me-auto">Bootstrap5 Toast</strong>
+                                    <small class="text-muted">Just now</small>
+                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast"
+                                        aria-label="Close">
+                                        <i class="bx bx-x"></i>
+                                    </button>
                                 </div>
-                                <!--accordion item-->
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingTwo">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                                            aria-expanded="false" aria-controls="collapseTwo">
-                                            Accordion Item #2
-                                        </button>
-                                    </h2>
-                                    <div id="collapseTwo" class="accordion-collapse collapse"
-                                        aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            <strong>This is the second item's accordion body.</strong> It is hidden by
-                                            default, until the collapse plugin adds the appropriate classes that we use
-                                            to style each element. These classes control the overall appearance, as well
-                                            as the showing and hiding via CSS transitions. You can modify any of this
-                                            with custom CSS or overriding our default variables. It's also worth noting
-                                            that just about any HTML can go within the <code>.accordion-body</code>,
-                                            though the transition does limit overflow.
-                                        </div>
-                                    </div>
+                                <div class="toast-body">
+                                    Checkout the latest bootstrap5 toast examples
                                 </div>
-                                <!--accordion item-->
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingThree">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
-                                            aria-expanded="false" aria-controls="collapseThree">
-                                            Accordion Item #3
-                                        </button>
-                                    </h2>
-                                    <div id="collapseThree" class="accordion-collapse collapse"
-                                        aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            <strong>This is the third item's accordion body.</strong> It is hidden by
-                                            default, until the collapse plugin adds the appropriate classes that we use
-                                            to style each element. These classes control the overall appearance, as well
-                                            as the showing and hiding via CSS transitions. You can modify any of this
-                                            with custom CSS or overriding our default variables. It's also worth noting
-                                            that just about any HTML can go within the <code>.accordion-body</code>,
-                                            though the transition does limit overflow.
-                                        </div>
-                                    </div>
+                            </div>
+                        </div>
+                        <hr class="my-5">
+                        <!--Toast demo example-->
+                        <div class="d-flex align-items-center justify-content-center mb-4">
+                            <h6 class="mb-0 me-2 me-lg-4">Auto hide</h6>
+                            <span class="border-top d-block flex-grow-1 border-light"></span>
+                        </div>
+                        <p class="small text-muted">Autohide - Set autohide to <code>"true"</code> to auto hide toast
+                        </p>
+                        <!--Toast-item-->
+                        <div class="position-relative" aria-live="assertive" aria-atomic="true">
+                            <!-- Then put toasts within -->
+                            <div class="toast show fade bg-dark text-white border-dark" data-bs-autohide="true"
+                                role="alert" data-bs-delay="3000">
+                                <div class="toast-header text-white bg-secondary border-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="me-2 bx bx-bootstrap-fill" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M4.002 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4h-8zm1.06 12h3.475c1.804 0 2.888-.908 2.888-2.396 0-1.102-.761-1.916-1.904-2.034v-.1c.832-.14 1.482-.93 1.482-1.816 0-1.3-.955-2.11-2.542-2.11H5.062V12zm1.313-4.875V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762h1.898c1.184 0 1.81-.48 1.81-1.377 0-.885-.65-1.348-1.886-1.348H6.375v2.725z" />
+                                    </svg>
+                                    <strong class="me-auto">Bootstrap5 Toast</strong>
+                                    <small class="text-muted">Just now</small>
+                                </div>
+                                <div class="toast-body">
+                                    Checkout the latest bootstrap5 toast examples
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="position-relative bg-light">
-                <div class="container py-9 py-lg-11">
-                    <div class="row">
-                        <div class="col-md-8 mx-auto">
 
-                            <div class="d-flex align-items-center justify-content-center mb-4">
-                                <h4 class="mb-0 me-2 me-lg-4">Custom Accordions</h4>
-                                <span class="border-top d-block flex-grow-1"></span>
+            <section class="position-relative" id="next">
+                <div class="container py-9 py-lg-11 px-lg-12 px-xl-15">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <h6 class="mb-0 me-2 me-lg-4">Placement</h6>
+                        <span class="border-top d-block flex-grow-1"></span>
+                    </div>
+                    <p class="small text-muted">Change the placement using classes -&gt;
+                        <code>.start-0 .top-0 .end-0 .bottom-0</code></p>
+                    <!--For Toast position wrapper-->
+                    <div class="position-relative border rounded-3 mb-5" style="height:360px">
+                        <!--Toast placement-item-->
+                        <div class="position-absolute start-0 top-0 p-3" aria-live="assertive" aria-atomic="true">
+                            <small>Top left</small>
+                            <!-- Then put toasts within -->
+                            <div class="toast fade show" data-bs-autohide="false" role="alert" data-bs-delay="5000">
+                                <div class="toast-header">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="me-2 bx bx-bootstrap-fill" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M4.002 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4h-8zm1.06 12h3.475c1.804 0 2.888-.908 2.888-2.396 0-1.102-.761-1.916-1.904-2.034v-.1c.832-.14 1.482-.93 1.482-1.816 0-1.3-.955-2.11-2.542-2.11H5.062V12zm1.313-4.875V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762h1.898c1.184 0 1.81-.48 1.81-1.377 0-.885-.65-1.348-1.886-1.348H6.375v2.725z">
+                                        </path>
+                                    </svg>
+                                    <strong class="me-auto">Awesome bootstrap5</strong>
+                                    <small class="text-muted">Just now</small>
+                                    <button type="button" class="btn-close" data-bs-dismiss="toast"
+                                        aria-label="Close"><i class="bx bx-x"></i></button>
+                                </div>
+                                <div class="toast-body">
+                                    Checkout the latest bootstrap5 toast examples
+                                </div>
                             </div>
-                             <!--Custom accordion-->
-                            <div class="accordion accordion-custom" id="accordionCustomExample">
-                                <!--accordion item-->
-                                <div class="accordion-item mb-3">
-                                     <!--accordion header-->
-                                    <h2 class="accordion-header" id="headingCustomOne">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#collapseCustomOne" aria-expanded="true"
-                                            aria-controls="collapseCustomOne">
-                                            Custom Accordion Item #1
-                                        </button>
-                                    </h2>
-                                     <!--accordion detail-->
-                                    <div id="collapseCustomOne" class="accordion-collapse collapse show"
-                                        aria-labelledby="headingCustomOne" data-bs-parent="#accordionCustomExample">
-                                        <div class="accordion-body">
-                                            <strong>This is the first item's accordion body.</strong> It is hidden by
-                                            default, until the collapse plugin adds the appropriate classes that we use
-                                            to style each element. These classes control the overall appearance, as well
-                                            as the showing and hiding via CSS transitions. You can modify any of this
-                                            with custom CSS or overriding our default variables. It's also worth noting
-                                            that just about any HTML can go within the <code>.accordion-body</code>,
-                                            though the transition does limit overflow.
-                                        </div>
-                                    </div>
+                        </div>
+                        <!--Toast placement-item-->
+                        <div class="position-absolute end-0 bottom-0 p-3" aria-live="assertive" aria-atomic="true">
+                            <small>Bottom right</small>
+                            <!-- Then put toasts within -->
+                            <div class="toast fade show" data-bs-autohide="false" role="alert" data-bs-delay="5000">
+                                <div class="toast-header">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="me-2 bx bx-bootstrap-fill" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M4.002 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4h-8zm1.06 12h3.475c1.804 0 2.888-.908 2.888-2.396 0-1.102-.761-1.916-1.904-2.034v-.1c.832-.14 1.482-.93 1.482-1.816 0-1.3-.955-2.11-2.542-2.11H5.062V12zm1.313-4.875V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762h1.898c1.184 0 1.81-.48 1.81-1.377 0-.885-.65-1.348-1.886-1.348H6.375v2.725z">
+                                        </path>
+                                    </svg>
+                                    <strong class="me-auto">Awesome bootstrap5</strong>
+                                    <small class="text-muted">Just now</small>
+                                    <button type="button" class="btn-close" data-bs-dismiss="toast"
+                                        aria-label="Close"><i class="bx bx-x"></i></button>
                                 </div>
-                                <!--accordion item-->
-                                <div class="accordion-item mb-3">
-                                     <!--accordion header-->
-                                    <h2 class="accordion-header" id="headingCustomTwo">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseCustomTwo"
-                                            aria-expanded="false" aria-controls="collapseCustomTwo">
-                                            Custom Accordion Item #2
-                                        </button>
-                                    </h2>
-                                     <!--accordion details-->
-                                    <div id="collapseCustomTwo" class="accordion-collapse collapse"
-                                        aria-labelledby="headingCustomTwo" data-bs-parent="#accordionCustomExample">
-                                        <div class="accordion-body">
-                                            <strong>This is the second item's accordion body.</strong> It is hidden by
-                                            default, until the collapse plugin adds the appropriate classes that we use
-                                            to style each element. These classes control the overall appearance, as well
-                                            as the showing and hiding via CSS transitions. You can modify any of this
-                                            with custom CSS or overriding our default variables. It's also worth noting
-                                            that just about any HTML can go within the <code>.accordion-body</code>,
-                                            though the transition does limit overflow.
-                                        </div>
-                                    </div>
+                                <div class="toast-body">
+                                    Checkout the latest bootstrap5 toast examples
                                 </div>
-                                <!--accordion item-->
-                                <div class="accordion-item">
-                                     <!--accordion header-->
-                                    <h2 class="accordion-header" id="headingCustomThree">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseCustomThree"
-                                            aria-expanded="false" aria-controls="collapseCustomThree">
-                                            Custom Accordion Item #3
-                                        </button>
-                                    </h2>
-                                     <!--accordion details-->
-                                    <div id="collapseCustomThree" class="accordion-collapse collapse"
-                                        aria-labelledby="headingCustomThree" data-bs-parent="#accordionCustomExample">
-                                        <div class="accordion-body">
-                                            <strong>This is the third item's accordion body.</strong> It is hidden by
-                                            default, until the collapse plugin adds the appropriate classes that we use
-                                            to style each element. These classes control the overall appearance, as well
-                                            as the showing and hiding via CSS transitions. You can modify any of this
-                                            with custom CSS or overriding our default variables. It's also worth noting
-                                            that just about any HTML can go within the <code>.accordion-body</code>,
-                                            though the transition does limit overflow.
-                                        </div>
-                                    </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="position-relative border rounded-3 mb-5" style="height:360px">
+                        <!--Toast placement-item-->
+                        <div class="position-absolute end-0 top-0 p-3" aria-live="assertive" aria-atomic="true">
+                            <small>Top right</small>
+                            <!-- Then put toasts within -->
+                            <div class="toast fade show" data-bs-autohide="false" role="alert" data-bs-delay="5000">
+                                <div class="toast-header">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="me-2 bx bx-bootstrap-fill" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M4.002 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4h-8zm1.06 12h3.475c1.804 0 2.888-.908 2.888-2.396 0-1.102-.761-1.916-1.904-2.034v-.1c.832-.14 1.482-.93 1.482-1.816 0-1.3-.955-2.11-2.542-2.11H5.062V12zm1.313-4.875V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762h1.898c1.184 0 1.81-.48 1.81-1.377 0-.885-.65-1.348-1.886-1.348H6.375v2.725z">
+                                        </path>
+                                    </svg>
+                                    <strong class="me-auto">Awesome bootstrap5</strong>
+                                    <small class="text-muted">Just now</small>
+                                    <button type="button" class="btn-close" data-bs-dismiss="toast"
+                                        aria-label="Close"><i class="bx bx-x"></i></button>
+                                </div>
+                                <div class="toast-body">
+                                    Checkout the latest bootstrap5 toast examples
+                                </div>
+                            </div>
+                        </div>
+                        <!--Toast placement-item-->
+                        <div class="position-absolute start-0 bottom-0 p-3" aria-live="assertive" aria-atomic="true">
+                            <small>Bottom left</small>
+                            <!-- Then put toasts within -->
+                            <div class="toast fade show" data-bs-autohide="false" role="alert" data-bs-delay="5000">
+                                <div class="toast-header">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="me-2 bx bx-bootstrap-fill" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M4.002 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4h-8zm1.06 12h3.475c1.804 0 2.888-.908 2.888-2.396 0-1.102-.761-1.916-1.904-2.034v-.1c.832-.14 1.482-.93 1.482-1.816 0-1.3-.955-2.11-2.542-2.11H5.062V12zm1.313-4.875V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762h1.898c1.184 0 1.81-.48 1.81-1.377 0-.885-.65-1.348-1.886-1.348H6.375v2.725z">
+                                        </path>
+                                    </svg>
+                                    <strong class="me-auto">Awesome bootstrap5</strong>
+                                    <small class="text-muted">Just now</small>
+                                    <button type="button" class="btn-close" data-bs-dismiss="toast"
+                                        aria-label="Close"><i class="bx bx-x"></i></button>
+                                </div>
+                                <div class="toast-body">
+                                    Checkout the latest bootstrap5 toast examples
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="position-relative border rounded-3 mb-5" style="height:360px">
+                        <!--Toast placement-item-->
+                        <div class="position-absolute start-50 bottom-0 translate-middle-x p-3" aria-live="assertive"
+                            aria-atomic="true">
+                            <small>Bottom center</small>
+                            <!-- Then put toasts within -->
+                            <div class="toast fade show" data-bs-autohide="false" role="alert" data-bs-delay="5000">
+                                <div class="toast-header">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="me-2 bx bx-bootstrap-fill" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M4.002 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4h-8zm1.06 12h3.475c1.804 0 2.888-.908 2.888-2.396 0-1.102-.761-1.916-1.904-2.034v-.1c.832-.14 1.482-.93 1.482-1.816 0-1.3-.955-2.11-2.542-2.11H5.062V12zm1.313-4.875V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762h1.898c1.184 0 1.81-.48 1.81-1.377 0-.885-.65-1.348-1.886-1.348H6.375v2.725z">
+                                        </path>
+                                    </svg>
+                                    <strong class="me-auto">Awesome bootstrap5</strong>
+                                    <small class="text-muted">Just now</small>
+                                    <button type="button" class="btn-close" data-bs-dismiss="toast"
+                                        aria-label="Close"><i class="bx bx-x"></i></button>
+                                </div>
+                                <div class="toast-body">
+                                    Checkout the latest bootstrap5 toast examples
+                                </div>
+                            </div>
+                        </div>
+                        <!--Toast placement-item-->
+                        <div class="position-absolute start-50 top-0 translate-middle-x p-3" aria-live="assertive"
+                            aria-atomic="true">
+                            <small>Top center</small>
+                            <!-- Then put toasts within -->
+                            <div class="toast fade show" data-bs-autohide="false" role="alert" data-bs-delay="5000">
+                                <div class="toast-header">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="me-2 bx bx-bootstrap-fill" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M4.002 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4h-8zm1.06 12h3.475c1.804 0 2.888-.908 2.888-2.396 0-1.102-.761-1.916-1.904-2.034v-.1c.832-.14 1.482-.93 1.482-1.816 0-1.3-.955-2.11-2.542-2.11H5.062V12zm1.313-4.875V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762h1.898c1.184 0 1.81-.48 1.81-1.377 0-.885-.65-1.348-1.886-1.348H6.375v2.725z">
+                                        </path>
+                                    </svg>
+                                    <strong class="me-auto">Awesome bootstrap5</strong>
+                                    <small class="text-muted">Just now</small>
+                                    <button type="button" class="btn-close" data-bs-dismiss="toast"
+                                        aria-label="Close"><i class="bx bx-x"></i></button>
+                                </div>
+                                <div class="toast-body">
+                                    Checkout the latest bootstrap5 toast examples
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="position-relative border rounded-3 mb-5" style="height:360px">
+                        <!--Toast placement-item-->
+                        <div class="position-absolute start-50 top-50 translate-middle p-3" aria-live="assertive"
+                            aria-atomic="true">
+                            <small>Center middle</small>
+                            <!-- Then put toasts within -->
+                            <div class="toast fade show" data-bs-autohide="false" role="alert" data-bs-delay="5000">
+                                <div class="toast-header">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="me-2 bx bx-bootstrap-fill" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M4.002 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4h-8zm1.06 12h3.475c1.804 0 2.888-.908 2.888-2.396 0-1.102-.761-1.916-1.904-2.034v-.1c.832-.14 1.482-.93 1.482-1.816 0-1.3-.955-2.11-2.542-2.11H5.062V12zm1.313-4.875V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762h1.898c1.184 0 1.81-.48 1.81-1.377 0-.885-.65-1.348-1.886-1.348H6.375v2.725z">
+                                        </path>
+                                    </svg>
+                                    <strong class="me-auto">Awesome bootstrap5</strong>
+                                    <small class="text-muted">Just now</small>
+                                    <button type="button" class="btn-close" data-bs-dismiss="toast"
+                                        aria-label="Close"><i class="bx bx-x"></i></button>
+                                </div>
+                                <div class="toast-body">
+                                    Checkout the latest bootstrap5 toast examples
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="position-relative border rounded-3" style="height:360px">
+                        <!--Toast placement-item-->
+                        <div class="position-absolute end-0 top-0 p-3" aria-live="assertive" aria-atomic="true">
+                            <small>Stack</small>
+                            <!-- Then put toasts within -->
+                            <div class="toast mb-3 fade show" data-bs-autohide="false" role="alert"
+                                data-bs-delay="5000">
+                                <div class="toast-header">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="me-2 bx bx-bootstrap-fill" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M4.002 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4h-8zm1.06 12h3.475c1.804 0 2.888-.908 2.888-2.396 0-1.102-.761-1.916-1.904-2.034v-.1c.832-.14 1.482-.93 1.482-1.816 0-1.3-.955-2.11-2.542-2.11H5.062V12zm1.313-4.875V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762h1.898c1.184 0 1.81-.48 1.81-1.377 0-.885-.65-1.348-1.886-1.348H6.375v2.725z">
+                                        </path>
+                                    </svg>
+                                    <strong class="me-auto">Awesome bootstrap5</strong>
+                                    <small class="text-muted">Just now</small>
+                                    <button type="button" class="btn-close" data-bs-dismiss="toast"
+                                        aria-label="Close"><i class="bx bx-x"></i></button>
+                                </div>
+                                <div class="toast-body">
+                                    Checkout the latest bootstrap5 toast examples
+                                </div>
+                            </div>
+                            <!-- Then put toasts within -->
+                            <div class="toast fade show" data-bs-autohide="false" role="alert" data-bs-delay="5000">
+                                <div class="toast-header">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="me-2 bx bx-bootstrap-fill" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M4.002 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4h-8zm1.06 12h3.475c1.804 0 2.888-.908 2.888-2.396 0-1.102-.761-1.916-1.904-2.034v-.1c.832-.14 1.482-.93 1.482-1.816 0-1.3-.955-2.11-2.542-2.11H5.062V12zm1.313-4.875V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762h1.898c1.184 0 1.81-.48 1.81-1.377 0-.885-.65-1.348-1.886-1.348H6.375v2.725z">
+                                        </path>
+                                    </svg>
+                                    <strong class="me-auto">Awesome bootstrap5</strong>
+                                    <small class="text-muted">Just now</small>
+                                    <button type="button" class="btn-close" data-bs-dismiss="toast"
+                                        aria-label="Close"><i class="bx bx-x"></i></button>
+                                </div>
+                                <div class="toast-body">
+                                    Checkout the latest bootstrap5 toast examples
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="container pt-5 pb-9 pb-lg-11">
-                    
-                            <!--///////////CODE SNIPPET FOR CUSTOM ACCORIONS-->
-                            <div class="position-relative" style="max-height: 75vh; overflow-y: auto;">
-                                <!--Copy clipboard button-->
-                                <button
-                                    class="btn btn-sm position-absolute rounded-3 end-0 top-0 z-index-1 mt-2 me-2 btn-primary copy-link"
-                                    data-clipboard-target="#copyCodeCustomAccordion1" data-clipboard-action="copy" id="copyCodeCustomAccordion1-1">Copy code</button>
-<pre id="copyCodeCustomAccordion1" class="language-markup" data-lang="html">
-<code>
-    &lt;!--Custom accordion-->
-    &lt;div class="accordion accordion-custom" id="accordionCustomExample">
-      &lt;!--accordion item-->
-      &lt;div class="accordion-item mb-3">
-           &lt;!--accordion header-->
-          &lt;h2 class="accordion-header" id="headingCustomOne">
-              &lt;button class="accordion-button" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseCustomOne" aria-expanded="true"
-                  aria-controls="collapseCustomOne">
-                  Custom Accordion Item #1
-              &lt;/button>
-          &lt;/h2>
-           &lt;!--accordion detail-->
-          &lt;div id="collapseCustomOne" class="accordion-collapse collapse show"
-              aria-labelledby="headingCustomOne" data-bs-parent="#accordionCustomExample">
-              &lt;div class="accordion-body">
-                  &lt;strong>This is the first item's accordion body.&lt;/strong> It is hidden by
-                  default, until the collapse plugin adds the appropriate classes that we use
-                  to style each element. These classes control the overall appearance, as well
-                  as the showing and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It's also worth noting
-                  that just about any HTML can go within the &lt;code>.accordion-body&lt;/code>,
-                  though the transition does limit overflow.
-              &lt;/div>
-          &lt;/div>
-      &lt;/div>
-      &lt;!--accordion item-->
-      &lt;div class="accordion-item mb-3">
-           &lt;!--accordion header-->
-          &lt;h2 class="accordion-header" id="headingCustomTwo">
-              &lt;button class="accordion-button collapsed" type="button"
-                  data-bs-toggle="collapse" data-bs-target="#collapseCustomTwo"
-                  aria-expanded="false" aria-controls="collapseCustomTwo">
-                  Custom Accordion Item #2
-              &lt;/button>
-          &lt;/h2>
-           &lt;!--accordion details-->
-          &lt;div id="collapseCustomTwo" class="accordion-collapse collapse"
-              aria-labelledby="headingCustomTwo" data-bs-parent="#accordionCustomExample">
-              &lt;div class="accordion-body">
-                  &lt;strong>This is the second item's accordion body.&lt;/strong> It is hidden by
-                  default, until the collapse plugin adds the appropriate classes that we use
-                  to style each element. These classes control the overall appearance, as well
-                  as the showing and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It's also worth noting
-                  that just about any HTML can go within the &lt;code>.accordion-body&lt;/code>,
-                  though the transition does limit overflow.
-              &lt;/div>
-          &lt;/div>
-      &lt;/div>
-      &lt;!--accordion item-->
-      &lt;div class="accordion-item">
-           &lt;!--accordion header-->
-          &lt;h2 class="accordion-header" id="headingCustomThree">
-              &lt;button class="accordion-button collapsed" type="button"
-                  data-bs-toggle="collapse" data-bs-target="#collapseCustomThree"
-                  aria-expanded="false" aria-controls="collapseCustomThree">
-                  Custom Accordion Item #3
-              &lt;/button>
-          &lt;/h2>
-           &lt;!--accordion details-->
-          &lt;div id="collapseCustomThree" class="accordion-collapse collapse"
-              aria-labelledby="headingCustomThree" data-bs-parent="#accordionCustomExample">
-              &lt;div class="accordion-body">
-                  &lt;strong>This is the third item's accordion body.&lt;/strong> It is hidden by
-                  default, until the collapse plugin adds the appropriate classes that we use
-                  to style each element. These classes control the overall appearance, as well
-                  as the showing and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It's also worth noting
-                  that just about any HTML can go within the &lt;code>.accordion-body&lt;/code>,
-                  though the transition does limit overflow.
-              &lt;/div>
-          &lt;/div>
-      &lt;/div>
-  &lt;/div>
-</code></pre>
-                            </div>
-                            <!--///////////CODE SNIPPET END-->
-                </div>
             </section>
-            <section class="bg-gradient-secondary text-white position-relative">
-                <svg class="position-absolute top-0 start-0 text-white w-50 h-auto w-lg-80" width="136" height="76"
-                    viewBox="0 0 136 76" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-opacity=".1"
-                        d="M136 -28C136 -14.3425 133.31 -0.818782 128.083 11.7991C122.857 24.4169 115.196 35.8818 105.539 45.5391C95.8818 55.1964 84.4169 62.857 71.7991 68.0835C59.1812 73.31 45.6575 76 32 76C18.3425 76 4.81878 73.31 -7.79908 68.0835C-20.4169 62.857 -31.8818 55.1964 -41.5391 45.5391C-51.1964 35.8818 -58.857 24.4169 -64.0835 11.7991C-69.31 -0.818789 -72 -14.3425 -72 -28L136 -28Z"
-                        fill="currentColor" />
-                </svg>
-                <div class="container py-9 py-lg-11 position-relative z-index-1">
-                    <div class="row align-items-center justify-content-center">
-                        <div class="col-md-10 col-lg-8 col-xl-7 text-center mx-auto">
-                            <h2 class="mb-4 display-4" data-aos="fade-up">
-                                Let's start building stunning websites
-                            </h2>
-                            <p class="mb-5 px-lg-5" data-aos="fade-up" data-aos-delay="100">
-                                Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing
-                                industries for previewing layouts and visual mockups.
-                            </p>
-                            <div data-aos="fade-up">
-                                <a href="#!" class="btn btn-primary btn-lg">Purchase a
-                                    license</a>
-                            </div>
+            
+            <section
+            class="position-relative overflow-hidden bg-dark text-white">
+            <div class="container py-9 py-lg-11">
+                <div class="row align-items-end justify-content-around text-center text-md-start">
+                    <div class="col-lg-8 col-md-7">
+                        <p data-aos="zoom-in" class="mb-4 opacity-75">Are you interested?</p>
+                        <h2 class="mb-4 mb-md-0 display-5 fw-lighter" data-aos="zoom-in-up" data-aos-delay="100">
+                            Build <span class="text-success font-serif"
+                                data-typed='{"strings": ["Stunning", "Amazing", "Responsive", "Working"]}'></span>
+                            Website
+                        </h2>
+                    </div>
+                    <!--End Col-->
+                    <div class="col-lg-4 col-md-5 text-md-end">
+
+                        <div data-aos="fade-left" data-aos-delay="200">
+                            <a href="#!" class="btn btn-white rounded-pill">
+                                Get started
+                              
+                            </a>
                         </div>
-                        <!--End Col-->
-                    </div> <!-- / .row -->
-                </div> <!-- / .container -->
-            </section>
+                    </div>
+                </div> <!-- / .row -->
+            </div> <!-- / .container -->
+        </section>
         </main>
-
         <!--Footer Start-->
 
         <footer id="footer" class="bg-white position-relative">
@@ -832,33 +879,6 @@
         </a>
         <!-- scripts -->
         <script src="../assets/js/theme.bundle.js"></script>
-        <!--Copy to clipboard + prismJs-->
-        <script src="../assets/vendor/node_modules/js/prism.js"></script>
-        <script src="../assets/vendor/node_modules/js/clipboard.min.js"></script>
-        <script>
-            /* Clipboard JS - Copy code button */
-            var cl = document.querySelector('.copy-link');
-            if (typeof !!cl && (cl) != 'undefined' && cl != null) {
-                var cle = document.querySelectorAll('.copy-link');
-                cle.forEach(el => {
-                    el.addEventListener("click", function () {
-                        var theButton = this;
-                        var copyId = this.getAttribute('id');
-                        var clipboard = new ClipboardJS('#' + copyId);
-
-                        clipboard.on('success', function (e) {
-                            e.clearSelection();
-                            theButton.innerHTML = 'Copied!';
-                            setTimeout(function () {
-                                theButton.innerHTML = 'Copy code';
-                            }, 5000);
-                        });
-                    });
-                });
-            }
-
-        </script>
-
     </body>
 
 </html>

@@ -15,8 +15,6 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Source+Serif+Pro:ital@0;1&display=swap" rel="stylesheet">
-        <!--Prism css snippets-->
-        <link rel="stylesheet" href="../assets/vendor/node_modules/css/prism-tomorrow.css">
         <!-- Main CSS -->
         <link href="../assets/css/theme.min.css" rel="stylesheet">
 
@@ -35,12 +33,9 @@
             <nav class="navbar navbar-expand-lg navbar-light navbar-link-white">
                 <div class="container position-relative">
                     <a class="navbar-brand" href="../index.html">
-                        <!--
                         <img src="../assets/img/logo/logo.svg" alt="" class="img-fluid navbar-brand-sticky">
                         <img src="../assets/img/logo/logo-white.svg" alt="" class="img-fluid navbar-brand-transparent">
-                        -->
-                        <span class="text-white fs-1">ALMG</span>
-                      </a>
+                    </a>
 
                     <div class="d-flex align-items-center navbar-no-collapse-items order-lg-last">
                         <button class="navbar-toggler order-last" type="button" data-bs-toggle="collapse"
@@ -391,12 +386,12 @@
                                             <ol class="breadcrumb">
                                                 <li class="breadcrumb-item"><a href="#">Home</a></li>
                                                 <li class="breadcrumb-item active">Components</li>
-                                                <li class="breadcrumb-item active" aria-current="page">Accordion</li>
+                                                <li class="breadcrumb-item active" aria-current="page">Modal</li>
                                             </ol>
                                         </div>
                                     </nav>
                                     <h1 class="mb-0 display-4">
-                                        Accordion
+                                        Modal
                                     </h1>
                                 </div>
                             </div>
@@ -406,166 +401,178 @@
             </section>
 
 
-            <section class="position-relative">
+            <section class="position-relative" id="next">
                 <div class="container py-9 py-lg-11">
                     <div class="row">
-                        <div class="col-md-8 mx-auto">
-                            <div class="d-flex align-items-center justify-content-center mb-4">
-                                <h4 class="mb-0 me-2 me-lg-4">Default</h4>
-                                <span class="border-top d-block flex-grow-1 border-light"></span>
+                        <div class="col-lg-10 mx-auto">
+                            <div class="d-flex align-items-center mb-4">
+                                <h6 class="me-3 mb-0">Modal demos</h6>
+                                <div class="border-bottom flex-grow-1"></div>
                             </div>
-                            <div class="accordion" id="accordionExample">
-                                <!--accordion item-->
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingOne">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#collapseOne" aria-expanded="true"
-                                            aria-controls="collapseOne">
-                                            Accordion Item #1
-                                        </button>
-                                    </h2>
-                                    <div id="collapseOne" class="accordion-collapse collapse show"
-                                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            <strong>This is the first item's accordion body.</strong> It is hidden by
-                                            default, until the collapse plugin adds the appropriate classes that we use
-                                            to style each element. These classes control the overall appearance, as well
-                                            as the showing and hiding via CSS transitions. You can modify any of this
-                                            with custom CSS or overriding our default variables. It's also worth noting
-                                            that just about any HTML can go within the <code>.accordion-body</code>,
-                                            though the transition does limit overflow.
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--accordion item-->
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingTwo">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                                            aria-expanded="false" aria-controls="collapseTwo">
-                                            Accordion Item #2
-                                        </button>
-                                    </h2>
-                                    <div id="collapseTwo" class="accordion-collapse collapse"
-                                        aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            <strong>This is the second item's accordion body.</strong> It is hidden by
-                                            default, until the collapse plugin adds the appropriate classes that we use
-                                            to style each element. These classes control the overall appearance, as well
-                                            as the showing and hiding via CSS transitions. You can modify any of this
-                                            with custom CSS or overriding our default variables. It's also worth noting
-                                            that just about any HTML can go within the <code>.accordion-body</code>,
-                                            though the transition does limit overflow.
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--accordion item-->
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingThree">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
-                                            aria-expanded="false" aria-controls="collapseThree">
-                                            Accordion Item #3
-                                        </button>
-                                    </h2>
-                                    <div id="collapseThree" class="accordion-collapse collapse"
-                                        aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            <strong>This is the third item's accordion body.</strong> It is hidden by
-                                            default, until the collapse plugin adds the appropriate classes that we use
-                                            to style each element. These classes control the overall appearance, as well
-                                            as the showing and hiding via CSS transitions. You can modify any of this
-                                            with custom CSS or overriding our default variables. It's also worth noting
-                                            that just about any HTML can go within the <code>.accordion-body</code>,
-                                            though the transition does limit overflow.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="position-relative bg-light">
-                <div class="container py-9 py-lg-11">
-                    <div class="row">
-                        <div class="col-md-8 mx-auto">
 
-                            <div class="d-flex align-items-center justify-content-center mb-4">
-                                <h4 class="mb-0 me-2 me-lg-4">Custom Accordions</h4>
-                                <span class="border-top d-block flex-grow-1"></span>
+                            <!--Modal button trigger-->
+                            <a href="#modalBasic" data-bs-toggle="modal" aria-expanded="false"
+                                class="btn btn-outline-secondary">Demo basic</a>
+                            <br><br>
+                            <!--Modal button trigger-->
+                            <a href="#modalForm" data-bs-toggle="modal" aria-expanded="false"
+                                class="btn btn-outline-secondary">Demo Form</a>
+                            <br><br>
+                            <!--Modal button trigger-->
+                            <a href="#modalNewsletter" data-bs-toggle="modal" aria-expanded="false"
+                                class="btn btn-outline-secondary">Demo Newsletter</a>
+                            <br><br>
+                            <!--Modal button trigger-->
+                            <a href="#modalDark" data-bs-toggle="modal" aria-expanded="false"
+                                class="btn btn-outline-secondary">Demo Dark</a>
+
+                            <hr class="my-7">
+                            <a href="https://getbootstrap.com/docs/5.0/components/modal/#how-it-works" target="_blank"
+                                class="link-underline">Explore modals</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!--Modals start-->
+
+
+                <!--Modal basic-->
+                <div class="modal fade" id="modalBasic" tabindex="-1" aria-labelledby="modalBasicLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content border-0">
+                            <div class="modal-header border-0 bg-light">
+                                <h5 class="modal-title">Modal title</h5>
+                                <!--Close button-->
+                                <button type="button"
+                                    class="btn btn-outline-secondary p-0 border-2 width-3x height-3x rounded-circle flex-center z-index-1"
+                                    data-bs-dismiss="modal" aria-label="Close">
+                                    <i class="bx bx-x fs-5"></i>
+                                </button>
                             </div>
-                             <!--Custom accordion-->
-                            <div class="accordion accordion-custom" id="accordionCustomExample">
-                                <!--accordion item-->
-                                <div class="accordion-item mb-3">
-                                     <!--accordion header-->
-                                    <h2 class="accordion-header" id="headingCustomOne">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#collapseCustomOne" aria-expanded="true"
-                                            aria-controls="collapseCustomOne">
-                                            Custom Accordion Item #1
-                                        </button>
+                            <div class="modal-body py-5 border-0">
+                                <p>
+                                    Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing
+                                    industries for previewing layouts and visual mockups.
+                                </p>
+                                <p class="mb-0">
+                                    Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing
+                                    industries for previewing layouts and visual mockups.
+                                </p>
+                            </div>
+                            <div class="modal-footer bg-light border-0">
+                                <button type="button" class="btn btn-gray-200 btn-sm"
+                                    data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary btn-sm">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Modal Form-->
+                <div class="modal fade" id="modalForm" tabindex="-1" aria-labelledby="modalFormLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content border-0">
+                            <div class="position-relative border-0 pe-4">
+                                <button type="button"
+                                    class="btn btn-outline-secondary p-0 border-2 width-3x height-3x rounded-circle flex-center position-absolute end-0 top-0 mt-3 me-3 z-index-1"
+                                    data-bs-dismiss="modal" aria-label="Close">
+                                    <i class="bx bx-x fs-5"></i>
+                                </button>
+                            </div>
+                            <div class="modal-body py-5 border-0">
+                                <div class="px-3">
+
+                                    <h2 class="mb-1 display-6">
+                                        Welcome back!
                                     </h2>
-                                     <!--accordion detail-->
-                                    <div id="collapseCustomOne" class="accordion-collapse collapse show"
-                                        aria-labelledby="headingCustomOne" data-bs-parent="#accordionCustomExample">
-                                        <div class="accordion-body">
-                                            <strong>This is the first item's accordion body.</strong> It is hidden by
-                                            default, until the collapse plugin adds the appropriate classes that we use
-                                            to style each element. These classes control the overall appearance, as well
-                                            as the showing and hiding via CSS transitions. You can modify any of this
-                                            with custom CSS or overriding our default variables. It's also worth noting
-                                            that just about any HTML can go within the <code>.accordion-body</code>,
-                                            though the transition does limit overflow.
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--accordion item-->
-                                <div class="accordion-item mb-3">
-                                     <!--accordion header-->
-                                    <h2 class="accordion-header" id="headingCustomTwo">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseCustomTwo"
-                                            aria-expanded="false" aria-controls="collapseCustomTwo">
-                                            Custom Accordion Item #2
-                                        </button>
-                                    </h2>
-                                     <!--accordion details-->
-                                    <div id="collapseCustomTwo" class="accordion-collapse collapse"
-                                        aria-labelledby="headingCustomTwo" data-bs-parent="#accordionCustomExample">
-                                        <div class="accordion-body">
-                                            <strong>This is the second item's accordion body.</strong> It is hidden by
-                                            default, until the collapse plugin adds the appropriate classes that we use
-                                            to style each element. These classes control the overall appearance, as well
-                                            as the showing and hiding via CSS transitions. You can modify any of this
-                                            with custom CSS or overriding our default variables. It's also worth noting
-                                            that just about any HTML can go within the <code>.accordion-body</code>,
-                                            though the transition does limit overflow.
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--accordion item-->
-                                <div class="accordion-item">
-                                     <!--accordion header-->
-                                    <h2 class="accordion-header" id="headingCustomThree">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseCustomThree"
-                                            aria-expanded="false" aria-controls="collapseCustomThree">
-                                            Custom Accordion Item #3
-                                        </button>
-                                    </h2>
-                                     <!--accordion details-->
-                                    <div id="collapseCustomThree" class="accordion-collapse collapse"
-                                        aria-labelledby="headingCustomThree" data-bs-parent="#accordionCustomExample">
-                                        <div class="accordion-body">
-                                            <strong>This is the third item's accordion body.</strong> It is hidden by
-                                            default, until the collapse plugin adds the appropriate classes that we use
-                                            to style each element. These classes control the overall appearance, as well
-                                            as the showing and hiding via CSS transitions. You can modify any of this
-                                            with custom CSS or overriding our default variables. It's also worth noting
-                                            that just about any HTML can go within the <code>.accordion-body</code>,
-                                            though the transition does limit overflow.
+                                    <p class="mb-4 text-muted">
+                                        Please Sign In with details...
+                                    </p>
+                                    <div class="position-relative">
+                                        <div>
+                                            <form>
+                                                <div class="input-icon-group mb-3">
+                                                    <span class="input-icon">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                            class="bx bx-envelope" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z">
+                                                            </path>
+                                                        </svg>
+                                                    </span>
+                                                    <input type="email" class="form-control" autofocus=""
+                                                        placeholder="Username">
+                                                </div>
+                                                <div class="input-icon-group mb-3">
+                                                    <span class="input-icon">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                            class="bx bx-key" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8zm4-3a3 3 0 1 0 2.712 4.285A.5.5 0 0 1 7.163 9h.63l.853-.854a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.793-.793-1-1h-6.63a.5.5 0 0 1-.451-.285A3 3 0 0 0 4 5z">
+                                                            </path>
+                                                            <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"></path>
+                                                        </svg>
+                                                    </span>
+                                                    <input type="password" class="form-control" placeholder="Password">
+                                                </div>
+                                                <div class="mb-3 d-flex justify-content-between">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="flexCheckDefault">
+                                                        <label class="form-check-label" for="flexCheckDefault">
+                                                            Remember me
+                                                        </label>
+                                                    </div>
+                                                    <div>
+                                                        <label class="text-end d-block small mb-0"><a href="#"
+                                                                class="text-muted link-decoration">Forget
+                                                                Password?</a></label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="d-grid">
+                                                    <button class="btn btn-primary" type="submit">
+                                                        Sign in
+                                                    </button>
+                                                </div>
+                                            </form>
+
+                                            <!---->
+                                            <p class="pt-4 text-muted">
+                                                Don’t have an account yet? <a href="#"
+                                                    class="ms-2 text-dark fw-semibold link-underline">Sign Up</a>
+                                            </p>
+                                            <!--Divider-->
+                                            <div class="d-flex align-items-center py-3">
+                                                <span class="flex-grow-1 border-bottom pt-1"></span>
+                                                <span
+                                                    class="d-inline-flex flex-center lh-1 width-2x height-2x rounded-circle bg-white text-mono">or</span>
+                                                <span class="flex-grow-1 border-bottom pt-1"></span>
+                                            </div>
+                                            <div class="d-grid">
+                                                <a href="#!"
+                                                    class="d-flex hover-lift btn-outline-secondary mb-2 btn position-relative flex-center">
+                                                    <!--Main Icon-->
+                                                    <div class="position-relative d-flex align-items-center">
+                                                        <img src="../assets/img/brands/google.svg" alt=""
+                                                            class="width-2x me-2">
+                                                        <span>sign in with google</span>
+                                                    </div>
+                                                </a>
+                                                <a href="#!"
+                                                    class="d-flex hover-lift btn-outline-secondary btn position-relative flex-center">
+                                                    <!--Main Icon-->
+                                                    <div class="position-relative d-flex align-items-center">
+                                                        <img src="../assets/img/brands/Facebook.svg" alt=""
+                                                            class="width-2x me-2">
+                                                        <span>sign in with facebook</span>
+                                                    </div>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -573,116 +580,125 @@
                         </div>
                     </div>
                 </div>
-                <div class="container pt-5 pb-9 pb-lg-11">
-                    
-                            <!--///////////CODE SNIPPET FOR CUSTOM ACCORIONS-->
-                            <div class="position-relative" style="max-height: 75vh; overflow-y: auto;">
-                                <!--Copy clipboard button-->
-                                <button
-                                    class="btn btn-sm position-absolute rounded-3 end-0 top-0 z-index-1 mt-2 me-2 btn-primary copy-link"
-                                    data-clipboard-target="#copyCodeCustomAccordion1" data-clipboard-action="copy" id="copyCodeCustomAccordion1-1">Copy code</button>
-<pre id="copyCodeCustomAccordion1" class="language-markup" data-lang="html">
-<code>
-    &lt;!--Custom accordion-->
-    &lt;div class="accordion accordion-custom" id="accordionCustomExample">
-      &lt;!--accordion item-->
-      &lt;div class="accordion-item mb-3">
-           &lt;!--accordion header-->
-          &lt;h2 class="accordion-header" id="headingCustomOne">
-              &lt;button class="accordion-button" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseCustomOne" aria-expanded="true"
-                  aria-controls="collapseCustomOne">
-                  Custom Accordion Item #1
-              &lt;/button>
-          &lt;/h2>
-           &lt;!--accordion detail-->
-          &lt;div id="collapseCustomOne" class="accordion-collapse collapse show"
-              aria-labelledby="headingCustomOne" data-bs-parent="#accordionCustomExample">
-              &lt;div class="accordion-body">
-                  &lt;strong>This is the first item's accordion body.&lt;/strong> It is hidden by
-                  default, until the collapse plugin adds the appropriate classes that we use
-                  to style each element. These classes control the overall appearance, as well
-                  as the showing and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It's also worth noting
-                  that just about any HTML can go within the &lt;code>.accordion-body&lt;/code>,
-                  though the transition does limit overflow.
-              &lt;/div>
-          &lt;/div>
-      &lt;/div>
-      &lt;!--accordion item-->
-      &lt;div class="accordion-item mb-3">
-           &lt;!--accordion header-->
-          &lt;h2 class="accordion-header" id="headingCustomTwo">
-              &lt;button class="accordion-button collapsed" type="button"
-                  data-bs-toggle="collapse" data-bs-target="#collapseCustomTwo"
-                  aria-expanded="false" aria-controls="collapseCustomTwo">
-                  Custom Accordion Item #2
-              &lt;/button>
-          &lt;/h2>
-           &lt;!--accordion details-->
-          &lt;div id="collapseCustomTwo" class="accordion-collapse collapse"
-              aria-labelledby="headingCustomTwo" data-bs-parent="#accordionCustomExample">
-              &lt;div class="accordion-body">
-                  &lt;strong>This is the second item's accordion body.&lt;/strong> It is hidden by
-                  default, until the collapse plugin adds the appropriate classes that we use
-                  to style each element. These classes control the overall appearance, as well
-                  as the showing and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It's also worth noting
-                  that just about any HTML can go within the &lt;code>.accordion-body&lt;/code>,
-                  though the transition does limit overflow.
-              &lt;/div>
-          &lt;/div>
-      &lt;/div>
-      &lt;!--accordion item-->
-      &lt;div class="accordion-item">
-           &lt;!--accordion header-->
-          &lt;h2 class="accordion-header" id="headingCustomThree">
-              &lt;button class="accordion-button collapsed" type="button"
-                  data-bs-toggle="collapse" data-bs-target="#collapseCustomThree"
-                  aria-expanded="false" aria-controls="collapseCustomThree">
-                  Custom Accordion Item #3
-              &lt;/button>
-          &lt;/h2>
-           &lt;!--accordion details-->
-          &lt;div id="collapseCustomThree" class="accordion-collapse collapse"
-              aria-labelledby="headingCustomThree" data-bs-parent="#accordionCustomExample">
-              &lt;div class="accordion-body">
-                  &lt;strong>This is the third item's accordion body.&lt;/strong> It is hidden by
-                  default, until the collapse plugin adds the appropriate classes that we use
-                  to style each element. These classes control the overall appearance, as well
-                  as the showing and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It's also worth noting
-                  that just about any HTML can go within the &lt;code>.accordion-body&lt;/code>,
-                  though the transition does limit overflow.
-              &lt;/div>
-          &lt;/div>
-      &lt;/div>
-  &lt;/div>
-</code></pre>
+
+                <!--Modal newsletter-->
+                <div class="modal fade" id="modalNewsletter" tabindex="-1" aria-labelledby="modalNewsletterLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content border-0">
+                            <div class="modal-body p-0 border-0">
+                                <button type="button"
+                                    class="btn btn-outline-secondary p-0 border-2 width-3x height-3x rounded-circle flex-center position-absolute end-0 top-0 mt-3 me-3 z-index-1"
+                                    data-bs-dismiss="modal" aria-label="Close">
+                                    <i class="bx bx-x fs-5"></i>
+                                </button>
+                                <div class="d-md-flex row">
+                                    <div class="col-md-6">
+                                        <img src="../assets/img/960x900/1.jpg" alt=""
+                                            class="d-block rounded-top d-md-none img-fluid">
+                                        <div
+                                            class="d-none d-md-flex overflow-hidden bg-shade-primary rounded-3 rounded-end-0 h-md-100 position-relative">
+                                            <img src="../assets/img/960x900/1.jpg" alt="" class="bg-image">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 h-100">
+                                        <div class="h-100 py-7 py-lg-9 px-lg-5 px-4 position-relative">
+                                            <h2 class="display-6 mb-2">
+                                                Signup to Newsletter
+                                            </h2>
+                                            <p>Sign up now and get 25% of first order</p>
+                                            <div class="position-relative">
+                                                <div>
+                                                    <form>
+                                                        <div class="input-icon-group mb-3">
+                                                            <span class="input-icon">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                    height="16" fill="currentColor"
+                                                                    class="bx bx-user-circle" viewBox="0 0 16 16">
+                                                                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                                                                    <path fill-rule="evenodd"
+                                                                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                                                                </svg>
+                                                            </span>
+                                                            <input type="text" class="form-control" autofocus=""
+                                                                placeholder="Your name">
+                                                        </div>
+                                                        <div class="input-icon-group mb-3">
+                                                            <span class="input-icon">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                    height="16" fill="currentColor"
+                                                                    class="bx bx-envelope" viewBox="0 0 16 16">
+                                                                    <path
+                                                                        d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z" />
+                                                                </svg>
+                                                            </span>
+                                                            </span>
+                                                            <input type="email" class="form-control"
+                                                                placeholder="Your email id">
+                                                        </div>
+
+                                                        <div class="d-grid">
+                                                            <button class="btn btn-primary" type="submit">
+                                                                SignUp
+                                                            </button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <!--///////////CODE SNIPPET END-->
+                        </div>
+                    </div>
+                </div>
+
+                <!--Modal dark-->
+                <div class="modal fade" id="modalDark" tabindex="-1" aria-labelledby="modalDarkLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content bg-dark text-white border-0">
+                            <div class="modal-header border-bottom border-secondary bg-dark">
+                                <h5 class="modal-title">Modal title</h5>
+                                <!--Close button-->
+                                <button type="button"
+                                    class="btn btn-outline-gray-200 p-0 border-2 width-3x height-3x rounded-circle flex-center z-index-1"
+                                    data-bs-dismiss="modal" aria-label="Close">
+                                    <i class="bx bx-x fs-5"></i>
+                                </button>
+                            </div>
+                            <div class="modal-body py-5 border-0">
+                                <p>
+                                    Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing
+                                    industries for previewing layouts and visual mockups.
+                                </p>
+                                <p class="mb-0">
+                                    Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing
+                                    industries for previewing layouts and visual mockups.
+                                </p>
+                            </div>
+                            <div class="modal-footer border-top border-secondary">
+                                <button type="button" class="btn btn-warning btn-sm"
+                                    data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary btn-sm">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section class="bg-gradient-secondary text-white position-relative">
-                <svg class="position-absolute top-0 start-0 text-white w-50 h-auto w-lg-80" width="136" height="76"
-                    viewBox="0 0 136 76" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-opacity=".1"
-                        d="M136 -28C136 -14.3425 133.31 -0.818782 128.083 11.7991C122.857 24.4169 115.196 35.8818 105.539 45.5391C95.8818 55.1964 84.4169 62.857 71.7991 68.0835C59.1812 73.31 45.6575 76 32 76C18.3425 76 4.81878 73.31 -7.79908 68.0835C-20.4169 62.857 -31.8818 55.1964 -41.5391 45.5391C-51.1964 35.8818 -58.857 24.4169 -64.0835 11.7991C-69.31 -0.818789 -72 -14.3425 -72 -28L136 -28Z"
-                        fill="currentColor" />
-                </svg>
-                <div class="container py-9 py-lg-11 position-relative z-index-1">
+                <div class="container py-9 py-lg-11">
                     <div class="row align-items-center justify-content-center">
                         <div class="col-md-10 col-lg-8 col-xl-7 text-center mx-auto">
-                            <h2 class="mb-4 display-4" data-aos="fade-up">
-                                Let's start building stunning websites
+                            <h2 class="mb-3 display-4" data-aos="fade-up">
+                                Build stunning websites
                             </h2>
-                            <p class="mb-5 px-lg-5" data-aos="fade-up" data-aos-delay="100">
+                            <p class="mb-5 text-muted px-lg-5" data-aos="fade-up" data-aos-delay="100">
                                 Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing
                                 industries for previewing layouts and visual mockups.
                             </p>
                             <div data-aos="fade-up">
-                                <a href="#!" class="btn btn-primary btn-lg">Purchase a
-                                    license</a>
+                                <a href="#!" class="btn btn-primary rounded-pill btn-lg">Purchase a license</a>
                             </div>
                         </div>
                         <!--End Col-->
@@ -826,39 +842,13 @@
         </footer>
 
 
+
         <!-- begin Back to Top button -->
         <a href="#" class="toTop">
             <i class="bx bxs-up-arrow"></i>
         </a>
         <!-- scripts -->
         <script src="../assets/js/theme.bundle.js"></script>
-        <!--Copy to clipboard + prismJs-->
-        <script src="../assets/vendor/node_modules/js/prism.js"></script>
-        <script src="../assets/vendor/node_modules/js/clipboard.min.js"></script>
-        <script>
-            /* Clipboard JS - Copy code button */
-            var cl = document.querySelector('.copy-link');
-            if (typeof !!cl && (cl) != 'undefined' && cl != null) {
-                var cle = document.querySelectorAll('.copy-link');
-                cle.forEach(el => {
-                    el.addEventListener("click", function () {
-                        var theButton = this;
-                        var copyId = this.getAttribute('id');
-                        var clipboard = new ClipboardJS('#' + copyId);
-
-                        clipboard.on('success', function (e) {
-                            e.clearSelection();
-                            theButton.innerHTML = 'Copied!';
-                            setTimeout(function () {
-                                theButton.innerHTML = 'Copy code';
-                            }, 5000);
-                        });
-                    });
-                });
-            }
-
-        </script>
-
     </body>
 
 </html>
