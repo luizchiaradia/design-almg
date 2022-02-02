@@ -5,14 +5,14 @@
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" href="assets/img/favicon.ico" type="image/ico">
-        @@include('./partials/head-includes.html')
+        <link rel="icon" href="../assets/img/favicon.ico" type="image/ico">
+        @@include('../partials/head-includes.html')
 
         <!--select style-->
-        <link rel="stylesheet" href="assets/vendor/node_modules/css/choices.min.css">
+        <link rel="stylesheet" href="../assets/vendor/node_modules/css/choices.min.css">
 
         <!--Flatpickr-->
-        <link rel="stylesheet" href="assets/vendor/node_modules/css/flatpickr.min.css">
+        <link rel="stylesheet" href="../assets/vendor/node_modules/css/flatpickr.min.css">
 
         <!--File uploader-->
         <link href="https://unpkg.com/filepond/dist/filepond.css" rel="stylesheet" />
@@ -22,7 +22,7 @@
             rel="stylesheet">
 
         <!-- Main CSS -->
-        <link href="assets/css/theme.min.css" rel="stylesheet">
+        <link href="../assets/css/theme.min.css" rel="stylesheet">
 
         <title>Assan 4</title>
     </head>
@@ -38,8 +38,8 @@
         <header class="z-index-fixed">
             <nav class="navbar navbar-expand-lg navbar-light bg-white">
                 <div class="container position-relative">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="assets/img/logo/logo.svg" alt="" class="img-fluid">
+                    <a class="navbar-brand" href="../index.html">
+                        <img src="../assets/img/logo/logo.svg" alt="" class="img-fluid">
                     </a>
 
                     <div class="d-flex align-items-center navbar-no-collapse-items order-lg-last">
@@ -53,14 +53,14 @@
                         <div class="nav-item me-3 me-lg-0 dropdown">
                             <a href="#" class="btn btn-secondary rounded-pill py-0 ps-0 pe-3"
                                 data-bs-auto-close="outside" data-bs-toggle="dropdown">
-                                <img src="assets/img/avatar/4.jpg" alt="" class="avatar sm rounded-circle me-1">
+                                <img src="../assets/img/avatar/4.jpg" alt="" class="avatar sm rounded-circle me-1">
                                 <small>Emily</small>
                             </a>
                             <div class="dropdown-menu dropdown-menu-end dropdown-menu-xs p-0">
                                 <a href="#" class="dropdown-header border-bottom p-4">
                                     <div class="d-flex align-items-center">
                                         <div>
-                                            <img src="assets/img/avatar/4.jpg" alt=""
+                                            <img src="../assets/img/avatar/4.jpg" alt=""
                                                 class="avatar xl rounded-pill me-3">
                                         </div>
                                         <div>
@@ -81,7 +81,7 @@
                         </div>
                     </div>
                     <div class="collapse navbar-collapse" id="mainNavbarTheme">
-                        @@include('./partials/headers/default-navbar-items.html',{"page": "pages"})
+                        @@include('../partials/headers/default-navbar-items.html',{"page": "pages"})
                     </div>
                 </div>
             </nav>
@@ -507,17 +507,17 @@
             </section>
         </main>
 
-        @@include('./partials/footers/footer-1.html')
+        @@include('../partials/footers/footer-1.html')
 
         <!-- begin Back to Top button -->
         <a href="#" class="toTop">
            <i class="bx bxs-up-arrow"></i>
         </a>
         <!-- scripts -->
-        <script src="assets/js/theme.bundle.js"></script>
+        <script src="../assets/js/theme.bundle.js"></script>
 
         <!--Page scripts-->
-        <script src="assets/vendor/node_modules/js/flatpickr.min.js"></script>
+        <script src="../assets/vendor/node_modules/js/flatpickr.min.js"></script>
         <script>
             let fpickr = document.querySelectorAll("[data-flatpickr]");
             fpickr.forEach(el => {
@@ -529,7 +529,7 @@
             );
         </script>
           <!--Select scripts-->
-        <script src="assets/vendor/node_modules/js/choices.min.js"></script>
+        <script src="../assets/vendor/node_modules/js/choices.min.js"></script>
         <script>
             var cSelect = document.querySelectorAll("[data-choices]");
             cSelect.forEach(el => {
@@ -588,7 +588,7 @@
 
                                 // pass poster property
                                 metadata: {
-                                    poster: './assets/img/avatar/4.jpg'
+                                    poster: './../assets/img/avatar/4.jpg'
                                 }
                             }
                         }

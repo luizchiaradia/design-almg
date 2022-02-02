@@ -5,35 +5,35 @@
         <!-- Required meta tags -->
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="assets/img/favicon.ico" type="image/ico" />
+        <link rel="icon" href="../assets/img/favicon.ico" type="image/ico" />
 
         <!--Box Icons-->
-        <link rel="stylesheet" href="assets/fonts/boxicons/css/boxicons.min.css" />
+        <link rel="stylesheet" href="../assets/fonts/boxicons/css/boxicons.min.css" />
 
         <!--Iconsmind Icons-->
-        <link rel="stylesheet" href="assets/fonts/iconsmind/iconsmind.css" />
+        <link rel="stylesheet" href="../assets/fonts/iconsmind/iconsmind.css" />
 
         <!--Select style-->
-        <link rel="stylesheet" href="assets/vendor/node_modules/css/choices.min.css">
+        <link rel="stylesheet" href="../assets/vendor/node_modules/css/choices.min.css">
 
         <!--Swiper slider-->
-        <link rel="stylesheet" href="assets/vendor/node_modules/css/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="../assets/vendor/node_modules/css/swiper-bundle.min.css" />
 
          <!--Quill-->
-         <link rel="stylesheet" href="assets/vendor/node_modules/css/quill.snow.css" />
+         <link rel="stylesheet" href="../assets/vendor/node_modules/css/quill.snow.css" />
 
         <!--Google fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100..900&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
         <!-- Main CSS -->
-        <link href="assets/css/theme-teal.min.css" rel="stylesheet" />
+        <link href="../assets/css/theme-teal.min.css" rel="stylesheet" />
 
         <title>Assan 4</title>
     </head>
 
     <body>
-        @@include('./partials/preloader.html')
+        @@include('../partials/preloader.html')
 
         <!--Header Start-->
         <header class="z-index-fixed pt-2 header-absolute-top header-boxed header-sticky">
@@ -64,7 +64,7 @@
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container position-relative">
                     <a class="navbar-brand" href="demo-real-estate.html">
-                        <img src="assets/img/logo/logo.svg" alt="" class="img-fluid navbar-brand-sticky">
+                        <img src="../assets/img/logo/logo.svg" alt="" class="img-fluid navbar-brand-sticky">
                     </a>
                     <div class="d-flex align-items-center navbar-no-collapse-items order-lg-last">
                         <button class="navbar-toggler order-last" type="button" data-bs-toggle="collapse"
@@ -374,16 +374,16 @@
         </main>
 
         <!--Footer Start-->
-        @@include('./partials/footers/footer-9.html')
+        @@include('../partials/footers/footer-9.html')
 
         <!-- begin Back to Top button -->
         <a href="#" class="toTop">
             <i class="bx bxs-up-arrow"></i>
         </a>
         <!-- scripts -->
-        <script src="assets/js/theme.bundle.js"></script>
+        <script src="../assets/js/theme.bundle.js"></script>
         <!--Select scripts-->
-        <script src="assets/vendor/node_modules/js/choices.min.js"></script>
+        <script src="../assets/vendor/node_modules/js/choices.min.js"></script>
         <script>
             var cSelect = document.querySelectorAll("[data-choices]");
             cSelect.forEach(el => {
@@ -407,7 +407,7 @@
         </script>
 
         <!--Quill Editor-->
-        <script src="assets/vendor/node_modules/js/quill.min.js"></script>
+        <script src="../assets/vendor/node_modules/js/quill.min.js"></script>
         <script>
             var initQuill = document.querySelectorAll("[data-quill]");
             initQuill.forEach((qe) => {
@@ -434,7 +434,7 @@
 
         </script>
 
-        <script src="assets/vendor/node_modules/js/dropzone-min.js"></script>
+        <script src="../assets/vendor/node_modules/js/dropzone-min.js"></script>
         <script>
             let e = new Dropzone("[data-dropzone-area]", {
                 url: "#",

@@ -5,24 +5,24 @@
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" href="assets/img/favicon.ico" type="image/ico">
-        @@include('./partials/head-includes.html')
+        <link rel="icon" href="../assets/img/favicon.ico" type="image/ico">
+        @@include('../partials/head-includes.html')
         <!--Prism css for code snippets-->
         <link rel="stylesheet"
-            href="assets/vendor/node_modules/css/prism-tomorrow.css">
+            href="../assets/vendor/node_modules/css/prism-tomorrow.css">
         <!-- Main CSS -->
-        <link href="assets/css/theme.min.css" rel="stylesheet">
+        <link href="../assets/css/theme.min.css" rel="stylesheet">
         <title>Assan 4</title>
     </head>
 
     <body>
-        @@include('./partials/preloader.html')
+        @@include('../partials/preloader.html')
         <!--Header Start-->
         <header class="z-index-fixed header-transparent header-absolute-top">
             <nav class="navbar navbar-expand-lg navbar-light navbar-link-white">
                 <div class="container position-relative">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="assets/img/logo/logo-white.svg" alt="" class="img-fluid">
+                    <a class="navbar-brand" href="../index.html">
+                        <img src="../assets/img/logo/logo-white.svg" alt="" class="img-fluid">
                     </a>
 
                     <div class="d-flex align-items-center navbar-no-collapse-items order-lg-last">
@@ -38,7 +38,7 @@
                         </div>
                     </div>
                     <div class="collapse navbar-collapse" id="mainNavbarTheme">
-                        @@include('./partials/headers/default-navbar-items.html',{"page": "features"})
+                        @@include('../partials/headers/default-navbar-items.html',{"page": "features"})
                     </div>
                 </div>
             </nav>
@@ -48,7 +48,7 @@
         <main class="main-content" id="main-content">
             <!--Hero-->
             <section class="position-relative bg-dark text-white jarallax" data-jarallax=".3">
-                <img src="assets/img/backgrounds/bg4.jpg" alt="" class="jarallax-img opacity-50">
+                <img src="../assets/img/backgrounds/bg4.jpg" alt="" class="jarallax-img opacity-50">
                 <!--Hero: divider-->
                 <svg class="w-100 text-white position-absolute start-0 bottom-0 z-index-1" height="48"
                     fill="currentColor" preserveAspectRatio="none" viewBox="0 0 1200 120"
@@ -105,7 +105,7 @@
     &lt;!--Hero-->
  &lt;section class="position-relative bg-dark text-white jarallax" data-jarallax=".3">
  &lt;!--Hero: parallax background-->
-    &lt;img src="assets/img/backgrounds/bg4.jpg" alt="" class="jarallax-img opacity-50">
+    &lt;img src="../assets/img/backgrounds/bg4.jpg" alt="" class="jarallax-img opacity-50">
     &lt;!--Hero: divider-->
     &lt;svg class="w-100 text-white position-absolute start-0 bottom-0 z-index-1" height="48"
     fill="currentColor" preserveAspectRatio="none" viewBox="0 0 1200 120"
@@ -161,7 +161,7 @@
                                 <pre id="copyCss1" class="language-markup" data-lang="html">
                 <code>
   &lt;!-- Bootstrap + Vendor + Theme -->
-  &lt;link href="assets/css/theme.min.css" rel="stylesheet">
+  &lt;link href="../assets/css/theme.min.css" rel="stylesheet">
 </code>
 </pre>
                             </div>
@@ -177,7 +177,7 @@
                                 <pre id="copyJs1" class="language-markup" data-lang="html">
                 <code>
   &lt;!-- Bootstrap + Vendor + Theme -->
-  &lt;script src="assets/css/theme.bundle.js">&lt;/script>
+  &lt;script src="../assets/css/theme.bundle.js">&lt;/script>
 </code>
 </pre>
                             </div>
@@ -231,10 +231,10 @@
             <i class="bx bxs-up-arrow"></i>
         </a>
         <!-- scripts -->
-        <script src="assets/js/theme.bundle.js"></script>
+        <script src="../assets/js/theme.bundle.js"></script>
         <!--Copy to clipboard + prismJs-->
-        <script src="assets/vendor/node_modules/js/prism.js"></script>
-        <script src="assets/vendor/node_modules/js/clipboard.min.js"></script>
+        <script src="../assets/vendor/node_modules/js/prism.js"></script>
+        <script src="../assets/vendor/node_modules/js/clipboard.min.js"></script>
         <script>
             /* Clipboard JS - Copy code button */
             var cl = document.querySelector('.copy-link');

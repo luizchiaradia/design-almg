@@ -4,25 +4,25 @@
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" href="assets/img/favicon.ico" type="image/ico">
-        @@include('./partials/head-includes.html')
+        <link rel="icon" href="../assets/img/favicon.ico" type="image/ico">
+        @@include('../partials/head-includes.html')
         <!--Prism css for code snippets-->
         <link rel="stylesheet"
-            href="assets/vendor/node_modules/css/prism-tomorrow.css">
+            href="../assets/vendor/node_modules/css/prism-tomorrow.css">
         <!-- Main CSS -->
-        <link href="assets/css/theme.min.css" rel="stylesheet">
+        <link href="../assets/css/theme.min.css" rel="stylesheet">
 
         <title>Assan 4</title>
     </head>
 
     <body>
-        @@include('./partials/preloader.html')
+        @@include('../partials/preloader.html')
         <!--Header Start-->
         <header class="z-index-fixed header-transparent header-absolute-top">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container position-relative">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="assets/img/logo/logo.svg" alt="" class="img-fluid">
+                    <a class="navbar-brand" href="../index.html">
+                        <img src="../assets/img/logo/logo.svg" alt="" class="img-fluid">
                     </a>
 
                     <div class="d-flex align-items-center navbar-no-collapse-items order-lg-last">
@@ -40,7 +40,7 @@
                         </div>
                     </div>
                     <div class="collapse navbar-collapse" id="mainNavbarTheme">
-                        @@include('./partials/headers/default-navbar-items.html',{"page": "features"})
+                        @@include('../partials/headers/default-navbar-items.html',{"page": "features"})
                     </div>
                 </div>
             </nav>
@@ -207,23 +207,23 @@
                                             &lt;!--Dropdown lang menu-->
                                             &lt;div class="dropdown-menu mb-3 dropdown-menu-lg-start">
                                                 &lt;a href="#!" class="d-flex align-items-center dropdown-item active">
-                                                    &lt;img src="assets/img/country/us.svg" class="width-2x me-2" alt="">
+                                                    &lt;img src="../assets/img/country/us.svg" class="width-2x me-2" alt="">
                                                     United States (English)
                                                 &lt;/a>
                                                 &lt;a href="#!" class="d-flex align-items-center dropdown-item">
-                                                    &lt;img src="assets/img/country/es.svg" class="width-2x me-2" alt="">
+                                                    &lt;img src="../assets/img/country/es.svg" class="width-2x me-2" alt="">
                                                     América Latina (Español)
                                                 &lt;/a>
                                                 &lt;a href="#!" class="d-flex align-items-center dropdown-item">
-                                                    &lt;img src="assets/img/country/gb.svg" class="width-2x me-2" alt="">
+                                                    &lt;img src="../assets/img/country/gb.svg" class="width-2x me-2" alt="">
                                                     United Kingdom (English)
                                                 &lt;/a>
                                                 &lt;a href="#!" class="d-flex align-items-center dropdown-item">
-                                                    &lt;img src="assets/img/country/fr.svg" class="width-2x me-2" alt="">
+                                                    &lt;img src="../assets/img/country/fr.svg" class="width-2x me-2" alt="">
                                                     France (Français)
                                                 &lt;/a>
                                                 &lt;a href="#!" class="d-flex align-items-center dropdown-item">
-                                                    &lt;img src="assets/img/country/pt.svg" class="width-2x me-2" alt="">
+                                                    &lt;img src="../assets/img/country/pt.svg" class="width-2x me-2" alt="">
                                                     Italia (Italiano)
                                                 &lt;/a>
                                             &lt;/div>
@@ -256,7 +256,7 @@
                                 <pre id="copyCss1" class="language-markup" data-lang="html">
                 <code>
   &lt;!-- Bootstrap + Vendor + Theme -->
-  &lt;link href="assets/css/theme.min.css" rel="stylesheet">
+  &lt;link href="../assets/css/theme.min.css" rel="stylesheet">
 </code>
 </pre>
                             </div>
@@ -267,17 +267,17 @@
             </section>
         </main>
 
-        @@include('./partials/footers/footer-3.html')
+        @@include('../partials/footers/footer-3.html')
 
         <!-- begin Back to Top button -->
         <a href="#" class="toTop">
             <i class="bx bxs-up-arrow"></i>
         </a>
         <!-- scripts -->
-        <script src="assets/js/theme.bundle.js"></script>
+        <script src="../assets/js/theme.bundle.js"></script>
         <!--Copy to clipboard + prismJs-->
-        <script src="assets/vendor/node_modules/js/prism.js"></script>
-        <script src="assets/vendor/node_modules/js/clipboard.min.js"></script>
+        <script src="../assets/vendor/node_modules/js/prism.js"></script>
+        <script src="../assets/vendor/node_modules/js/clipboard.min.js"></script>
         <script>
             /* Clipboard JS - Copy code button */
             var cl = document.querySelector('.copy-link');

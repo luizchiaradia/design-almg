@@ -5,23 +5,23 @@
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" href="assets/img/favicon.ico" type="image/ico">
-        @@include('./partials/head-includes.html')
+        <link rel="icon" href="../assets/img/favicon.ico" type="image/ico">
+        @@include('../partials/head-includes.html')
         <!-- Main CSS -->
-        <link href="assets/css/theme.min.css" rel="stylesheet">
+        <link href="../assets/css/theme.min.css" rel="stylesheet">
 
         <title>Assan 4</title>
     </head>
 
     <body>
-        @@include('./partials/preloader.html')
+        @@include('../partials/preloader.html')
        <!--Header Start-->
        <header class="z-index-fixed header-transparent header-absolute-top sticky-reverse">
         <nav class="navbar navbar-expand-lg navbar-light navbar-link-white">
             <div class="container position-relative">
-                <a class="navbar-brand" href="index.html">
-                    <img src="assets/img/logo/logo.svg" alt="" class="img-fluid navbar-brand-sticky">
-                    <img src="assets/img/logo/logo-white.svg" alt="" class="img-fluid navbar-brand-transparent">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../assets/img/logo/logo.svg" alt="" class="img-fluid navbar-brand-sticky">
+                    <img src="../assets/img/logo/logo-white.svg" alt="" class="img-fluid navbar-brand-transparent">
                 </a>
 
                 <div class="d-flex align-items-center navbar-no-collapse-items order-lg-last">
@@ -37,7 +37,7 @@
                     </div>
                 </div>
                 <div class="collapse navbar-collapse" id="mainNavbarTheme">
-                    @@include('./partials/headers/default-navbar-items.html',{"page": "pages"})
+                    @@include('../partials/headers/default-navbar-items.html',{"page": "pages"})
                 </div>
             </div>
         </nav>
@@ -45,7 +45,7 @@
         <!--Main content-->
         <main class="main-content" id="main-content">
             <section class="position-relative bg-gradient-primary text-white jarallax" data-jarallax=".3">
-                <img src="assets/img/backgrounds/bg2.jpg" class="jarallax-img" alt="">
+                <img src="../assets/img/backgrounds/bg2.jpg" class="jarallax-img" alt="">
                 <div class="bg-dark opacity-50 position-absolute start-0 top-0 w-100 h-100"></div>
                 <div class="container position-relative z-index-2 pt-14 pb-14">
                     <div class="row pb-13 pt-lg-12">
@@ -70,7 +70,7 @@
                     <div class="row mb-7">
                         <div class="col-lg-4 mb-7 mt-auto text-center" data-aos="fade-up" data-aos-delay="100" data-aos-duration="700">
                             <div class="position-relative mb-4 overflow-hidden card-hover">
-                                <img src="assets/img/team/1.jpg" alt="" class="img-fluid img-zoom">
+                                <img src="../assets/img/team/1.jpg" alt="" class="img-fluid img-zoom">
                             </div>
                             
                             <div>
@@ -86,7 +86,7 @@
                         </div>
                         <div class="col-lg-4 mb-7 mt-auto text-center" data-aos="fade-up" data-aos-delay="100" data-aos-duration="700">
                             <div class="position-relative mb-4 overflow-hidden card-hover">
-                                <img src="assets/img/team/2.jpg" alt="" class="img-fluid img-zoom">
+                                <img src="../assets/img/team/2.jpg" alt="" class="img-fluid img-zoom">
                             </div>
                             <div>
                                 <h5 class="mb-1 text-primary">
@@ -101,7 +101,7 @@
                         </div>
                         <div class="col-lg-4 mb-7 mt-auto text-center" data-aos="fade-up" data-aos-delay="100" data-aos-duration="700">
                             <div class="position-relative mb-4 overflow-hidden card-hover">
-                                <img src="assets/img/team/3.jpg" alt="" class="img-fluid img-zoom">
+                                <img src="../assets/img/team/3.jpg" alt="" class="img-fluid img-zoom">
                             </div>
                             <div>
                                 <h5 class="mb-1 text-primary">
@@ -117,7 +117,7 @@
                         <div class="py-4"></div>
                         <div class="col-lg-4 mb-7 text-center" data-aos="fade-up" data-aos-delay="100" data-aos-duration="700">
                             <div class="position-relative mb-4 overflow-hidden card-hover">
-                                <img src="assets/img/team/5.jpg" alt="" class="img-fluid img-zoom">
+                                <img src="../assets/img/team/5.jpg" alt="" class="img-fluid img-zoom">
                             </div>
                             <div>
                                 <h5 class="mb-1 text-primary">
@@ -132,7 +132,7 @@
                         </div>
                         <div class="col-lg-4 mb-7 text-center" data-aos="fade-up" data-aos-delay="100" data-aos-duration="700">
                             <div class="position-relative mb-4 overflow-hidden card-hover">
-                                <img src="assets/img/team/6.jpg" alt="" class="img-fluid img-zoom">
+                                <img src="../assets/img/team/6.jpg" alt="" class="img-fluid img-zoom">
                             </div>
                             <div>
                                 <h5 class="mb-1 text-primary">
@@ -148,7 +148,7 @@
                         <div class="col-lg-4 mb-7" data-aos="fade-up" data-aos-delay="250" data-aos-duration="700">
                             <div class="position-relative d-flex flex-column h-100">
                                <div class="position-relative mb-4 w-100 bg-gradient-primary">
-                                <img src="assets/img/team/1.jpg" class="img-fluid opacity-0" alt="">
+                                <img src="../assets/img/team/1.jpg" class="img-fluid opacity-0" alt="">
                                 <div class="h-100 w-100 d-flex align-items-center justify-content-center fs-1 text-white position-absolute start-0 top-0">
                                  
                                 You
@@ -190,14 +190,14 @@
         </main>
 
 
-        @@include('./partials/footers/footer-1.html')
+        @@include('../partials/footers/footer-1.html')
 
         <!-- begin Back to Top button -->
         <a href="#" class="toTop">
             <i class="bx bxs-up-arrow"></i>
         </a>
         <!-- scripts -->
-        <script src="assets/js/theme.bundle.js"></script>
+        <script src="../assets/js/theme.bundle.js"></script>
     </body>
 
 </html>

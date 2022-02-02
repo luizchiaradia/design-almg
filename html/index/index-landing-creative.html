@@ -5,26 +5,26 @@
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" href="assets/img/favicon.ico" type="image/ico">
-        @@include('./partials/head-includes.html')
+        <link rel="icon" href="../assets/img/favicon.ico" type="image/ico">
+        @@include('../partials/head-includes.html')
 
         <!--Swiper slider-->
-        <link rel="stylesheet" href="assets/vendor/node_modules/css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="../assets/vendor/node_modules/css/swiper-bundle.min.css">
 
         <!-- Main CSS -->
-        <link href="assets/css/theme.min.css" rel="stylesheet">
+        <link href="../assets/css/theme.min.css" rel="stylesheet">
 
         <title>Assan 4</title>
     </head>
 
     <body>
-        @@include('./partials/preloader.html')
+        @@include('../partials/preloader.html')
         <!--Header Start-->
         <header class="z-index-fixed">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid position-relative">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="assets/img/logo/logo.svg" alt="" class="img-fluid">
+                    <a class="navbar-brand" href="../index.html">
+                        <img src="../assets/img/logo/logo.svg" alt="" class="img-fluid">
                     </a>
                     <div class="d-flex align-items-center navbar-no-collapse-items order-lg-last">
                         <button class="navbar-toggler order-last" type="button" data-bs-toggle="collapse"
@@ -39,7 +39,7 @@
                         </div>
                     </div>
                     <div class="collapse navbar-collapse" id="mainNavbarTheme">
-                        @@include('./partials/headers/default-navbar-items.html',{"page": "home"})
+                        @@include('../partials/headers/default-navbar-items.html',{"page": "home"})
                     </div>
                 </div>
             </nav>
@@ -56,11 +56,11 @@
                             <div class="swiper-wrapper">
                                 <!-- Slides -->
                                 <div class="swiper-slide bg-cover bg-center bg-no-repeat"
-                                    style="background-image: url(assets/img/backgrounds/bg1.jpg);"></div>
+                                    style="background-image: url(../assets/img/backgrounds/bg1.jpg);"></div>
                                 <div class="swiper-slide bg-cover bg-center bg-no-repeat"
-                                    style="background-image: url(assets/img/backgrounds/bg2.jpg);"></div>
+                                    style="background-image: url(../assets/img/backgrounds/bg2.jpg);"></div>
                                 <div class="swiper-slide bg-cover bg-center bg-no-repeat"
-                                    style="background-image: url(assets/img/backgrounds/bg3.jpg);"></div>
+                                    style="background-image: url(../assets/img/backgrounds/bg3.jpg);"></div>
                             </div>
                         </div>
                         <div class="position-relative text-white w-md-75 px-4 w-lg-60 mx-auto text-center z-index-1 py-12 py-lg-15">
@@ -249,7 +249,7 @@
                             <div
                                 class="bg-pattern text-warning mb-n2 mb-lg-n3 position-absolute w-50 h-50 end-0 bottom-0">
                             </div>
-                            <img src="assets/img/960x1140/4.jpg"
+                            <img src="../assets/img/960x1140/4.jpg"
                                 class="img-fluid shadow-lg rounded-block rounded-top-start-0 rounded-bottom-end-0 position-relative" alt="">
                         </div>
                         <!--/column -->
@@ -348,7 +348,7 @@
                                             fill="white" />
                                     </svg>
                                     <!--Get started image-->
-                                    <img src="assets/img/960x640/2.jpg" class="img-fluid" alt="">
+                                    <img src="../assets/img/960x640/2.jpg" class="img-fluid" alt="">
                                 </div>
                                 <div class="px-4 bg-white position-relative pb-5 pt-4">
                                     <small class="d-block mb-2 text-muted">No CC required</small>
@@ -454,7 +454,7 @@
                             <!--Testimonial card-->
                             <div class="position-relative">
                                 <div class="mb-5 mb-lg-7">
-                                    <img src="assets/img/partners/amazon.svg" class="width-8x h-auto" alt="">
+                                    <img src="../assets/img/partners/amazon.svg" class="width-8x h-auto" alt="">
                                 </div>
                                 <!--Testimonial text-->
                                 <h2 class="display-5 font-serif mb-6">
@@ -506,7 +506,7 @@
                                 <article class="card-hover hover-lift">
                                     <!--Article Image-->
                                     <div class="position-relative rounded-4 overflow-hidden">
-                                        <img src="assets/img/960x640/8.jpg" class="img-fluid img-zoom" alt="">
+                                        <img src="../assets/img/960x640/8.jpg" class="img-fluid img-zoom" alt="">
                                     </div>
 
                                     <!--Article title-->
@@ -528,7 +528,7 @@
                                 <article class="card-hover hover-lift">
                                     <!--Article Image-->
                                     <div class="position-relative rounded-4 overflow-hidden">
-                                        <img src="assets/img/960x640/6.jpg" class="img-fluid img-zoom" alt="">
+                                        <img src="../assets/img/960x640/6.jpg" class="img-fluid img-zoom" alt="">
                                     </div>
                                     <!--Article title-->
                                     <div class="pt-4">
@@ -548,7 +548,7 @@
                                 <article class="card-hover hover-lift">
                                     <!--Article Image-->
                                     <div class="position-relative rounded-4 overflow-hidden">
-                                        <img src="assets/img/960x640/2.jpg" class="img-fluid img-zoom" alt="">
+                                        <img src="../assets/img/960x640/2.jpg" class="img-fluid img-zoom" alt="">
                                     </div>
                                     <!--Article title-->
                                     <div class="pt-4">
@@ -609,15 +609,15 @@
             </section>
         </main>
 
-        @@include('./partials/footers/footer-3.html')
+        @@include('../partials/footers/footer-3.html')
 
         <!-- begin Back to Top button -->
         <a href="#" class="toTop">
             <i class="bx bxs-up-arrow"></i>
         </a>
         <!-- scripts -->
-        <script src="assets/js/theme.bundle.js"></script>
-        <script src="assets/vendor/node_modules/js/swiper-bundle.min.js"></script>
+        <script src="../assets/js/theme.bundle.js"></script>
+        <script src="../assets/vendor/node_modules/js/swiper-bundle.min.js"></script>
         <script>
             const swiper = new Swiper('.swiper-main', {
                 spaceBetween: 0,
