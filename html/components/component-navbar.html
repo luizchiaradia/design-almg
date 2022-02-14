@@ -73,7 +73,7 @@
             <!--Navbar demo heading-->
             <div class="container pt-9 pt-lg-11">
                 <div class="d-flex align-items-center mb-4">
-                    <h6 class="mb-0 me-4">Navbar Basic</h6>
+                    <h6 class="mb-0 me-4">Navbar</h6>
                     <hr class="my-0 bg-primary flex-grow-1">
                 </div>
             </div>
@@ -85,11 +85,10 @@
                         <div class="w-100 d-flex justify-content-end">
                             <div class="dropdown me-3 d-none d-md-block">
                                 <button class="btn btn-gray-400 btn-sm text-uppercase dropdown-toggle" type="button"
-                                    id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
-                                    aria-expanded="false">
+                                    id="sitesAlmg" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <i class="bi bi-house-fill fs-5 lh-1 align-text-bottom me-2"></i>Sites da ALMG
                                 </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <div class="dropdown-menu" aria-labelledby="sitesAlmg">
                                     <a class="dropdown-item" href="#">Portal de Políticas Públicas</a>
                                     <a class="dropdown-item" href="#">Resultado de Eleições</a>
                                 </div>
@@ -115,39 +114,315 @@
                         <a class="navbar-brand" href="../index.html">
                             <img src="../assets/img/logo/logo.svg" alt="" class="img-fluid">
                         </a>
-
-                        <div class="d-flex align-items-center navbar-no-collapse-items order-lg-last">
-                            <button class="navbar-toggler order-last" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbar-demo-1" aria-controls="navbar-demo-1" aria-expanded="false"
-                                aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon">
-                                    <i></i>
-                                </span>
-                            </button>
-                        </div>
-                        <div class="collapse navbar-collapse" id="navbar-demo-1">
+                        <div class="collapse navbar-collapse" id="navbar-1">
                             <ul class="navbar-nav ms-auto">
-                                <li class="nav-item me-3">
-                                    <a href="#" class="nav-link link-gray-800">Institucional</a>
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link link-gray-800 dropdown-toggle" role="button"
+                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                        data-bs-auto-close="outside">Institucional</a>
+                                    <div
+                                        class="dropdown-menu dropdown-menu-md dropdown-menu-start py-0 overflow-hidden">
+                                        <div class="row">
+                                            <div class="col-lg-6 ps-lg-4 position-relative">
+                                                <div class="py-1 py-lg-3 d-lg-flex flex-column">
+                                                    <a href="#"
+                                                        class="dropdown-item link-gray-800 fw-semibold">Agenda</a>
+                                                    <a href="#" class="dropdown-item link-gray-800 fw-semibold">Entenda
+                                                        a Assembleia</a>
+                                                    <a href="#" class="dropdown-item link-gray-800 fw-semibold">Mesa
+                                                        Diretora</a>
+                                                    <a href="#"
+                                                        class="dropdown-item link-gray-800 fw-semibold">Procuradoria da
+                                                        Mulher</a>
+                                                    <a href="#"
+                                                        class="dropdown-item link-gray-800 fw-semibold">Direcionamento
+                                                        Estratégico</a>
+                                                    <a href="#" class="dropdown-item link-gray-800 fw-semibold">Balanço
+                                                        das Atividades</a>
+                                                    <a href="#" class="dropdown-item link-gray-800 fw-semibold">Educação
+                                                        para Cidadania</a>
+                                                    <a href="#" class="dropdown-item link-gray-800 fw-semibold">Como
+                                                        Chegar</a>
+                                                </div>
+                                            </div>
+                                            <!--/.col-->
+                                            <div class="col-lg-6 d-none d-lg-block position-relative bg-no-repeat bg-cover bg-center"
+                                                style="background-image: url('https://mediaserver.almg.gov.br/acervo/268/253/1268253.jpg')">
+                                                <div
+                                                    class="position-absolute w-100 h-100 top-0 start-0 bg-primary opacity-75">
+                                                </div>
+                                                <div
+                                                    class="p-4 d-flex flex-column align-items-center text-center justify-content-center h-100 py-5 position-relative text-white">
+                                                    <p class="mb-0">A Assembleia de Minas é o Poder Legislativo
+                                                        Estadual, com 77 deputados eleitos pelo voto popular</p>
+                                                </div>
+                                            </div>
+                                            <!--/.col-->
+                                        </div>
+                                        <!--/.row-->
+                                    </div>
                                 </li>
-                                <li class="nav-item me-3">
-                                    <a href="#" class="nav-link link-gray-800">Deputados</a>
+
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link link-gray-800 dropdown-toggle" role="button"
+                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                        data-bs-auto-close="outside">Deputados</a>
+                                    <div
+                                        class="dropdown-menu dropdown-menu-md dropdown-menu-start py-0 overflow-hidden">
+                                        <div class="row">
+                                            <div class="col-lg-6 ps-lg-4 position-relative">
+                                                <div class="py-1 py-lg-3 d-lg-flex flex-column">
+                                                    <a href="#"
+                                                        class="dropdown-item link-gray-800 fw-semibold">Conheça os Deputados</a>
+                                                    <a href="#" class="dropdown-item link-gray-800 fw-semibold">Lideranças</a>
+                                                    <a href="#" class="dropdown-item link-gray-800 fw-semibold">Representação Partidária</a>
+                                                    <a href="#"
+                                                        class="dropdown-item link-gray-800 fw-semibold">Deputados Majoritários por Localidade</a>
+                                                </div>
+                                            </div>
+                                            <!--/.col-->
+                                            <div class="col-lg-6 d-none d-lg-block position-relative bg-no-repeat bg-cover bg-center"
+                                                style="background-image: url('https://mediaserver.almg.gov.br/acervo/603/135/1603135.jpg')">
+                                                <div
+                                                    class="position-absolute w-100 h-100 top-0 start-0 bg-primary opacity-75">
+                                                </div>
+                                                <div
+                                                    class="p-4 d-flex flex-column align-items-center text-center justify-content-center h-100 py-5 position-relative text-white">
+                                                    <p class="mb-0">Conheça os deputados que integram ou já integraram a Assembleia, os partidos representados e os líderes</p>
+                                                </div>
+                                            </div>
+                                            <!--/.col-->
+                                        </div>
+                                        <!--/.row-->
+                                    </div>
                                 </li>
-                                <li class="nav-item me-3">
-                                    <a href="#" class="nav-link link-gray-800">Atividade Legislativa</a>
+
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link link-gray-800 dropdown-toggle" role="button"
+                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                        data-bs-auto-close="outside">Atividade Legislativa</a>
+                                    <div
+                                        class="dropdown-menu dropdown-menu-md dropdown-menu-start py-0 overflow-hidden">
+                                        <div class="row">
+                                            <div class="col-lg-6 ps-lg-4 position-relative">
+                                                <div class="py-1 py-lg-3 d-lg-flex flex-column">
+                                                    <a href="#"
+                                                        class="dropdown-item link-gray-800 fw-semibold">Plenário</a>
+                                                    <a href="#" class="dropdown-item link-gray-800 fw-semibold">Comissões</a>
+                                                    <a href="#" class="dropdown-item link-gray-800 fw-semibold">Tramitação de Projetos</a>
+                                                    <a href="#"
+                                                        class="dropdown-item link-gray-800 fw-semibold">Legislação</a>
+                                                    <a href="#"
+                                                        class="dropdown-item link-gray-800 fw-semibold">Planejamento e Orçamento</a>
+                                                    <a href="#" class="dropdown-item link-gray-800 fw-semibold">Pronunciamentos</a>
+                                                    <a href="#" class="dropdown-item link-gray-800 fw-semibold">Diário do Legislativo</a>
+                                                </div>
+                                            </div>
+                                            <!--/.col-->
+                                            <div class="col-lg-6 d-none d-lg-block position-relative bg-no-repeat bg-cover bg-center"
+                                                style="background-image: url('https://mediaserver.almg.gov.br/acervo/268/253/1268253.jpg')">
+                                                <div
+                                                    class="position-absolute w-100 h-100 top-0 start-0 bg-primary opacity-75">
+                                                </div>
+                                                <div
+                                                    class="p-4 d-flex flex-column align-items-center text-center justify-content-center h-100 py-5 position-relative text-white">
+                                                    <p class="mb-0">Confira o trabalho dos deputados no Plenário e nas Comissões, além do conteúdo dos projetos em tramitação</p>
+                                                </div>
+                                            </div>
+                                            <!--/.col-->
+                                        </div>
+                                        <!--/.row-->
+                                    </div>
                                 </li>
-                                <li class="nav-item me-3">
-                                    <a href="#" class="nav-link link-gray-800">Participe</a>
+
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link link-gray-800 dropdown-toggle" role="button"
+                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                        data-bs-auto-close="outside">Participe</a>
+                                    <div
+                                        class="dropdown-menu dropdown-menu-md dropdown-menu-start py-0 overflow-hidden">
+                                        <div class="row">
+                                            <div class="col-lg-6 ps-lg-4 position-relative">
+                                                <div class="py-1 py-lg-3 d-lg-flex flex-column">
+                                                    <a href="#"
+                                                        class="dropdown-item link-gray-800 fw-semibold">Agenda</a>
+                                                    <a href="#" class="dropdown-item link-gray-800 fw-semibold">Entenda
+                                                        a Assembleia</a>
+                                                    <a href="#" class="dropdown-item link-gray-800 fw-semibold">Mesa
+                                                        Diretora</a>
+                                                    <a href="#"
+                                                        class="dropdown-item link-gray-800 fw-semibold">Procuradoria da
+                                                        Mulher</a>
+                                                    <a href="#"
+                                                        class="dropdown-item link-gray-800 fw-semibold">Direcionamento
+                                                        Estratégico</a>
+                                                    <a href="#" class="dropdown-item link-gray-800 fw-semibold">Balanço
+                                                        das Atividades</a>
+                                                    <a href="#" class="dropdown-item link-gray-800 fw-semibold">Educação
+                                                        para Cidadania</a>
+                                                    <a href="#" class="dropdown-item link-gray-800 fw-semibold">Como
+                                                        Chegar</a>
+                                                </div>
+                                            </div>
+                                            <!--/.col-->
+                                            <div class="col-lg-6 d-none d-lg-block position-relative bg-no-repeat bg-cover bg-center"
+                                                style="background-image: url('https://mediaserver.almg.gov.br/acervo/268/253/1268253.jpg')">
+                                                <div
+                                                    class="position-absolute w-100 h-100 top-0 start-0 bg-primary opacity-50">
+                                                </div>
+                                                <div
+                                                    class="p-4 d-flex flex-column align-items-center text-center justify-content-center h-100 py-5 position-relative text-white">
+                                                    <p class="mb-0">A Assembleia de Minas é o Poder Legislativo
+                                                        Estadual, com 77 deputados eleitos pelo voto popular</p>
+                                                </div>
+                                            </div>
+                                            <!--/.col-->
+                                        </div>
+                                        <!--/.row-->
+                                    </div>
                                 </li>
-                                <li class="nav-item me-3">
-                                    <a href="#" class="nav-link link-gray-800">Notícias</a>
+
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link link-gray-800 dropdown-toggle" role="button"
+                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                        data-bs-auto-close="outside">Comunicação</a>
+                                    <div
+                                        class="dropdown-menu dropdown-menu-md dropdown-menu-end py-0 overflow-hidden">
+                                        <div class="row">
+                                            <div class="col-lg-6 ps-lg-4 position-relative">
+                                                <div class="py-1 py-lg-3 d-lg-flex flex-column">
+                                                    <a href="#"
+                                                        class="dropdown-item link-gray-800 fw-semibold">Agenda</a>
+                                                    <a href="#" class="dropdown-item link-gray-800 fw-semibold">Entenda
+                                                        a Assembleia</a>
+                                                    <a href="#" class="dropdown-item link-gray-800 fw-semibold">Mesa
+                                                        Diretora</a>
+                                                    <a href="#"
+                                                        class="dropdown-item link-gray-800 fw-semibold">Procuradoria da
+                                                        Mulher</a>
+                                                    <a href="#"
+                                                        class="dropdown-item link-gray-800 fw-semibold">Direcionamento
+                                                        Estratégico</a>
+                                                    <a href="#" class="dropdown-item link-gray-800 fw-semibold">Balanço
+                                                        das Atividades</a>
+                                                    <a href="#" class="dropdown-item link-gray-800 fw-semibold">Educação
+                                                        para Cidadania</a>
+                                                    <a href="#" class="dropdown-item link-gray-800 fw-semibold">Como
+                                                        Chegar</a>
+                                                </div>
+                                            </div>
+                                            <!--/.col-->
+                                            <div class="col-lg-6 d-none d-lg-block position-relative bg-no-repeat bg-cover bg-center"
+                                                style="background-image: url('https://mediaserver.almg.gov.br/acervo/268/253/1268253.jpg')">
+                                                <div
+                                                    class="position-absolute w-100 h-100 top-0 start-0 bg-primary opacity-50">
+                                                </div>
+                                                <div
+                                                    class="p-4 d-flex flex-column align-items-center text-center justify-content-center h-100 py-5 position-relative text-white">
+                                                    <p class="mb-0">A Assembleia de Minas é o Poder Legislativo
+                                                        Estadual, com 77 deputados eleitos pelo voto popular</p>
+                                                </div>
+                                            </div>
+                                            <!--/.col-->
+                                        </div>
+                                        <!--/.row-->
+                                    </div>
                                 </li>
-                                <li class="nav-item me-3">
-                                    <a href="#" class="nav-link link-gray-800">Serviços</a>
+
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link link-gray-800 dropdown-toggle" role="button"
+                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                        data-bs-auto-close="outside">Serviços</a>
+                                    <div
+                                        class="dropdown-menu dropdown-menu-md dropdown-menu-end py-0 overflow-hidden">
+                                        <div class="row">
+                                            <div class="col-lg-6 ps-lg-4 position-relative">
+                                                <div class="py-1 py-lg-3 d-lg-flex flex-column">
+                                                    <a href="#"
+                                                        class="dropdown-item link-gray-800 fw-semibold">Agenda</a>
+                                                    <a href="#" class="dropdown-item link-gray-800 fw-semibold">Entenda
+                                                        a Assembleia</a>
+                                                    <a href="#" class="dropdown-item link-gray-800 fw-semibold">Mesa
+                                                        Diretora</a>
+                                                    <a href="#"
+                                                        class="dropdown-item link-gray-800 fw-semibold">Procuradoria da
+                                                        Mulher</a>
+                                                    <a href="#"
+                                                        class="dropdown-item link-gray-800 fw-semibold">Direcionamento
+                                                        Estratégico</a>
+                                                    <a href="#" class="dropdown-item link-gray-800 fw-semibold">Balanço
+                                                        das Atividades</a>
+                                                    <a href="#" class="dropdown-item link-gray-800 fw-semibold">Educação
+                                                        para Cidadania</a>
+                                                    <a href="#" class="dropdown-item link-gray-800 fw-semibold">Como
+                                                        Chegar</a>
+                                                </div>
+                                            </div>
+                                            <!--/.col-->
+                                            <div class="col-lg-6 d-none d-lg-block position-relative bg-no-repeat bg-cover bg-center"
+                                                style="background-image: url('https://mediaserver.almg.gov.br/acervo/268/253/1268253.jpg')">
+                                                <div
+                                                    class="position-absolute w-100 h-100 top-0 start-0 bg-primary opacity-50">
+                                                </div>
+                                                <div
+                                                    class="p-4 d-flex flex-column align-items-center text-center justify-content-center h-100 py-5 position-relative text-white">
+                                                    <p class="mb-0">A Assembleia de Minas é o Poder Legislativo
+                                                        Estadual, com 77 deputados eleitos pelo voto popular</p>
+                                                </div>
+                                            </div>
+                                            <!--/.col-->
+                                        </div>
+                                        <!--/.row-->
+                                    </div>
                                 </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link link-gray-800">Transparência</a>
+
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link link-gray-800 dropdown-toggle" role="button"
+                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                        data-bs-auto-close="outside">Transparência</a>
+                                    <div
+                                        class="dropdown-menu dropdown-menu-md dropdown-menu-end py-0 overflow-hidden">
+                                        <div class="row">
+                                            <div class="col-lg-6 ps-lg-4 position-relative">
+                                                <div class="py-1 py-lg-3 d-lg-flex flex-column">
+                                                    <a href="#"
+                                                        class="dropdown-item link-gray-800 fw-semibold">Agenda</a>
+                                                    <a href="#" class="dropdown-item link-gray-800 fw-semibold">Entenda
+                                                        a Assembleia</a>
+                                                    <a href="#" class="dropdown-item link-gray-800 fw-semibold">Mesa
+                                                        Diretora</a>
+                                                    <a href="#"
+                                                        class="dropdown-item link-gray-800 fw-semibold">Procuradoria da
+                                                        Mulher</a>
+                                                    <a href="#"
+                                                        class="dropdown-item link-gray-800 fw-semibold">Direcionamento
+                                                        Estratégico</a>
+                                                    <a href="#" class="dropdown-item link-gray-800 fw-semibold">Balanço
+                                                        das Atividades</a>
+                                                    <a href="#" class="dropdown-item link-gray-800 fw-semibold">Educação
+                                                        para Cidadania</a>
+                                                    <a href="#" class="dropdown-item link-gray-800 fw-semibold">Como
+                                                        Chegar</a>
+                                                </div>
+                                            </div>
+                                            <!--/.col-->
+                                            <div class="col-lg-6 d-none d-lg-block position-relative bg-no-repeat bg-cover bg-center"
+                                                style="background-image: url('https://mediaserver.almg.gov.br/acervo/268/253/1268253.jpg')">
+                                                <div
+                                                    class="position-absolute w-100 h-100 top-0 start-0 bg-primary opacity-50">
+                                                </div>
+                                                <div
+                                                    class="p-4 d-flex flex-column align-items-center text-center justify-content-center h-100 py-5 position-relative text-white">
+                                                    <p class="mb-0">A Assembleia de Minas é o Poder Legislativo
+                                                        Estadual, com 77 deputados eleitos pelo voto popular</p>
+                                                </div>
+                                            </div>
+                                            <!--/.col-->
+                                        </div>
+                                        <!--/.row-->
+                                    </div>
                                 </li>
+
                             </ul>
                         </div>
                     </div>
