@@ -47,7 +47,10 @@ $grays: (
 // fusv-enable
 
 // scss-docs-start color-variables
-$blue   :#377094 !default;
+$blue:#377094 !default;
+$blue-light:#69B3E0 !default;
+$palha:#E0E0AD !default;
+$khaki:#94947E !default;
 $indigo: #5865f5  !default;
 $purple: #C26BF8 !default;
 $pink: #F65660 !default;
@@ -62,6 +65,9 @@ $cyan: #28abff !default;
 // scss-docs-start colors-map
 $colors: (
   "blue":       $blue,
+  "blue-light":       $blue-light,
+  "palha":     $palha,
+  "khaki":     $khaki,
   "indigo":     $indigo,
   "purple":     $purple,
   "pink":       $pink,
@@ -80,6 +86,9 @@ $colors: (
 // scss-docs-start theme-color-variables
 $primary: $red !default;
 $secondary: $blue !default;
+$secondary-light: $blue-light !default;
+$palha: $palha !default;
+$khaki: $khaki !default;
 $success: $green !default;
 $info: $cyan !default;
 $warning: $yellow !default;
@@ -97,16 +106,19 @@ $dark: $black !default;
 $theme-colors: (
   "primary":    $primary,
   "secondary":  $secondary,
+  "secondary-light":  $secondary-light,
+  "palha":  $palha,
+  "khaki":  $khaki,
   "success":    $success,
   "info":       $info,
   "warning":    $warning,
   "danger":     $danger,
   "light":      $light,
   "white":      $white,
-  "gray-200":      $gray-200,
-  "gray-500":      $gray-500,
-  "gray-400":      $gray-400,
-  "gray-800":      $gray-800,
+  "gray-200":   $gray-200,
+  "gray-500":   $gray-500,
+  "gray-400":   $gray-400,
+  "gray-800":   $gray-800,
   "dark":       $dark
 ) !default;
 // scss-docs-end theme-colors-map
