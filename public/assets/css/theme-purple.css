@@ -25365,6 +25365,18 @@ h6,
   font-weight: 500;
 }
 
+.ls--3 {
+  letter-spacing: -1.5px;
+}
+
+.ls--2 {
+  letter-spacing: -1px;
+}
+
+.ls--1 {
+  letter-spacing: -0.5px;
+}
+
 .ls-0 {
   letter-spacing: 0px;
 }
