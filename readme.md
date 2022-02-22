@@ -22,7 +22,7 @@ Instale o Gulp
 3. Verifique em qual branche está trabalhando, se precisar crie uma.
 
 4. Rode as tarefas do Gulp:
-  - `gulp`      - Para compilar scss para css, minify css e js e criar os arquivos de produção na pasta **public**.
+   `gulp`      - Para compilar scss para css, minify css e js e criar os arquivos de produção na pasta **public**.
 
 5. Altere os arquivos das pastas **html**, **js** e **scss** conforme sua necessidade.
 
