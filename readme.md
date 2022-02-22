@@ -18,6 +18,12 @@ Instale o Gulp
     
 2. Instale todas as dependências do projeto:
    `npm install`
+   
+3. Verifique em qual branche está trabalhando, se precisar crie uma.
 
-3. Rode as tarefas do Gulp:
+4. Rode as tarefas do Gulp:
   - `gulp`      - Para compilar scss para css, minify css e js e criar os arquivos de produção na pasta **public**.
+
+5. Altere os arquivos das pastas **html**, **js** e **scss** conforme sua necessidade.
+
+6. Faça os commits para sua branche antes de finalizar o trabalho.
