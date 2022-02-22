@@ -29,7 +29,7 @@
 
 <body>
     <!--Header Start-->
-    <header class="z-index-fixed header-transparent sticky-reverse">
+    <header>
         <nav>
             <div class="navbar navbar-expand-lg navbar-primary bg-gray-200">
                 <div class="container p-3">
@@ -246,8 +246,15 @@
         <div class="modal fade" id="modal-search" tabindex="-1" aria-labelledby="modalBasicLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-lg">
                 <div class="modal-content border-0 bg-gray-800">
+                    <div class="modal-header border-0 bg-gray-200">
+                        <h5 class="modal-title">Pesquisar</h5>
+                        <!--Close button-->
+                        <button type="button" class="btn btn-secondary p-0 border-2 width-3x height-3x rounded-circle flex-center z-index-1" data-bs-dismiss="modal" aria-label="Close">
+                            <i class="bx bx-x fs-5"></i>
+                        </button>
+                    </div>
                     <div class="modal-body p-4 border-0">
-                        <input type="text" class="form-control form-control-lg text-gray-800" id="search" placeholder="pesquisar">
+                        <input type="text" class="form-control form-control-lg text-gray-800" id="search" placeholder="">
                         <div class="pt-4">
                             <div class="d-flex flex-wrap align-items-center px-2">
                                 <span class="small me-2 fw-semibold text-white">Mais buscado:</span>
