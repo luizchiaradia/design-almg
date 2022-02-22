@@ -57,7 +57,7 @@ h6,
 }
 
 //letter-spacing
-@for $i from 0 through 9 {
+@for $i from -3 through 9 {
     $size: ($i * .5);
     .ls-#{$i} {
         letter-spacing: #{$size}px;
