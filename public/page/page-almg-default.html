@@ -59,7 +59,7 @@
                             <i class="bi bi-chat-fill fs-5 lh-1 align-text-bottom me-2"></i>Fale com a Assembleia
                         </a>
                         <a href="#" class="btn btn-gray-800 fw-semibold btn-sm text-uppercase me-3" data-bs-target="#modal-search" data-bs-toggle="modal">
-                            <i class="bx bx-search fs-5 lh-1 align-text-bottom me-2"></i>Pesquisar
+                            <i class="bx bx-search fs-5 lh-1 align-text-bottom me-1"></i>Pesquisar
                         </a>
                         <a href="#" class="btn btn-primary fw-semibold btn-sm text-uppercase">
                             <i class="bi bi-person-fill fs-5 lh-1 align-text-bottom me-1"></i>Entrar
@@ -242,36 +242,26 @@
                 </div>
             </div>
         </nav>
-        <!--Search bar modal-->
-        <div id="modal-search" class="modal fade" tabindex="-1" aria-labelledby="modal-search-bar-2" aria-hidden="true">
+        <!--Modal basic-->
+        <div class="modal fade" id="modal-search" tabindex="-1" aria-labelledby="modalBasicLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content position-relative border-0">
-                    <div class="position-relative px-4">
-                        <div
-                            class="position-absolute end-0 width-7x top-0 d-flex me-4 align-items-center h-100 justify-content-center">
-                            <button type="button" class="btn-close w-auto small" data-bs-dismiss="modal"
-                                aria-label="Close">Cancelar
-                        </div>
-                        <form class="mb-0">
-                            <div class="d-flex align-items-center">
-                                <div class="d-flex flex-grow-1 align-items-center">
-                                    <i class="bx bx-search opacity-25"></i>
-                                    <input type="text" placeholder="pesquisar..."
-                                        class="form-control shadow-none border-0 flex-grow-1 form-control-lg">
-                                </div>
+                <div class="modal-content border-0 bg-gray-800">
+                    <div class="modal-body p-4 border-0">
+                        <input type="text" class="form-control form-control-lg text-gray-800" id="search" placeholder="pesquisar">
+                        <div class="pt-4">
+                            <div class="d-flex flex-wrap align-items-center px-2">
+                                <span class="small me-2 fw-semibold text-white">Mais buscado:</span>
+                                <span><a href="#!"
+                                        class="badge bg-gray-200 text-gray-800 me-1 mb-1 px-3 py-1">Tag01</a></span>
+                                <span><a href="#!"
+                                        class="badge bg-gray-200 text-gray-800 me-1 mb-1 px-3 py-1">Tag02</a></span>
                             </div>
-                        </form>
-                    </div>
-                    <div class="p-4 border-top">
-                        <h6 class="mb-4">
-                            <i class="bx bx-lightning me-2 text-muted"></i>Mais pesquisados
-                        </h6>
-                        <div class="d-flex flex-wrap align-items-center">
-                            <span><a href="#!"
-                                    class="badge badge-pill border border-secondary text-body me-1 mb-1 px-3 py-1">Tag 01</a></span>
-                            <span><a href="#!"
-                                    class="badge badge-pill border border-secondary text-body me-1 mb-1 px-3 py-1">Tag 01</a></span>
                         </div>
+                    </div>
+                    <div class="modal-footer bg-gray-800 border-0">
+                        <button type="button" class="btn btn-gray-200 btn-sm">
+                            <i class="bx bx-search fs-5 lh-1 align-text-bottom me-1"></i>Pesquisar
+                        </button>
                     </div>
                 </div>
             </div>
