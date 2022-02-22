@@ -1,5 +1,5 @@
-# Widget SMM
-Projeto visual do para criar uma busca no SMM e alimentar um conteúdo estruturado do Opencms.
+# Desgin ALMG
+Projeto visual do novo portal da ALMG baseado em Bootstrap 5.
 
 ## Pré-requisitos
 - [Node.js](https://nodejs.org/en/download/ "Node Js")
