@@ -1,4 +1,4 @@
-# Desgin ALMG
+# Design ALMG
 Projeto visual do novo portal da ALMG baseado em Bootstrap 5.
 
 ## Pré-requisitos
