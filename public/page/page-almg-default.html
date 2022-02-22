@@ -58,7 +58,7 @@
                         <a href="#" class="btn btn-gray-500 btn-sm text-uppercase me-3 d-none d-md-block">
                             <i class="bi bi-chat-fill fs-5 lh-1 align-text-bottom me-2"></i>Fale com a Assembleia
                         </a>
-                        <a href="#" class="btn btn-gray-800 fw-semibold btn-sm text-uppercase me-3" data-as-toggle="fullscreen">
+                        <a href="#" class="btn btn-gray-800 fw-semibold btn-sm text-uppercase me-3" data-bs-target="#modal-search" data-bs-toggle="modal">
                             <i class="bx bx-search fs-5 lh-1 align-text-bottom me-2"></i>Pesquisar
                         </a>
                         <a href="#" class="btn btn-primary fw-semibold btn-sm text-uppercase">
@@ -242,76 +242,38 @@
                 </div>
             </div>
         </nav>
-        <!--Fullscreen-element - Search box-->
-        <div class="fullscreen-wrapper text-white">
-            <!--fullscreen close-->
-            <a href="#" class="fullscreen-close text-white" data-as-toggle="fullscreen">
-                <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" width="16" height="16"
-                    viewBox="0 0 128 128">
-                    <g>
-                        <path stroke="currentColor" stroke-width="8" stroke-linecap="square" fill="none"
-                            d="M7 7l114 114m0-114l-114 114"></path>
-                    </g>
-                </svg>
-            </a>
-            <div class="fullscreen-inner">
-                <ul class="fullscreen-list list-unstyled mb-0 w-100">
-                    <li class="fullscreen-item">
-                        <div class="container mb-5 mb-lg-7">
-                            <form>
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="d-flex align-items-center">
-                                            <span><i class="bx bx-search fs-4 text-muted"></i></span>
-                                            <input
-                                                class="form-control form-control-lg shadow-none border-0 fs-2 text-white bg-transparent"
-                                                type="text" placeholder="Type and hit enter..." autofocus="">
-                                        </div>
-                                    </div>
-                                    <div class="col-1 d-none">
-                                        <div class="d-grid">
-                                            <button class="btn btn-lg btn-white rounded-0" type="button">Search</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
+        <!--Search bar modal-->
+        <div id="modal-search" class="modal fade" tabindex="-1" aria-labelledby="modal-search-bar-2" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content position-relative border-0">
+                    <div class="position-relative px-4">
+                        <div
+                            class="position-absolute end-0 width-7x top-0 d-flex me-4 align-items-center h-100 justify-content-center">
+                            <button type="button" class="btn-close w-auto small" data-bs-dismiss="modal"
+                                aria-label="Close">Cancelar
                         </div>
-                    </li>
-                    <li class="fullscreen-item">
-                        <div class="container">
-                            <h6 class="mb-4">Popular Categories</h6>
-                            <div class="row mb-5">
-                                <div class="col-md-8 col-lg-6 mb-4">
-                                    <div class="d-flex flex-wrap align-items-center g-2">
-                                        <span><a href="#!"
-                                                class="badge badge-pill bg-primary text-white me-2 mb-2 px-3 py-2">Jeans</a></span>
-                                        <span>
-                                            <a href="#!"
-                                                class="badge badge-pill bg-primary text-white me-2 mb-2 px-3 py-2">Shoes</a>
-                                        </span>
-                                        <span>
-                                            <a href="#!"
-                                                class="badge badge-pill bg-primary text-white me-2 mb-2 px-3 py-2">Watches</a>
-                                        </span>
-                                        <span>
-                                            <a href="#!"
-                                                class="badge badge-pill bg-primary text-white me-2 mb-2 px-3 py-2">Men's</a>
-                                        </span>
-                                        <span>
-                                            <a href="#!"
-                                                class="badge badge-pill bg-primary text-white me-2 mb-2 px-3 py-2">Sneakers</a>
-                                        </span>
-                                        <span>
-                                            <a href="#!"
-                                                class="badge badge-pill bg-primary text-white me-2 mb-2 px-3 py-2">Casual</a>
-                                        </span>
-                                    </div>
+                        <form class="mb-0">
+                            <div class="d-flex align-items-center">
+                                <div class="d-flex flex-grow-1 align-items-center">
+                                    <i class="bx bx-search opacity-25"></i>
+                                    <input type="text" placeholder="pesquisar..."
+                                        class="form-control shadow-none border-0 flex-grow-1 form-control-lg">
                                 </div>
                             </div>
-                    
+                        </form>
+                    </div>
+                    <div class="p-4 border-top">
+                        <h6 class="mb-4">
+                            <i class="bx bx-lightning me-2 text-muted"></i>Mais pesquisados
+                        </h6>
+                        <div class="d-flex flex-wrap align-items-center">
+                            <span><a href="#!"
+                                    class="badge badge-pill border border-secondary text-body me-1 mb-1 px-3 py-1">Tag 01</a></span>
+                            <span><a href="#!"
+                                    class="badge badge-pill border border-secondary text-body me-1 mb-1 px-3 py-1">Tag 01</a></span>
                         </div>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
