@@ -15,34 +15,13 @@
 
 <body>
     <!--Header Start-->
-    <header>
+    <header class="z-index-fixed header-transparent sticky-reverse">
         @@include('../partials/headers/almg-navbar.html')
         @@include('../partials/search/almg-search.html')
     </header>
     <!--Main content-->
-    <main style="min-height: 500px;">
-        <section class="position-relative bg-gray-200">
-            <div class="container pt-8 pb-4">
-                <div class="row align-items-center">
-                    <div class="col-md-10 col-lg-8 mx-auto text-center">
-                        <div>
-                            <nav class="d-flex justify-content-center" aria-label="breadcrumb">
-                                <div class="mb-4">
-                                    <ol class="breadcrumb fw-semibold mb-0">
-                                        <li class="breadcrumb-item"><a href="#" class="link-gray-800">Início</a></li>
-                                        <li class="breadcrumb-item"><a href="#" class="link-gray-800">Deputados</a></li>
-                                        <li class="breadcrumb-item active" aria-current="page">Esta página</li>
-                                    </ol>
-                                </div>
-                            </nav>
-                            <h1 class="mb-0 fw-bold text-uppercase text-gray-800 ls--2">
-                                Conheça os Deputados
-                            </h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <main>
+        @@include('../partials/breadcrumbs/almg-breadcrumbs.html')
         <section>
             <div class="container px-lg-11 py-4 py-lg-6">
                 <div class="row mb-3 g-lg-8">

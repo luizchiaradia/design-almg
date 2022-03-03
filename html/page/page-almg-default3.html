@@ -14,14 +14,14 @@
     </head>
 
     <body>
-        @@include('../partials/preloader.html')
         <!--Header Start-->
-        <header class="z-index-fixed header-transparent header-absolute-top sticky-reverse">
-            @@include('../partials/headers/almg-navbar2.html')
+        <header class="z-index-fixed header-transparent sticky-reverse">
+            @@include('../partials/headers/almg-navbar.html')
+            @@include('../partials/search/almg-search.html')
         </header>
         <!--Main content-->
-        <main class="main-content" id="main-content" style="min-height:500px;">
-            
+        <main>
+            @@include('../partials/breadcrumbs/almg-breadcrumbs.html')
         </main>
 
         @@include('../partials/footers/footer-1.html')
