@@ -149,8 +149,8 @@
                 top: 0;
                 z-index: $zindex-fixed;
                 width: 100%;
-                transition: all 0.3s;
-                animation: fadeDown 0.4s both;
+                //transition: all 0.3s;
+                //animation: fadeDown 0.4s both;
                 border-width: 1px;
 
                 &.navbar-light {

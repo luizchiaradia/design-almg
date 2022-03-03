@@ -28916,9 +28916,6 @@ img.bg-image {
     top: 0;
     z-index: 1030;
     width: 100%;
-    transition: all 0.3s;
-    -webkit-animation: fadeDown 0.4s both;
-            animation: fadeDown 0.4s both;
     border-width: 1px;
   }
   header.sticky-reverse.scroll-up .navbar.navbar-expand-lg.navbar-light, header.header-sticky.is-sticky .navbar.navbar-expand-lg.navbar-light {
