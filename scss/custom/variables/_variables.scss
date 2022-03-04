@@ -60,12 +60,13 @@ $yellow: #FFC940 !default;
 $green: #37A878 !default;
 $teal: #21A5A7 !default;
 $cyan: #28abff !default;
+$green-dark: #407A52 !default;
 // scss-docs-end color-variables
 
 // scss-docs-start colors-map
 $colors: (
   "blue":       $blue,
-  "blue-light":       $blue-light,
+  "blue-light": $blue-light,
   "palha":     $palha,
   "khaki":     $khaki,
   "indigo":     $indigo,
@@ -75,6 +76,7 @@ $colors: (
   "orange":     $orange,
   "yellow":     $yellow,
   "green":      $green,
+  "green-dark": $green-dark,
   "teal":       $teal,
   "cyan":       $cyan,
   "white":      $white,
@@ -89,6 +91,7 @@ $secondary: $blue !default;
 $secondary-light: $blue-light !default;
 $palha: $palha !default;
 $khaki: $khaki !default;
+$green-dark: $green-dark !default;
 $success: $green !default;
 $info: $cyan !default;
 $warning: $yellow !default;
@@ -110,6 +113,7 @@ $theme-colors: (
   "secondary-light":  $secondary-light,
   "palha":  $palha,
   "khaki":  $khaki,
+  "green-dark": $green-dark,
   "success":    $success,
   "info":       $info,
   "warning":    $warning,
