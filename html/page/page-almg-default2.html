@@ -1,36 +1,99 @@
 <!doctype html>
 <html lang="pt-BR">
 
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" href="../assets/img/favicon.ico" type="image/ico">
-        @@include('../partials/head-includes.html')
-        <!-- Main CSS -->
-        <link href="../assets/css/theme.min.css" rel="stylesheet">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../assets/img/favicon.ico" type="image/ico">
+    @@include('../partials/head-includes.html')
+    <!-- Main CSS -->
+    <link href="../assets/css/theme.min.css" rel="stylesheet">
 
-        <title>ALMG</title>
-    </head>
+    <title>ALMG</title>
+</head>
 
-    <body>
-        @@include('../partials/preloader.html')
-        <!--Header Start-->
-        <header class="z-index-fixed header-transparent sticky-reverse">
-            @@include('../partials/headers/almg-navbar.html')
-            @@include('../partials/search/almg-search.html')
-        </header>
-        <!--Main content-->
-        <main class=" position-relative">
-            @@include('../partials/breadcrumbs/almg-breadcrumbs.html')
-            <div style="min-height: 300px;"></div>
-        </main>
+<body>
+    @@include('../partials/preloader.html')
+    <!--Header Start-->
+    <header class="z-index-fixed header-transparent sticky-reverse">
+        @@include('../partials/headers/almg-navbar.html')
+        @@include('../partials/search/almg-search.html')
+    </header>
+    <!--Main content-->
+    <main class=" position-relative">
+        @@include('../partials/breadcrumbs/almg-breadcrumbs.html')
+        <div class="container px-lg-11 py-4 py-lg-6">
+            <div class="row mb-3 g-lg-8">
+                <div class="col-md-9">
+                    <p>A ALMG é formada por 77 deputados, eleitos para um mandato de quatro anos (período que é
+                        conhecido como <a tabindex="0" class="link-primary text-decoration-underline"
+                            data-bs-toggle="popover" data-bs-trigger="focus" title=""
+                            data-bs-content="É um período de quatro anos, cujo início coincide com o mandato dos Deputados.">legislatura</a>).
+                        Conheça cada deputado: biografia, posicionamento político,
+                        produção legislativa e prestação de contas.</p>
+                </div>
+                <div class="col-md-3">
+                    <nav class="bg-gray-200 p-3 rounded-2">
+                        <h4 class="h6 mb-3">Veja Também</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <a href="#" class="link-hover-move-arrow text-body">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 9"
+                                        style=" transform: rotate(-90deg);">
+                                        <path fill="currentColor"
+                                            d="M12.25 2.30062L10.8988 0.949371L6.5 5.33854L2.10125 0.949371L0.75 2.30062L6.5 8.05062L12.25 2.30062Z">
+                                        </path>
+                                    </svg>
+                                    A Mesa
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#" class="link-hover-move-arrow text-body">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 9"
+                                        style=" transform: rotate(-90deg);">
+                                        <path fill="currentColor"
+                                            d="M12.25 2.30062L10.8988 0.949371L6.5 5.33854L2.10125 0.949371L0.75 2.30062L6.5 8.05062L12.25 2.30062Z">
+                                        </path>
+                                    </svg>
+                                    Deputados Majoritários por Localidade
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#" class="link-hover-move-arrow text-body">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 9"
+                                        style=" transform: rotate(-90deg);">
+                                        <path fill="currentColor"
+                                            d="M12.25 2.30062L10.8988 0.949371L6.5 5.33854L2.10125 0.949371L0.75 2.30062L6.5 8.05062L12.25 2.30062Z">
+                                        </path>
+                                    </svg>
+                                    Fale com seu Deputado
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="" class="link-hover-move-arrow text-body">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 9"
+                                        style=" transform: rotate(-90deg);">
+                                        <path fill="currentColor"
+                                            d="M12.25 2.30062L10.8988 0.949371L6.5 5.33854L2.10125 0.949371L0.75 2.30062L6.5 8.05062L12.25 2.30062Z">
+                                        </path>
+                                    </svg>
+                                    Pronunciamentos
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        </section>
+    </main>
 
-        @@include('../partials/footers/footer-1.html')
+    @@include('../partials/footers/footer-1.html')
 
-        <!-- scripts -->
-        <script src="../assets/js/theme.bundle.js"></script>
+    <!-- scripts -->
+    <script src="../assets/js/theme.bundle.js"></script>
 
-    </body>
+</body>
 
 </html>
