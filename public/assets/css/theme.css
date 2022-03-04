@@ -5227,8 +5227,8 @@ textarea.form-control-lg {
   border: 0;
 }
 .dropdown-item:hover, .dropdown-item:focus {
-  color: #3c445f;
-  background-color: #f9f9fe;
+  color: #0d0f15;
+  background-color: #e7e7ef;
 }
 .dropdown-item.active, .dropdown-item:active {
   color: #ab0000;
