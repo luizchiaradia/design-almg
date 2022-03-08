@@ -26987,6 +26987,10 @@ b, strong {
   width: 5rem;
   height: 5rem;
 }
+.avatar.xx {
+  width: 6rem;
+  height: 6rem;
+}
 
 .avatar-status {
   position: relative;
