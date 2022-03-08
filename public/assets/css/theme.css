@@ -26905,6 +26905,18 @@ b, strong {
   font-weight: 600;
 }
 
+.accordion.accordion-custom2 .accordion-button {
+  background-color: #d6d6df;
+  color: #232A42;
+}
+.accordion.accordion-custom2 .accordion-button:not(.collapsed) {
+  background-color: #377094;
+  color: #fff;
+}
+.accordion.accordion-custom2 .accordion-button:focus {
+  box-shadow: none;
+}
+
 .accordion.accordion-custom .accordion-item {
   border: 0px;
 }

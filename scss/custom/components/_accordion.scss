@@ -3,6 +3,20 @@
     font-weight: $headings-font-weight-sm;
 }
 
+.accordion.accordion-custom2 {
+    .accordion-button {
+        background-color: $gray-300;
+        color: $gray-800;
+    }
+    .accordion-button:not(.collapsed) {
+        background-color: $secondary;
+        color: $white;
+    }
+    .accordion-button:focus {
+        box-shadow: none;
+    }
+}
+
 //custo underline-accordion
 .accordion.accordion-custom {
     .accordion-item {
