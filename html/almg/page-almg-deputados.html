@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../assets/img/favicon.ico" type="image/ico">
+    @@include('../partials/head-includes.html')
+    <!-- Main CSS -->
+    <link href="../assets/css/theme.min.css" rel="stylesheet">
+
+    <title>ALMG</title>
+</head>
+
+<body>
+    <!--Header Start-->
+    <!--header class="z-index-fixed header-transparent sticky-reverse"-->
+    <header class="">
+        @@include('../partials/headers/almg-navbar.html')
+        @@include('../partials/search/almg-search.html')
+        </!--header>
+        <!--Main content-->
+        <main>
+            @@include('../partials/breadcrumbs/almg-breadcrumbs.html')
+            <section>
+                <div class="container px-lg-15 py-4 py-lg-6">
+                    <div class="row mb-3 g-lg-8">
+                        <div class="col-12">
+                            <p>A ALMG é formada por 77 deputados, eleitos para um mandato de quatro anos (período que é
+                                conhecido como legislatura).
+                                Conheça cada deputado: biografia, posicionamento político,
+                                produção legislativa e prestação de contas.
+                            </p>
+
+                            <div class="accordion accordion-custom2 mt-4" id="pesquisaDeputado">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="legAtual">
+                                        <button class="accordion-button btn-secondary text-uppercase" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseLegAtual" aria-expanded="true"
+                                            aria-controls="collapseLegAtual">
+                                            <i class="bi bi-search fs-5 me-2 lh-1"></i> Legislatura Atual
+                                        </button>
+                                    </h2>
+                                    <div id="collapseLegAtual" class="accordion-collapse collapse show"
+                                        aria-labelledby="legAtual" data-bs-parent="#pesquisaDeputado">
+                                        <div class="accordion-body nav-custom2 bg-light">
+                                            <ul class="nav nav-pills d-flex flex-center" id="pills-tab-legAtual" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link me-1 rounded-0 rounded-top active"
+                                                        id="pills-situacao-tab" data-bs-toggle="pill"
+                                                        data-bs-target="#pills-situacao" type="button" role="tab"
+                                                        aria-controls="pills-situacao" aria-selected="true">Por
+                                                        Situação</button>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link me-1 rounded-0 rounded-top"
+                                                        id="pills-partido-tab" data-bs-toggle="pill"
+                                                        data-bs-target="#pills-partido" type="button" role="tab"
+                                                        aria-controls="pills-partido" aria-selected="false">Por
+                                                        Partido</button>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link rounded-0 rounded-top"
+                                                        id="pills-bloco-tab" data-bs-toggle="pill"
+                                                        data-bs-target="#pills-bloco" type="button" role="tab"
+                                                        aria-controls="pills-bloco" aria-selected="false">Por
+                                                        Bloco</button>
+                                                </li>
+                                            </ul>
+                                            <div class="tab-content pt-3 border-top pesquisaDeputado" id="pills-tabContent">
+                                                <div class="tab-pane fade show active" id="pills-situacao" role="tabpanel"
+                                                    aria-labelledby="pills-situacao-tab">
+                                                    <form class="row">
+                                                        <div class="col-md-12 mt-0">
+                                                            <select class="form-select"
+                                                                aria-label="Default select example">
+                                                                <option selected>Situação</option>
+                                                                <option value="1">Lorem Ipsun</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-12 mt-3 text-end">
+                                                            <a href="#" class="btn btn-gray-800 btn-sm text-uppercase"
+                                                                data-bs-target="#modal-search" data-bs-toggle="modal">
+                                                                <i class="bi bi-search fs-6 me-2 lh-1"></i>Buscar
+                                                            </a>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="tab-pane fade" id="pills-partido" role="tabpanel"
+                                                    aria-labelledby="pills-partido-tab">
+                                                    <form class="row">
+                                                        <div class="col-md-12 mt-0">
+                                                            <select class="form-select"
+                                                                aria-label="Default select example">
+                                                                <option selected>Partido</option>
+                                                                <option value="1">Lorem Ipsun</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-12 mt-3 text-end">
+                                                            <a href="#" class="btn btn-gray-800 btn-sm text-uppercase"
+                                                                data-bs-target="#modal-search" data-bs-toggle="modal">
+                                                                <i class="bi bi-search fs-6 me-2 lh-1"></i>Buscar
+                                                            </a>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="tab-pane fade" id="pills-bloco" role="tabpanel"
+                                                    aria-labelledby="pills-bloco-tab">
+                                                    <form class="row">
+                                                        <div class="col-md-12 mt-0">
+                                                            <select class="form-select"
+                                                                aria-label="Default select example">
+                                                                <option selected>Bloco</option>
+                                                                <option value="1">Lorem Ipsun</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-12 mt-3 text-end">
+                                                            <a href="#" class="btn btn-gray-800 btn-sm text-uppercase"
+                                                                data-bs-target="#modal-search" data-bs-toggle="modal">
+                                                                <i class="bi bi-search fs-6 me-2 lh-1"></i>Buscar
+                                                            </a>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="legAnterior">
+                                        <button class="accordion-button collapsed text-uppercase" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseLegAnterior"
+                                            aria-expanded="false" aria-controls="collapseLegAnterior">
+                                            <i class="bi bi-search fs-5 me-2 lh-1"></i> Legislaturas Anteriores
+                                        </button>
+                                    </h2>
+                                    <div id="collapseLegAnterior" class="accordion-collapse collapse"
+                                        aria-labelledby="legAnterior" data-bs-parent="#pesquisaDeputado">
+                                        <div class="accordion-body nav-custom2 bg-light">
+                                            <ul class="nav nav-pills d-flex flex-center" id="pills-tab" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link me-1 rounded-0 rounded-top active"
+                                                        id="pills-14-18-tab" data-bs-toggle="pill"
+                                                        data-bs-target="#pills-14-18" type="button" role="tab"
+                                                        aria-controls="pills-14-18" aria-selected="true">14ª a 18ª Legislatura</button>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link me-1 rounded-0 rounded-top"
+                                                        id="pills-1-13-tab" data-bs-toggle="pill"
+                                                        data-bs-target="#pills-1-13" type="button" role="tab"
+                                                        aria-controls="pills-1-13" aria-selected="false">1ª a 13ª Legislatura</button>
+                                                </li>
+                                            </ul>
+                                            <div class="tab-content pt-3 border-top pesquisaDeputado" id="pills-tabContent">
+                                                <div class="tab-pane fade show active" id="pills-14-18" role="tabpanel"
+                                                    aria-labelledby="pills-14-18-tab">
+                                                    <form class="row">
+                                                        <div class="col-12 col-md-6 mt-0">
+                                                            <select class="form-select"
+                                                                aria-label="Default select example">
+                                                                <option selected>Legislatura</option>
+                                                                <option value="1">Lorem Ipsun</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-12 col-md-6 mt-0">
+                                                            <select class="form-select"
+                                                                aria-label="Default select example">
+                                                                <option selected>Situação</option>
+                                                                <option value="1">Lorem Ipsun</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-12 mt-3 text-end">
+                                                            <a href="#" class="btn btn-gray-800 btn-sm text-uppercase"
+                                                                data-bs-target="#modal-search" data-bs-toggle="modal">
+                                                                <i class="bi bi-search fs-6 me-2 lh-1"></i>Buscar
+                                                            </a>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="tab-pane fade" id="pills-1-13" role="tabpanel"
+                                                    aria-labelledby="pills-1-13-tab">
+                                                    <form class="row">
+                                                        <div class="col-12 col-md-6 mt-0">
+                                                            <select class="form-select"
+                                                                aria-label="Default select example">
+                                                                <option selected>Deputados</option>
+                                                                <option value="1">Lorem Ipsun</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-12 col-md-6 mt-0">
+                                                            <select class="form-select"
+                                                                aria-label="Default select example">
+                                                                <option selected>Mesas</option>
+                                                                <option value="1">Lorem Ipsun</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-12 col-md-6 mt-3">
+                                                            <select class="form-select"
+                                                                aria-label="Default select example">
+                                                                <option selected>Comissões Permanentes</option>
+                                                                <option value="1">Lorem Ipsun</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-12 col-md-6 mt-3">
+                                                            <select class="form-select"
+                                                                aria-label="Default select example">
+                                                                <option selected>Lideranças</option>
+                                                                <option value="1">Lorem Ipsun</option>
+                                                            </select>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-6">
+                                    <div class="col-12 col-md-6">
+                                        <input class="form-control" type="text" placeholder="Filtrar pelo nome" />
+                                    </div>
+                                    <div class="col-12 col-md-6 text-end">
+                                        <p>3 Deputados encontrados <i class="bi bi-arrow-down-short fs-5"></i>
+                                        </p>
+
+                                    </div>
+
+                                </div>
+
+                                <ul class="list-group mt-3 rounded-0">
+                                    <li class="list-group-item py-3">
+                                        <div class="d-flex align-items-center">
+                                            <div class="me-3 me-lg-4">
+                                                <img src="https://www.almg.gov.br/export/sites/default/deputados/fotos/15245.jpg"
+                                                    alt="" class="avatar rounded-circle xx" />
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <div class="d-sm-flex align-items-center">
+                                                    <div class="mb-3 mb-sm-0 flex-grow-1 w-50">
+                                                        <a class="h5 link-gray-800" href="#!">Agostinho Patrus <span
+                                                                class="badge bg-gray-500">PV</span></a>
+                                                        <p class="mb-0 small">Presidente</p>
+                                                    </div>
+                                                    <div class="w-25"><i
+                                                            class="bi bi-telephone-fill text-gray-500 fs-5 align-middle"></i>
+                                                        (31) 2108-7288</div>
+                                                    <div class="d-flex w-25 flex-row-reverse">
+                                                        <a class="d-block width-2x height-2x me-3 hover-lift hover-shadow rounded-circle"
+                                                            href="#"><img src="../assets/img/brands/Instagram.svg"
+                                                                alt="" class="rounded-circle w-100 h-auto"></a>
+                                                        <a class="d-block width-2x height-2x me-3 hover-lift hover-shadow rounded-circle"
+                                                            href="#"><img src="../assets/img/brands/Facebook.svg" alt=""
+                                                                class="rounded-circle w-100 h-auto"></a>
+                                                        <a class="d-block width-2x height-2x me-3 hover-lift hover-shadow rounded-circle"
+                                                            href="#"><img src="../assets/img/brands/Twitter.svg" alt=""
+                                                                class="rounded-circle w-100 h-auto"></a>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="list-group-item py-3 bg-light">
+                                        <div class="d-flex align-items-center">
+                                            <div class="me-3 me-lg-4">
+                                                <img src="https://www.almg.gov.br/export/sites/default/deputados/fotos/7752.jpg"
+                                                    alt="" class="avatar rounded-circle xx" />
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <div class="d-sm-flex align-items-center">
+                                                    <div class="mb-3 mb-sm-0 flex-grow-1 w-50">
+                                                        <a class="h5 link-gray-800" href="#!">Alencar da Silveira Jr.
+                                                            <span class="badge bg-gray-500">PDT</span></a>
+
+                                                    </div>
+                                                    <div class="w-25"><i
+                                                            class="bi bi-telephone-fill text-gray-500 fs-5 align-middle"></i>
+                                                        (31) 2108-7288</div>
+                                                    <div class="d-flex w-25 flex-row-reverse">
+                                                        <a class="d-block width-2x height-2x me-3 hover-lift hover-shadow rounded-circle"
+                                                            href="#"><img src="../assets/img/brands/Instagram.svg"
+                                                                alt="" class="rounded-circle w-100 h-auto"></a>
+                                                        <a class="d-block width-2x height-2x me-3 hover-lift hover-shadow rounded-circle"
+                                                            href="#"><img src="../assets/img/brands/Facebook.svg" alt=""
+                                                                class="rounded-circle w-100 h-auto"></a>
+                                                        <a class="d-block width-2x height-2x me-3 hover-lift hover-shadow rounded-circle"
+                                                            href="#"><img src="../assets/img/brands/Twitter.svg" alt=""
+                                                                class="rounded-circle w-100 h-auto"></a>
+                                                        <a class="d-block width-2x height-2x me-3 hover-lift hover-shadow rounded-circle"
+                                                            href="#"><img src="../assets/img/brands/Youtube.svg" alt=""
+                                                                class="rounded-circle w-100 h-auto"></a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="list-group-item py-3">
+                                        <div class="d-flex align-items-center">
+                                            <div class="me-3 me-lg-4">
+                                                <img src="https://www.almg.gov.br/export/sites/default/deputados/fotos/19150.jpg"
+                                                    alt="" class="avatar rounded-circle xx border-2 border-dark" />
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <div class="d-sm-flex align-items-center">
+                                                    <div class="mb-3 mb-sm-0 flex-grow-1 w-50">
+                                                        <a class="h5 link-gray-800" href="#!">Ana Paula Siqueira <span
+                                                                class="badge bg-gray-500">REDE</span></a>
+                                                    </div>
+                                                    <div class="w-25"><i
+                                                            class="bi bi-telephone-fill text-gray-500 fs-5 align-middle"></i>
+                                                        (31) 2108-7288</div>
+                                                    <div class="d-flex w-25 flex-row-reverse">
+                                                        <a class="d-block width-2x height-2x me-3 hover-lift hover-shadow rounded-circle"
+                                                            href="#"><img src="../assets/img/brands/Instagram.svg"
+                                                                alt="" class="rounded-circle w-100 h-auto"></a>
+
+                                                        <a class="d-block width-2x height-2x me-3 hover-lift hover-shadow rounded-circle"
+                                                            href="#"><img src="../assets/img/brands/Twitter.svg" alt=""
+                                                                class="rounded-circle w-100 h-auto"></a>
+                                                        <a class="d-block width-2x height-2x me-3 hover-lift hover-shadow rounded-circle"
+                                                            href="#"><img src="../assets/img/brands/Youtube.svg" alt=""
+                                                                class="rounded-circle w-100 h-auto"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+            </section>
+        </main>
+
+        @@include('../partials/footers/almg-footer2.html')
+
+        <!-- scripts -->
+        <script src="../assets/js/theme.bundle.js"></script>
+
+</body>
+
+</html>
