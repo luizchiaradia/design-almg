@@ -29101,14 +29101,14 @@ img.bg-image {
   opacity: 1;
 }
 
-.nav-custom-secondary .nav .nav-link {
+.nav-custom2 .nav .nav-link {
   background-color: #e7e7ef;
   color: #6C718C;
 }
-.nav-custom-secondary .nav .nav-link.active, .nav-custom-secondary .nav .nav-link:hover {
+.nav-custom2 .nav .nav-link.active, .nav-custom2 .nav .nav-link:hover {
   color: #fff;
 }
-.nav-custom-secondary .nav .nav-link.active {
+.nav-custom2 .nav .nav-link.active {
   background-color: #6C718C;
   color: #ab0000;
 }
