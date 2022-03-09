@@ -29101,6 +29101,18 @@ img.bg-image {
   opacity: 1;
 }
 
+.nav-custom-secondary .nav .nav-link {
+  background-color: #e7e7ef;
+  color: #6C718C;
+}
+.nav-custom-secondary .nav .nav-link.active, .nav-custom-secondary .nav .nav-link:hover {
+  color: #fff;
+}
+.nav-custom-secondary .nav .nav-link.active {
+  background-color: #377094;
+  color: #ab0000;
+}
+
 .nav .nav-link:not(.disabled) {
   color: #232A42;
 }

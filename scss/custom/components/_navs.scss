@@ -1,3 +1,21 @@
+.nav-custom-secondary {
+    .nav {
+        .nav-link {
+            background-color: $gray-200;
+            color: $gray-500;
+            &.active,
+            &:hover {
+                color: $component-active-color;
+            }
+        }
+
+        .nav-link.active{
+            background-color: $secondary;
+            color: $component-active-bg;
+        }
+    }
+}
+
 //Navs
 .nav {
     .nav-link:not(.disabled) {
