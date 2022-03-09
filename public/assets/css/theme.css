@@ -26910,7 +26910,7 @@ b, strong {
   color: #6C718C;
 }
 .accordion.accordion-custom2 .accordion-button:not(.collapsed) {
-  background-color: #377094;
+  background-color: #6C718C;
   color: #fff;
 }
 .accordion.accordion-custom2 .accordion-button:focus {
@@ -29109,7 +29109,7 @@ img.bg-image {
   color: #fff;
 }
 .nav-custom-secondary .nav .nav-link.active {
-  background-color: #377094;
+  background-color: #6C718C;
   color: #ab0000;
 }
 
