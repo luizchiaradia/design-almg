@@ -46,7 +46,7 @@
 }
 
 .text-white .grid-separator > * {
-  box-shadow: -1px -1px 0 0 rgba(255, 255, 255, 0.125);
+  box-shadow: -1px -1px 0 0 white;
 }
 
 /*!

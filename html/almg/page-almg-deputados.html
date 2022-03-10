@@ -25,15 +25,15 @@
             @@include('../partials/breadcrumbs/almg-breadcrumbs.html')
             <section>
                 <div class="container px-lg-15 py-4 py-lg-6">
-                    <div class="row mb-3 g-lg-8">
+                    <div class="row">
                         <div class="col-12">
-                            <p>A ALMG é formada por 77 deputados, eleitos para um mandato de quatro anos (período que é
+                            <p class="d-none d-lg-block mb-0 mb-lg-4">A ALMG é formada por 77 deputados, eleitos para um mandato de quatro anos (período que é
                                 conhecido como legislatura).
                                 Conheça cada deputado: biografia, posicionamento político,
                                 produção legislativa e prestação de contas.
                             </p>
 
-                            <div class="accordion accordion-custom2 mt-4" id="pesquisaDeputado">
+                            <div class="accordion accordion-custom2" id="pesquisaDeputado">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="legAtual">
                                         <button class="accordion-button btn-secondary text-uppercase" type="button"
@@ -46,29 +46,29 @@
                                         aria-labelledby="legAtual" data-bs-parent="#pesquisaDeputado">
                                         <div class="accordion-body nav-custom2 bg-light">
                                             <ul class="nav nav-pills d-flex flex-center" id="pills-tab-legAtual" role="tablist">
-                                                <li class="nav-item" role="presentation">
-                                                    <button class="nav-link me-1 rounded-0 rounded-top active"
+                                                <li class="nav-item w-100 w-lg-auto mb-1 mb-lg-0" role="presentation">
+                                                    <button class="w-100 w-lg-auto nav-link  me-0 me-lg-1 rounded-0 rounded-top-lg-1 active"
                                                         id="pills-situacao-tab" data-bs-toggle="pill"
                                                         data-bs-target="#pills-situacao" type="button" role="tab"
                                                         aria-controls="pills-situacao" aria-selected="true">Por
                                                         Situação</button>
                                                 </li>
-                                                <li class="nav-item" role="presentation">
-                                                    <button class="nav-link me-1 rounded-0 rounded-top"
+                                                <li class="nav-item w-100 w-lg-auto mb-1 mb-lg-0" role="presentation">
+                                                    <button class="w-100 w-lg-auto nav-link me-0 me-lg-1 rounded-0 rounded-top-lg-1"
                                                         id="pills-partido-tab" data-bs-toggle="pill"
                                                         data-bs-target="#pills-partido" type="button" role="tab"
                                                         aria-controls="pills-partido" aria-selected="false">Por
                                                         Partido</button>
                                                 </li>
-                                                <li class="nav-item" role="presentation">
-                                                    <button class="nav-link rounded-0 rounded-top"
+                                                <li class="nav-item w-100 w-lg-auto mb-1 mb-lg-0" role="presentation">
+                                                    <button class="w-100 w-lg-auto nav-link rounded-0 rounded-top-lg-1"
                                                         id="pills-bloco-tab" data-bs-toggle="pill"
                                                         data-bs-target="#pills-bloco" type="button" role="tab"
                                                         aria-controls="pills-bloco" aria-selected="false">Por
                                                         Bloco</button>
                                                 </li>
                                             </ul>
-                                            <div class="tab-content pt-3 border-top pesquisaDeputado" id="pills-tabContent">
+                                            <div class="tab-content pt-3 border-0 border-top-lg" id="pills-tab-legAtual">
                                                 <div class="tab-pane fade show active" id="pills-situacao" role="tabpanel"
                                                     aria-labelledby="pills-situacao-tab">
                                                     <form class="row">
@@ -80,7 +80,7 @@
                                                             </select>
                                                         </div>
                                                         <div class="col-12 mt-3 text-end">
-                                                            <a href="#" class="btn btn-gray-800 btn-sm text-uppercase">
+                                                            <a href="#" class="w-100 w-lg-auto btn btn-gray-800 btn-sm text-uppercase">
                                                                 <i class="bi bi-search fs-6 me-2 lh-1"></i>Buscar
                                                             </a>
                                                         </div>
@@ -97,7 +97,7 @@
                                                             </select>
                                                         </div>
                                                         <div class="col-12 mt-3 text-end">
-                                                            <a href="#" class="btn btn-gray-800 btn-sm text-uppercase">
+                                                            <a href="#" class="w-100 w-lg-auto btn btn-gray-800 btn-sm text-uppercase">
                                                                 <i class="bi bi-search fs-6 me-2 lh-1"></i>Buscar
                                                             </a>
                                                         </div>
@@ -114,14 +114,13 @@
                                                             </select>
                                                         </div>
                                                         <div class="col-12 mt-3 text-end">
-                                                            <a href="#" class="btn btn-gray-800 btn-sm text-uppercase">
+                                                            <a href="#" class="w-100 w-lg-auto btn btn-gray-800 btn-sm text-uppercase">
                                                                 <i class="bi bi-search fs-6 me-2 lh-1"></i>Buscar
                                                             </a>
                                                         </div>
                                                     </form>
                                                 </div>
                                             </div>
-
                                         </div>
                                     </div>
                                 </div>
@@ -136,21 +135,21 @@
                                     <div id="collapseLegAnterior" class="accordion-collapse collapse"
                                         aria-labelledby="legAnterior" data-bs-parent="#pesquisaDeputado">
                                         <div class="accordion-body nav-custom2 bg-light">
-                                            <ul class="nav nav-pills d-flex flex-center" id="pills-tab" role="tablist">
-                                                <li class="nav-item" role="presentation">
-                                                    <button class="nav-link me-1 rounded-0 rounded-top active"
+                                            <ul class="nav nav-pills d-flex flex-center" id="pills-tab-legAnterior" role="tablist">
+                                                <li class="nav-item w-100 w-lg-auto mb-1 mb-lg-0" role="presentation">
+                                                    <button class="w-100 w-lg-auto nav-link  me-0 me-lg-1 rounded-0 rounded-top-lg-1 active"
                                                         id="pills-14-18-tab" data-bs-toggle="pill"
                                                         data-bs-target="#pills-14-18" type="button" role="tab"
                                                         aria-controls="pills-14-18" aria-selected="true">14ª a 18ª Legislatura</button>
                                                 </li>
-                                                <li class="nav-item" role="presentation">
-                                                    <button class="nav-link me-1 rounded-0 rounded-top"
+                                                <li class="nav-item w-100 w-lg-auto mb-1 mb-lg-0" role="presentation">
+                                                    <button class="w-100 w-lg-auto nav-link  me-0 me-lg-1 rounded-0 rounded-top-lg-1"
                                                         id="pills-1-13-tab" data-bs-toggle="pill"
                                                         data-bs-target="#pills-1-13" type="button" role="tab"
                                                         aria-controls="pills-1-13" aria-selected="false">1ª a 13ª Legislatura</button>
                                                 </li>
                                             </ul>
-                                            <div class="tab-content pt-3 border-top pesquisaDeputado" id="pills-tabContent">
+                                            <div class="tab-content pt-3 border-0 border-top-lg" id="pills-tab-legAnterior">
                                                 <div class="tab-pane fade show active" id="pills-14-18" role="tabpanel"
                                                     aria-labelledby="pills-14-18-tab">
                                                     <form class="row">
@@ -161,7 +160,7 @@
                                                                 <option value="1">Lorem Ipsun</option>
                                                             </select>
                                                         </div>
-                                                        <div class="col-12 col-md-6 mt-0">
+                                                        <div class="col-12 col-md-6 mt-2 mt-lg-0">
                                                             <select class="form-select"
                                                                 aria-label="Default select example">
                                                                 <option selected>Situação</option>
@@ -169,7 +168,7 @@
                                                             </select>
                                                         </div>
                                                         <div class="col-12 mt-3 text-end">
-                                                            <a href="#" class="btn btn-gray-800 btn-sm text-uppercase">
+                                                            <a href="#" class="w-100 w-lg-auto btn btn-gray-800 btn-sm text-uppercase">
                                                                 <i class="bi bi-search fs-6 me-2 lh-1"></i>Buscar
                                                             </a>
                                                         </div>
@@ -185,21 +184,21 @@
                                                                 <option value="1">Lorem Ipsun</option>
                                                             </select>
                                                         </div>
-                                                        <div class="col-12 col-md-6 mt-0">
+                                                        <div class="col-12 col-md-6 mt-2 mt-lg-0">
                                                             <select class="form-select"
                                                                 aria-label="Default select example">
                                                                 <option selected>Mesas</option>
                                                                 <option value="1">Lorem Ipsun</option>
                                                             </select>
                                                         </div>
-                                                        <div class="col-12 col-md-6 mt-3">
+                                                        <div class="col-12 col-md-6 mt-2">
                                                             <select class="form-select"
                                                                 aria-label="Default select example">
                                                                 <option selected>Comissões Permanentes</option>
                                                                 <option value="1">Lorem Ipsun</option>
                                                             </select>
                                                         </div>
-                                                        <div class="col-12 col-md-6 mt-3">
+                                                        <div class="col-12 col-md-6 mt-2">
                                                             <select class="form-select"
                                                                 aria-label="Default select example">
                                                                 <option selected>Lideranças</option>
@@ -213,10 +212,10 @@
                                     </div>
                                 </div>
                                 <div class="row mt-6">
-                                    <div class="col-12 col-md-6">
+                                    <div class="col-12 col-lg-6">
                                         <input class="form-control" type="text" placeholder="Filtrar pelo nome" />
                                     </div>
-                                    <div class="col-12 col-md-6 text-end">
+                                    <div class="col-12 col-lg-6 text-center text-lg-end mt-4 mt-lg-0">
                                         <p>3 Deputados encontrados <i class="bi bi-arrow-down-short fs-5"></i>
                                         </p>
 
@@ -224,7 +223,7 @@
 
                                 </div>
 
-                                <ul class="list-group mt-3 rounded-0">
+                                <ul class="list-group mt-2 rounded-0">
                                     <li class="list-group-item py-3">
                                         <div class="d-flex align-items-center">
                                             <div class="me-3 me-lg-4">
