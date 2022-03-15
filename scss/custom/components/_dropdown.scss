@@ -36,7 +36,7 @@
 }
 
 //Dropdown Mega Menu
-@include media-breakpoint-up(lg) {
+@include media-breakpoint-up(xl) {
     .navbar .dropdown-menu-end {
         right:0;
         left: auto;

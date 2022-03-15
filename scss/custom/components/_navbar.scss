@@ -457,3 +457,13 @@ header.header-transparent.sticky-fixed{
         }
     }
 }
+
+@include media-breakpoint-between(xl, xxl) { 
+    .navbar {
+        .navbar-nav {
+            .nav-link {
+                font-size: .90rem;
+            }
+        }
+    }
+}

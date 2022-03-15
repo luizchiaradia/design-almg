@@ -29508,6 +29508,11 @@ header.header-transparent.sticky-fixed.is-fixed .navbar-dark .navbar-fixed-bg {
   background-color: rgba(14, 17, 31, 0.985);
 }
 
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .navbar .navbar-nav .nav-link {
+    font-size: 0.9rem;
+  }
+}
 .dropdown-menu {
   box-shadow: 0 1rem 3rem rgba(14, 17, 31, 0.125);
 }
@@ -29536,7 +29541,7 @@ header.header-transparent.sticky-fixed.is-fixed .navbar-dark .navbar-fixed-bg {
   width: 300px;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .navbar .dropdown-menu-end {
     right: 0;
     left: auto;
