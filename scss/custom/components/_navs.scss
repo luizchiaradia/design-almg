@@ -40,8 +40,8 @@
             color: $component-active-bg;
         }
         @include media-breakpoint-up(lg) {
-            .nav-item:not(:last-child) {
-                border-right: 3px solid $light;
+            .nav-item:not(:last-child)  {
+                border-right: 1px solid $light;
             }
         }
     }

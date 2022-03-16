@@ -29132,7 +29132,7 @@ img.bg-image {
 }
 @media (min-width: 992px) {
   .nav-custom3 .nav .nav-item:not(:last-child) {
-    border-right: 3px solid #f9f9fe;
+    border-right: 1px solid #f9f9fe;
   }
 }
 
