@@ -29131,8 +29131,8 @@ img.bg-image {
   color: #ab0000;
 }
 @media (min-width: 992px) {
-  .nav-custom3 .nav .nav-item:not(:first-child) .nav-link {
-    border-left: 2px solid #e7e7ef;
+  .nav-custom3 .nav .nav-item:not(:last-child) {
+    border-right: 5px solid #e7e7ef;
   }
 }
 

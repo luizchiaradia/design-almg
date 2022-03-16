@@ -40,8 +40,8 @@
             color: $component-active-bg;
         }
         @include media-breakpoint-up(lg) {
-            .nav-item:not(:first-child) .nav-link {
-                border-left: 2px solid $gray-200;
+            .nav-item:not(:last-child) {
+                border-right: 5px solid $gray-200;
             }
         }
     }
