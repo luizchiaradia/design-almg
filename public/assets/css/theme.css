@@ -29113,6 +29113,29 @@ img.bg-image {
   color: #ab0000;
 }
 
+.nav-custom3 .nav .nav-link {
+  background-color: #f9f9fe;
+  color: #fff;
+}
+.nav-custom3 .nav .nav-link.active, .nav-custom3 .nav .nav-link:hover {
+  color: #fff;
+}
+.nav-custom3 .nav .nav-link:not(.disabled) {
+  color: #232A42;
+}
+.nav-custom3 .nav .nav-link:not(.disabled).active {
+  color: #fff;
+}
+.nav-custom3 .nav .nav-link.active {
+  background-color: #6C718C;
+  color: #ab0000;
+}
+@media (min-width: 992px) {
+  .nav-custom3 .nav .nav-item:not(:first-child) .nav-link {
+    border-left: 2px solid #e7e7ef;
+  }
+}
+
 .nav .nav-link:not(.disabled) {
   color: #232A42;
 }

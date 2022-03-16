@@ -16,6 +16,37 @@
     }
 }
 
+.nav-custom3 {
+    .nav {
+        .nav-link {
+            background-color: $light;
+            color: $white;
+            &.active,
+            &:hover {
+                color: $white;
+            }
+        }
+            
+        .nav-link:not(.disabled) {
+            color: $body-color;
+            &.active{
+                color: $white;
+            }
+            
+        }
+
+        .nav-link.active{
+            background-color: $gray-500;
+            color: $component-active-bg;
+        }
+        @include media-breakpoint-up(lg) {
+            .nav-item:not(:first-child) .nav-link {
+                border-left: 2px solid $gray-200;
+            }
+        }
+    }
+}
+
 //Navs
 .nav {
     .nav-link:not(.disabled) {
