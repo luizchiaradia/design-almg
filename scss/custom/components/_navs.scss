@@ -19,7 +19,7 @@
 .nav-custom3 {
     .nav {
         .nav-link {
-            background-color: $light;
+            background-color: $gray-200;
             color: $white;
             &.active,
             &:hover {
@@ -41,7 +41,7 @@
         }
         @include media-breakpoint-up(lg) {
             .nav-item:not(:last-child) {
-                border-right: 5px solid $gray-200;
+                border-right: 3px solid $light;
             }
         }
     }
