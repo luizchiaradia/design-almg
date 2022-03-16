@@ -27,15 +27,23 @@
                 <div class="bg-gray-400">
                     <div class="container-fluid container-lg">
                         <div class="row">
-                            <div class="col-12 px-0 d-flex justify-content-end">
-                                <a class="p-2 ps-3 bg-gray-500 d-lg-none me-1" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseExample3" aria-expanded="false"
+                            <div class="col-6 d-lg-none px-0 d-flex justify-content-start">
+                                <div class="p-2">
+                                    <a class="link-gray-800" href="#">
+                                        <i class="bi bi-arrow-left-short fs-5 lh-1 text-gray-800 align-bottom"></i>
+                                        <span class="small align-bottom">Lorem Ipsum</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6 px-0 d-flex justify-content-end">
+                                <a class="p-2 ps-3 bg-gray-500 d-lg-none border-end border-gray-400" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false"
                                     aria-controls="collapseExample3">
                                     <i class="bi bi-three-dots fs-5 me-2 lh-1 text-white"></i>
                                 </a>
                                 <a class="p-2 ps-3 bg-gray-500 d-lg-none" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseExample" aria-expanded="false"
-                                    aria-controls="collapseExample">
+                                    aria-controls="collapseExample" data-bs-parent="#menuContent">
                                     <i class="bi bi-search fs-5 me-2 lh-1 text-white"></i>
                                 </a>
                             </div>
@@ -45,7 +53,8 @@
                                         <div class="col-12 nav-custom3">
                                             <ul class="nav nav-fill flex-column flex-lg-row">
                                                 <li class="nav-item">
-                                                    <a class="nav-link active" aria-current="page" href="#">Lorem ipsum dolor</a>
+                                                    <a class="nav-link active" aria-current="page" href="#">Lorem ipsum
+                                                        dolor</a>
                                                 </li>
                                                 <li class="nav-item">
                                                     <a class="nav-link" href="#">Consectetur adipisicing elit</a>
