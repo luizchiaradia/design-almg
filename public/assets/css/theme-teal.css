@@ -25628,13 +25628,16 @@ b, strong {
 }
 .headings .title {
   margin: 0;
+  background-color: #9EA7B0;
+  color: #fff;
+  padding: 0.5rem 0.7rem;
 }
 .headings .hr {
   display: block;
   flex: 1;
-  margin: 0 0 0 15px;
-  height: 2px;
-  background: #F0F5FA;
+  margin: 0 15px 0 15px;
+  height: 3px;
+  background: #9EA7B0;
 }
 
 @-webkit-keyframes textGradientAnimation {
@@ -30634,6 +30637,15 @@ th {
 
 .dropstart .dropdown-toggle-split.dropdown-toggle::before {
   margin-right: 0px;
+}
+
+.page-link a {
+  color: #1F252C;
+}
+
+.page-item.active .page-link {
+  background-color: #1F252C;
+  border-color: #1F252C;
 }
 
 .page-item:not(:first-child) {
