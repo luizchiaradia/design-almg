@@ -30640,12 +30640,12 @@ th {
 }
 
 .page-link a {
-  color: #2a292e;
+  color: #9b96a1;
 }
 
 .page-item.active .page-link {
-  background-color: #2a292e;
-  border-color: #2a292e;
+  background-color: #9b96a1;
+  border-color: #9b96a1;
 }
 
 .page-item:not(:first-child) {

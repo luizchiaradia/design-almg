@@ -32148,12 +32148,12 @@ th {
 }
 
 .page-link a {
-  color: #232A42;
+  color: #6C718C;
 }
 
 .page-item.active .page-link {
-  background-color: #232A42;
-  border-color: #232A42;
+  background-color: #6C718C;
+  border-color: #6C718C;
 }
 
 .page-item:not(:first-child) {
