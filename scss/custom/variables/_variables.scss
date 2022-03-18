@@ -6,13 +6,27 @@
 // Color system
 
 // scss-docs-start gray-color-variables
-/*Default*/
+/*Default
 $white:    #fff !default;
 $gray-100: #f9f9fe !default;
 $gray-200: #e7e7ef !default;
 $gray-300: #d6d6df !default;
 $gray-400: #c5c5cf !default;
 $gray-500: #898997 !default;
+$gray-600: #474e5f !default;
+$gray-700: #343a49 !default;
+$gray-800: #252a36 !default;
+$gray-900: #191d27 !default;
+$black:    #0e1119 !default;
+*/
+
+/*Default 2*/
+$white:    #fff !default;
+$gray-100: #f4f4ef !default;
+$gray-200: #e1e0d9 !default;
+$gray-300: #c6c5bb !default;
+$gray-400: #b5b4ab !default;
+$gray-500: #9b9a8f !default;
 $gray-600: #474e5f !default;
 $gray-700: #343a49 !default;
 $gray-800: #252a36 !default;
