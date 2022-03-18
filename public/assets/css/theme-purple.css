@@ -27726,6 +27726,10 @@ img.bg-image {
 }
 .nav-custom2 .nav .nav-link.active, .nav-custom2 .nav .nav-link:hover {
   color: #ffffff;
+  background-color: #9b96a1;
+}
+.nav-custom2 .nav .nav-link:hover {
+  color: #ffffff !important;
 }
 .nav-custom2 .nav .nav-link.active {
   background-color: #4e4b53;
@@ -27733,16 +27737,20 @@ img.bg-image {
 }
 
 .nav-custom3 .nav .nav-link {
-  color: #ffffff;
+  background-color: #dbd8df;
+  color: #343238;
 }
 .nav-custom3 .nav .nav-link.active, .nav-custom3 .nav .nav-link:hover {
   color: #ffffff;
-  background-color: #343238;
+  background-color: #9b96a1;
 }
 .nav-custom3 .nav .nav-link:not(.disabled) {
-  color: #ffffff !important;
+  color: #343238 !important;
 }
 .nav-custom3 .nav .nav-link:not(.disabled).active, .nav-custom3 .nav .nav-link:not(.disabled).hover {
+  color: #ffffff !important;
+}
+.nav-custom3 .nav .nav-link:hover {
   color: #ffffff !important;
 }
 .nav-custom3 .nav .nav-link.active {

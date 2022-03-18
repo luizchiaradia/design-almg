@@ -30032,6 +30032,10 @@ img.bg-image {
 }
 .nav-custom2 .nav .nav-link.active, .nav-custom2 .nav .nav-link:hover {
   color: #fff;
+  background-color: #898997;
+}
+.nav-custom2 .nav .nav-link:hover {
+  color: #fff !important;
 }
 .nav-custom2 .nav .nav-link.active {
   background-color: #474e5f;
@@ -30039,16 +30043,20 @@ img.bg-image {
 }
 
 .nav-custom3 .nav .nav-link {
-  color: #fff;
+  background-color: #d6d6df;
+  color: #343a49;
 }
 .nav-custom3 .nav .nav-link.active, .nav-custom3 .nav .nav-link:hover {
   color: #fff;
-  background-color: #007D94;
+  background-color: #898997;
 }
 .nav-custom3 .nav .nav-link:not(.disabled) {
-  color: #fff !important;
+  color: #343a49 !important;
 }
 .nav-custom3 .nav .nav-link:not(.disabled).active, .nav-custom3 .nav .nav-link:not(.disabled).hover {
+  color: #fff !important;
+}
+.nav-custom3 .nav .nav-link:hover {
   color: #fff !important;
 }
 .nav-custom3 .nav .nav-link.active {

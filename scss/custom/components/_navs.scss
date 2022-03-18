@@ -5,8 +5,12 @@
             color: $gray-500;
             &.active,
             &:hover {
-                color: $component-active-color;
+                color: $white;
+                background-color: $gray-500;
             }
+        }
+        .nav-link:hover {
+            color: $white !important;
         }
 
         .nav-link.active{
@@ -19,21 +23,25 @@
 .nav-custom3 {
     .nav {
         .nav-link {
-            color: $white;
+            background-color: $gray-300;
+            color: $gray-700;
             &.active,
             &:hover {
                 color: $white;
-                background-color: $secondary;
+                background-color: $gray-500;
             }
         }
             
         .nav-link:not(.disabled) {
-            color: $white !important;
+            color: $gray-700 !important;
             &.active,
             &.hover{
                 color: $white !important;
             }
             
+        }
+        .nav-link:hover {
+            color: $white !important;
         }
 
         .nav-link.active{
