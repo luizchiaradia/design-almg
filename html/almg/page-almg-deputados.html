@@ -19,229 +19,225 @@
     <header class="">
         @@include('../partials/headers/almg-navbar.html')
         @@include('../partials/search/almg-search.html')
-        </!--header>
-        <!--Main content-->
-        <main>
-            @@include('../partials/breadcrumbs/almg-breadcrumbs-deputados.html')
-            <section>
-                <div class="bg-gray-400">
-                    <div class="container-fluid container-lg">
-                        <div class="row">
-                            <div class="col-12 px-0 d-flex justify-content-end">
-                                <a class="p-2 ps-3 bg-gray-500 d-lg-none" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseExample" aria-expanded="false"
-                                    aria-controls="collapseExample">
-                                    <i class="bi bi-search fs-5 me-2 lh-1 text-white"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="container-fluid container-lg px-xl-15 py-0 mb-4 py-lg-6">
+    </header>
+    <!--Main content-->
+    <main>
+        @@include('../partials/breadcrumbs/almg-breadcrumbs-deputados.html')
+        <section>
+            <div class="bg-gray-400">
+                <div class="container-fluid container-lg">
                     <div class="row">
-                        <div class="col-12 px-0 px-lg-2">
-                            <p class="d-none d-lg-block mb-0 mb-lg-4">A ALMG é formada por 77 deputados, eleitos para um
-                                mandato de quatro anos (período que é
-                                conhecido como legislatura).
-                                Conheça cada deputado: biografia, posicionamento político,
-                                produção legislativa e prestação de contas.
-                            </p>
+                        <div class="col-12 px-0 d-flex justify-content-end">
+                            <a class="p-2 ps-3 bg-gray-500 d-lg-none" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                <i class="bi bi-search fs-5 me-2 lh-1 text-white"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid container-lg px-xl-15 py-0 mb-4 py-lg-6">
+                <div class="row">
+                    <div class="col-12 px-0 px-lg-2">
+                        <p class="d-none d-lg-block mb-0 mb-lg-4">A ALMG é formada por 77 deputados, eleitos para um
+                            mandato de quatro anos (período que é
+                            conhecido como legislatura).
+                            Conheça cada deputado: biografia, posicionamento político,
+                            produção legislativa e prestação de contas.
+                        </p>
 
-                            <div class="collapse d-lg-block" id="collapseExample">
-                                <div class="accordion accordion-custom2" id="pesquisaDeputado">
-                                    <div class="accordion-item border-0">
-                                        <h2 class="accordion-header" id="legAtual">
-                                            <button class="accordion-button btn-secondary text-uppercase rounded-0 rounded-top-lg-2" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#collapseLegAtual"
-                                                aria-expanded="true" aria-controls="collapseLegAtual">
-                                                <i class="bi bi-search fs-5 me-2 lh-1 d-none d-lg-block"></i> Legislatura Atual
-                                            </button>
-                                        </h2>
-                                        <div id="collapseLegAtual" class="accordion-collapse collapse show"
-                                            aria-labelledby="legAtual" data-bs-parent="#pesquisaDeputado">
-                                            <div class="accordion-body nav-custom2 bg-light">
-                                                <ul class="nav nav-pills d-flex flex-center" id="pills-tab-legAtual"
-                                                    role="tablist">
-                                                    <li class="nav-item w-100 w-lg-auto mb-1 mb-lg-0"
-                                                        role="presentation">
-                                                        <button
-                                                            class="w-100 w-lg-auto nav-link  me-0 me-lg-1 rounded-0 rounded-top-lg-1 active"
-                                                            id="pills-situacao-tab" data-bs-toggle="pill"
-                                                            data-bs-target="#pills-situacao" type="button" role="tab"
-                                                            aria-controls="pills-situacao" aria-selected="true">Por
-                                                            Situação</button>
-                                                    </li>
-                                                    <li class="nav-item w-100 w-lg-auto mb-1 mb-lg-0"
-                                                        role="presentation">
-                                                        <button
-                                                            class="w-100 w-lg-auto nav-link me-0 me-lg-1 rounded-0 rounded-top-lg-1"
-                                                            id="pills-partido-tab" data-bs-toggle="pill"
-                                                            data-bs-target="#pills-partido" type="button" role="tab"
-                                                            aria-controls="pills-partido" aria-selected="false">Por
-                                                            Partido</button>
-                                                    </li>
-                                                    <li class="nav-item w-100 w-lg-auto mb-1 mb-lg-0"
-                                                        role="presentation">
-                                                        <button
-                                                            class="w-100 w-lg-auto nav-link rounded-0 rounded-top-lg-1"
-                                                            id="pills-bloco-tab" data-bs-toggle="pill"
-                                                            data-bs-target="#pills-bloco" type="button" role="tab"
-                                                            aria-controls="pills-bloco" aria-selected="false">Por
-                                                            Bloco</button>
-                                                    </li>
-                                                </ul>
-                                                <div class="tab-content pt-3 border-0 border-top-lg"
-                                                    id="pills-tab-legAtual">
-                                                    <div class="tab-pane fade show active" id="pills-situacao"
-                                                        role="tabpanel" aria-labelledby="pills-situacao-tab">
-                                                        <form class="row">
-                                                            <div class="col-md-12 mt-0">
-                                                                <select class="form-select"
-                                                                    aria-label="Default select example">
-                                                                    <option selected>Situação</option>
-                                                                    <option value="1">Lorem Ipsun</option>
-                                                                </select>
-                                                            </div>
-                                                            <div class="col-12 mt-3 text-end">
-                                                                <a href="#"
-                                                                    class="w-100 w-lg-auto btn btn-gray-800 text-uppercase">
-                                                                    <i class="bi bi-search fs-6 me-2 lh-1"></i>Buscar
-                                                                </a>
-                                                            </div>
-                                                        </form>
-                                                    </div>
-                                                    <div class="tab-pane fade" id="pills-partido" role="tabpanel"
-                                                        aria-labelledby="pills-partido-tab">
-                                                        <form class="row">
-                                                            <div class="col-md-12 mt-0">
-                                                                <select class="form-select"
-                                                                    aria-label="Default select example">
-                                                                    <option selected>Partido</option>
-                                                                    <option value="1">Lorem Ipsun</option>
-                                                                </select>
-                                                            </div>
-                                                            <div class="col-12 mt-3 text-end">
-                                                                <a href="#"
-                                                                    class="w-100 w-lg-auto btn btn-gray-800 text-uppercase">
-                                                                    <i class="bi bi-search fs-6 me-2 lh-1"></i>Buscar
-                                                                </a>
-                                                            </div>
-                                                        </form>
-                                                    </div>
-                                                    <div class="tab-pane fade" id="pills-bloco" role="tabpanel"
-                                                        aria-labelledby="pills-bloco-tab">
-                                                        <form class="row">
-                                                            <div class="col-md-12 mt-0">
-                                                                <select class="form-select"
-                                                                    aria-label="Default select example">
-                                                                    <option selected>Bloco</option>
-                                                                    <option value="1">Lorem Ipsun</option>
-                                                                </select>
-                                                            </div>
-                                                            <div class="col-12 mt-3 text-end">
-                                                                <a href="#"
-                                                                    class="w-100 w-lg-auto btn btn-gray-800 text-uppercase">
-                                                                    <i class="bi bi-search fs-6 me-2 lh-1"></i>Buscar
-                                                                </a>
-                                                            </div>
-                                                        </form>
-                                                    </div>
+                        <div class="collapse d-lg-block" id="collapseExample">
+                            <div class="accordion accordion-custom2" id="pesquisaDeputado">
+                                <div class="accordion-item border-0">
+                                    <h2 class="accordion-header" id="legAtual">
+                                        <button
+                                            class="accordion-button btn-secondary text-uppercase rounded-0 rounded-top-lg-2"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseLegAtual"
+                                            aria-expanded="true" aria-controls="collapseLegAtual">
+                                            <i class="bi bi-search fs-5 me-2 lh-1 d-none d-lg-block"></i> Legislatura
+                                            Atual
+                                        </button>
+                                    </h2>
+                                    <div id="collapseLegAtual" class="accordion-collapse collapse show"
+                                        aria-labelledby="legAtual" data-bs-parent="#pesquisaDeputado">
+                                        <div class="accordion-body nav-custom2 bg-light">
+                                            <ul class="nav nav-pills d-flex flex-center" id="pills-tab-legAtual"
+                                                role="tablist">
+                                                <li class="nav-item w-100 w-lg-auto mb-1 mb-lg-0" role="presentation">
+                                                    <button
+                                                        class="w-100 w-lg-auto nav-link  me-0 me-lg-1 rounded-0 rounded-top-lg-1 active"
+                                                        id="pills-situacao-tab" data-bs-toggle="pill"
+                                                        data-bs-target="#pills-situacao" type="button" role="tab"
+                                                        aria-controls="pills-situacao" aria-selected="true">Por
+                                                        Situação</button>
+                                                </li>
+                                                <li class="nav-item w-100 w-lg-auto mb-1 mb-lg-0" role="presentation">
+                                                    <button
+                                                        class="w-100 w-lg-auto nav-link me-0 me-lg-1 rounded-0 rounded-top-lg-1"
+                                                        id="pills-partido-tab" data-bs-toggle="pill"
+                                                        data-bs-target="#pills-partido" type="button" role="tab"
+                                                        aria-controls="pills-partido" aria-selected="false">Por
+                                                        Partido</button>
+                                                </li>
+                                                <li class="nav-item w-100 w-lg-auto mb-1 mb-lg-0" role="presentation">
+                                                    <button class="w-100 w-lg-auto nav-link rounded-0 rounded-top-lg-1"
+                                                        id="pills-bloco-tab" data-bs-toggle="pill"
+                                                        data-bs-target="#pills-bloco" type="button" role="tab"
+                                                        aria-controls="pills-bloco" aria-selected="false">Por
+                                                        Bloco</button>
+                                                </li>
+                                            </ul>
+                                            <div class="tab-content pt-3 border-0 border-top-lg"
+                                                id="pills-tab-legAtual">
+                                                <div class="tab-pane fade show active" id="pills-situacao"
+                                                    role="tabpanel" aria-labelledby="pills-situacao-tab">
+                                                    <form class="row">
+                                                        <div class="col-md-12 mt-0">
+                                                            <select class="form-select"
+                                                                aria-label="Default select example">
+                                                                <option selected>Situação</option>
+                                                                <option value="1">Lorem Ipsun</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-12 mt-3 text-end">
+                                                            <a href="#"
+                                                                class="w-100 w-lg-auto btn btn-gray-800 text-uppercase">
+                                                                <i class="bi bi-search fs-6 me-2 lh-1"></i>Buscar
+                                                            </a>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="tab-pane fade" id="pills-partido" role="tabpanel"
+                                                    aria-labelledby="pills-partido-tab">
+                                                    <form class="row">
+                                                        <div class="col-md-12 mt-0">
+                                                            <select class="form-select"
+                                                                aria-label="Default select example">
+                                                                <option selected>Partido</option>
+                                                                <option value="1">Lorem Ipsun</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-12 mt-3 text-end">
+                                                            <a href="#"
+                                                                class="w-100 w-lg-auto btn btn-gray-800 text-uppercase">
+                                                                <i class="bi bi-search fs-6 me-2 lh-1"></i>Buscar
+                                                            </a>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="tab-pane fade" id="pills-bloco" role="tabpanel"
+                                                    aria-labelledby="pills-bloco-tab">
+                                                    <form class="row">
+                                                        <div class="col-md-12 mt-0">
+                                                            <select class="form-select"
+                                                                aria-label="Default select example">
+                                                                <option selected>Bloco</option>
+                                                                <option value="1">Lorem Ipsun</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-12 mt-3 text-end">
+                                                            <a href="#"
+                                                                class="w-100 w-lg-auto btn btn-gray-800 text-uppercase">
+                                                                <i class="bi bi-search fs-6 me-2 lh-1"></i>Buscar
+                                                            </a>
+                                                        </div>
+                                                    </form>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="accordion-item border-0">
-                                        <h2 class="accordion-header" id="legAnterior">
-                                            <button class="accordion-button collapsed text-uppercase rounded-0" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#collapseLegAnterior"
-                                                aria-expanded="false" aria-controls="collapseLegAnterior">
-                                                <i class="bi bi-search fs-5 me-2 lh-1 d-none d-lg-block"></i> Legislaturas Anteriores
-                                            </button>
-                                        </h2>
-                                        <div id="collapseLegAnterior" class="accordion-collapse collapse"
-                                            aria-labelledby="legAnterior" data-bs-parent="#pesquisaDeputado">
-                                            <div class="accordion-body nav-custom2 bg-light">
-                                                <ul class="nav nav-pills d-flex flex-center" id="pills-tab-legAnterior"
-                                                    role="tablist">
-                                                    <li class="nav-item w-100 w-lg-auto mb-1 mb-lg-0"
-                                                        role="presentation">
-                                                        <button
-                                                            class="w-100 w-lg-auto nav-link  me-0 me-lg-1 rounded-0 rounded-top-lg-1 active"
-                                                            id="pills-14-18-tab" data-bs-toggle="pill"
-                                                            data-bs-target="#pills-14-18" type="button" role="tab"
-                                                            aria-controls="pills-14-18" aria-selected="true">14ª a 18ª
-                                                            Legislatura</button>
-                                                    </li>
-                                                    <li class="nav-item w-100 w-lg-auto mb-1 mb-lg-0"
-                                                        role="presentation">
-                                                        <button
-                                                            class="w-100 w-lg-auto nav-link  me-0 me-lg-1 rounded-0 rounded-top-lg-1"
-                                                            id="pills-1-13-tab" data-bs-toggle="pill"
-                                                            data-bs-target="#pills-1-13" type="button" role="tab"
-                                                            aria-controls="pills-1-13" aria-selected="false">1ª a 13ª
-                                                            Legislatura</button>
-                                                    </li>
-                                                </ul>
-                                                <div class="tab-content pt-3 border-0 border-top-lg"
-                                                    id="pills-tab-legAnterior">
-                                                    <div class="tab-pane fade show active" id="pills-14-18"
-                                                        role="tabpanel" aria-labelledby="pills-14-18-tab">
-                                                        <form class="row">
-                                                            <div class="col-12 col-md-6 mt-0">
-                                                                <select class="form-select"
-                                                                    aria-label="Default select example">
-                                                                    <option selected>Legislatura</option>
-                                                                    <option value="1">Lorem Ipsun</option>
-                                                                </select>
-                                                            </div>
-                                                            <div class="col-12 col-md-6 mt-2 mt-lg-0">
-                                                                <select class="form-select"
-                                                                    aria-label="Default select example">
-                                                                    <option selected>Situação</option>
-                                                                    <option value="1">Lorem Ipsun</option>
-                                                                </select>
-                                                            </div>
-                                                            <div class="col-12 mt-3 text-end">
-                                                                <a href="#"
-                                                                    class="w-100 w-lg-auto btn btn-gray-800 text-uppercase">
-                                                                    <i class="bi bi-search fs-6 me-2 lh-1"></i>Buscar
-                                                                </a>
-                                                            </div>
-                                                        </form>
-                                                    </div>
-                                                    <div class="tab-pane fade" id="pills-1-13" role="tabpanel"
-                                                        aria-labelledby="pills-1-13-tab">
-                                                        <form class="row">
-                                                            <div class="col-12 col-md-6 mt-0">
-                                                                <select class="form-select"
-                                                                    aria-label="Default select example">
-                                                                    <option selected>Deputados</option>
-                                                                    <option value="1">Lorem Ipsun</option>
-                                                                </select>
-                                                            </div>
-                                                            <div class="col-12 col-md-6 mt-2 mt-lg-0">
-                                                                <select class="form-select"
-                                                                    aria-label="Default select example">
-                                                                    <option selected>Mesas</option>
-                                                                    <option value="1">Lorem Ipsun</option>
-                                                                </select>
-                                                            </div>
-                                                            <div class="col-12 col-md-6 mt-2">
-                                                                <select class="form-select"
-                                                                    aria-label="Default select example">
-                                                                    <option selected>Comissões Permanentes</option>
-                                                                    <option value="1">Lorem Ipsun</option>
-                                                                </select>
-                                                            </div>
-                                                            <div class="col-12 col-md-6 mt-2">
-                                                                <select class="form-select"
-                                                                    aria-label="Default select example">
-                                                                    <option selected>Lideranças</option>
-                                                                    <option value="1">Lorem Ipsun</option>
-                                                                </select>
-                                                            </div>
-                                                        </form>
-                                                    </div>
+                                </div>
+                                <div class="accordion-item border-0">
+                                    <h2 class="accordion-header" id="legAnterior">
+                                        <button class="accordion-button collapsed text-uppercase rounded-0"
+                                            type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseLegAnterior" aria-expanded="false"
+                                            aria-controls="collapseLegAnterior">
+                                            <i class="bi bi-search fs-5 me-2 lh-1 d-none d-lg-block"></i> Legislaturas
+                                            Anteriores
+                                        </button>
+                                    </h2>
+                                    <div id="collapseLegAnterior" class="accordion-collapse collapse"
+                                        aria-labelledby="legAnterior" data-bs-parent="#pesquisaDeputado">
+                                        <div class="accordion-body nav-custom2 bg-light">
+                                            <ul class="nav nav-pills d-flex flex-center" id="pills-tab-legAnterior"
+                                                role="tablist">
+                                                <li class="nav-item w-100 w-lg-auto mb-1 mb-lg-0" role="presentation">
+                                                    <button
+                                                        class="w-100 w-lg-auto nav-link  me-0 me-lg-1 rounded-0 rounded-top-lg-1 active"
+                                                        id="pills-14-18-tab" data-bs-toggle="pill"
+                                                        data-bs-target="#pills-14-18" type="button" role="tab"
+                                                        aria-controls="pills-14-18" aria-selected="true">14ª a 18ª
+                                                        Legislatura</button>
+                                                </li>
+                                                <li class="nav-item w-100 w-lg-auto mb-1 mb-lg-0" role="presentation">
+                                                    <button
+                                                        class="w-100 w-lg-auto nav-link  me-0 me-lg-1 rounded-0 rounded-top-lg-1"
+                                                        id="pills-1-13-tab" data-bs-toggle="pill"
+                                                        data-bs-target="#pills-1-13" type="button" role="tab"
+                                                        aria-controls="pills-1-13" aria-selected="false">1ª a 13ª
+                                                        Legislatura</button>
+                                                </li>
+                                            </ul>
+                                            <div class="tab-content pt-3 border-0 border-top-lg"
+                                                id="pills-tab-legAnterior">
+                                                <div class="tab-pane fade show active" id="pills-14-18" role="tabpanel"
+                                                    aria-labelledby="pills-14-18-tab">
+                                                    <form class="row">
+                                                        <div class="col-12 col-md-6 mt-0">
+                                                            <select class="form-select"
+                                                                aria-label="Default select example">
+                                                                <option selected>Legislatura</option>
+                                                                <option value="1">Lorem Ipsun</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-12 col-md-6 mt-2 mt-lg-0">
+                                                            <select class="form-select"
+                                                                aria-label="Default select example">
+                                                                <option selected>Situação</option>
+                                                                <option value="1">Lorem Ipsun</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-12 mt-3 text-end">
+                                                            <a href="#"
+                                                                class="w-100 w-lg-auto btn btn-gray-800 text-uppercase">
+                                                                <i class="bi bi-search fs-6 me-2 lh-1"></i>Buscar
+                                                            </a>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="tab-pane fade" id="pills-1-13" role="tabpanel"
+                                                    aria-labelledby="pills-1-13-tab">
+                                                    <form class="row">
+                                                        <div class="col-12 col-md-6 mt-0">
+                                                            <select class="form-select"
+                                                                aria-label="Default select example">
+                                                                <option selected>Deputados</option>
+                                                                <option value="1">Lorem Ipsun</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-12 col-md-6 mt-2 mt-lg-0">
+                                                            <select class="form-select"
+                                                                aria-label="Default select example">
+                                                                <option selected>Mesas</option>
+                                                                <option value="1">Lorem Ipsun</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-12 col-md-6 mt-2">
+                                                            <select class="form-select"
+                                                                aria-label="Default select example">
+                                                                <option selected>Comissões Permanentes</option>
+                                                                <option value="1">Lorem Ipsun</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-12 col-md-6 mt-2">
+                                                            <select class="form-select"
+                                                                aria-label="Default select example">
+                                                                <option selected>Lideranças</option>
+                                                                <option value="1">Lorem Ipsun</option>
+                                                            </select>
+                                                        </div>
+                                                    </form>
                                                 </div>
                                             </div>
                                         </div>
@@ -249,248 +245,252 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="col-12 col-lg-6 mt-4">
-                            <input class="form-control" type="text" placeholder="Filtrar pelo nome" />
-                        </div>
-                        <div class="col-12 col-lg-6 text-center text-lg-end mt-4 ">
-                            <p>3 Deputados encontrados <i class="bi bi-arrow-down-short fs-5"></i>
-                            </p>
+                    <div class="col-12 col-lg-6 mt-4">
+                        <input class="form-control" type="text" placeholder="Filtrar pelo nome" />
+                    </div>
+                    <div class="col-12 col-lg-6 text-center text-lg-end mt-4 ">
+                        <p>3 Deputados encontrados <i class="bi bi-arrow-down-short fs-5"></i>
+                        </p>
 
-                        </div>
+                    </div>
 
-                        <div class="col-12">
-                            <ul class="list-group mt-2 rounded-0">
-                                <li class="list-group-item py-3">
-                                    <div class="d-flex align-items-center">
-                                        <div class="me-3 me-lg-4">
-                                            <img src="https://www.almg.gov.br/export/sites/default/deputados/fotos/15245.jpg"
-                                                alt="" class="avatar rounded-circle xx" />
-                                        </div>
-                                        <div class="flex-grow-1">
-                                            <div class="d-sm-flex align-items-center">
-                                                <div class="w-100 w-lg-50">
-                                                    <p class="mb-0 small">Presidente</p>
-                                                    <a class="h5 link-gray-800 d-block mb-1" href="#!">Agostinho
-                                                        Patrus</a>
-                                                    <div class="h5 mb-0">
-                                                        <span class="badge badge-pill bg-gray-500">PV</span>
-                                                    </div>
+                    <div class="col-12">
+                        <ul class="list-group mt-2 rounded-0">
+                            <li class="list-group-item py-3">
+                                <div class="d-flex align-items-center">
+                                    <div class="me-3 me-lg-4">
+                                        <img src="https://www.almg.gov.br/export/sites/default/deputados/fotos/15245.jpg"
+                                            alt="" class="avatar rounded-circle xx" />
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <div class="d-sm-flex align-items-center">
+                                            <div class="w-100 w-lg-50">
+                                                <p class="mb-0 small">Presidente</p>
+                                                <a class="h5 link-gray-800 d-block mb-1" href="#!">Agostinho
+                                                    Patrus</a>
+                                                <div class="h5 mb-0">
+                                                    <span class="badge badge-pill bg-gray-500">PV</span>
                                                 </div>
-                                                <div class="w-25 d-none d-lg-block"><i
-                                                        class="bi bi-telephone-fill text-gray-500 fs-5 align-middle"></i>
-                                                    (31) 2108-7288</div>
-                                                <div class="w-25 flex-row-reverse d-none d-lg-flex">
-                                                    <a class="d-block width-2x height-2x me-3 hover-lift hover-shadow rounded-circle"
-                                                        href="#"><img src="../assets/img/brands/Instagram.svg" alt=""
-                                                            class="rounded-circle w-100 h-auto"></a>
-                                                    <a class="d-block width-2x height-2x me-3 hover-lift hover-shadow rounded-circle"
-                                                        href="#"><img src="../assets/img/brands/Facebook.svg" alt=""
-                                                            class="rounded-circle w-100 h-auto"></a>
-                                                    <a class="d-block width-2x height-2x me-3 hover-lift hover-shadow rounded-circle"
-                                                        href="#"><img src="../assets/img/brands/Twitter.svg" alt=""
-                                                            class="rounded-circle w-100 h-auto"></a>
-                                                </div>
+                                            </div>
+                                            <div class="w-25 d-none d-lg-block"><i
+                                                    class="bi bi-telephone-fill text-gray-500 fs-5 align-middle"></i>
+                                                (31) 2108-7288</div>
+                                            <div class="w-25 flex-row-reverse d-none d-lg-flex">
+                                                <a class="d-block width-2x height-2x me-3 hover-lift hover-shadow rounded-circle"
+                                                    href="#"><img src="../assets/img/brands/Instagram.svg" alt=""
+                                                        class="rounded-circle w-100 h-auto"></a>
+                                                <a class="d-block width-2x height-2x me-3 hover-lift hover-shadow rounded-circle"
+                                                    href="#"><img src="../assets/img/brands/Facebook.svg" alt=""
+                                                        class="rounded-circle w-100 h-auto"></a>
+                                                <a class="d-block width-2x height-2x me-3 hover-lift hover-shadow rounded-circle"
+                                                    href="#"><img src="../assets/img/brands/Twitter.svg" alt=""
+                                                        class="rounded-circle w-100 h-auto"></a>
                                             </div>
                                         </div>
                                     </div>
-                                </li>
+                                </div>
+                            </li>
 
-                                <li class="list-group-item py-3 bg-light">
-                                    <div class="d-flex align-items-center">
-                                        <div class="me-3 me-lg-4">
-                                            <img src="https://www.almg.gov.br/export/sites/default/deputados/fotos/7752.jpg"
-                                                alt="" class="avatar rounded-circle xx" />
-                                        </div>
-                                        <div class="flex-grow-1">
-                                            <div class="d-sm-flex align-items-center">
-                                                <div class="w-100 w-lg-50">
-                                                    <a class="h5 link-gray-800 d-block mb-1" href="#!">Alencar da
-                                                        Silveira Jr.</a>
-                                                    <div class="h5 mb-0">
-                                                        <span class="badge badge-pill bg-gray-500">PDT</span>
-                                                    </div>
+                            <li class="list-group-item py-3 bg-light">
+                                <div class="d-flex align-items-center">
+                                    <div class="me-3 me-lg-4">
+                                        <img src="https://www.almg.gov.br/export/sites/default/deputados/fotos/7752.jpg"
+                                            alt="" class="avatar rounded-circle xx" />
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <div class="d-sm-flex align-items-center">
+                                            <div class="w-100 w-lg-50">
+                                                <a class="h5 link-gray-800 d-block mb-1" href="#!">Alencar da
+                                                    Silveira Jr.</a>
+                                                <div class="h5 mb-0">
+                                                    <span class="badge badge-pill bg-gray-500">PDT</span>
                                                 </div>
-                                                <div class="w-25 d-none d-lg-block"><i
-                                                        class="bi bi-telephone-fill text-gray-500 fs-5 align-middle"></i>
-                                                    (31) 2108-7288</div>
-                                                <div class="w-25 flex-row-reverse d-none d-lg-flex">
-                                                    <a class="d-block width-2x height-2x me-3 hover-lift hover-shadow rounded-circle"
-                                                        href="#"><img src="../assets/img/brands/Instagram.svg" alt=""
-                                                            class="rounded-circle w-100 h-auto"></a>
-                                                    <a class="d-block width-2x height-2x me-3 hover-lift hover-shadow rounded-circle"
-                                                        href="#"><img src="../assets/img/brands/Facebook.svg" alt=""
-                                                            class="rounded-circle w-100 h-auto"></a>
-                                                    <a class="d-block width-2x height-2x me-3 hover-lift hover-shadow rounded-circle"
-                                                        href="#"><img src="../assets/img/brands/Twitter.svg" alt=""
-                                                            class="rounded-circle w-100 h-auto"></a>
-                                                    <a class="d-block width-2x height-2x me-3 hover-lift hover-shadow rounded-circle"
-                                                        href="#"><img src="../assets/img/brands/Youtube.svg" alt=""
-                                                            class="rounded-circle w-100 h-auto"></a>
-                                                </div>
+                                            </div>
+                                            <div class="w-25 d-none d-lg-block"><i
+                                                    class="bi bi-telephone-fill text-gray-500 fs-5 align-middle"></i>
+                                                (31) 2108-7288</div>
+                                            <div class="w-25 flex-row-reverse d-none d-lg-flex">
+                                                <a class="d-block width-2x height-2x me-3 hover-lift hover-shadow rounded-circle"
+                                                    href="#"><img src="../assets/img/brands/Instagram.svg" alt=""
+                                                        class="rounded-circle w-100 h-auto"></a>
+                                                <a class="d-block width-2x height-2x me-3 hover-lift hover-shadow rounded-circle"
+                                                    href="#"><img src="../assets/img/brands/Facebook.svg" alt=""
+                                                        class="rounded-circle w-100 h-auto"></a>
+                                                <a class="d-block width-2x height-2x me-3 hover-lift hover-shadow rounded-circle"
+                                                    href="#"><img src="../assets/img/brands/Twitter.svg" alt=""
+                                                        class="rounded-circle w-100 h-auto"></a>
+                                                <a class="d-block width-2x height-2x me-3 hover-lift hover-shadow rounded-circle"
+                                                    href="#"><img src="../assets/img/brands/Youtube.svg" alt=""
+                                                        class="rounded-circle w-100 h-auto"></a>
                                             </div>
                                         </div>
                                     </div>
-                                </li>
+                                </div>
+                            </li>
 
-                                <li class="list-group-item py-3">
-                                    <div class="d-flex align-items-center">
-                                        <div class="me-3 me-lg-4">
-                                            <img src="https://www.almg.gov.br/export/sites/default/deputados/fotos/19150.jpg"
-                                                alt="" class="avatar rounded-circle xx border-2 border-dark" />
-                                        </div>
-                                        <div class="flex-grow-1">
-                                            <div class="d-sm-flex align-items-center">
-                                                <div class="w-100 w-lg-50">
-                                                    <a class="h5 link-gray-800 d-block mb-1" href="#!">Ana Paula
-                                                        Siqueira</a>
-                                                    <div class="h5 mb-0">
-                                                        <span class="badge badge-pill bg-gray-500">REDE</span>
-                                                    </div>
+                            <li class="list-group-item py-3">
+                                <div class="d-flex align-items-center">
+                                    <div class="me-3 me-lg-4">
+                                        <img src="https://www.almg.gov.br/export/sites/default/deputados/fotos/19150.jpg"
+                                            alt="" class="avatar rounded-circle xx border-2 border-dark" />
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <div class="d-sm-flex align-items-center">
+                                            <div class="w-100 w-lg-50">
+                                                <a class="h5 link-gray-800 d-block mb-1" href="#!">Ana Paula
+                                                    Siqueira</a>
+                                                <div class="h5 mb-0">
+                                                    <span class="badge badge-pill bg-gray-500">REDE</span>
                                                 </div>
-                                                <div class="w-25 d-none d-lg-block"><i
-                                                        class="bi bi-telephone-fill text-gray-500 fs-5 align-middle"></i>
-                                                    (31) 2108-7288</div>
-                                                <div class="w-25 flex-row-reverse d-none d-lg-flex">
-                                                    <a class="d-block width-2x height-2x me-3 hover-lift hover-shadow rounded-circle"
-                                                        href="#"><img src="../assets/img/brands/Instagram.svg" alt=""
-                                                            class="rounded-circle w-100 h-auto"></a>
-                                                    <a class="d-block width-2x height-2x me-3 hover-lift hover-shadow rounded-circle"
-                                                        href="#"><img src="../assets/img/brands/Twitter.svg" alt=""
-                                                            class="rounded-circle w-100 h-auto"></a>
-                                                    <a class="d-block width-2x height-2x me-3 hover-lift hover-shadow rounded-circle"
-                                                        href="#"><img src="../assets/img/brands/Youtube.svg" alt=""
-                                                            class="rounded-circle w-100 h-auto"></a>
-                                                </div>
+                                            </div>
+                                            <div class="w-25 d-none d-lg-block"><i
+                                                    class="bi bi-telephone-fill text-gray-500 fs-5 align-middle"></i>
+                                                (31) 2108-7288</div>
+                                            <div class="w-25 flex-row-reverse d-none d-lg-flex">
+                                                <a class="d-block width-2x height-2x me-3 hover-lift hover-shadow rounded-circle"
+                                                    href="#"><img src="../assets/img/brands/Instagram.svg" alt=""
+                                                        class="rounded-circle w-100 h-auto"></a>
+                                                <a class="d-block width-2x height-2x me-3 hover-lift hover-shadow rounded-circle"
+                                                    href="#"><img src="../assets/img/brands/Twitter.svg" alt=""
+                                                        class="rounded-circle w-100 h-auto"></a>
+                                                <a class="d-block width-2x height-2x me-3 hover-lift hover-shadow rounded-circle"
+                                                    href="#"><img src="../assets/img/brands/Youtube.svg" alt=""
+                                                        class="rounded-circle w-100 h-auto"></a>
                                             </div>
                                         </div>
                                     </div>
-                                </li>
+                                </div>
+                            </li>
 
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <aside class="text-white">
+            <div class="bg-gray-200 position-relative">
+                <div class="container position-relative z-index-1">
+                    <div class="row grid-separator align-items-stretch">
+                        <div class="col-md-12 col-lg-4 py-lg-6 py-4">
+                            <h6 class="mb-4 text-gray-800"><i class="bi bi-arrow-right-short fs-4 align-middle"></i>
+                                Páginas Relacionadas</h6>
+                            <ul class="list-unstyled ms-4 mb-1">
+                                <li class="mb-2">
+                                    <a href="#" class="link-hover-move-arrow text-body">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 9"
+                                            style=" transform: rotate(-90deg);">
+                                            <path fill="currentColor"
+                                                d="M12.25 2.30062L10.8988 0.949371L6.5 5.33854L2.10125 0.949371L0.75 2.30062L6.5 8.05062L12.25 2.30062Z">
+                                            </path>
+                                        </svg>
+                                        Mesa Diretora
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#" class="link-hover-move-arrow text-body">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 9"
+                                            style=" transform: rotate(-90deg);">
+                                            <path fill="currentColor"
+                                                d="M12.25 2.30062L10.8988 0.949371L6.5 5.33854L2.10125 0.949371L0.75 2.30062L6.5 8.05062L12.25 2.30062Z">
+                                            </path>
+                                        </svg>
+                                        Deputados Majoritários por Localidade
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#" class="link-hover-move-arrow text-body">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 9"
+                                            style=" transform: rotate(-90deg);">
+                                            <path fill="currentColor"
+                                                d="M12.25 2.30062L10.8988 0.949371L6.5 5.33854L2.10125 0.949371L0.75 2.30062L6.5 8.05062L12.25 2.30062Z">
+                                            </path>
+                                        </svg>
+                                        Lideranças
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="" class="link-hover-move-arrow text-body">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 9"
+                                            style=" transform: rotate(-90deg);">
+                                            <path fill="currentColor"
+                                                d="M12.25 2.30062L10.8988 0.949371L6.5 5.33854L2.10125 0.949371L0.75 2.30062L6.5 8.05062L12.25 2.30062Z">
+                                            </path>
+                                        </svg>
+                                        Pronunciamentos
+                                    </a>
+                                </li>
                             </ul>
-
                         </div>
-                    </div>
-                </div>
-            </section>
-            <aside class="text-white">
-                <div class="bg-gray-200 position-relative">
-                    <div class="container position-relative z-index-1">
-                        <div class="row grid-separator align-items-stretch">
-                            <div class="col-md-12 col-lg-4 py-lg-6 py-4">
-                                <h6 class="mb-4 text-gray-800"><i class="bi bi-arrow-right-short fs-4 align-middle"></i>
-                                    Páginas Relacionadas</h6>
-                                <ul class="list-unstyled ms-4 mb-1">
-                                    <li class="mb-2">
-                                        <a href="#" class="link-hover-move-arrow text-body">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 9"
-                                                style=" transform: rotate(-90deg);">
-                                                <path fill="currentColor"
-                                                    d="M12.25 2.30062L10.8988 0.949371L6.5 5.33854L2.10125 0.949371L0.75 2.30062L6.5 8.05062L12.25 2.30062Z">
-                                                </path>
-                                            </svg>
-                                            Mesa Diretora
-                                        </a>
-                                    </li>
-                                    <li class="mb-2">
-                                        <a href="#" class="link-hover-move-arrow text-body">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 9"
-                                                style=" transform: rotate(-90deg);">
-                                                <path fill="currentColor"
-                                                    d="M12.25 2.30062L10.8988 0.949371L6.5 5.33854L2.10125 0.949371L0.75 2.30062L6.5 8.05062L12.25 2.30062Z">
-                                                </path>
-                                            </svg>
-                                            Deputados Majoritários por Localidade
-                                        </a>
-                                    </li>
-                                    <li class="mb-2">
-                                        <a href="#" class="link-hover-move-arrow text-body">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 9"
-                                                style=" transform: rotate(-90deg);">
-                                                <path fill="currentColor"
-                                                    d="M12.25 2.30062L10.8988 0.949371L6.5 5.33854L2.10125 0.949371L0.75 2.30062L6.5 8.05062L12.25 2.30062Z">
-                                                </path>
-                                            </svg>
-                                            Lideranças
-                                        </a>
-                                    </li>
-                                    <li class="">
-                                        <a href="" class="link-hover-move-arrow text-body">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 9"
-                                                style=" transform: rotate(-90deg);">
-                                                <path fill="currentColor"
-                                                    d="M12.25 2.30062L10.8988 0.949371L6.5 5.33854L2.10125 0.949371L0.75 2.30062L6.5 8.05062L12.25 2.30062Z">
-                                                </path>
-                                            </svg>
-                                            Pronunciamentos
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-md-6 col-lg-4 py-lg-6 py-4">
-                                <h6 class="mb-4 text-gray-800"><i class="bi bi-arrow-right-short fs-4 align-middle"></i> Serviços
-                                    Relacionados</h6>
-                                <ul class="list-unstyled ms-4 mb-1">
-                                    <li class="mb-2">
-                                        <a href="#" class="link-hover-move-arrow text-body">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 9"
-                                                style=" transform: rotate(-90deg);">
-                                                <path fill="currentColor"
-                                                    d="M12.25 2.30062L10.8988 0.949371L6.5 5.33854L2.10125 0.949371L0.75 2.30062L6.5 8.05062L12.25 2.30062Z">
-                                                </path>
-                                            </svg>
-                                            Fale com o Deputado
-                                        </a>
-                                    </li>
-                                    <li class="mb-2">
-                                        <a href="#" class="link-hover-move-arrow text-body">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 9"
-                                                style=" transform: rotate(-90deg);">
-                                                <path fill="currentColor"
-                                                    d="M12.25 2.30062L10.8988 0.949371L6.5 5.33854L2.10125 0.949371L0.75 2.30062L6.5 8.05062L12.25 2.30062Z">
-                                                </path>
-                                            </svg>
-                                            Boletins por E-mail
-                                        </a>
-                                    </li>
-                                    <li class="">
-                                        <a href="" class="link-hover-move-arrow text-body">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 9"
-                                                style=" transform: rotate(-90deg);">
-                                                <path fill="currentColor"
-                                                    d="M12.25 2.30062L10.8988 0.949371L6.5 5.33854L2.10125 0.949371L0.75 2.30062L6.5 8.05062L12.25 2.30062Z">
-                                                </path>
-                                            </svg>
-                                            Resultados de Eleições
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-md-6 col-lg-4 py-lg-6 py-4">
-                                <h6 class="mb-4 text-gray-800"><i class="bi bi-arrow-right-short fs-4 align-middle"></i> Participe
-                                    das Atividades da ALMG</h6>
-                                <div class="ms-4">
-                                    <p class="text-gray-800">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo dolor ut faucibus
-                                        mollis.
-                                    </p>
-                                    <div>
-                                        <a href="#" class="btn btn-primary text-uppercase me-3">
-                                            Cadastre-se
-                                        </a>
-                                    </div>
+                        <div class="col-md-6 col-lg-4 py-lg-6 py-4">
+                            <h6 class="mb-4 text-gray-800"><i class="bi bi-arrow-right-short fs-4 align-middle"></i>
+                                Serviços
+                                Relacionados</h6>
+                            <ul class="list-unstyled ms-4 mb-1">
+                                <li class="mb-2">
+                                    <a href="#" class="link-hover-move-arrow text-body">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 9"
+                                            style=" transform: rotate(-90deg);">
+                                            <path fill="currentColor"
+                                                d="M12.25 2.30062L10.8988 0.949371L6.5 5.33854L2.10125 0.949371L0.75 2.30062L6.5 8.05062L12.25 2.30062Z">
+                                            </path>
+                                        </svg>
+                                        Fale com o Deputado
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#" class="link-hover-move-arrow text-body">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 9"
+                                            style=" transform: rotate(-90deg);">
+                                            <path fill="currentColor"
+                                                d="M12.25 2.30062L10.8988 0.949371L6.5 5.33854L2.10125 0.949371L0.75 2.30062L6.5 8.05062L12.25 2.30062Z">
+                                            </path>
+                                        </svg>
+                                        Boletins por E-mail
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="" class="link-hover-move-arrow text-body">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 9"
+                                            style=" transform: rotate(-90deg);">
+                                            <path fill="currentColor"
+                                                d="M12.25 2.30062L10.8988 0.949371L6.5 5.33854L2.10125 0.949371L0.75 2.30062L6.5 8.05062L12.25 2.30062Z">
+                                            </path>
+                                        </svg>
+                                        Resultados de Eleições
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 col-lg-4 py-lg-6 py-4">
+                            <h6 class="mb-4 text-gray-800"><i class="bi bi-arrow-right-short fs-4 align-middle"></i>
+                                Participe
+                                das Atividades da ALMG</h6>
+                            <div class="ms-4">
+                                <p class="text-gray-800">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo dolor ut
+                                    faucibus
+                                    mollis.
+                                </p>
+                                <div>
+                                    <a href="#" class="btn btn-primary text-uppercase me-3">
+                                        Cadastre-se
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </aside>
-        </main>
+            </div>
+        </aside>
+    </main>
 
-        @@include('../partials/footers/almg-footer.html')
+    @@include('../partials/footers/almg-footer.html')
 
-        <!-- scripts -->
-        <script src="../assets/js/theme.bundle.js"></script>
+    <!-- scripts -->
+    <script src="../assets/js/theme.bundle.js"></script>
 
 </body>
 
