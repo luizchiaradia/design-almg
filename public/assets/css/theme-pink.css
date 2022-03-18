@@ -27806,9 +27806,6 @@ img.bg-image {
   color: #fff;
   background-color: #888;
 }
-.nav-custom3 .nav .nav-link:not(.disabled) {
-  color: #262626 !important;
-}
 .nav-custom3 .nav .nav-link:not(.disabled).active, .nav-custom3 .nav .nav-link:not(.disabled).hover {
   color: #fff !important;
 }

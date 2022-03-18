@@ -27672,9 +27672,6 @@ header.header-transparent.sticky-fixed.is-fixed .navbar-dark .navbar-fixed-bg {
   color: #fff;
   background-color: #878787;
 }
-.nav-custom3 .nav .nav-link:not(.disabled) {
-  color: #323232 !important;
-}
 .nav-custom3 .nav .nav-link:not(.disabled).active, .nav-custom3 .nav .nav-link:not(.disabled).hover {
   color: #fff !important;
 }

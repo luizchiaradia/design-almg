@@ -33,7 +33,6 @@
         }
             
         .nav-link:not(.disabled) {
-            color: $gray-700 !important;
             &.active,
             &.hover{
                 color: $white !important;
