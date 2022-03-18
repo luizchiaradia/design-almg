@@ -5,11 +5,11 @@
 
 .accordion.accordion-custom2 {
     .accordion-button {
-        background-color: $gray-200;
-        color: $gray-500;
+        background-color: $gray-300;
+        color: $gray-600;
     }
     .accordion-button:not(.collapsed) {
-        background-color: $gray-500;
+        background-color: $gray-600;
         color: $white;
     }
     .accordion-button:focus {

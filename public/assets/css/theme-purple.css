@@ -26077,11 +26077,11 @@ b, strong {
 }
 
 .accordion.accordion-custom2 .accordion-button {
-  background-color: #e8e6eb;
-  color: #9b96a1;
+  background-color: #dbd8df;
+  color: #4e4b53;
 }
 .accordion.accordion-custom2 .accordion-button:not(.collapsed) {
-  background-color: #9b96a1;
+  background-color: #4e4b53;
   color: #ffffff;
 }
 .accordion.accordion-custom2 .accordion-button:focus {
@@ -27721,33 +27721,33 @@ img.bg-image {
 }
 
 .nav-custom2 .nav .nav-link {
-  background-color: #e8e6eb;
+  background-color: #dbd8df;
   color: #9b96a1;
 }
 .nav-custom2 .nav .nav-link.active, .nav-custom2 .nav .nav-link:hover {
   color: #ffffff;
 }
 .nav-custom2 .nav .nav-link.active {
-  background-color: #9b96a1;
+  background-color: #4e4b53;
   color: #64318e;
 }
 
 .nav-custom3 .nav .nav-link {
-  background-color: #e8e6eb;
   color: #ffffff;
 }
 .nav-custom3 .nav .nav-link.active, .nav-custom3 .nav .nav-link:hover {
   color: #ffffff;
+  background-color: #dbd8df;
 }
 .nav-custom3 .nav .nav-link:not(.disabled) {
-  color: #2a292e;
+  color: #ffffff !important;
 }
-.nav-custom3 .nav .nav-link:not(.disabled).active {
-  color: #ffffff;
+.nav-custom3 .nav .nav-link:not(.disabled).active, .nav-custom3 .nav .nav-link:not(.disabled).hover {
+  color: #ffffff !important;
 }
 .nav-custom3 .nav .nav-link.active {
-  background-color: #9b96a1;
-  color: #64318e;
+  background-color: #64318e;
+  color: #ffffff;
 }
 @media (min-width: 992px) {
   .nav-custom3 .nav .nav-item:not(:last-child) {

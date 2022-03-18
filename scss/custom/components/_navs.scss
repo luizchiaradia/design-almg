@@ -1,7 +1,7 @@
 .nav-custom2 {
     .nav {
         .nav-link {
-            background-color: $gray-200;
+            background-color: $gray-300;
             color: $gray-500;
             &.active,
             &:hover {
@@ -10,7 +10,7 @@
         }
 
         .nav-link.active{
-            background-color: $gray-500;
+            background-color: $gray-600;
             color: $component-active-bg;
         }
     }
@@ -19,26 +19,28 @@
 .nav-custom3 {
     .nav {
         .nav-link {
-            background-color: $gray-200;
             color: $white;
             &.active,
             &:hover {
                 color: $white;
+                background-color: $gray-300;
             }
         }
             
         .nav-link:not(.disabled) {
-            color: $body-color;
-            &.active{
-                color: $white;
+            color: $white !important;
+            &.active,
+            &.hover{
+                color: $white !important;
             }
             
         }
 
         .nav-link.active{
-            background-color: $gray-500;
-            color: $component-active-bg;
+            background-color: $primary;
+            color: $white;
         }
+
         @include media-breakpoint-up(lg) {
             .nav-item:not(:last-child)  {
                 border-right: 1px solid $light;
