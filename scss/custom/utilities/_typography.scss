@@ -123,7 +123,7 @@ sup,sub{
     }
 }
 
-//Footer
+/*
 footer:not(.text-white):not(.text-light) {
     a:not(.btn):not(.dropdown-item):not(.text-muted) {
         color: rgba($body-color, 1) !important;
@@ -139,7 +139,7 @@ footer:not(.text-white):not(.text-light) {
         }
     }
 }
-
+*/
 //A colors
 a {
     &.text-dark,

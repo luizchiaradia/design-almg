@@ -25495,20 +25495,23 @@ sup, sub {
   color: white !important;
 }
 
-footer:not(.text-white):not(.text-light) a:not(.btn):not(.dropdown-item):not(.text-muted) {
-  color: #14191e !important;
-  transition: all 0.2s ease-in-out;
+/*
+footer:not(.text-white):not(.text-light) {
+    a:not(.btn):not(.dropdown-item):not(.text-muted) {
+        color: rgba($body-color, 1) !important;
+        transition: $transition-base;
+        &:hover:not(.active):not(.disabled):not(:disabled) {
+            color: rgba($primary, 1) !important;
+        }
+    }
+    a.text-muted {
+        color: $text-muted !important;
+        &:hover:not(.active):not(.disabled):not(:disabled) {
+            color: rgba($dark, 1) !important;
+        }
+    }
 }
-footer:not(.text-white):not(.text-light) a:not(.btn):not(.dropdown-item):not(.text-muted):hover:not(.active):not(.disabled):not(:disabled) {
-  color: #389769 !important;
-}
-footer:not(.text-white):not(.text-light) a.text-muted {
-  color: #39414A !important;
-}
-footer:not(.text-white):not(.text-light) a.text-muted:hover:not(.active):not(.disabled):not(:disabled) {
-  color: #0a0d10 !important;
-}
-
+*/
 a.text-dark:hover, a.text-muted:hover, a.text-secondary:hover, a.text-body:hover {
   color: #389769 !important;
 }
