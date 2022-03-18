@@ -25693,7 +25693,7 @@ b, strong {
 }
 .headings .title {
   margin: 0;
-  background-color: #F15B66;
+  background-color: #262626;
   color: #fff;
   padding: 0.5rem 0.7rem;
 }
@@ -25702,7 +25702,7 @@ b, strong {
   flex: 1;
   margin: 0 15px 0 15px;
   height: 3px;
-  background: #F15B66;
+  background: #262626;
 }
 
 @-webkit-keyframes textGradientAnimation {
@@ -27799,7 +27799,7 @@ img.bg-image {
 }
 .nav-custom3 .nav .nav-link.active, .nav-custom3 .nav .nav-link:hover {
   color: #fff;
-  background-color: #888;
+  background-color: #262626;
 }
 .nav-custom3 .nav .nav-link:not(.disabled) {
   color: #fff !important;

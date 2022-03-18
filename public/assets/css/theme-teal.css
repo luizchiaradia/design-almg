@@ -25631,7 +25631,7 @@ b, strong {
 }
 .headings .title {
   margin: 0;
-  background-color: #389769;
+  background-color: #2B323A;
   color: #fff;
   padding: 0.5rem 0.7rem;
 }
@@ -25640,7 +25640,7 @@ b, strong {
   flex: 1;
   margin: 0 15px 0 15px;
   height: 3px;
-  background: #389769;
+  background: #2B323A;
 }
 
 @-webkit-keyframes textGradientAnimation {
@@ -27737,7 +27737,7 @@ img.bg-image {
 }
 .nav-custom3 .nav .nav-link.active, .nav-custom3 .nav .nav-link:hover {
   color: #fff;
-  background-color: #9EA7B0;
+  background-color: #2B323A;
 }
 .nav-custom3 .nav .nav-link:not(.disabled) {
   color: #fff !important;
