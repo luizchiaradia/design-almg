@@ -2,12 +2,12 @@
 //Pagination styl
 //
 .page-link a {
-    color: $gray-500;
+    color: $gray-600;
 }
 
 .page-item.active .page-link {
-    background-color: $gray-500;
-    border-color: $gray-500;
+    background-color: $gray-600;
+    border-color: $gray-600;
 }
 .page-item{
     &:not(:first-child){

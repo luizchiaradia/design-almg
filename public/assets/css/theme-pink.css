@@ -25693,7 +25693,7 @@ b, strong {
 }
 .headings .title {
   margin: 0;
-  background-color: #888;
+  background-color: #F15B66;
   color: #fff;
   padding: 0.5rem 0.7rem;
 }
@@ -25702,7 +25702,7 @@ b, strong {
   flex: 1;
   margin: 0 15px 0 15px;
   height: 3px;
-  background: #888;
+  background: #F15B66;
 }
 
 @-webkit-keyframes textGradientAnimation {
@@ -27799,7 +27799,7 @@ img.bg-image {
 }
 .nav-custom3 .nav .nav-link.active, .nav-custom3 .nav .nav-link:hover {
   color: #fff;
-  background-color: #e5e5e5;
+  background-color: #888;
 }
 .nav-custom3 .nav .nav-link:not(.disabled) {
   color: #fff !important;
@@ -30705,12 +30705,12 @@ th {
 }
 
 .page-link a {
-  color: #888;
+  color: #545454;
 }
 
 .page-item.active .page-link {
-  background-color: #888;
-  border-color: #888;
+  background-color: #545454;
+  border-color: #545454;
 }
 
 .page-item:not(:first-child) {
