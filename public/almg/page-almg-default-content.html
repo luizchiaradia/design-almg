@@ -361,6 +361,30 @@
         <div class="container py-6 pb-4">
             <div class="row mb-6 mb-lg-8 justify-content-between align-items-end">
                 <div class="col-xl-9 mx-auto">
+                    <div class="position-absolute d-none d-xl-block" style="margin-top: 40px; margin-left: -100px;">
+                        <a class="bg-gray-700 fs-4 px-2 py-1 d-block border-bottom share-button " href="#">
+                            <i class="bi bi-share-fill text-white"></i>
+                        </a>
+                        <a class="bg-gray-500 fs-4 px-2 py-1 d-block border-bottom" href="#open">
+                            <i class="bi bi-file-pdf-fill text-white"></i>
+                        </a>
+                        <a class="bg-gray-500 fs-4 px-2 py-1 d-block" href="#">
+                            <i class="bi bi-printer-fill text-white"></i>
+                        </a>
+                    </div>
+
+                    <!--script>
+                        const shareButton = document.querySelector('.share-button');
+                        shareButton.addEventListener("click", async event => {
+                            event.preventDefault();
+                            try {
+                                await navigator.share({ title: "Título da Página", url: "url da página" });
+                                console.log("Dados compartilhados com sucesso.");
+                            } catch (err) {
+                                console.error("Compartilhamento falhou:", err.message);
+                            }
+                        });
+                    </script-->
                     <div class="mb-3 ">
                         <span class="h6 text-muted">Lorem ipsum dolor</span>
                     </div>
@@ -370,7 +394,7 @@
                 </div>
             </div>
         </div>
-        <div class="bg-light">
+        <div class="bg-gray-100 border-top border-bottom">
             <div class="container py-6 pb-4">
                 <div class="row justify-content-around g-1 g-lg-6 mb-4">
                     <div class="col-12 col-md-6 col-xl-3 mb-7 mb-xl-0 ">
@@ -466,7 +490,8 @@
                             lectus vestibulum mattis ullamcorper.
                         </p>
 
-                        <blockquote class="blockquote rounded-3 rounded-0 px-4 px-lg-6 py-6 py-lg-8 bg-white shadow-lg border-primary border-start border-3 my-7 my-lg-9">
+                        <blockquote
+                            class="blockquote rounded-3 rounded-0 px-4 px-lg-6 py-6 py-lg-8 bg-white shadow-lg border-primary border-start border-3 my-7 my-lg-9">
                             <h2 class="mb-4 display-4 fw-semibold">
                                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                 incididunt ut"
@@ -475,11 +500,6 @@
                                 <footer class="blockquote-footer fs-5 fw-semibold">
                                     Lorem Ipsum
                                 </footer>
-                                <div class="text-end">
-                                    <a href="#!" class="btn text-primary hover-shadow si-hover-twitter border border-primary">
-                                
-                                        Tweetar</a>
-                                </div>
                             </div>
                         </blockquote>
                         <p class="mb-5">
@@ -495,7 +515,31 @@
                             risus. Mi tempus imperdiet nulla malesuada pellentesque. Lectus urna duis convallis
                             convallis. Tellus cras adipiscing enim eu turpis egestas pretium aenean pharetra.
                         </p>
-                        <h4 class="mb-4">Harum quidem rerum facilis</h4>
+                        <section class="position-relative jarallax bg-primary" data-jarallax=".3">
+
+                            <div class="container py-4">
+                                <div class="row vh-50 align-items-center">
+                                    <div class="col-12 col-lg-10 px-4">
+                                        <h3 class="text-white h1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                            do eiusmod tempor
+                                            incididunt ut</h3>
+                                        <p class="text-white mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                            do eiusmod tempor
+                                            incididunt ut
+                                            labore et dolore magna aliqua. Viverra nam libero justo laoreet. Suscipit adipiscin.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="jarallax-container-0"
+                                style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; z-index: -100;">
+                                <img src="https://mediaserver.almg.gov.br/acervo/265/309/1265309.jpg" alt=""
+                                    class="jarallax-img"
+                                    style="object-fit: cover; object-position: 50% 50%; max-width: none; position: fixed; top: 0px; left: 0px; width: 1414px; height: 545.25px; overflow: hidden; pointer-events: none; transform-style: preserve-3d; backface-visibility: hidden; will-change: transform, opacity; margin-top: 2.375px; transform: translate3d(0px, 96.4375px, 0px);">
+                            </div>
+                        </section>
+                        <h4 class="my-4">Harum quidem rerum facilis</h4>
                         <p>
                             Harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum
                             soluta nobis
@@ -504,17 +548,18 @@
                             omnis voluptas
                             assumenda est, omnis dolor repellendus.
                         </p>
+
                         <div class="row">
                             <div class="col-md-6">
                                 <figure class="mb-5 mt-5">
-                                    <img src="../assets/img/1200x600/3.jpg" alt="image" class="img-fluid rounded mb-3">
+                                    <img src="https://via.placeholder.com/1200x800" alt="image" class="img-fluid rounded mb-3">
                                     <figcaption class="text-muted small text-center">Harum quidem rerum facilis
                                     </figcaption>
                                 </figure>
                             </div>
                             <div class="col-md-6">
                                 <figure class="mb-5 mt-5">
-                                    <img src="../assets/img/1200x600/2.jpg" alt="image" class="img-fluid rounded mb-3">
+                                    <img src="https://via.placeholder.com/1200x800" alt="image" class="img-fluid rounded mb-3">
                                     <figcaption class="text-muted small text-center">Harum quidem rerum facilis
                                     </figcaption>
                                 </figure>
@@ -537,6 +582,7 @@
                             et molestie ac feugiat sed lectus vestibulum mattis ullamcorper.
                         </p>
                     </article>
+
                     <!--/.article-->
                 </div>
             </div>
