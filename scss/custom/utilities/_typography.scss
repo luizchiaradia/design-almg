@@ -1,30 +1,37 @@
-
-html{
+html {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
 }
+
 body {
     letter-spacing: $letter-spacing-base;
     -webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-    &:not(.loaded){
+    -moz-osx-font-smoothing: grayscale;
+
+    &:not(.loaded) {
         overflow-x: hidden;
     }
 }
+
 @media(prefers-reduced-motion:reduce) {
     html {
-        scroll-behavior:auto;
+        scroll-behavior: auto;
     }
 }
-html,body{
+
+html,
+body {
     min-height: 100%;
-  }
+}
+
 *:focus {
     outline: 0 !important;
 }
+
 a {
     transition: $transition-base;
 }
+
 //Headings
 h1,
 .h1,
@@ -40,18 +47,22 @@ h6,
 .h6 {
     font-family: $headings-font-family;
 }
+
 h1,
 h2,
 .h1,
-.h2{
+.h2 {
     letter-spacing: $headings-letter-spacing;
 }
-h3,h4,
+
+h3,
+h4,
 h5,
 h6,
-.h3,.h4,
+.h3,
+.h4,
 .h5,
-.h6{
+.h6 {
     letter-spacing: $headings-letter-spacing-sm;
     font-weight: $headings-font-weight-sm;
 }
@@ -59,38 +70,59 @@ h6,
 //letter-spacing
 @for $i from -3 through 9 {
     $size: ($i * .5);
+
     .ls-#{$i} {
         letter-spacing: #{$size}px;
     }
 }
+
 //Text styles
-.text-strikethrough{
+.text-strikethrough {
     text-decoration: line-through;
 }
-.font-serif{
-    font-family: $font-family-serif!important;
+
+.font-serif {
+    font-family: $font-family-serif !important;
     letter-spacing: 0;
     font-weight: $font-weight-base;
-    &.display-6,&.display-5,&.display-4,&.display-3,&.display-2,&.display-1{
+
+    &.display-6,
+    &.display-5,
+    &.display-4,
+    &.display-3,
+    &.display-2,
+    &.display-1 {
         font-weight: $font-weight-base;
     }
 }
-.display-6,.display-5,.display-4,.display-3,.display-2,.display-1{
-font-family: $display-font-family;
+
+.display-6,
+.display-5,
+.display-4,
+.display-3,
+.display-2,
+.display-1 {
+    font-family: $display-font-family;
 }
+
 .text-mono {
-    font-family: $font-family-monospace!important;
+    font-family: $font-family-monospace !important;
     font-weight: $font-weight-normal;
 }
+
 .text-italic {
     font-style: italic;
 }
-sup,sub{
+
+sup,
+sub {
     letter-spacing: $letter-spacing-base;
 }
+
 //Typography for dark backgrounds
 .text-white,
 .text-light {
+
     h1,
     .h1,
     h2,
@@ -105,18 +137,23 @@ sup,sub{
     .h6 {
         color: $white;
     }
+
     .text-muted {
         color: rgba($white, 0.54) !important;
     }
+
     a:not(.btn):not(.dropdown-item):not([class^="text-"]):not([class*="text-"]):not(.nav-link) {
         color: rgba($white, 0.7) !important;
         transition: $transition-base;
+
         &:hover:not(.active):not(.disabled):not(:disabled) {
             color: rgba($white, 1) !important;
         }
     }
+
     a.text-muted {
         color: rgba($white, 0.54) !important;
+
         &:hover:not(.active):not(.disabled):not(:disabled) {
             color: rgba($white, 1) !important;
         }
@@ -142,6 +179,7 @@ footer:not(.text-white):not(.text-light) {
 */
 //A colors
 a {
+
     &.text-dark,
     &.text-muted,
     &.text-secondary,
@@ -151,9 +189,10 @@ a {
         }
     }
 }
+
 //Text gradients
 .text-gradient {
-    background:radial-gradient(circle at 70%, $gradient-alt 5%,$primary 20%);
+    background: radial-gradient(circle at 70%, $gradient-alt 5%, $primary 20%);
     background-size: 400% 400%;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
@@ -163,8 +202,9 @@ a {
     animation: textGradientAnimation 5s ease-in-out infinite;
     -webkit-animation: textGradientAnimation 5s ease-in-out infinite;
 }
+
 .text-gradient-light {
-    background:radial-gradient(circle at 70%, $white 5%,tint-color($primary,50%) 20%);
+    background: radial-gradient(circle at 70%, $white 5%, tint-color($primary, 50%) 20%);
     background-size: 400% 400%;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
@@ -174,6 +214,7 @@ a {
     animation: textGradientAnimation 5s ease-in-out infinite;
     -webkit-animation: textGradientAnimation 5s ease-in-out infinite;
 }
+
 //Dropcap text
 .dropcap::first-letter {
     float: left;
@@ -193,7 +234,9 @@ a {
     background: transparent;
     -webkit-text-fill-color: transparent;
 }
-@each $color, $value in $theme-colors {
+
+@each $color,
+$value in $theme-colors {
     .text-outline.text-#{$color} {
         -webkit-text-stroke: 2px $value;
         color: transparent !important;
@@ -201,13 +244,14 @@ a {
 }
 
 
-b,strong{
+b,
+strong {
     font-weight: $font-weight-semibold;
 }
 
 
 // Box Icons
-.bx{
+.bx {
     display: inline-block;
     vertical-align: middle;
     line-height: 1;
@@ -224,14 +268,13 @@ b,strong{
         background-color: $gray-700;
         color: $white;
         padding: 0.5rem 0.7rem;
-      }
-      
-      .hr {
+    }
+
+    .hr {
         display: block;
         flex: 1;
         margin: 0 15px 0 15px;
         height: 3px;
         background: $gray-700;
-      }
-  }
-  
+    }
+}
