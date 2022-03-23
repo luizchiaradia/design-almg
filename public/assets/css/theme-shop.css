@@ -27671,6 +27671,7 @@ header.header-transparent.sticky-fixed.is-fixed .navbar-dark .navbar-fixed-bg {
 .nav-custom3 .nav .nav-link {
   background-color: #d9d9d9;
   color: #323232;
+  border-bottom: 1px solid #f9f9f9 !important;
 }
 .nav-custom3 .nav .nav-link.active, .nav-custom3 .nav .nav-link:hover {
   color: #fff;
@@ -27685,6 +27686,14 @@ header.header-transparent.sticky-fixed.is-fixed .navbar-dark .navbar-fixed-bg {
 .nav-custom3 .nav .nav-link.active {
   background-color: #F15B66;
   color: #fff;
+}
+@media (max-width: 991.98px) {
+  .nav-custom3 .nav ul.dropdown-menu {
+    position: relative !important;
+    transform: none !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+  }
 }
 @media (min-width: 992px) {
   .nav-custom3 .nav .nav-item:not(:last-child) {

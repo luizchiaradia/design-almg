@@ -27766,6 +27766,7 @@ img.bg-image {
 .nav-custom3 .nav .nav-link {
   background-color: #dbd8df;
   color: #343238;
+  border-bottom: 1px solid #f9f7fb !important;
 }
 .nav-custom3 .nav .nav-link.active, .nav-custom3 .nav .nav-link:hover {
   color: #ffffff;
@@ -27780,6 +27781,14 @@ img.bg-image {
 .nav-custom3 .nav .nav-link.active {
   background-color: #64318e;
   color: #ffffff;
+}
+@media (max-width: 991.98px) {
+  .nav-custom3 .nav ul.dropdown-menu {
+    position: relative !important;
+    transform: none !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+  }
 }
 @media (min-width: 992px) {
   .nav-custom3 .nav .nav-item:not(:last-child) {

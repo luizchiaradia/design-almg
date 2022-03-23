@@ -30085,6 +30085,7 @@ img.bg-image {
 .nav-custom3 .nav .nav-link {
   background-color: #c6c5bb;
   color: #343a49;
+  border-bottom: 1px solid #f4f4ef !important;
 }
 .nav-custom3 .nav .nav-link.active, .nav-custom3 .nav .nav-link:hover {
   color: #fff;
@@ -30099,6 +30100,14 @@ img.bg-image {
 .nav-custom3 .nav .nav-link.active {
   background-color: #ab0000;
   color: #fff;
+}
+@media (max-width: 991.98px) {
+  .nav-custom3 .nav ul.dropdown-menu {
+    position: relative !important;
+    transform: none !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+  }
 }
 @media (min-width: 992px) {
   .nav-custom3 .nav .nav-item:not(:last-child) {
