@@ -27788,6 +27788,15 @@ img.bg-image {
     transform: none !important;
     box-shadow: none !important;
     border-radius: 0 !important;
+    padding: 0 !important;
+    background-color: #9b96a1;
+  }
+  .nav-custom3 .nav ul.dropdown-menu li {
+    background-color: #f9f7fb;
+    border-bottom: 1px solid #9b96a1 !important;
+  }
+  .nav-custom3 .nav ul.dropdown-menu li a.nav-link {
+    color: #2a292e;
   }
 }
 @media (min-width: 992px) {

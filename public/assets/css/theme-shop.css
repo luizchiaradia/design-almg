@@ -27693,6 +27693,15 @@ header.header-transparent.sticky-fixed.is-fixed .navbar-dark .navbar-fixed-bg {
     transform: none !important;
     box-shadow: none !important;
     border-radius: 0 !important;
+    padding: 0 !important;
+    background-color: #878787;
+  }
+  .nav-custom3 .nav ul.dropdown-menu li {
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #878787 !important;
+  }
+  .nav-custom3 .nav ul.dropdown-menu li a.nav-link {
+    color: #262626;
   }
 }
 @media (min-width: 992px) {

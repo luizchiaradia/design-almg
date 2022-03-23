@@ -27850,6 +27850,15 @@ img.bg-image {
     transform: none !important;
     box-shadow: none !important;
     border-radius: 0 !important;
+    padding: 0 !important;
+    background-color: #888;
+  }
+  .nav-custom3 .nav ul.dropdown-menu li {
+    background-color: #fafafa;
+    border-bottom: 1px solid #888 !important;
+  }
+  .nav-custom3 .nav ul.dropdown-menu li a.nav-link {
+    color: #191919;
   }
 }
 @media (min-width: 992px) {
