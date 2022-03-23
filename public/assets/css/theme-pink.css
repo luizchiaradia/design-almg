@@ -25724,11 +25724,11 @@ strong {
   background: #262626;
 }
 
+/*
 p {
-  font-size: 1.075rem;
-  line-height: 1.5;
-}
-
+    font-size: 1.075rem;
+    line-height: 1.5;
+}*/
 @-webkit-keyframes textGradientAnimation {
   0% {
     background-position: 50% 30%;
@@ -25746,7 +25746,6 @@ p {
     background-position: 50% 30%;
   }
 }
-
 @keyframes textGradientAnimation {
   0% {
     background-position: 50% 30%;
