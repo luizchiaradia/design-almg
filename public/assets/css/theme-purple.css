@@ -25345,7 +25345,8 @@ body:not(.loaded) {
     scroll-behavior: auto;
   }
 }
-html, body {
+html,
+body {
   min-height: 100%;
 }
 
@@ -25364,10 +25365,12 @@ h2,
   letter-spacing: -0.015em;
 }
 
-h3, h4,
+h3,
+h4,
 h5,
 h6,
-.h3, .h4,
+.h3,
+.h4,
 .h5,
 .h6 {
   letter-spacing: -0.005em;
@@ -25439,7 +25442,12 @@ h6,
   font-weight: 400;
 }
 
-.display-6, .display-5, .display-4, .display-3, .display-2, .display-1 {
+.display-6,
+.display-5,
+.display-4,
+.display-3,
+.display-2,
+.display-1 {
   font-family: var(--bs-font-sans-serif);
 }
 
@@ -25452,7 +25460,8 @@ h6,
   font-style: italic;
 }
 
-sup, sub {
+sup,
+sub {
   letter-spacing: 0em;
 }
 
@@ -25622,7 +25631,8 @@ a.text-dark:hover, a.text-muted:hover, a.text-secondary:hover, a.text-body:hover
   color: transparent !important;
 }
 
-b, strong {
+b,
+strong {
   font-weight: 500;
 }
 
@@ -25650,6 +25660,10 @@ b, strong {
   margin: 0 15px 0 15px;
   height: 3px;
   background: #343238;
+}
+
+p {
+  font-size: 1.075rem;
 }
 
 @-webkit-keyframes textGradientAnimation {
