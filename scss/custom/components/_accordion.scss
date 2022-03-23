@@ -5,7 +5,7 @@
         background-image: none;
         font-weight: 200;
         font-family: boxicons !important;
-        transform: rotate(-90deg);
+        transform: rotate(0);
         content: "\ea4a";
         font-size: 2rem;
         color:currentColor;
@@ -22,7 +22,7 @@
 .accordion-button:not(.collapsed) {
     &::after {
         background-image: none;
-        transform: rotate(0);
+        transform: rotate(-180deg);
         color: $white;
     }
 }
