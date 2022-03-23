@@ -385,3 +385,8 @@ $utilities: map-merge($utilities,
 .btn-collapse-sm-menu:not(.collapsed) {
     background-color: $gray-600 !important;
 }
+
+mark, .mark {
+    background-color: $red-100 !important;
+    padding: 0 !important;
+}
