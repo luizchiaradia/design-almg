@@ -1,6 +1,30 @@
 //Accordion style
 .accordion-button {
     font-weight: $headings-font-weight-sm;
+    &::after {
+        background-image: none;
+        font-weight: 200;
+        font-family: boxicons !important;
+        transform: rotate(-90deg);
+        content: "\ea4a";
+        font-size: 2rem;
+        color:currentColor;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 1rem;
+        height: 1rem;
+        text-align:center;
+        line-height: 1;
+        box-sizing: content-box;
+    }
+}
+.accordion-button:not(.collapsed) {
+    &::after {
+        background-image: none;
+        transform: rotate(0);
+        color: $white;
+    }
 }
 
 .accordion.accordion-custom2 {

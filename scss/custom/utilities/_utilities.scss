@@ -381,3 +381,7 @@ $utilities: map-merge($utilities,
         }
     }
 }
+
+.btn-collapse-sm-menu:not(.collapsed) {
+    background-color: $gray-600 !important;
+}
