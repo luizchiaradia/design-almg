@@ -27196,6 +27196,7 @@ p {
 
 .dropdown-menu {
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.125);
+  border-radius: 0;
 }
 
 .dropdown-item {
@@ -27204,7 +27205,6 @@ p {
   letter-spacing: 0em;
   font-size: 1rem;
   font-weight: 400;
-  border-radius: 0.375rem;
 }
 
 .text-white .dropdown-divider,
@@ -27235,7 +27235,6 @@ p {
     opacity: 0;
   }
   .navbar .dropdown-menu.show {
-    transition: opacity 0.15s, transform 0.25s cubic-bezier(0.25, 0.5, 0.75, 1);
     transform: none;
     opacity: 1;
     visibility: visible;
@@ -27344,6 +27343,9 @@ p {
   font-size: 1rem;
   font-family: var(--bs-font-sans-serif);
   letter-spacing: -0.005em;
+}
+.navbar .navbar-nav .nav-link.show {
+  background-color: #e7e7e7;
 }
 .navbar:not(.position-fixed):not(.position-absolute):not(.fixed-top) {
   position: relative;

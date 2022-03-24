@@ -27898,6 +27898,9 @@ img.bg-image {
   font-family: var(--bs-font-sans-serif);
   letter-spacing: -0.005em;
 }
+.navbar .navbar-nav .nav-link.show {
+  background-color: #e8e6eb;
+}
 .navbar:not(.position-fixed):not(.position-absolute):not(.fixed-top) {
   position: relative;
 }
@@ -28226,6 +28229,7 @@ header.header-transparent.sticky-fixed.is-fixed .navbar-dark .navbar-fixed-bg {
 }
 .dropdown-menu {
   box-shadow: 0 1rem 3rem rgba(12, 11, 13, 0.125);
+  border-radius: 0;
 }
 
 .dropdown-item {
@@ -28234,7 +28238,6 @@ header.header-transparent.sticky-fixed.is-fixed .navbar-dark .navbar-fixed-bg {
   letter-spacing: 0em;
   font-size: 1rem;
   font-weight: 400;
-  border-radius: 0.375rem;
 }
 
 .text-white .dropdown-divider,
@@ -28265,7 +28268,6 @@ header.header-transparent.sticky-fixed.is-fixed .navbar-dark .navbar-fixed-bg {
     opacity: 0;
   }
   .navbar .dropdown-menu.show {
-    transition: opacity 0.15s, transform 0.25s cubic-bezier(0.25, 0.5, 0.75, 1);
     transform: none;
     opacity: 1;
     visibility: visible;
