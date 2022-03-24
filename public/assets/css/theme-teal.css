@@ -27897,7 +27897,7 @@ img.bg-image {
   font-size: 1rem;
   font-family: var(--bs-font-sans-serif);
   letter-spacing: 0.005em;
-  color: #389769;
+  color: #2B323A;
 }
 .navbar .navbar-nav .nav-link.show {
   background-color: #F0F5FA;
@@ -28242,7 +28242,7 @@ header.header-transparent.sticky-fixed.is-fixed .navbar-dark .navbar-fixed-bg {
   letter-spacing: 0em;
   font-size: 1rem;
   font-weight: 400;
-  color: #389769 !important;
+  color: #2B323A !important;
 }
 
 .text-white .dropdown-divider,
