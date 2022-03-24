@@ -28264,10 +28264,10 @@ header.header-transparent.sticky-fixed.is-fixed .navbar-dark .navbar-fixed-bg {
   .navbar .dropdown-menu {
     display: block;
     visibility: hidden;
-    transform: translateY(16px);
     opacity: 0;
   }
   .navbar .dropdown-menu.show {
+    transition: opacity 0.15s;
     transform: none;
     opacity: 1;
     visibility: visible;

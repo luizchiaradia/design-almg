@@ -46,10 +46,11 @@
     .navbar .dropdown-menu {
         display: block;
         visibility: hidden;
-        transform: translateY(16px);
+        //transform: translateY(16px);
         opacity: 0;
         &.show {
             //transition: opacity .15s, transform .25s cubic-bezier(.25, .5, .75, 1);
+             transition: opacity .15s;
             transform: none;
             opacity: 1;
             visibility: visible;
