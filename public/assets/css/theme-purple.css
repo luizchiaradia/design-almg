@@ -27900,8 +27900,6 @@ img.bg-image {
 }
 .navbar .navbar-nav .nav-link.show {
   background-color: #e8e6eb;
-  border-top-left-radius: 0.375rem;
-  border-top-right-radius: 0.375rem;
 }
 .navbar:not(.position-fixed):not(.position-absolute):not(.fixed-top) {
   position: relative;
@@ -28240,6 +28238,7 @@ header.header-transparent.sticky-fixed.is-fixed .navbar-dark .navbar-fixed-bg {
   letter-spacing: 0em;
   font-size: 1rem;
   font-weight: 400;
+  border-radius: 0.375rem;
 }
 
 .text-white .dropdown-divider,
@@ -30693,7 +30692,7 @@ th {
 }
 
 .dropdown-toggle::after {
-  margin-left: 0.75rem;
+  margin: 0;
   opacity: 0.5;
   border: 0 !important;
 }
