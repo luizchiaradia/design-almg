@@ -2,8 +2,9 @@
 //Caret dropdown toggle
 //
 .dropdown-toggle::after{
-    margin-left: $spacer * .25;
+    margin-left: $spacer * .75;
     opacity: .5;
+    border: 0 !important;
 }
 .dropend .dropdown-toggle::after{
     margin-left: $spacer * .25;

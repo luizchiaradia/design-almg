@@ -26908,8 +26908,9 @@ p {
 }
 
 .dropdown-toggle::after {
-  margin-left: 0.25rem;
+  margin-left: 0.75rem;
   opacity: 0.5;
+  border: 0 !important;
 }
 
 .dropend .dropdown-toggle::after {
@@ -27346,6 +27347,8 @@ p {
 }
 .navbar .navbar-nav .nav-link.show {
   background-color: #e7e7e7;
+  border-top-left-radius: 0.375rem;
+  border-top-right-radius: 0.375rem;
 }
 .navbar:not(.position-fixed):not(.position-absolute):not(.fixed-top) {
   position: relative;

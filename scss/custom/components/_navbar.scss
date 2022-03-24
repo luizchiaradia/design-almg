@@ -9,6 +9,8 @@
             letter-spacing: $navbar-link-letter-spacing;
             &.show {
                 background-color: $gray-200;
+                border-top-left-radius: $border-radius;
+                border-top-right-radius: $border-radius;
             }
         }
     }
