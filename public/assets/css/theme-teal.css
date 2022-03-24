@@ -27897,9 +27897,13 @@ img.bg-image {
   font-size: 1rem;
   font-family: var(--bs-font-sans-serif);
   letter-spacing: 0.005em;
+  color: #389769;
 }
 .navbar .navbar-nav .nav-link.show {
   background-color: #F0F5FA;
+}
+.navbar .navbar-nav .nav-link :hover {
+  background-color: #F8FBFE;
 }
 .navbar:not(.position-fixed):not(.position-absolute):not(.fixed-top) {
   position: relative;

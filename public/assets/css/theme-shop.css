@@ -27345,9 +27345,13 @@ p {
   font-size: 1rem;
   font-family: var(--bs-font-sans-serif);
   letter-spacing: -0.005em;
+  color: #F15B66;
 }
 .navbar .navbar-nav .nav-link.show {
   background-color: #e7e7e7;
+}
+.navbar .navbar-nav .nav-link :hover {
+  background-color: #f9f9f9;
 }
 .navbar:not(.position-fixed):not(.position-absolute):not(.fixed-top) {
   position: relative;
