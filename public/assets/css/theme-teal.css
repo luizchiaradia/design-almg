@@ -28238,6 +28238,7 @@ header.header-transparent.sticky-fixed.is-fixed .navbar-dark .navbar-fixed-bg {
   letter-spacing: 0em;
   font-size: 1rem;
   font-weight: 400;
+  color: #389769 !important;
 }
 
 .text-white .dropdown-divider,
