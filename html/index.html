@@ -1,23 +1,46 @@
 <!doctype html>
 <html lang="pt-BR">
 
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="assets/img/favicon.ico" type="image/ico">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="assets/img/favicon.ico" type="image/ico">
 
-    @@include('./partials/head-includes.html')
+  @@include('./partials/head-includes.html')
 
 
-    <!-- Main CSS -->
-    <link href="assets/css/theme.min.css" rel="stylesheet">
+  <!-- Main CSS -->
+  <link href="assets/css/theme.min.css" rel="stylesheet">
 
-    <title>ALMG</title>
-  </head>
+  <title>ALMG</title>
+</head>
 
-  <body>
-   
-  </body>
+<body>
+  <!--Navbar items-->
+  <ul class="navbar-nav ms-auto">
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle  @@if (context.page === 'pages') {active}" href="#" role="button"
+        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-auto-close="outside">Páginas
+      </a>
+      <div class="dropdown-menu">
+        <div class="dropend">
+          <a class="dropdown-item dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" href="#">ALMG</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="/almg/page-almg-default.html">Default List</a>
+            <a class="dropdown-item" href="/almg/page-almg-default-content.html">Default Content</a>
+            <a class="dropdown-item" href="/almg/page-almg-default-content-2.html">Default Content 2</a>
+            <a class="dropdown-item" href="/almg/page-almg-default-content-3.html">Default Content 3</a>
+            <a class="dropdown-item" href="/almg/page-almg-noticia.html">Notícia</a>
+            <a class="dropdown-item" href="/almg/page-almg-deputados.html">Deputados</a>
+
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+  <!-- scripts -->
+  <script src="../assets/js/theme.bundle.js"></script>
+</body>
 
 </html>
