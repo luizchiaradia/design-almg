@@ -7,6 +7,15 @@
             font-size: $navbar-link-font-size;
             font-family: $navbar-link-font-family;
             letter-spacing: $navbar-link-letter-spacing;
+            color: $gray-700;
+            &.show {
+                background-color: $gray-200;
+                //border-top-left-radius: $border-radius;
+                //border-top-right-radius: $border-radius;
+            }
+            :hover {
+                background-color: $gray-100;
+            }
         }
     }
 
@@ -149,8 +158,8 @@
                 top: 0;
                 z-index: $zindex-fixed;
                 width: 100%;
-                transition: all 0.3s;
-                animation: fadeDown 0.4s both;
+                //transition: all 0.3s;
+                //animation: fadeDown 0.4s both;
                 border-width: 1px;
 
                 &.navbar-light {
@@ -453,6 +462,16 @@ header.header-transparent.sticky-fixed{
         .navbar-dark{
             .navbar-fixed-bg{
                 background-color: rgba($dark, 0.985);
+            }
+        }
+    }
+}
+
+@include media-breakpoint-between(xl, xxl) { 
+    .navbar {
+        .navbar-nav {
+            .nav-link {
+                font-size: .90rem;
             }
         }
     }

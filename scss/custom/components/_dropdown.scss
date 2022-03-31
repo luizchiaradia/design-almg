@@ -1,6 +1,7 @@
 
 .dropdown-menu{
     box-shadow: $dropdown-box-shadow;
+    border-radius: 0;
 }
 .dropdown-item {
     font-family: $dropdown-font-family;
@@ -9,7 +10,8 @@
     letter-spacing: $dropdown-letter-spacing;
     font-size: $dropdown-font-size;
     font-weight: $dropdown-font-weight;
-    border-radius: $border-radius;
+    color: $gray-700 !important;
+    //border-radius: $border-radius;
     //white-space: normal;
 }
 .text-white,
@@ -36,7 +38,7 @@
 }
 
 //Dropdown Mega Menu
-@include media-breakpoint-up(lg) {
+@include media-breakpoint-up(xl) {
     .navbar .dropdown-menu-end {
         right:0;
         left: auto;
@@ -45,10 +47,11 @@
     .navbar .dropdown-menu {
         display: block;
         visibility: hidden;
-        transform: translateY(16px);
+        //transform: translateY(16px);
         opacity: 0;
         &.show {
-            transition: opacity .15s, transform .25s cubic-bezier(.25, .5, .75, 1);
+            //transition: opacity .15s, transform .25s cubic-bezier(.25, .5, .75, 1);
+             transition: opacity .15s;
             transform: none;
             opacity: 1;
             visibility: visible;

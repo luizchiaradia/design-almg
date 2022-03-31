@@ -1,7 +1,14 @@
 //
 //Pagination styl
 //
+.page-link a {
+    color: $gray-600;
+}
 
+.page-item.active .page-link {
+    background-color: $gray-600;
+    border-color: $gray-600;
+}
 .page-item{
     &:not(:first-child){
         margin-left: .375rem;

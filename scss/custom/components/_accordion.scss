@@ -1,6 +1,44 @@
 //Accordion style
 .accordion-button {
     font-weight: $headings-font-weight-sm;
+    &::after {
+        background-image: none;
+        font-weight: 200;
+        font-family: boxicons !important;
+        transform: rotate(0);
+        content: "\ea4a";
+        font-size: 2rem;
+        color:currentColor;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 1rem;
+        height: 1rem;
+        text-align:center;
+        line-height: 1;
+        box-sizing: content-box;
+    }
+}
+.accordion-button:not(.collapsed) {
+    &::after {
+        background-image: none;
+        transform: rotate(-180deg);
+        color: $white;
+    }
+}
+
+.accordion.accordion-custom2 {
+    .accordion-button {
+        background-color: $gray-300;
+        color: $gray-600;
+    }
+    .accordion-button:not(.collapsed) {
+        background-color: $gray-600;
+        color: $white;
+    }
+    .accordion-button:focus {
+        box-shadow: none;
+    }
 }
 
 //custo underline-accordion
