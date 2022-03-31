@@ -18,11 +18,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Source+Serif+Pro:ital@0;1&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+
+
     <!-- Main CSS -->
     <link href="../assets/css/theme.min.css" rel="stylesheet">
 
     <title>ALMG</title>
+    <meta name="description" content="Site da ALMG">
 </head>
 
 <body>
@@ -291,17 +293,17 @@
                     </div>
                     <div class="col-6 px-0 d-flex justify-content-end">
                         <button class="p-2 ps-3 btn btn-gray-500 rounded-0 d-lg-none border-end border-gray-400" data-bs-toggle="modal" data-bs-target="#modal-share">
-                            <i class="bi bi-share-fill fs-5 me-2 lh-1 text-white"></i>
+                            <i class="bi bi-share-fill fs-5 me-2 lh-1 text-white"></i><span class="d-none">Compartilhar</span>
                         </button>
-                        <a class="p-2 ps-3 bg-gray-500 d-lg-none border-end border-gray-400 btn-collapse-sm-menu collapsed" type="button"
+                        <button class="p-2 ps-3 btn btn-gray-500 rounded-0 d-lg-none border-end border-gray-400 btn-collapse-sm-menu collapsed" type="button"
                             data-bs-toggle="collapse" data-bs-target="#collapseSecondaryMenu" aria-expanded="false"
                             aria-controls="collapseSecondaryMenu">
-                            <i class="bi bi-three-dots fs-5 me-2 lh-1 text-white"></i>
-                        </a>
-                        <a class="p-2 ps-3 bg-gray-500 d-lg-none btn-collapse-sm-menu collapsed" type="button" data-bs-toggle="collapse"
+                            <i class="bi bi-three-dots fs-5 me-2 lh-1 text-white"></i><span class="d-none">Menu Local</span>
+                        </button>
+                        <button class="p-2 ps-3 btn btn-gray-500 rounded-0 d-lg-none btn-collapse-sm-menu collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseSearch" aria-expanded="false" aria-controls="collapseSearch">
-                            <i class="bi bi-search fs-5 me-2 lh-1 text-white"></i>
-                        </a>
+                            <i class="bi bi-search fs-5 me-2 lh-1 text-white"></i><span class="d-none">Pesquisar</span>
+                        </button>
                     </div>
                     <div class="collapse d-lg-block px-0" id="collapseSecondaryMenu">
                         <div class="accordion">
@@ -677,7 +679,7 @@
                                 </a>
                             </li>
                             <li class="">
-                                <a href="" class="link-hover-move-arrow text-body">
+                                <a href="#" class="link-hover-move-arrow text-body">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 9"
                                         style=" transform: rotate(-90deg);">
                                         <path fill="currentColor"
@@ -706,13 +708,13 @@
                                 </a>
                             </li>
                             <li class="mb-2">
-                                <a href="" class="link-hover-move-arrow text-body">
+                                <a href="#" class="link-hover-move-arrow text-body">
                                     <i class="bi bi-file-earmark-pdf fs-4 align-middle lh-1"></i>
                                     Consectetur adipisicing elit
                                 </a>
                             </li>
                             <li class="">
-                                <a href="" class="link-hover-move-arrow text-body">
+                                <a href="#" class="link-hover-move-arrow text-body">
                                     <i class="bi bi-file-earmark-pdf fs-4 align-middle lh-1"></i>
                                     Quae quia sapiente atque architecto unde
                                 </a>
