@@ -27709,7 +27709,7 @@ p {
   float: none;
 }
 .breadcrumb .breadcrumb-item.active {
-  color: #9b9a8f;
+  color: rgba(37, 42, 54, 0.8);
 }
 
 .text-white .breadcrumb-item, .text-light .breadcrumb-item {

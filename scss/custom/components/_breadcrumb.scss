@@ -13,7 +13,7 @@
         float: none;
          }
          &.active{
-            color: $gray-500;
+            color: rgba($body-color,.8);
         }
     }
 }
