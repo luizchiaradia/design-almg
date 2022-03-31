@@ -30097,7 +30097,7 @@ img.bg-image {
 }
 .nav-custom2 .nav .nav-link.active {
   background-color: #474e5f;
-  color: #ab0000;
+  color: #fff !important;
 }
 
 .nav-custom3 .nav .nav-link {
