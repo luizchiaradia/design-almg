@@ -1,0 +1,890 @@
+<!doctype html>
+<html lang="pt-BR">
+
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="../assets/img/favicon.ico" type="image/ico">
+        <!--Box Icons-->
+        <link rel="stylesheet" href="/../assets/fonts/boxicons/css/boxicons.min.css">
+
+        <!--Bootstrap Icons -->
+        <link rel="stylesheet" href="/../assets/fonts/bootstrap-icons/bootstrap-icons.css">
+
+        <!--Iconsmind Icons-->
+        <link rel="stylesheet" href="/../assets/fonts/iconsmind/iconsmind.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Source+Serif+Pro:ital@0;1&display=swap" rel="stylesheet">
+
+        <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+        <!--Prism css snippets-->
+        <link rel="stylesheet" href="../assets/vendor/node_modules/css/prism-tomorrow.css">
+        <!--Mapbox-->
+        <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet'/>
+        <!-- Main CSS -->
+        <link href="../assets/css/theme.min.css" rel="stylesheet">
+
+        <title>ALMG</title>
+    </head>
+
+    <body>
+         <!--Preloader Spinner-->
+         <div class="spinner-loader bg-tint-primary">
+            <div class="spinner-border text-primary" role="status">
+            </div>
+            <span class="small d-block ms-2">Loading...</span>
+        </div>
+        <!--Header Start-->
+        <header class="z-index-fixed header-transparent header-absolute-top sticky-reverse">
+            <nav class="navbar navbar-expand-lg navbar-light navbar-link-white">
+                <div class="container position-relative">
+                    <a class="navbar-brand" href="../index.html">
+                        <img src="../assets/img/logo/logo.svg" alt="" class="img-fluid navbar-brand-sticky">
+                        <img src="../assets/img/logo/logo-white.svg" alt="" class="img-fluid navbar-brand-transparent">
+                    </a>
+
+                    <div class="d-flex align-items-center navbar-no-collapse-items order-lg-last">
+                        <button class="navbar-toggler order-last" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#mainNavbarTheme" aria-controls="mainNavbarTheme" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon">
+                                <i></i>
+                            </span>
+                        </button>
+
+                    </div>
+                    <div class="collapse navbar-collapse" id="mainNavbarTheme">
+                        <!--Navbar items-->
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle  " href="#" role="button" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false" data-bs-auto-close="outside">Landings
+                              </a>
+                              <div class="dropdown-menu dropdown-menu-md dropdown-menu-start py-0 overflow-hidden">
+                                <div class="row">
+                                  <div class="col-lg-5 ps-lg-4 position-relative">
+                                    <div class="py-1 py-lg-3 d-lg-flex flex-column">
+                                      <a href="../index.html" class="dropdown-item">Welcome</a>
+                                      <a href="/index/index-landing-classic.html" class="dropdown-item">Classic
+                                        Landing</a>
+                                      <a href="/index/index-landing-creative.html" class="dropdown-item">Creative</a>
+                                      <a href="/index/index-landing-agency.html" class="dropdown-item">Agency</a>
+                                      <a href="/index/index-landing-business.html" class="dropdown-item">Business</a>
+                                      <a href="/index/index-landing-startup.html" class="dropdown-item">Startup</a>
+                                      <a href="/index/index-landing-consultancy.html" class="dropdown-item">Consultancy</a>
+                                      <a href="/index/index-landing-saas-webapp.html" class="dropdown-item">Saas
+                                        WebApp</a>
+                                      <a href="/index/index-landing-mobile-App.html" class="dropdown-item">Mobile
+                                        App</a>
+                                      <a href="/index/index-landing-personal-portfolio.html" class="dropdown-item">Personal Portfolio</a>
+                                      <a href="/index/index-dark.html" class="dropdown-item">Dark</a>
+                                    </div>
+                                  </div>
+                                  <!--/.col-->
+                                  <div class="col-lg-7 d-none d-lg-block position-relative bg-no-repeat bg-cover bg-center"
+                                    style="background-image: url('../assets/img/960x1140/3.jpg')">
+                                    <div class="position-absolute w-100 h-100 top-0 start-0 bg-gradient-primary opacity-75">
+                                    </div>
+                                    <div
+                                      class="p-4 d-flex flex-column align-items-center text-center justify-content-center h-100 py-5 position-relative text-white">
+                                      <h5 class="display-6 mb-4">Ultimate modern design toolkit</h5>
+                                      <p class="mb-0">Built with lots of love and patient</p>
+                                      <p>
+                                    </div>
+                                  </div>
+                                  <!--/.col-->
+                                </div>
+                                <!--/.row-->
+                              </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle  " href="#" role="button" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false" data-bs-auto-close="outside">Portfolio
+                              </a>
+                              <div class="dropdown-menu">
+                                <div class="dropend">
+                                  <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Classic</a>
+                                  <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="/portfolio/portfolio-classic-2-col.html">2 Col</a>
+                                    <a class="dropdown-item" href="/portfolio/portfolio-classic-3-col.html">3 Col</a>
+                                    <a class="dropdown-item" href="/portfolio/portfolio-classic-4-col.html">4 Col</a>
+                                    <a class="dropdown-item" href="/portfolio/portfolio-classic-masonry.html">Masonry</a>
+                                  </div>
+                                </div>
+                                <div class="dropend">
+                                  <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Grid
+                                    Overlay</a>
+                                  <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="/portfolio/portfolio-grid-overlay-2-col.html">2 Col</a>
+                                    <a class="dropdown-item" href="/portfolio/portfolio-grid-overlay-3-col.html">3 Col</a>
+                                    <a class="dropdown-item" href="/portfolio/portfolio-grid-overlay-4-col.html">4 Col</a>
+                                    <a class="dropdown-item" href="/portfolio/portfolio-grid-overlay-masonry.html">Masonry</a>
+                                  </div>
+                                </div>
+                                <div class="dropend">
+                                  <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Full
+                                    width</a>
+                                  <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="/portfolio/portfolio-full-width-3-col.html">3 Col</a>
+                                    <a class="dropdown-item" href="/portfolio/portfolio-full-width-4-col.html">4 Col</a>
+                                    <a class="dropdown-item" href="/portfolio/portfolio-full-width-masonry.html">Masonry</a>
+                                  </div>
+                                </div>
+                                <div class="dropend">
+                                  <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Project
+                                    Layouts</a>
+                                  <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="/portfolio/portfolio-case-study.html">Case Study</a>
+                                    <a class="dropdown-item" href="/portfolio/portfolio-single-classic.html">classic</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle  " href="#" role="button" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false" data-bs-auto-close="outside">Blog
+                              </a>
+                              <div class="dropdown-menu">
+                                <div class="dropend">
+                                  <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Blog
+                                    Layouts</a>
+                                  <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="/blog/blog-classic.html">Blog classic</a>
+                                    <a class="dropdown-item" href="/blog/blog-standard.html">Blog standard</a>
+                                    <a class="dropdown-item" href="/blog/blog-masonry.html">Blog Masonry</a>
+                                    <a class="dropdown-item" href="/blog/blog-sidebar.html">Blog Sidebar</a>
+                                    <a class="dropdown-item" href="/blog/blog-magazine.html">Blog magazine</a>
+                                  </div>
+                                </div>
+                                <div class="dropend">
+                                  <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Article
+                                    Layouts</a>
+                                  <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="/blog/blog-article-basic.html">Basic</a>
+                                    <a class="dropdown-item" href="/blog/blog-article-video.html">Video</a>
+                                    <a class="dropdown-item" href="/blog/blog-article-gallery.html">Gallery</a>
+                                    <a class="dropdown-item" href="/blog/blog-article-parallax.html">Parallax
+                                      Header</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle  " href="#" role="button" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false" data-bs-auto-close="outside">Páginas
+                              </a>
+                              <div class="dropdown-menu">
+                                <div class="dropend">
+                                  <a class="dropdown-item dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown"
+                                    href="#">ALMG</a>
+                                  <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="/page/page-almg-default.html">Default</a>
+                                    <a class="dropdown-item" href="/page/page-almg-default2.html">Default 2</a>
+                                    <a class="dropdown-item" href="/page/page-almg-default3.html">Default 3</a>
+                                    <a class="dropdown-item" href="/page/page-almg-default4.html">Default 4</a>
+
+                                  </div>
+                                </div>
+                                <div class="dropend">
+                                  <a class="dropdown-item dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown"
+                                    href="#">About</a>
+                                  <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="/page/page-about.html">About Company</a>
+                                    <a class="dropdown-item" href="/page/page-about-modern.html">About modern</a>
+                                    <a class="dropdown-item" href="/page/page-team.html">Our Team</a>
+                                  </div>
+                                </div>
+                                <div class="dropend">
+                                  <a class="dropdown-item dropdown-toggle" href="#" aria-expanded="false"
+                                    data-bs-toggle="dropdown">Services</a>
+                                  <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="/page/page-services.html">Services</a>
+                                    <a class="dropdown-item" href="/page/page-services-modern.html">Services
+                                      Modern</a>
+                                  </div>
+                                </div>
+                                <div class="dropend">
+                                  <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Career</a>
+                                  <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="/page/page-careers.html">careers</a>
+                                    <a class="dropdown-item" href="/page/page-career-single.html">career single</a>
+                                  </div>
+                                </div>
+                                <div class="dropend">
+                                  <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Customers</a>
+                                  <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="/page/page-customers.html">Customers</a>
+                                    <a class="dropdown-item" href="/page/page-customer-story.html">Customer Story</a>
+                                  </div>
+                                </div>
+                                <div class="dropend">
+                                  <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Account</a>
+                                  <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="/page/page-profile.html">Profile</a>
+                                    <a class="dropdown-item" href="/page/page-account-signin.html">Sign In</a>
+                                    <a class="dropdown-item" href="/page/page-account-signin-alt.html">Sign In alt</a>
+                                    <a class="dropdown-item" href="/page/page-account-signup.html">Sign Up</a>
+                                    <a class="dropdown-item" href="/page/page-account-signup-alt.html">Sign Up Alt</a>
+                                    <a class="dropdown-item" href="/page/page-account-forget-password.html">Forget Password</a>
+                                  </div>
+                                </div>
+                                <div class="dropend">
+                                  <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="/#">Misc</a>
+                                  <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="/page/page-misc-error-404.html">Error 404</a>
+                                    <a class="dropdown-item" href="/page/page-misc-coming-soon.html">Coming Soon</a>
+                                    <a class="dropdown-item" href="/page/page-misc-maintenance.html">Maintenance</a>
+                                    <a class="dropdown-item" href="/page/page-misc-success-message.html">Success Message</a>
+                                    <a class="dropdown-item" href="/page/page-misc-policy.html">Privacy Policy</a>
+                                  </div>
+                                </div>
+                                <a class="dropdown-item" href="/page/page-pricing.html">Pricing Plans</a>
+                                <a class="dropdown-item" href="/page/page-faq.html">Faq</a>
+                                <a class="dropdown-item" href="/page/page-knowladge-base.html">Knowladge Base</a>
+                                <div class="dropend">
+                                  <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="/#">Contact</a>
+                                  <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="/page/page-contact-us-1.html">Contact Us 1</a>
+                                    <a class="dropdown-item" href="/page/page-contact-us-2.html">Contact Us 2</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="nav-item dropdown position-lg-static">
+                              <a class="nav-link dropdown-toggle  active" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Componentes
+                              </a>
+                              <div class="dropdown-menu p-lg-4 dropdown-menu-fw">
+                                <div class="row mx-lg-0 justify-content-lg-around">
+                                  <!--Dropdown-grid-Col-->
+                                  <div class="col-lg-3">
+                                    <div class="h-100">
+                                      <div>
+                                        <a class="dropdown-item" href="/components/component-accordion.html">Accordion</a>
+                                        <a class="dropdown-item" href="/components/component-alerts.html">Alerts</a>
+                                        <a class="dropdown-item" href="/components/component-animations.html">Animations</a>
+                                        <a class="dropdown-item" href="/components/component-avatar.html">Avatar</a>
+                                        <a class="dropdown-item" href="/components/component-breadcrumb.html">Breadcrumb</a>
+                                        <a class="dropdown-item" href="/components/component-badge.html">Badge</a>
+                                        <a class="dropdown-item" href="/components/component-blockquote.html">Blockquote</a>
+                                        <a class="dropdown-item" href="/components/component-buttons.html">Buttons</a>
+                                        <a class="dropdown-item" href="/components/component-border-shadow.html">Border & Shadow</a>
+                                        <a class="dropdown-item" href="/components/component-card-image.html">card image</a>
+                                        <a class="dropdown-item" href="/components/component-card-icon.html">card icon</a>
+                                        <a class="dropdown-item" href="/components/component-call-to-action.html">Call to action</a>
+                                        <a class="dropdown-item" href="/components/component-bs-carousel.html">Carousel bootstrap</a>
+                                        <a class="dropdown-item" href="/components/component-colors.html">Colors</a>
+                                        <a class="dropdown-item" href="/components/component-collapse.html">Collapse</a>
+                                        <a class="dropdown-item" href="/components/component-cookies.html">Cookies <span class="badge ms-1 bg-primary">New</span></a>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <!--Dropdown-grid-Col-->
+                                  <div class="col-lg-3">
+                                    <div class="h-100">
+                                      <div>
+                                        <a class="dropdown-item" href="/components/component-cursor.html">Cursor <span class="badge ms-1 bg-primary">New</span></a>
+                                        <a class="dropdown-item" href="/components/component-count-down.html">Countdown</a>
+                                        <a class="dropdown-item" href="/components/component-counteup.html">Countup</a>
+                                        <a class="dropdown-item" href="/components/component-clients.html">Clients</a>
+                                        <a class="dropdown-item" href="/components/component-dropdowns.html">Dropdown</a>
+                                        <a class="dropdown-item" href="/components/component-dropdown-grid.html">Dropdown Grid</a>
+                                        <a class="dropdown-item" href="/components/component-form-components.html">Form components</a>
+                                        <a class="dropdown-item" href="/components/component-form-select.html">Form Select</a>
+                                        <a class="dropdown-item" href="/components/component-form-layouts.html">Form Layouts</a>
+                                        <a class="dropdown-item" href="/components/component-form-quill-editor.html">Form editor</a>
+                                        <a class="dropdown-item" href="/components/component-form-flatpicker.html">Form flatpicker</a>
+                                        <a class="dropdown-item" href="/components/component-form-validation.html">Form validation</a>
+                                        <a class="dropdown-item" href="/components/component-grid-system.html">Grid system</a>
+                                        <a class="dropdown-item" href="/components/component-gsap-reveal.html">Gsap Reveal <span class="badge ms-1 bg-primary">New</span></a>
+                                        <a class="dropdown-item" href="/components/component-icons-bootstrap.html">Icons Bootstrap</a>
+                                        <a class="dropdown-item" href="/components/component-icons-boxicons.html">Boxicons <span class="badge ms-1 bg-primary">New</span></a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!--Dropdown-grid-Col-->
+                                  <div class="col-lg-3">
+                                    <div class="h-100">
+                                      <div>
+                
+                                        <a class="dropdown-item" href="/components/component-iconsmind.html">Iconsmind</a>
+                                        <a class="dropdown-item" href="/components/component-icons-social-brands.html">Icons Social</a>
+                                        <a class="dropdown-item" href="/components/component-isotope-filter.html">Isotope filter</a>
+                                        <a class="dropdown-item" href="/components/component-lightbox.html">Lightbox</a>
+                                        <a class="dropdown-item" href="/components/component-list.html">List</a>
+                                        <a class="dropdown-item" href="/components/component-link.html">Link</a>
+                                        <a class="dropdown-item" href="/components/component-modal.html">Modal</a>
+                                        <a class="dropdown-item" href="/components/component-masonry.html">Masonry</a>
+                                        <a class="dropdown-item" href="/components/component-map-box.html">Map</a>
+                                        <a class="dropdown-item" href="/components/component-navs.html">Navs</a>
+                                        <a class="dropdown-item" href="/components/component-navbar.html">Navbar</a>
+                                        <a class="dropdown-item" href="/components/component-offcanvas.html">Offcanvas</a>
+                                        <a class="dropdown-item" href="/components/component-pagination.html">Pagination</a>
+                                        <a class="dropdown-item" href="/components/component-progress.html">Progress</a>
+                                        <a class="dropdown-item" href="/components/component-popover.html">Popover</a>
+                                        <a class="dropdown-item" href="/components/component-page-header.html">Page Header</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!--Dropdown-grid-Col-->
+                                  <div class="col-lg-3">
+                                    <div class="h-100">
+                                      <div>
+                
+                                        <a class="dropdown-item" href="/components/component-parallax.html">Parallax</a>
+                                        <a class="dropdown-item" href="/components/component-pricing.html">Pricing</a>
+                                        <a class="dropdown-item" href="/components/component-swiper-slider.html">Swiper slider</a>
+                                        <a class="dropdown-item" href="/components/component-scroll-spy.html">Scroll spy</a>
+                                        <a class="dropdown-item" href="/components/component-spinners.html">Spinners</a>
+                                        <a class="dropdown-item" href="/components/component-shapes-dividers.html">Shapes & dividers <span class="badge ms-1 bg-primary">New</span></a>
+                                        <a class="dropdown-item" href="/components/component-tabbbed-content.html">Tabbed Content</a>
+                                        <a class="dropdown-item" href="/components/component-tables.html">Tables</a>
+                                        <a class="dropdown-item" href="/components/component-toast.html">Toast</a>
+                                        <a class="dropdown-item" href="/components/component-tooltip.html">Tooltip</a>
+                                        <a class="dropdown-item" href="/components/component-testimonials.html">Testimonials</a>
+                                        <a class="dropdown-item" href="/components/component-timeline.html">Timeline</a>
+                                        <a class="dropdown-item" href="/components/component-typed-text.html">Typed Text</a>
+                                        <a class="dropdown-item" href="/components/component-typography.html">Typography</a>
+                                        <a class="dropdown-item" href="/components/component-utility-classes.html">Utility classes <span class="badge ms-1 bg-primary">New</span></a>
+                                        <a class="dropdown-item" href="/components/component-video-embed.html">Video embed</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="nav-item dropdown position-lg-static">
+                              <a class="nav-link dropdown-toggle  " href="#" role="button" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Características
+                              </a>
+                              <div class="dropdown-menu dropdown-menu-fw">
+                                <div class="row mx-lg-0 py-lg-3 px-lg-2">
+                                  <div class="col-lg-4 mb-4 mb-lg-0">
+                                    <h5 class="dropdown-header mb-lg-2">
+                                      Headers Footers</h5>
+                                    <div class="row g-0">
+                                      <div class="col-lg-6">
+                                        <a href="/header/header-default.html" class="dropdown-item">Default</a>
+                                        <a href="/header/header-info-bar.html" class="dropdown-item">info bar</a>
+                                        <a href="/header/header-info-bar-2.html" class="dropdown-item">info bar 2</a>
+                                        <a href="/header/header-no-navbar.html" class="dropdown-item">No Navbar</a>
+                                        <a href="/header/header-transparent.html" class="dropdown-item">Transparent</a>
+                                        <a href="/header/header-absolute-top.html" class="dropdown-item">Absolute top</a>
+                                        <a href="/header/header-fixed-top.html" class="dropdown-item">Fixed top</a>
+                                        <a href="/header/header-center-logo.html" class="dropdown-item">Center logo</a>
+                                        <a href="/header/header-sticky-down.html" class="dropdown-item">Sticky down</a>
+                                        <a href="/header/header-sticky-up.html" class="dropdown-item">Sticky up</a>
+                                        <a href="/header/header-sticky-fixed.html" class="dropdown-item">Sticky fixed</a>
+                                        <a href="/header/header-sticky-boxed.html" class="dropdown-item">Sticky Boxed <span class="badge bg-primary me-1">New</span></a>
+                                        <a href="/header/header-full-screen.html" class="dropdown-item">Full screen</a>
+                                        <a href="/header/header-login.html" class="dropdown-item">Login</a>
+                                        <a href="/header/header-logged-in.html" class="dropdown-item">Logged In</a>
+                                      </div>
+                                      <!--/.col-sm-6-->
+                                      <div class="col-lg-6">
+                                        <a href="/header/header-search-bar.html" class="dropdown-item">Search</a>
+                                        <a href="/header/header-search-bar-2.html" class="dropdown-item">Search 2</a>
+                                        <a href="/header/header-shopping-cart.html" class="dropdown-item">Shopping Cart</a>
+                                        <a href="/header/header-shopping-cart-2.html" class="dropdown-item">Shopping Cart 2</a>
+                                        <a href="/header/header-offcanvas.html" class="dropdown-item">offcanvas</a>
+                                        <div class="dropdown-divider mx-3"></div>
+                                        <a href="/footer/footer-1.html" class="dropdown-item">Footer 1</a>
+                                        <a href="/footer/footer-2.html" class="dropdown-item">Footer 2</a>
+                                        <a href="/footer/footer-3.html" class="dropdown-item">Footer 3</a>
+                                        <a href="/footer/footer-4.html" class="dropdown-item">Footer 4</a>
+                                        <a href="/footer/footer-5.html" class="dropdown-item">Footer 5</a>
+                                        <a href="/footer/footer-6.html" class="dropdown-item">Footer 6</a>
+                                        <a href="/footer/footer-7.html" class="dropdown-item">Footer 7</a>
+                                        <a href="/footer/footer-8.html" class="dropdown-item">Footer 8</a>
+                                        <a href="/footer/footer-9.html" class="dropdown-item">Footer 9</a>
+                                      </div>
+                                    </div>
+                                    <!--/.row-->
+                                  </div>
+                                  <!--/.End col-->
+                                  <div class="col-lg-5 mb-4 mb-lg-0">
+                                    <h5 class="dropdown-header mb-lg-2">
+                                      Hero Covers Slider</h5>
+                                      <div class="row">
+                                        <div class="col-lg-6">
+                                          <a href="/hero/hero-simple.html" class="dropdown-item">Hero Simple</a>
+                                          <a href="/hero/hero-parallax.html" class="dropdown-item">Hero Parallax</a>
+                                          <a href="/hero/hero-parallax-element.html" class="dropdown-item"> Parallax Element</a>
+                                          <a href="/hero/hero-fullscreen.html" class="dropdown-item">Hero Fullscreen</a>
+                                          <a href="/hero/hero-newsletter.html" class="dropdown-item">Hero Newsletter</a>
+                                          <a href="/hero/hero-signup.html" class="dropdown-item">Form SignUp</a>
+                                          <a href="/hero/hero-pricing.html" class="dropdown-item">Form Pricing</a>
+                                          <a href="/hero/hero-video-button.html" class="dropdown-item">Video popup</a>
+                                          <a href="/hero/hero-youtube-video.html" class="dropdown-item">Youtube Video</a>
+                                          <a href="/hero/hero-vimeo-video.html" class="dropdown-item">Vimeo Video</a>
+                                          <a href="/hero/hero-html5-video.html" class="dropdown-item">HTML5 Video</a>
+                                        </div>
+                                        <div class="col-lg-6">
+                                          <a href="/hero/hero-bg-shape.html" class="dropdown-item">BG Shape</a>
+                                          <a href="/hero/hero-bg-shape-2.html" class="dropdown-item">BG Shape 2</a>
+                                          <a href="/hero/hero-shape-image.html" class="dropdown-item">Shape Image</a>
+                                          <a href="/hero/hero-shape-image-2.html" class="dropdown-item">Shape Image 2</a>
+                                          <a href="/hero/hero-illustration.html" class="dropdown-item">Illustration</a>
+                                          <a href="/hero/hero-typed-text.html" class="dropdown-item">Typed Text</a>
+                                          <a href="/hero/hero-text-outline.html" class="dropdown-item">Text outline <span class="badge ms-1 bg-primary">New</span></a>
+                                          <a href="/hero/hero-slider-swiper.html" class="dropdown-item">Swiper slider</a>
+                                          <a href="/hero/hero-slider-master.html" class="dropdown-item">Master Slider</a>
+                                          <a href="/hero/hero-slider-master-alt.html" class="dropdown-item">Master Slider Alt</a>
+                                          <a href="/hero/hero-particles.html" class="dropdown-item">Particles <span class="badge ms-1 bg-primary">New</span></a>
+                                        </div>
+                                      </div>
+                                  </div>
+                                  <!--/.End col-->
+
+                                  <div class="col-lg-3">
+                                    <h5 class="dropdown-header mb-lg-2">
+                                      Layouts</h5>
+                                    <a class="dropdown-item" target="_blank" href="/layout/layout-blank.html">Blank</a>
+                                    <a class="dropdown-item" href="/layout/layout-full-width.html">Full width</a>
+                                    <a class="dropdown-item" href="/layout/layout-sidebar-start.html">Sidebar start</a>
+                                    <a class="dropdown-item" href="/layout/layout-sidebar-end.html">Sidebar end</a>
+                                    <a class="dropdown-item" href="/layout/layout-footer-fixed.html">Footer fixed</a>
+                                    <a class="dropdown-item" href="/layout/layout-sticky-sidebar.html">Sticky Sidebar</a>
+                                    <a class="dropdown-item" href="/layout/layout-secondary-navbar.html">Secondary Navbar</a>
+                                    <hr>
+                                    <h5 class="dropdown-header mb-lg-2">
+                                      Theme styles</h5>
+                                    <a class="d-flex align-items-center dropdown-item" href="/theme/theme-style-default.html">
+                                      <span class="d-inline-block align-middle me-2 rounded-circle shadow-lg lh-1">
+                                        <svg width="16" height="16" class="align-middle" viewBox="0 0 10 10" fill="none"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <path
+                                            d="M0 5C0 2.23858 2.23858 0 5 0V0C7.76142 0 10 2.23858 10 5V5C10 7.76142 7.76142 10 5 10V10C2.23858 10 0 7.76142 0 5V5Z"
+                                            fill="#3655ff" />
+                                        </svg>
+                                      </span> Theme Blue (default)
+                                    </a>
+                                    <a class="d-flex align-items-center dropdown-item" href="/theme/theme-style-purple.html">
+                                      <span class="d-inline-block align-middle me-2 rounded-circle shadow-lg lh-1">
+                                        <svg width="16" height="16" class="align-middle" viewBox="0 0 10 10" fill="none"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <path
+                                            d="M0 5C0 2.23858 2.23858 0 5 0V0C7.76142 0 10 2.23858 10 5V5C10 7.76142 7.76142 10 5 10V10C2.23858 10 0 7.76142 0 5V5Z"
+                                            fill="#64318e" />
+                                        </svg>
+                                      </span> Theme Purple
+                                    </a>
+                                    <a class="d-flex align-items-center dropdown-item" href="/theme/theme-style-teal.html">
+                                      <span class="d-inline-block align-middle me-2 rounded-circle shadow-lg lh-1">
+                                        <svg width="16" height="16" class="align-middle" viewBox="0 0 10 10" fill="none"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <path
+                                            d="M0 5C0 2.23858 2.23858 0 5 0V0C7.76142 0 10 2.23858 10 5V5C10 7.76142 7.76142 10 5 10V10C2.23858 10 0 7.76142 0 5V5Z"
+                                            fill="#389769" />
+                                        </svg>
+                                      </span> Theme teal
+                                    </a>
+                                    <a class="d-flex align-items-center dropdown-item" href="/theme/theme-style-pink.html">
+                                      <span class="d-inline-block align-middle me-2 rounded-circle shadow-lg lh-1">
+                                        <svg width="16" height="16" class="align-middle" viewBox="0 0 10 10" fill="none"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <path
+                                            d="M0 5C0 2.23858 2.23858 0 5 0V0C7.76142 0 10 2.23858 10 5V5C10 7.76142 7.76142 10 5 10V10C2.23858 10 0 7.76142 0 5V5Z"
+                                            fill="#f15b66"/>
+                                        </svg>
+                                      </span> Theme Pink
+                                    </a>
+                                  </div>
+                                  <!--/.End col-->
+                                </div>
+                              </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle  " href="#" role="button"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Demos
+                              </a>
+                              <div class="dropdown-menu p-lg-3 dropdown-menu-end dropdown-menu-xs">
+                                <a class="dropdown-item" target="_blank" href="/demo/demo-shop.html">
+                                  E-commerce
+                                </a>
+                                <a class="dropdown-item" target="_blank" href="/demo/demo-one-page.html">
+                                  One Page
+                                </a>
+                                <a class="dropdown-item" target="_blank" href="/demo/demo-real-estate.html">
+                                  Real estate <span class="badge bg-primary ms-1">New</span>
+                                </a>
+                                <!--footer-->
+                                <div class="p-3">
+                                  <div class="row">
+                                    <div class="col-12 d-flex align-items-center justify-content-center">
+  
+                                      <span class="flex-grow-1 small text-muted">Many more demos
+                                        coming soon...</span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!--Main content-->
+        <main>
+            <!--page-hero-->
+            <section class="bg-dark text-white position-relative">
+                <div class="container pt-14 pb-9 pb-lg-11 position-relative z-index-1">
+                    <div class="row pt-lg-9 pb-lg-5 align-items-center justify-content-center text-center">
+                        <div class="col-lg-10 col-xl-7 z-index-2">
+                            <div class="position-relative">
+                                <div>
+                                    <nav class="d-flex justify-content-center" aria-label="breadcrumb">
+                                        <div class="mb-4">
+                                            <ol class="breadcrumb">
+                                                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                                <li class="breadcrumb-item active">Components</li>
+                                                <li class="breadcrumb-item active" aria-current="page">Map</li>
+                                            </ol>
+                                        </div>
+                                    </nav>
+                                    <h1 class="mb-0 display-4">
+                                        Mapbox Map
+                                    </h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="position-relative bg-gradient-light">
+                <div class="container py-9 py-lg-11">
+                    <div class="row">
+                        <div class="col-lg-10 mx-auto">
+                            <div class="d-flex align-items-center justify-content-center mb-4">
+                                <h6 class="mb-0 me-2 me-lg-4">Demo</h6>
+                                <span class="border-top d-block flex-grow-1 border-light"></span>
+                            </div>
+
+                            <!--Map start-->
+                            <div id="map" class="w-100 mb-5 rounded-3" style="height: 350px"></div>
+                            <!--/.Map End-->
+
+                            <!--///////////CODE SNIPPET FOR LINK STYLES-->
+                            <nav class="nav nav-tabs mb-3">
+                                <a href="#codeMapHtml" data-bs-toggle="tab" class="nav-link active">HTML</a>
+                                <a href="#codeMapCss" data-bs-toggle="tab" class="nav-link">Css</a>
+                                <a href="#codeMapJs" data-bs-toggle="tab" class="nav-link">Js</a>
+                            </nav>
+                            <div class="tab-content">
+                                <div class="tab-pane show fade active" id="codeMapHtml">
+                                    <div class="position-relative">
+                                        <!--Copy clipboard button-->
+                                        <button
+                                            class="btn btn-sm position-absolute end-0 top-0 z-index-1 mt-2 me-2 btn-primary copy-link"
+                                            data-clipboard-target="#copyMapHtml1" data-clipboard-action="copy" id="copyMapHtml1-1">Copy code</button>
+        <pre id="copyMapHtml1" class="language-markup" data-lang="html">
+<code>
+&lt;div id="map" class="w-100 mb-5 rounded-3" style="height: 350px">&lt;/div> 
+</code></pre>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="codeMapCss">
+                                    <div class="position-relative">
+                                        <!--Copy clipboard button-->
+                                        <button
+                                            class="btn btn-sm position-absolute end-0 top-0 z-index-1 mt-2 me-2 btn-primary copy-link"
+                                            data-clipboard-target="#copyMapCss2" data-clipboard-action="copy" id="copyMapCss2-2">Copy code</button>
+<pre id="copyMapCss2" class="language-markup" data-lang="html">
+<code>
+&lt;!--Mapbox-->
+&lt;link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet'/>
+</code></pre>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="codeMapJs">
+                                    <div class="position-relative">
+                                        <!--Copy clipboard button-->
+                                        <button
+                                            class="btn btn-sm position-absolute end-0 top-0 z-index-1 mt-2 me-2 btn-primary copy-link"
+                                            data-clipboard-target="#copyMapJs3" data-clipboard-action="copy" id="copyMapJs3-3">Copy code</button>
+<pre id="copyMapJs3" class="language-markup" data-lang="html">
+<code>
+    &lt;!--maps js-->
+    &lt;script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'>&lt;/script>
+    &lt;script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoiZGVzaWdubXlsaWZlIiwiYSI6ImNqeHlkMzljejAwaHAzbXFtaXphYWI3NmYifQ.IRPz2gseBSE-DQMzurY4ZA';
+        var officeLocation = [75.788350, 26.958520];
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/light-v10',
+            center: officeLocation,
+            zoom: 9
+        });
+        // create the popup
+        var popup = new mapboxgl.Popup({ offset: 18 }).setHTML(
+            '&lt;h6 class="text-primary mb-0 fw-normal">Our office&lt;/h6>&lt;small class="text-muted">CreativeDM, SE-03, Vidhyadhar Nagar, Jaipur, 302012&lt;/small>'
+        );
+        // create DOM element for the marker
+        var el = document.createElement('div');
+        el.id = 'marker';
+        // disable map zoom when using scroll
+        map.scrollZoom.disable();
+        // create the marker
+        new mapboxgl.Marker(el)
+            .setLngLat(officeLocation)
+            .setPopup(popup) // sets a popup on this marker
+            .addTo(map);
+    &lt;/script>
+</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--///////////CODE SNIPPET END-->
+
+                            <div class="text-end border border-top-0 p-4">
+                                <a target="_blank" href="https://www.mapbox.com/">Explore mapbox</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!--Footer start-->
+
+        <footer id="footer" class="bg-primary text-white position-relative">
+            <svg class="position-absolute end-0 top-0 text-white flip-y d-none d-md-block" fill="currentColor" width="100%" height="120" preserveAspectRatio="none" viewBox="0 0 1440 150">
+                <path d="M0,139.588931 C152,152.720009 299.666667,139.401344 443,99.6329343 C658,39.9803202 681,66.1486839 905,90.6287661 C1129,115.108848 1222,59.3955578 1293,37.4478979 C1340.33333,22.8161246 1389.33333,16.1567919 1440,17.4698997 L1440,150 L0,150 L0,139.588931 Z"></path>
+                <path d="M0,117.980769 C152,145.786435 299.666667,138.940533 443,97.4430619 C658,35.1968558 697,56.6671048 921,82.2115385 C1145,107.755972 1222,55.4562342 1293,32.5543282 C1340.33333,17.2863909 1389.33333,10.337522 1440,11.7077215 L1440,150 L0,150 L0,117.980769 Z" fill-opacity="0.3"></path>
+                <path d="M0,106.034486 C156.666667,132.662839 291.666667,129.406134 405,96.2643713 C575,46.5517277 637,36.0308187 861,62.6436817 C1085,89.2565447 1215,51.1586623 1286,27.2988541 C1333.33333,11.3923153 1384.66667,2.2926973 1440,1.13686838e-13 L1440,150 L0,150 L0,106.034486 Z" fill-opacity="0.3"></path>
+            </svg>
+            <div class="container pt-5 pt-md-15">
+                <div class="row pt-5" data-masonry='{"percentPosition": true }'>
+                    <div class="col-12 col-md-4 col-lg-3 mb-6 ms-auto">
+                        <!--Title-->
+                        <h6 class="small mb-2 text-uppercase">Institucional</h6>
+                        <!--Nav-->
+                        <ul class="nav flex-column mb-0">
+                            <li class="nav-item"><a class="nav-link pb-0" href="#!">Agenda</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#!">Entenda a Assembleia</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#!">Mesa Diretora</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#!">Procuradoria da Mulher</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#!">Direcionamento Estratégico</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#!">Balanço das Atividades</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#!">Educação para Cidadania</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#!">Como Chegar</a></li>
+                        </ul>
+                    </div>
+                    <!--/.Col-->
+                    <div class="col-12 col-md-4 col-lg-3 mb-6 ms-auto">
+                        <!--Title-->
+                        <h6 class="small mb-2 text-uppercase">Atividade Legislativa</h6>
+                        <!--Nav-->
+                        <ul class="nav flex-column mb-0">
+                            <li class="nav-item"><a class="nav-link pb-0" href="#!">Plenário</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#!">Comissões</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#!">Tramitação de Projetos</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#!">Fiscalização</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#!">Legislação</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#!">Planejamento e Orçamento</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#!">Pronunciamentos</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#!">Diário do Legislativo</a></li>
+                        </ul>
+                    </div>
+                    <!--/.Col-->
+                    <div class="col-12 col-md-4 col-lg-3 mb-6 ms-auto">
+                        <!--Title-->
+                        <h6 class="small mb-2 text-uppercase">Serviços</h6>
+                        <!--Nav-->
+                        <ul class="nav flex-column mb-0">
+                            <li class="nav-item"><a class="nav-link pb-0" href="#!">Procon Assembleia</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#!">Apoio às Câmaras</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#!">Apoio às Prefeituras</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#!">Sala de Imprensa</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#!">Biblioteca</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#!">Espaço Cidadania</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#!">Resultado de Eleições</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#!">Municípios de Minas Gerais</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#!">Boletins por e-mail</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#!">Glossário</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#!">Fale com a Assembleia</a></li>
+                        </ul>
+                    </div>
+                    <!--/.Col-->
+                    <div class="col-12 col-md-4 col-lg-3 mb-6 ms-auto">
+                        <!--Title-->
+                        <h6 class="small mb-2 text-uppercase">Deputados</h6>
+                        <!--Nav-->
+                        <ul class="nav flex-column mb-0">
+                            <li class="nav-item"><a class="nav-link pb-0" href="#!">Conheça os Deputados</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#!">Lideranças</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#!">Representação Partidária</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#!">Deputados Majoritários por Localidade</a></li>
+                        </ul>
+                    </div>
+                    <!--/.Col-->
+                    <div class="col-12 col-md-4 col-lg-3 mb-6 ms-auto">
+                        <!--Title-->
+                        <h6 class="small mb-2 text-uppercase">Participe</h6>
+                        <!--Nav-->
+                        <ul class="nav flex-column mb-0">
+                            <li class="nav-item"><a class="nav-link pb-0" href="#!">Eventos</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#!">Assembleia Cultural</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#!">Dê sua opinião sobre projetos de lei</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#!">Reuniões Interativas</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#!">Consulta Pública</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#!">Envie sua sugestão de projeto de lei</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#!">Enquetes</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#!">Visite a Assembleia</a></li>
+                        </ul>
+                    </div>
+                    <!--/.Col-->
+                    <div class="col-12 col-md-4 col-lg-3 mb-6 ms-auto">
+                        <!--Title-->
+                        <h6 class="small mb-2 text-uppercase">Portal da ALMG</h6>
+                        <!--Nav-->
+                        <ul class="nav flex-column mb-0">
+                            <li class="nav-item"><a class="nav-link pb-0" href="#!">Sobe o Portal</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#!">Termos de Uso e Política de Privacidade</a></li>
+                        </ul>
+                    </div>
+                    <!--/.Col-->
+                    <div class="col-12 col-md-4 col-lg-3 mb-6 ms-auto">
+                        <!--Title-->
+                        <h6 class="small mb-2 text-uppercase">Transparência</h6>
+                        <!--Nav-->
+                        <ul class="nav flex-column mb-0">
+                            <li class="nav-item"><a class="nav-link pb-0" href="#!">Prestação de Contas</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#!">Licitações</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#!">Concursos Públicos</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#!">Gestão de Dados Pessoais</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#!">Dados Abertos</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#!">Políticas Públicas</a></li>
+                        </ul>
+                    </div>
+                    <!--/.Col-->
+                    <div class="col-12 col-md-4 col-lg-3 mb-6 ms-auto">
+                        <!--Title-->
+                        <h6 class="small mb-2 text-uppercase">Comunicação</h6>
+                        <!--Nav-->
+                        <ul class="nav flex-column mb-0">
+                            <li class="nav-item"><a class="nav-link pb-0" href="#!">Notícias</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#!">TV Assembleia</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#!">Rádio Assembleia</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#!">Galeria de Fotos</a></li>
+                        </ul>
+                    </div>
+                    <!--/.Col-->
+                </div>
+                <hr class="mb-5 mt-0">
+            </div> <!-- / .container -->
+            <div class="pb-5">
+                <div class="container">
+                    <div class="row justify-content-md-between align-items-center">
+                        <div class="d-flex mb-3 mb-md-0 col-12 col-lg-4 justify-content-center justify-content-md-left">
+                            <div class="d-flex">
+                                <!--Icon-->
+                                <div class="me-4 flex-shrink-0 position-relative d-none d-lg-block">
+                                    <i class="bi bi-geo-alt-fill display-4 lh-1 text-khaki position-relative"></i>
+                                </div>
+                                <div class="flex-grow-1">
+                                    <!--Description-->
+                                    <p class="mb-0 text-light small text-center text-lg-start">
+                                        Rua Rodrigues Caldas, 30 | Santo Agostinho<br />
+                                        CEP 30190-921 | Belo Horizonte/MG<br />
+                                        (31) 2108-7000
+                                    </p>
+                                    <a href="#" class="btn btn-khaki fw-semibold btn-sm text-uppercase mt-2 me-2">
+                                        <i class="bx bx-map-alt fs-5 lh-1 align-text-bottom me-1"></i>Como chegar
+                                    </a>
+                                    <a href="#" class="btn btn-khaki fw-semibold btn-sm text-uppercase mt-2">
+                                        <i class="bx bx-phone fs-5 lh-1 align-text-bottom me-1"></i>Lista Telefônica
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4 d-flex justify-content-center mb-3 mb-lg-0 lh-sm mt-4 mt-lg-0">
+                            <a class="link-light" href="#"><i class="bi bi-instagram fs-4 ms-3 text-khaki"></i></a>
+                            <a class="link-light" href="#"><i class="bi bi-facebook fs-4 ms-3 text-khaki"></i></a>
+                            <a class="link-light" href="#"><i class="bi bi-telegram fs-4 ms-3 text-khaki"></i></a>
+                            <a class="link-light" href="#"><i class="bi bi-twitter fs-4 ms-3 text-khaki"></i></a>
+                            <a class="link-light" href="#"><i class="bi bi-youtube fs-4 ms-3 me-3 text-khaki"></i></a>
+                        </div>
+                        <div class="col-12 col-lg-4 text-center text-lg-start mt-2 mt-lg-0">
+                            <a href="#" class="btn btn-khaki fw-semibold btn-sm text-uppercase mt-2">
+                                <i class="bi bi-house-fill fs-5 lh-1 align-text-bottom me-1"></i>Intranet
+                            </a>
+                            <a href="#" class="btn btn-khaki fw-semibold btn-sm text-uppercase mt-2 ms-2">
+                                <i class="bi bi-envelope-fill fs-5 lh-1 align-text-bottom me-2"></i>Webmail
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <!-- begin Back to Top button -->
+        <a href="#" class="toTop">
+            <i class="bx bxs-up-arrow"></i>
+        </a>
+        <!-- scripts -->
+        <script src="../assets/js/theme.bundle.js"></script>
+
+        <!--maps js-->
+        <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+        <script>
+            mapboxgl.accessToken = 'pk.eyJ1IjoiZGVzaWdubXlsaWZlIiwiYSI6ImNqeHlkMzljejAwaHAzbXFtaXphYWI3NmYifQ.IRPz2gseBSE-DQMzurY4ZA';
+            var officeLocation = [75.788350, 26.958520];
+            var map = new mapboxgl.Map({
+                container: 'map',
+                style: 'mapbox://styles/mapbox/light-v10',
+                center: officeLocation,
+                zoom: 9
+            });
+            // create the popup
+            var popup = new mapboxgl.Popup({ offset: 18 }).setHTML(
+                '<h6 class="text-primary mb-0 fw-normal">Our office</h6><small class="text-muted">CreativeDM, SE-03, Vidhyadhar Nagar, Jaipur, 302012</small>'
+            );
+            // create DOM element for the marker
+            var el = document.createElement('div');
+            el.id = 'marker';
+            // disable map zoom when using scroll
+            map.scrollZoom.disable();
+            // create the marker
+            new mapboxgl.Marker(el)
+                .setLngLat(officeLocation)
+                .setPopup(popup) // sets a popup on this marker
+                .addTo(map);
+        </script>
+
+                <!--Copy to clipboard + prismJs-->
+                <script src="../assets/vendor/node_modules/js/prism.js"></script>
+                <script src="../assets/vendor/node_modules/js/clipboard.min.js"></script>
+                <script>
+                    /* Clipboard JS - Copy code button */
+                    var cl = document.querySelector('.copy-link');
+                    if (typeof !!cl && (cl) != 'undefined' && cl != null) {
+                        var cle = document.querySelectorAll('.copy-link');
+                        cle.forEach(el => {
+                            el.addEventListener("click", function () {
+                                var theButton = this;
+                                var copyId = this.getAttribute('id');
+                                var clipboard = new ClipboardJS('#' + copyId);
+        
+                                clipboard.on('success', function (e) {
+                                    e.clearSelection();
+                                    theButton.innerHTML = 'Copied!';
+                                    setTimeout(function () {
+                                        theButton.innerHTML = 'Copy code';
+                                    }, 5000);
+                                });
+                            });
+                        });
+                    }
+        
+                </script>
+    </body>
+
+</html>
