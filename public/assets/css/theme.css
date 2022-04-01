@@ -32161,8 +32161,8 @@ body.loaded .spinner-loader {
 }
 
 .si-hover-slack:hover {
-  background-color: #e01e5a !important;
-  border-color: #e01e5a !important;
+  background-color: rgb(224, 30, 90) !important;
+  border-color: rgb(224, 30, 90) !important;
   color: #fff !important;
 }
 
@@ -32617,8 +32617,8 @@ body.loaded .spinner-loader {
 }
 
 .si-colored-slack {
-  background-color: #e01e5a !important;
-  border-color: #e01e5a !important;
+  background-color: rgb(224, 30, 90) !important;
+  border-color: rgb(224, 30, 90) !important;
   color: #fff !important;
 }
 .si-colored-slack:hover {
