@@ -6,17 +6,35 @@
 // Color system
 
 // scss-docs-start gray-color-variables
-// $white:    #fff !default;
-// $gray-100: #f9f9fe !default;
-// $gray-200: #e7e7ef !default;
-// $gray-300: #d6d6df !default;
-// $gray-400: #c5c5cf !default;
-// $gray-500: #898997 !default;
-// $gray-600: #474e5f !default;
-// $gray-700: #343a49 !default;
-// $gray-800: #252a36 !default;
-// $gray-900: #191d27 !default;
-// $black:    #0e1119 !default;
+/*Default
+$white:    #fff !default;
+$gray-100: #f9f9fe !default;
+$gray-200: #e7e7ef !default;
+$gray-300: #d6d6df !default;
+$gray-400: #c5c5cf !default;
+$gray-500: #898997 !default;
+$gray-600: #474e5f !default;
+$gray-700: #343a49 !default;
+$gray-800: #252a36 !default;
+$gray-900: #191d27 !default;
+$black:    #0e1119 !default;
+*/
+
+/*Default 2*/
+$white:    #fff !default;
+$gray-100: #f4f4ef !default;
+$gray-200: #e1e0d9 !default;
+$gray-300: #c6c5bb !default;
+$gray-400: #b5b4ab !default;
+$gray-500: #9b9a8f !default;
+$gray-600: #474e5f !default;
+$gray-700: #343a49 !default;
+$gray-800: #252a36 !default;
+$gray-900: #191d27 !default;
+$black:    #0e1119 !default;
+
+
+/*Template
 $white:    #fff !default;
 $gray-100: #f9f9fe !default;
 $gray-200: #e7e7ef !default;
@@ -28,6 +46,21 @@ $gray-700: #2E3552 !default;
 $gray-800: #232A42 !default;
 $gray-900: #191E32 !default;
 $black:    #0E111F !default;
+*/
+
+/*Guerrinha
+$white:    #fff !default;
+$gray-100: #f4f4ef !default;
+$gray-200: #e1e0d9 !default;
+$gray-300: #c6c5bb !default;
+$gray-400: #b5b4ab !default;
+$gray-500: #9b9a8f !default;
+$gray-600: #7b7a71 !default;
+$gray-700: #605f58 !default;
+$gray-800: #42423d !default;
+$gray-900: #2d2d2a !default;
+$black:    #0E111F !default;
+*/
 // scss-docs-end gray-color-variables
 
 // fusv-disable
@@ -47,12 +80,12 @@ $grays: (
 // fusv-enable
 
 // scss-docs-start color-variables
-$blue:#377094 !default;
-$blue-light:#69B3E0 !default;
+$blue:#007D94 !default;
+$blue-light:#26C0E0 !default;
 $palha:#E0E0AD !default;
 $khaki:#94947E !default;
 $indigo: #5865f5  !default;
-$purple: #C26BF8 !default;
+$purple: #8E44AD !default;
 $pink: #F65660 !default;
 $red: #ab0000 !default;
 $orange: #ff6838 !default;
@@ -60,12 +93,13 @@ $yellow: #FFC940 !default;
 $green: #37A878 !default;
 $teal: #21A5A7 !default;
 $cyan: #28abff !default;
+$green-dark: #407A52 !default;
 // scss-docs-end color-variables
 
 // scss-docs-start colors-map
 $colors: (
   "blue":       $blue,
-  "blue-light":       $blue-light,
+  "blue-light": $blue-light,
   "palha":     $palha,
   "khaki":     $khaki,
   "indigo":     $indigo,
@@ -75,6 +109,7 @@ $colors: (
   "orange":     $orange,
   "yellow":     $yellow,
   "green":      $green,
+  "green-dark": $green-dark,
   "teal":       $teal,
   "cyan":       $cyan,
   "white":      $white,
@@ -89,16 +124,23 @@ $secondary: $blue !default;
 $secondary-light: $blue-light !default;
 $palha: $palha !default;
 $khaki: $khaki !default;
+$green-dark: $green-dark !default;
 $success: $green !default;
 $info: $cyan !default;
 $warning: $yellow !default;
 $danger: $pink !default;
 $light: $gray-100 !default;
+$gray-100: $gray-100 !default;
 $gray-200: $gray-200 !default;
+$gray-300: $gray-300 !default;
 $gray-400: $gray-400 !default;
 $gray-500: $gray-500 !default;
-$white: $white !default;
+$gray-600: $gray-600 !default;
+$gray-700: $gray-700 !default;
 $gray-800: $gray-800 !default;
+$gray-900: $gray-900 !default;
+$white: $white !default;
+$orange: $orange !default;
 $dark: $black !default;
 // scss-docs-end theme-color-variables
 
@@ -109,16 +151,24 @@ $theme-colors: (
   "secondary-light":  $secondary-light,
   "palha":  $palha,
   "khaki":  $khaki,
+  "participe": $green-dark,
+  "servico": $orange,
   "success":    $success,
   "info":       $info,
   "warning":    $warning,
   "danger":     $danger,
   "light":      $light,
   "white":      $white,
+  "orange":      $orange,
+  "gray-100":   $gray-100,
   "gray-200":   $gray-200,
-  "gray-500":   $gray-500,
+  "gray-300":   $gray-300,
   "gray-400":   $gray-400,
+  "gray-500":   $gray-500,
+  "gray-600":   $gray-600,
+  "gray-700":   $gray-700,
   "gray-800":   $gray-800,
+  "gray-900":   $gray-900,
   "dark":       $dark
 ) !default;
 // scss-docs-end theme-colors-map
@@ -1252,8 +1302,8 @@ $dropdown-divider-margin-y:         $spacer * .5 !default;
 $dropdown-box-shadow:               $box-shadow-lg !default;
 
 $dropdown-link-color:               $gray-600 !default;
-$dropdown-link-hover-color:         shade-color($dropdown-link-color, 10%) !default;
-$dropdown-link-hover-bg:            $gray-100 !default;
+$dropdown-link-hover-color:         shade-color($dropdown-link-color, 80%) !default;
+$dropdown-link-hover-bg:            $gray-200 !default;
 
 $dropdown-link-active-color:        $primary !default;
 $dropdown-link-active-bg:           $gray-200 !default;

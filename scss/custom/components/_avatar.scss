@@ -19,6 +19,10 @@
         width: $spacer * 5;
         height: $spacer * 5;
     }
+    &.xx{
+        width: $spacer * 6;
+        height: $spacer * 6;
+    }
 }
 .avatar-status{
     position: relative;

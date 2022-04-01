@@ -1,0 +1,826 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../assets/img/favicon.ico" type="image/ico">
+    <!--Box Icons-->
+    <link rel="stylesheet" href="../assets/fonts/boxicons/css/boxicons.min.css">
+
+    <!--Bootstrap Icons -->
+    <link rel="stylesheet" href="../assets/fonts/bootstrap-icons/bootstrap-icons.css">
+
+    <!--Iconsmind Icons-->
+    <link rel="stylesheet" href="../assets/fonts/iconsmind/iconsmind.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Source+Serif+Pro:ital@0;1&display=swap" rel="stylesheet">
+
+
+    <!-- Main CSS -->
+    <link href="../assets/css/theme.min.css" rel="stylesheet">
+
+    <title>ALMG</title>
+    <meta name="description" content="Site da ALMG">
+</head>
+
+<body>
+    <!--Header Start-->
+    <!--header class="z-index-fixed header-transparent sticky-reverse"-->
+    <header>
+        <nav class="navbar navbar-expand-xl navbar-primary bg-gray-700 d-none d-xl-block">
+            <div class="container py-2 position-relative">
+                <div class="w-100 d-flex justify-content-center">
+                    <div class="dropdown me-3 d-none d-xl-block">
+                        <button class="btn btn-secondary btn-sm text-uppercase dropdown-toggle" type="button"
+                            id="sitesAlmg" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="bi bi-house-fill fs-6 me-2 lh-1"></i>Sites da ALMG
+                        </button>
+                        <div class="dropdown-menu border-1 border-gray-200" aria-labelledby="sitesAlmg">
+                            <a class="dropdown-item fw-semibold" href="#">Portal de Políticas Públicas</a>
+                            <a class="dropdown-item fw-semibold" href="#">Páginas Especiais</a>
+                            <a class="dropdown-item fw-semibold" href="#">EAD ALMG</a>   
+                            <a class="dropdown-item fw-semibold" href="#">Acervo Arquivístico</a>
+                            <a class="dropdown-item fw-semibold" href="#">Coleção Memória</a>
+                            <a class="dropdown-item fw-semibold" href="#">Resultado de Eleições</a>
+                    
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-secondary btn-sm text-uppercase h-0 me-3" data-bs-target="#modal-search" data-bs-toggle="modal">
+                        <i class="bi bi-search fs-6 me-2 lh-1"></i>Buscar em toda ALMG
+                    </a>
+                    <div class="me-10 ms-10 d-flex flex-wrap align-items-center h-auto">
+                        <a class="d-block width-2x height-2x me-3 hover-lift hover-shadow rounded-circle" href="#"><img src="../assets/img/brands/Instagram.svg" alt="Instagram" class="rounded-circle w-100 h-auto"></a>
+                        <a class="d-block width-2x height-2x me-3 hover-lift hover-shadow rounded-circle" href="#"><img src="../assets/img/brands/Telegram.svg" alt="Telegram" class="rounded-circle w-100 h-auto"></a>
+                        <a class="d-block width-2x height-2x me-3 hover-lift hover-shadow rounded-circle" href="#"><img src="../assets/img/brands/Facebook.svg" alt="Facebook" class="rounded-circle w-100 h-auto"></a>
+                        <a class="d-block width-2x height-2x me-3 hover-lift hover-shadow rounded-circle" href="#"><img src="../assets/img/brands/Twitter.svg" alt="Twitter" class="rounded-circle w-100 h-auto"></a>
+                        <a class="d-block width-2x height-2x me-3 hover-lift hover-shadow rounded-circle" href="#"><img src="../assets/img/brands/Youtube.svg" alt="Youtube" class="rounded-circle w-100 h-auto"></a>
+                    </div>
+                    <a href="#" class="btn btn-primary btn-sm text-uppercase me-3 h-0">
+                        <i class="bi bi-chat-fill fs-6 me-2 lh-1"></i>Fale com a ALMG
+                    </a>
+                    <a href="#" class="btn btn-primary btn-sm text-uppercase h-0 me-3">
+                        <i class="bi bi-person-fill fs-6 me-1 lh-1"></i>Entrar
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-xl bg-white">
+            <div class="container position-relative">
+                <a class="navbar-brand" href="page-almg-default.html">
+                    <img src="../assets/img/logo/logo.svg" alt="Logomarca ALMG" width="195px" class="p-2">
+                </a>
+                <div class="d-flex align-items-center navbar-no-collapse-items order-xl-last">
+                    <button class="navbar-toggler order-last" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbar-1" aria-controls="navbar-1" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon">
+                            <i></i>
+                        </span>
+                    </button>
+
+                </div>
+                <div class="collapse navbar-collapse" id="navbar-1">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle px-3" role="button"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                data-bs-auto-close="outside">Institucional</a>
+                            <div
+                                class="dropdown-menu dropdown-menu-start py-0 overflow-hidden border-1 border-gray-200">
+                                <div class="py-1 py-xl-3 d-xl-flex flex-column">
+                                    <a href="#" class="dropdown-item fw-semibold">Agenda</a>
+                                    <a href="#" class="dropdown-item fw-semibold">Entenda a Assembleia</a>
+                                    <a href="#" class="dropdown-item fw-semibold">Mesa Diretora</a>
+                                    <a href="#" class="dropdown-item fw-semibold">Procuradoria da Mulher</a>
+                                    <a href="#" class="dropdown-item fw-semibold">Direcionamento Estratégico</a>
+                                    <a href="#" class="dropdown-item fw-semibold">Balanço das Atividades</a>
+                                    <a href="#" class="dropdown-item fw-semibold">Escola do Legislativo</a>
+                                    <a href="#" class="dropdown-item fw-semibold">Como Chegar</a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle px-3 border-start-lg" role="button"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                data-bs-auto-close="outside">Deputados</a>
+                            <div
+                                class="dropdown-menu dropdown-menu-start py-0 overflow-hidden border-1 border-gray-200">
+                                <div class="py-1 py-xl-3 d-xl-flex flex-column">
+                                    <a href="#" class="dropdown-item fw-semibold">Conheça os Deputados</a>
+                                    <a href="#" class="dropdown-item fw-semibold">Lideranças</a>
+                                    <a href="#" class="dropdown-item fw-semibold">Representação Partidária</a>
+                                    <a href="#" class="dropdown-item fw-semibold">Deputados Majoritários por Localidade</a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown ">
+                            <a href="#" class="nav-link dropdown-toggle px-3 border-start-lg" role="button"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                data-bs-auto-close="outside">Atividade Legislativa</a>
+                            <div
+                                class="dropdown-menu dropdown-menu-start py-0 overflow-hidden border-1 border-gray-200">
+                                <div class="py-1 py-xl-3 d-xl-flex flex-column">
+                                    <a href="#" class="dropdown-item fw-semibold">Plenário</a>
+                                    <a href="#" class="dropdown-item fw-semibold">Comissões</a>
+                                    <a href="#" class="dropdown-item fw-semibold">Tramitação de Projetos</a>
+                                    <a href="#" class="dropdown-item fw-semibold">Legislação</a>
+                                    <a href="#" class="dropdown-item fw-semibold">Fiscalização</a>
+                                    <a href="#" class="dropdown-item fw-semibold">Planejamento e Orçamento</a>
+                                    <a href="#" class="dropdown-item fw-semibold">Pronunciamentos</a>
+                                    <a href="#" class="dropdown-item fw-semibold">Diário do Legislativo</a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle px-3 border-start-lg" role="button"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                data-bs-auto-close="outside">Participe</a>
+                            <div class="dropdown-menu dropdown-menu-start py-0 overflow-hidden border-1 border-gray-200">
+                                <div class="py-1 py-xl-3 d-xl-flex flex-column">
+                                    <a href="#" class="dropdown-item fw-semibold">Eventos</a>
+                                    <a href="#" class="dropdown-item fw-semibold">Assembleia Cultural</a>
+                                    <a href="#" class="dropdown-item fw-semibold">Dê sua opinião sobre projetos de lei</a>
+                                    <a href="#" class="dropdown-item fw-semibold">Reuniões Interativas</a>
+                                    <a href="#" class="dropdown-item fw-semibold">Consulta Pública</a>
+                                    <a href="#" class="dropdown-item fw-semibold">Envie sua sugestão de projeto de lei</a>
+                                    <a href="#" class="dropdown-item fw-semibold">Enquetes</a>
+                                    <a href="#" class="dropdown-item fw-semibold">Visite a Assembleia</a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle px-3 border-start-lg border-end-lg" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-auto-close="outside">Comunicação</a>
+                            <div class="dropdown-menu dropdown-menu-end py-0 overflow-hidden border-1 border-gray-200">
+                                <div class="py-1 py-xl-3 d-xl-flex flex-column">
+                                    <a href="#" class="dropdown-item fw-semibold">Notícias</a>
+                                    <a href="#" class="dropdown-item fw-semibold">TV Assembleia</a>
+                                    <a href="#" class="dropdown-item fw-semibold">Rádio Assembleia</a>
+                                    <a href="#" class="dropdown-item fw-semibold">Infográficos</a>
+                                    <a href="#" class="dropdown-item fw-semibold">Fotos</a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle px-3 border-end-lg" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-auto-close="outside">Serviços</a>
+                            <div
+                                class="dropdown-menu dropdown-menu-end py-0 overflow-hidden border-1 border-gray-200">
+                                <div class="py-1 py-xl-3 d-xl-flex flex-column">
+                                    <a href="#" class="dropdown-item fw-semibold">Espaço Cidadania</a>
+                                    <a href="#" class="dropdown-item fw-semibold">Procon Assembleia</a>
+                                    <a href="#" class="dropdown-item fw-semibold">Apoio às Câmaras</a>
+                                    <a href="#" class="dropdown-item fw-semibold">Apoio às Prefeituras</a>
+                                    <a href="#" class="dropdown-item fw-semibold">Sala de Imprensa</a>
+                                    <a href="#" class="dropdown-item fw-semibold">Biblioteca</a>
+                                    <a href="#" class="dropdown-item fw-semibold">Municípios de Minas Gerais</a>
+                                    <a href="#" class="dropdown-item fw-semibold">Resultado de Eleições</a>
+                                    <a href="#" class="dropdown-item fw-semibold">Glossário</a>
+                                    <a href="#" class="dropdown-item fw-semibold">Boletins por e-mail</a>
+                                    <a href="#" class="dropdown-item fw-semibold">Fale com a Assembleia</a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle px-3" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-auto-close="outside">Transparência</a>
+                            <div class="dropdown-menu dropdown-menu-end py-0 overflow-hidden border-1 border-gray-200">
+                                <div class="py-1 py-xl-3 d-xl-flex flex-column">
+                                    <a href="#" class="dropdown-item fw-semibold">Prestação de Contas</a>
+                                    <a href="#" class="dropdown-item fw-semibold">Licitações</a>
+                                    <a href="#" class="dropdown-item fw-semibold">Concursos Públicos</a>
+                                    <a href="#" class="dropdown-item fw-semibold">Gestão de Dados Pessoais</a>
+                                    <a href="#" class="dropdown-item fw-semibold">Dados Abertos</a>
+                                    <a href="#" class="dropdown-item fw-semibold">Portal de Políticas Públicas</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--Modal basic-->
+        <div class="modal fade" id="modal-search" tabindex="-1" aria-labelledby="modalBasicLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content border-0">
+                    <div class="modal-header border-0 bg-gray-500">
+                        <h5 class="modal-title text-white">Buscar em toda ALMG</h5>
+                        <!--Close button-->
+                        <button type="button" class="btn btn-outline-gray-100 p-0 border-2 width-3x height-3x rounded-circle flex-center z-index-1" data-bs-dismiss="modal" aria-label="Close">
+                            <i class="bx bx-x fs-5"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body p-4 border-0 bg-white">
+                        <input type="text" class="form-control form-control-lg text-gray-800" id="search" placeholder="">
+                        <div class="pt-4">
+                            <div class="d-flex flex-wrap align-items-center px-2">
+                                <span class="me-2 fw-semibold text-gray-800">Mais buscado:</span>
+                                <span><a href="#!"
+                                        class="badge bg-gray-500 text-white me-1 mb-1 px-3 py-1">Tag01</a></span>
+                                <span><a href="#!"
+                                        class="badge bg-gray-500 text-white me-1 mb-1 px-3 py-1">Tag02</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer bg-gray-200 border-0">
+                        <a href="#" class="btn btn-gray-800 text-uppercase h-0 me-2" data-bs-target="#modal-search" data-bs-toggle="modal">
+                            <i class="bi bi-search fs-6 me-2 lh-1"></i>Buscar
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--Main content-->
+    <main>
+        <section class="position-relative bg-gray-100 d-none d-lg-block border-top border-bottom">
+            <div class="container py-4 d-none d-lg-block">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb fw-semibold mb-0">
+                        <li class="breadcrumb-item">
+                            <a href="#" class="fw-semibold">Início</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#" class="fw-semibold" role="button" data-bs-toggle="dropdown" aria-expanded="false">Lorem Ipsum</a>
+                            <ul class="dropdown-menu border-1 border-gray-200">
+                                <li><a class="dropdown-item fw-semibold" href="#">Lorem ipsum</a></li>
+                                <li><a class="dropdown-item fw-semibold" href="#">Harum quidem rerum</a></li>
+                                <li><a class="dropdown-item fw-semibold" href="#">Nam libero tempore</a></li>
+                                <li>
+                                    <hr class="my-1" />
+                                </li>
+                                <li><a class="dropdown-item fw-semibold" href="#">Facere possimus</a></li>
+                            </ul>
+                        </li>
+                        <li class="breadcrumb-item fw-semibold active" aria-current="page">Esta página</li>
+                    </ol>
+                </nav>
+            </div>
+        </section>
+        <section class="position-relative jarallax bg-light border-top border-top-lg-0" data-jarallax=".3">
+            <div class="container py-6">
+                <div class="row align-items-center" style="height: 25vh!important;">
+                    <div class="col-12">
+                        <h1 class="text-white bg-primary d-inline-block px-3 py-1 text-uppercase">Lorem ipsum dolor sit</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div id="jarallax-container-0">
+                <img src="https://mediaserver.almg.gov.br/acervo/236/910/1236910.jpg" alt=""
+                    class="jarallax-img img-fluid"/>
+            </div>
+        </section>
+        <section class="bg-gray-200 border-bottom-lg border-top">
+            <div class="container-fluid container-lg">
+                <div class="row">
+                    <div class="col-6 d-lg-none px-0 d-flex justify-content-start">
+                        <div class="p-2">
+                            <a class="link-primary" href="#">
+                                <i class="bi bi-arrow-left-short fs-5 lh-1 align-bottom"></i>
+                                <span class="small align-bottom fw-semibold">Lorem Ipsum</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6 px-0 d-flex justify-content-end">
+                        <button aria-label="Compartilhar" class="p-2 ps-3 btn btn-gray-500 rounded-0 d-lg-none border-end border-gray-400" data-bs-toggle="modal" data-bs-target="#modal-share">
+                            <i class="bi bi-share-fill fs-5 me-2 lh-1 text-white"></i><span class="d-none">Compartilhar</span>
+                        </button>
+                        <button aria-label="Menu Local" class="p-2 ps-3 btn btn-gray-500 rounded-0 d-lg-none border-end border-gray-400 btn-collapse-sm-menu collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseSecondaryMenu" aria-expanded="false"
+                            aria-controls="collapseSecondaryMenu">
+                            <i class="bi bi-three-dots fs-5 me-2 lh-1 text-white"></i><span class="d-none">Menu Local</span>
+                        </button>
+                        <button aria-label="Pesquisar" class="p-2 ps-3 btn btn-gray-500 rounded-0 d-lg-none btn-collapse-sm-menu collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseSearch" aria-expanded="false" aria-controls="collapseSearch">
+                            <i class="bi bi-search fs-5 me-2 lh-1 text-white"></i><span class="d-none">Pesquisar</span>
+                        </button>
+                    </div>
+                    <div class="collapse d-lg-block px-0" id="collapseSecondaryMenu">
+                        <div class="accordion">
+                            <div class="col-12 nav-custom3">
+                                <ul class="nav nav-fill nav flex-column flex-lg-row p-0">
+                                    <li class="nav-item  pb-lg-0 text-start text-lg-center">
+                                        <a class="nav-link active ps-3 ps-lg-0 fw-semibold" aria-current="page" href="#">Lorem ipsum
+                                            dolor</a>
+                                    </li>
+                                    <li class="nav-item  pb-lg-0 text-start text-lg-center">
+                                        <a class="nav-link ps-3 ps-lg-0 dropdown-toggle fw-semibold" href="#" data-bs-toggle="dropdown" role="button" aria-expanded="false">Consectetur adipisicing
+                                            elit</a>
+                                        <ul class="dropdown-menu my-n1 border-1 border-gray-300">
+                                            <li><a class="dropdown-item fw-semibold" href="#">Lorem ipsum</a></li>
+                                            <li><a class="dropdown-item fw-semibold" href="#">Harum quidem rerum</a></li>
+                                            <li><a class="dropdown-item fw-semibold" href="#">Nam libero tempore</a></li>
+                                            <li><a class="dropdown-item fw-semibold" href="#">Facere possimus</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item  pb-lg-0 text-start text-lg-center">
+                                        <a class="nav-link ps-3 ps-lg-0 fw-semibold" href="#">Tempore</a>
+                                    </li>
+                                    <li class="nav-item  pb-lg-0 text-start text-lg-center">
+                                        <a class="nav-link ps-3 ps-lg-0 fw-semibold" href="#">Architecto vel totam </a>
+                                    </li>
+                                    <li class="nav-item  pb-lg-0 text-start text-lg-center">
+                                        <a class="nav-link ps-3 ps-lg-0 fw-semibold" href="#" tabindex="-1" aria-disabled="true">Sapiente
+                                        </a>
+                                    </li>
+                                    <li class="nav-item text-start text-lg-center">
+                                        <a class="nav-link ps-3 ps-lg-0 fw-semibold" href="#">Consectetur</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="container my-4 my-lg-8">
+            <div class="row">
+                <div class="col-xl-9 mx-auto">
+                    <article class="article mb-4">
+                        <div class="position-absolute d-none d-xl-block" style="margin-top: 40px; margin-left: -100px;">
+                            <button aria-label="Compartilhar" class="btn btn-gray-500 rounded-0 fs-4 px-2 py-1 d-block border-bottom" data-bs-toggle="modal" data-bs-target="#modal-share">
+                                <i class="bi bi-share-fill text-white"></i><span class="d-none">Compartilhar</span>
+                            </button>
+                            <button aria-label="Gerar PDF" class="btn btn-gray-500 rounded-0 fs-4 px-2 py-1 d-block border-bottom" href="#open">
+                                <i class="bi bi-file-pdf-fill text-white"></i><span class="d-none">Gerar PDF</span>
+                            </button>
+                            <button aria-label="Imprimir" class="btn btn-gray-500 rounded-0 fs-4 px-2 py-1 d-block" href="#">
+                                <i class="bi bi-printer-fill text-white"></i><span class="d-none">Imprimir</span>
+                            </button>
+                        </div>
+
+                        <!--Modal basic-->
+                        <div class="modal fade" id="modal-share" tabindex="-1" aria-labelledby="modalBasicLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content border-0">
+                                    <div class="modal-header border-0 bg-gray-500">
+                                        <h5 class="modal-title text-white">Compartilhar</h5>
+                                        <!--Close button-->
+                                        <button type="button" class="btn btn-outline-gray-100 p-0 border-2 width-3x height-3x rounded-circle flex-center z-index-1" data-bs-dismiss="modal" aria-label="Close">
+                                            <i class="bx bx-x fs-5"></i>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body pt-4 pb-0 border-0 bg-white">
+                                        <a href="#!" class="d-inline-flex btn w-100 mb-3 position-relative si-colored-whatsapp flex-center">
+                                            <!--Main Icon-->
+                                            <div class="position-relative d-flex align-items-center">
+                                                <i class="bx bxl-whatsapp fs-5 me-2"></i>
+                                                <span>whatsapp</span>
+                                            </div>
+                                        </a>
+                                        <a href="#!" class="d-inline-flex btn w-100 mb-3 position-relative si-colored-facebook flex-center">
+                                            <!--Main Icon-->
+                                            <div class="position-relative d-flex align-items-center">
+                                                <i class="bx bxl-facebook fs-5 me-2"></i>
+                                                <span>Facebook</span>
+                                            </div>
+                                        </a>
+                                        <a href="#!" class="d-inline-flex btn w-100 mb-3 position-relative si-colored-twitter flex-center">
+                                            <!--Main Icon-->
+                                            <div class="position-relative d-flex align-items-center">
+                                                <i class="bx bxl-twitter fs-5 me-2"></i>
+                                                <span>Twitter</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="modal-footer bg-white border-0">
+                
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h1 class="mb-4 ls--2 h2">Lorem ipsum dolor
+                        </h1>
+                        <p class="lead mb-4">
+                            Harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum
+                            soluta nobis.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut
+                            labore et dolore magna aliqua. Viverra nam libero justo laoreet. Suscipit adipiscing
+                            bibendum est ultricies integer quis auctor elit. Mauris pellentesque pulvinar
+                            pellentesque
+                            habitant morbi. Sapien nec sagittis aliquam malesuada. Purus sit amet volutpat
+                            consequat
+                            mauris. Imperdiet sed euismod nisi porta lorem mollis. Risus quis varius quam
+                            quisque id
+                            diam. Habitasse platea dictumst vestibulum rhoncus est pellentesque elit. Sit amet
+                            massa
+                            vitae tortor condimentum lacinia quis vel eros. Diam vel quam elementum pulvinar
+                            etiam non.
+                            Nisl rhoncus mattis rhoncus urna. Vel elit scelerisque mauris pellentesque. Molestie
+                            a
+                            iaculis at erat pellentesque adipiscing commodo elit at. Faucibus et molestie ac
+                            feugiat sed
+                            lectus vestibulum mattis ullamcorper.
+                        </p>
+                        <h4 class="my-4">Molestie a iaculis at erat</h4>
+                        <ul class="step mx-3 px-0 px-lg-15 mx-sm-0 list-unstyled mb-0 my-6">
+                            <li class="step-item">
+                                <div class="step-row">
+                                    <span class="step-icon bg-success text-white">
+                                        <!--ICON-DOT-->
+                                        <i class="bi bi-building align-middle lh-1 fs-4"></i>
+                                    </span>
+
+                                    <div class="step-content">
+                                        <div class="alert alert-success d-flex mb-0" role="alert">
+                                            <i class="bi bi-calendar-check mt-1 me-4 fs-3"></i>
+                                            <div class="">
+                                                <h6 class="alert-heading">Lorem ipsum dolor sit amet</h6>
+                                                <small class="d-block mb-2 ">25/11 14:30hs</small>
+                                                <hr class="my-2">
+                                                <p class="text-body mb-0">Molestie
+                                                    a
+                                                    iaculis at erat pellentesque adipiscing commodo elit at. Faucibus et
+                                                    molestie ac
+                                                    feugiat sed
+                                                    lectus vestibulum mattis ullamcorper.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <!--/.step-item-->
+                            <li class="step-item">
+                                <div class="step-row">
+                                    <span class="step-icon bg-gray-500 text-white">
+                                        <!--ICON-DOT-->
+                                        <i class="bi bi-chat-fill align-middle lh-1 fs-4"></i>
+                                    </span>
+
+                                    <div class="step-content">
+                                        <h6 class="mb-1">Lorem ipsum dolor sit amet</h6>
+                                        <small class="d-block mb-2 ">25/11 14:30hs</small>
+                                        <p class="mb-0">
+                                            Imperdiet sed euismod nisi porta lorem mollis. Risus quis varius quam
+                                            quisque id
+                                            diam. Habitasse platea dictumst vestibulum rhoncus est pellentesque elit. Sit amet
+                                            massa
+                                            vitae tortor condimentum lacinia quis vel eros. Diam vel quam elementum pulvinar
+                                            etiam non.
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <!--/.step-item-->
+                            <li class="step-item">
+                                <div class="step-row">
+                                    <span class="step-icon bg-gray-500 text-white">
+                                        <!--ICON-DOT-->
+                                        <i class="bi bi-check-circle-fill align-middle lh-1 fs-4"></i>
+                                    </span>
+
+                                    <div class="step-content">
+                                        <h6 class="mb-1">Lorem ipsum dolor sit amet</h6>
+                                        <small class="d-block mb-2 ">25/11 14:30hs</small>
+                                        <p class="mb-0">
+                                            Imperdiet sed euismod nisi porta lorem mollis. Risus quis varius quam
+                                            quisque id
+                                            diam. Habitasse platea dictumst vestibulum rhoncus est pellentesque elit. Sit amet
+                                            massa
+                                            vitae tortor condimentum lacinia quis vel eros. Diam vel quam elementum pulvinar
+                                            etiam non.
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <!--/.step-item-->
+                        </ul>
+
+                        <h4 class="my-4">Harum quidem rerum facilis</h4>
+                        <p>
+                            Harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum
+                            soluta nobis
+                            est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere
+                            possimus,
+                            omnis voluptas
+                            assumenda est, omnis dolor repellendus.
+                        </p>
+                        <p>
+                            Suscipit adipiscing bibendum est ultricies integer quis auctor elit. Mauris
+                            pellentesque
+                            pulvinar pellentesque habitant morbi. Sapien nec sagittis aliquam malesuada. Purus
+                            sit amet
+                            volutpat consequat mauris. <mark>Imperdiet sed euismod nisi porta lorem mollis. Risus quis
+                            varius
+                            quam quisque id diam</mark>. Habitasse platea dictumst vestibulum rhoncus est pellentesque
+                            elit.
+                            Sit amet massa vitae tortor condimentum lacinia quis vel eros. Diam vel quam
+                            elementum
+                            pulvinar etiam non. Nisl rhoncus mattis rhoncus urna. Vel elit scelerisque mauris
+                            pellentesque. Molestie a iaculis at erat pellentesque adipiscing commodo elit at.
+                            Faucibus
+                            et molestie ac feugiat sed lectus vestibulum mattis ullamcorper.
+                        </p>
+                    </article>
+
+                    <!--/.article-->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <aside>
+        <section class="bg-gray-200 position-relative text-white">
+            <div class="container-fluid container-lg position-relative z-index-1">
+                <div class="row grid-separator align-items-stretch">
+                    <div class="col-lg-4 py-lg-6 py-4">
+                        <h3 class="h6 mb-4 text-gray-800"><i class="bi bi-arrow-right-short fs-4 align-middle"></i>
+                            Lorem Ipsum</h3>
+                        <ul class="list-unstyled ms-4 mb-1">
+                            <li class="mb-2">
+                                <a href="#" class="link-hover-move-arrow text-body">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 9"
+                                        style=" transform: rotate(-90deg);">
+                                        <path fill="currentColor"
+                                            d="M12.25 2.30062L10.8988 0.949371L6.5 5.33854L2.10125 0.949371L0.75 2.30062L6.5 8.05062L12.25 2.30062Z">
+                                        </path>
+                                    </svg>
+                                    Lorem ipsum dolar
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#" class="link-hover-move-arrow text-body">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 9"
+                                        style=" transform: rotate(-90deg);">
+                                        <path fill="currentColor"
+                                            d="M12.25 2.30062L10.8988 0.949371L6.5 5.33854L2.10125 0.949371L0.75 2.30062L6.5 8.05062L12.25 2.30062Z">
+                                        </path>
+                                    </svg>
+                                    Consectetur adipisicing elit
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#" class="link-hover-move-arrow text-body">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 9"
+                                        style=" transform: rotate(-90deg);">
+                                        <path fill="currentColor"
+                                            d="M12.25 2.30062L10.8988 0.949371L6.5 5.33854L2.10125 0.949371L0.75 2.30062L6.5 8.05062L12.25 2.30062Z">
+                                        </path>
+                                    </svg>
+                                    Accusantium numquam
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="link-hover-move-arrow text-body">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 9"
+                                        style=" transform: rotate(-90deg);">
+                                        <path fill="currentColor"
+                                            d="M12.25 2.30062L10.8988 0.949371L6.5 5.33854L2.10125 0.949371L0.75 2.30062L6.5 8.05062L12.25 2.30062Z">
+                                        </path>
+                                    </svg>
+                                    Sapiente atque
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 py-lg-6 py-4">
+                        <h3 class="h6 mb-4 text-gray-800"><i class="bi bi-arrow-right-short fs-4 align-middle"></i>
+                            Dolor sit amet</h3>
+                        <ul class="list-unstyled ms-4 mb-1">
+                            <li class="mb-2">
+                                <a href="#" class="link-hover-move-arrow text-body">
+                                    <i class="bi bi-file-earmark-pdf fs-4 align-middle lh-1"></i>
+                                    Lorem ipsum dolar
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#" class="link-hover-move-arrow text-body">
+                                    <i class="bi bi-file-earmark-pdf fs-4 align-middle lh-1"></i>
+                                    Sed accusantium numquam doloribus
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#" class="link-hover-move-arrow text-body">
+                                    <i class="bi bi-file-earmark-pdf fs-4 align-middle lh-1"></i>
+                                    Consectetur adipisicing elit
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="link-hover-move-arrow text-body">
+                                    <i class="bi bi-file-earmark-pdf fs-4 align-middle lh-1"></i>
+                                    Quae quia sapiente atque architecto unde
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 py-lg-6 py-4">
+                        <h3 class="h6 mb-2 text-gray-800"><i class="bi bi-arrow-right-short fs-4 align-middle"></i>
+                            Consectetur adipisicing elit</h3>
+                        <div class="ms-4">
+                            <p class="text-gray-800">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo dolor
+                                ut faucibus
+                                mollis.
+                            </p>
+                            <div>
+                                <a href="#" class="btn btn-primary text-uppercase me-3">
+                                    Lorem Ipsum
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </aside>
+    <footer>
+        <!--Footer start-->
+
+        <!--container-->
+        <div class="bg-primary text-white position-relative">
+            <div class="container pt-5">
+                <div class="row g-2 pt-5 w-100 d-none d-lg-block" data-masonry='{"percentPosition": true }'>
+                    <div class="col-12 col-md-4 col-lg-3 mb-6 ms-auto">
+                        <!--Title-->
+                        <h6 class="small mb-2 text-uppercase">Institucional</h6>
+                        <!--Nav-->
+                        <ul class="nav flex-column flex-lg-column mb-0">
+                            <li class="nav-item"><a class="nav-link pb-0" href="#">Agenda</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#">Entenda a Assembleia</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#">Mesa Diretora</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#">Procuradoria da Mulher</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#">Direcionamento Estratégico</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#">Balanço das Atividades</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#">Educação para Cidadania</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#">Como Chegar</a></li>
+                        </ul>
+                    </div>
+                    <!--/.Col-->
+                    <div class="col-12 col-md-4 col-lg-3 mb-6 ms-auto">
+                        <!--Title-->
+                        <h6 class="small mb-2 text-uppercase">Atividade Legislativa</h6>
+                        <!--Nav-->
+                        <ul class="nav flex-column mb-0">
+                            <li class="nav-item"><a class="nav-link pb-0" href="#">Plenário</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#">Comissões</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#">Tramitação de Projetos</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#">Fiscalização</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#">Legislação</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#">Planejamento e Orçamento</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#">Pronunciamentos</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#">Diário do Legislativo</a></li>
+                        </ul>
+                    </div>
+                    <!--/.Col-->
+                    <div class="col-12 col-md-4 col-lg-3 mb-6 ms-auto">
+                        <!--Title-->
+                        <h6 class="small mb-2 text-uppercase">Serviços</h6>
+                        <!--Nav-->
+                        <ul class="nav flex-column mb-0">
+                            <li class="nav-item"><a class="nav-link pb-0" href="#">Procon Assembleia</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#">Apoio às Câmaras</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#">Apoio às Prefeituras</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#">Sala de Imprensa</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#">Biblioteca</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#">Espaço Cidadania</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#">Resultado de Eleições</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#">Municípios de Minas Gerais</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#">Boletins por e-mail</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#">Glossário</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#">Fale com a Assembleia</a></li>
+                        </ul>
+                    </div>
+                    <!--/.Col-->
+                    <div class="col-12 col-md-4 col-lg-3 mb-6 ms-auto">
+                        <!--Title-->
+                        <h6 class="small mb-2 text-uppercase">Deputados</h6>
+                        <!--Nav-->
+                        <ul class="nav flex-column mb-0">
+                            <li class="nav-item"><a class="nav-link pb-0" href="#">Conheça os Deputados</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#">Lideranças</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#">Representação Partidária</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#">Deputados Majoritários por Localidade</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--/.Col-->
+                    <div class="col-12 col-md-4 col-lg-3 mb-6 ms-auto">
+                        <!--Title-->
+                        <h6 class="small mb-2 text-uppercase">Participe</h6>
+                        <!--Nav-->
+                        <ul class="nav flex-column mb-0">
+                            <li class="nav-item"><a class="nav-link pb-0" href="#">Eventos</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#">Assembleia Cultural</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#">Dê sua opinião sobre projetos de lei</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#">Reuniões Interativas</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#">Consulta Pública</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#">Envie sua sugestão de projeto de lei</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#">Enquetes</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#">Visite a Assembleia</a></li>
+                        </ul>
+                    </div>
+                    <!--/.Col-->
+                    <div class="col-12 col-md-4 col-lg-3 mb-6 ms-auto">
+                        <!--Title-->
+                        <h6 class="small mb-2 text-uppercase">Portal da ALMG</h6>
+                        <!--Nav-->
+                        <ul class="nav flex-column mb-0">
+                            <li class="nav-item"><a class="nav-link pb-0" href="#">Sobre o Portal</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#">Termos de Uso e Política de
+                                    Privacidade</a></li>
+                        </ul>
+                    </div>
+                    <!--/.Col-->
+                    <div class="col-12 col-md-4 col-lg-3 mb-6 ms-auto">
+                        <!--Title-->
+                        <h6 class="small mb-2 text-uppercase">Transparência</h6>
+                        <!--Nav-->
+                        <ul class="nav flex-column mb-0">
+                            <li class="nav-item"><a class="nav-link pb-0" href="#">Prestação de Contas</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#">Licitações</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#">Concursos Públicos</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#">Gestão de Dados Pessoais</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#">Dados Abertos</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#">Políticas Públicas</a></li>
+                        </ul>
+                    </div>
+                    <!--/.Col-->
+                    <div class="col-12 col-md-4 col-lg-3 mb-6 ms-auto">
+                        <!--Title-->
+                        <h6 class="small mb-2 text-uppercase">Comunicação</h6>
+                        <!--Nav-->
+                        <ul class="nav flex-column mb-0">
+                            <li class="nav-item"><a class="nav-link pb-0" href="#">Notícias</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#">TV Assembleia</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#">Rádio Assembleia</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" href="#">Galeria de Fotos</a></li>
+                        </ul>
+                    </div>
+                    <!--/.Col-->
+                </div>
+                <hr class="mb-5 mt-0 d-none d-lg-block">
+            </div> <!-- / .container -->
+            <div class="pb-5">
+                <div class="container">
+                    <div class="row justify-content-md-between align-items-center">
+                        <div class="d-flex mb-3 mb-md-0 col-12 col-lg-4 justify-content-center justify-content-md-left">
+                            <div class="d-flex">
+                                <!--Icon-->
+                                <div class="me-4 flex-shrink-0 position-relative d-none d-lg-block">
+                                    <i class="bi bi-geo-fill display-4 lh-1 text-light position-relative"></i>
+                                </div>
+                                <div class="flex-grow-1">
+                                    <!--Description-->
+                                    <p class="mb-0 text-light small text-center text-lg-start mb-2">
+                                        Rua Rodrigues Caldas, 30 | Santo Agostinho<br />
+                                        CEP 30190-921 | Belo Horizonte/MG<br />
+                                        (31) 2108-7000
+                                    </p>
+                                    <a href="#" class="btn btn-dark btn-sm text-uppercase me-2 mb-2">
+                                        <i class="bi bi-geo-alt-fill fs-6 me-2 lh-1"></i>Como Chegar
+                                    </a>
+                                    <a href="#" class="btn btn-dark btn-sm text-uppercase me-2 mb-2">
+                                        <i class="bi bi-telephone-fill fs-6 me-2 lh-1"></i>Lista Telefônica
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4 d-flex justify-content-center mb-3 mb-lg-0 lh-sm mt-4 mt-lg-0">
+                            <a class="d-block width-2x height-2x mx-2 hover-lift hover-shadow rounded-circle" href="#"><img
+                                    src="../assets/img/brands/Instagram-white.svg" alt="Instagram" class="rounded-circle w-100 h-auto"></a>
+                            <a class="d-block width-2x height-2x mx-2 hover-lift hover-shadow rounded-circle" href="#"><img
+                                    src="../assets/img/brands/Telegram-white.svg" alt="Telegram" class="rounded-circle w-100 h-auto"></a>
+                            <a class="d-block width-2x height-2x mx-2 hover-lift hover-shadow rounded-circle" href="#"><img
+                                    src="../assets/img/brands/Facebook-white.svg" alt="Facebook" class="rounded-circle w-100 h-auto"></a>
+                            <a class="d-block width-2x height-2x mx-2 hover-lift hover-shadow rounded-circle" href="#"><img
+                                    src="../assets/img/brands/Twitter-white.svg" alt="Twitter" class="rounded-circle w-100 h-auto"></a>
+                            <a class="d-block width-2x height-2x mx-2 hover-lift hover-shadow rounded-circle" href="#"><img
+                                    src="../assets/img/brands/Youtube-white.svg" alt="Youtube" class="rounded-circle w-100 h-auto"></a>
+                        </div>
+                        <div class="col-12 col-lg-4 text-center text-lg-start mt-2 mt-lg-0">
+                            <a href="#" class="btn btn-dark btn-sm text-uppercase me-2 h-0">
+                                <i class="bi bi-envelope-fill fs-6 me-2 lh-1"></i>Webmail
+                            </a>
+                            <a href="#" class="btn btn-dark btn-sm text-uppercase me-2 h-0">
+                                <i class="bi bi-house-fill fs-6 me-2 lh-1"></i>Intranet
+                            </a>
+                        </div>
+                        <div class="col-12 text-center mt-4 small">
+                            Este site é protegido pelo reCAPTCHA (aplicam-se sua Política de Privacidade e Termos de
+                            Serviço).
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- scripts -->
+    <script src="../assets/js/theme.bundle.js"></script>
+
+</body>
+
+</html>
