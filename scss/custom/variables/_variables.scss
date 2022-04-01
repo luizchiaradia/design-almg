@@ -27,6 +27,7 @@ $gray-200: #e1e0d9 !default;
 $gray-300: #c6c5bb !default;
 $gray-400: #b5b4ab !default;
 $gray-500: #9b9a8f !default;
+$gray-550: #6c6b64 !default;
 $gray-600: #474e5f !default;
 $gray-700: #343a49 !default;
 $gray-800: #252a36 !default;
@@ -71,6 +72,7 @@ $grays: (
   "300": $gray-300,
   "400": $gray-400,
   "500": $gray-500,
+  "550": $gray-550,
   "600": $gray-600,
   "700": $gray-700,
   "800": $gray-800,
@@ -135,6 +137,7 @@ $gray-200: $gray-200 !default;
 $gray-300: $gray-300 !default;
 $gray-400: $gray-400 !default;
 $gray-500: $gray-500 !default;
+$gray-550: $gray-550 !default;
 $gray-600: $gray-600 !default;
 $gray-700: $gray-700 !default;
 $gray-800: $gray-800 !default;
@@ -165,6 +168,7 @@ $theme-colors: (
   "gray-300":   $gray-300,
   "gray-400":   $gray-400,
   "gray-500":   $gray-500,
+  "gray-550":   $gray-550,
   "gray-600":   $gray-600,
   "gray-700":   $gray-700,
   "gray-800":   $gray-800,
