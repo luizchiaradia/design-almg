@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../assets/img/favicon.ico" type="image/ico">
+    @@include('../partials/head-includes.html')
+    <!-- Main CSS -->
+    <link href="../assets/css/theme.min.css" rel="stylesheet">
+
+    <title>ALMG</title>
+    <meta name="description" content="Site da ALMG">
+</head>
+
+<body>
+    <!--Header Start-->
+    <!--header class="z-index-fixed header-transparent sticky-reverse"-->
+    <header>
+        @@include('../partials/headers/almg-navbar.html')
+        @@include('../partials/search/almg-search.html')
+    </header>
+    <!--Main content-->
+    <main>
+        @@include('../partials/breadcrumbs/almg-breadcrumbs-evento.html')
+        @@include('../partials/content/almg-content-parallax-ppag.html')
+        @@include('../partials/menu/almg-menu-secondary-evento2.html')
+        @@include('../partials/content/almg-content-evento-home2.html')
+    </main>
+
+    <aside>
+        @@include('../partials/aside/almg-aside-related.html')
+    </aside>
+    <footer>
+        @@include('../partials/footers/almg-footer.html')
+    </footer>
+    <!-- scripts -->
+    <script src="../assets/js/theme.bundle.js"></script>
+
+</body>
+
+</html>
