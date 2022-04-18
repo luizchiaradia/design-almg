@@ -27194,6 +27194,7 @@ strong {
 main p {
   font-size: 1.125rem;
   line-height: 1.65;
+  margin-bottom: 1.65rem;
 }
 
 @-webkit-keyframes textGradientAnimation {
