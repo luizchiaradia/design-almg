@@ -37,6 +37,7 @@
         &.active{
             background-color: $gray-600;
             color: $white;
+            border-bottom-color: $gray-600;
         }
         &:not(.disabled):hover{
             color: $gray-600;
