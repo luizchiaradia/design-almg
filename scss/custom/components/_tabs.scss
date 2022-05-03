@@ -22,3 +22,27 @@
         }
     }
 }
+
+.nav-tabs.nav-tabs-custom2 {
+    .nav-link{
+        &:not(:first-child){
+            margin-left:0;
+        }
+    }
+    .nav-link{
+        background-color: $gray-300;
+        color: $gray-600;
+        border-radius: 0;
+        font-weight: 600;
+        &.active{
+            background-color: $gray-600;
+            color: $white;
+        }
+        &:not(.disabled):hover{
+            color: $gray-600;
+        }
+        &.active:hover{
+            color: $white;
+        }
+    }
+}

@@ -32714,6 +32714,26 @@ body.loaded .spinner-loader {
   border-bottom-color: #ab0000;
 }
 
+.nav-tabs.nav-tabs-custom2 .nav-link:not(:first-child) {
+  margin-left: 0;
+}
+.nav-tabs.nav-tabs-custom2 .nav-link {
+  background-color: #c6c5bb;
+  color: #474e5f;
+  border-radius: 0;
+  font-weight: 600;
+}
+.nav-tabs.nav-tabs-custom2 .nav-link.active {
+  background-color: #474e5f;
+  color: #fff;
+}
+.nav-tabs.nav-tabs-custom2 .nav-link:not(.disabled):hover {
+  color: #474e5f;
+}
+.nav-tabs.nav-tabs-custom2 .nav-link.active:hover {
+  color: #fff;
+}
+
 .fullscreen-wrapper {
   overflow: hidden;
   position: fixed;
