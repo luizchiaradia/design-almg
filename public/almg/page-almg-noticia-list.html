@@ -237,31 +237,35 @@
                 </div>
             </div>
         </div>
-    </header>
-    <!--Main content-->
-    <main>
-        <section class="position-relative bg-gray-100 d-none d-lg-block border-top border-bottom">
-            <div class="container py-4 d-none d-lg-block">
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb fw-semibold mb-0">
-                        <li class="breadcrumb-item">
-                            <a href="#" class="fw-semibold">Início</a>
-                        </li>
-                        <li class="breadcrumb-item">
-                            <a href="#" class="fw-semibold" role="button" data-bs-toggle="dropdown" aria-expanded="false">Lorem Ipsum</a>
-                            <ul class="dropdown-menu border-1 border-gray-200">
-                                <li><a class="dropdown-item fw-semibold" href="#">Lorem ipsum</a></li>
-                                <li><a class="dropdown-item fw-semibold" href="#">Harum quidem rerum</a></li>
-                                <li><a class="dropdown-item fw-semibold" href="#">Nam libero tempore</a></li>
-                                <li>
-                                    <hr class="my-1" />
-                                </li>
-                                <li><a class="dropdown-item fw-semibold" href="#">Facere possimus</a></li>
-                            </ul>
-                        </li>
-                        <li class="breadcrumb-item fw-semibold active" aria-current="page">Esta página</li>
-                    </ol>
-                </nav>
+        <section class="position-relative bg-gray-100">
+            <div class="container pt-6 pb-4 pb-lg-6">
+                <div class="row align-items-center">
+                    <div class="col-12 mx-auto text-center">
+                        <nav class="d-none d-lg-flex justify-content-center" aria-label="breadcrumb">
+                            <div class="mb-4">
+                                <ul class="breadcrumb fw-semibold mb-0">
+                                    <li class="breadcrumb-item">
+                                        <a href="#" class="fw-semibold">Início</a>
+                                    </li>
+                                    <li class="breadcrumb-item">
+                                        <a href="#" class="fw-semibold" data-bs-toggle="dropdown" role="button" aria-expanded="false">Comunicação</a>
+                                        <ul class="dropdown-menu border-1 border-gray-200 mt-2">
+                                            <li><a class="dropdown-item fw-semibold" href="#">Notícias</a></li>
+                                            <li><a class="dropdown-item fw-semibold" href="#">TV Assembleia</a></li>
+                                            <li><a class="dropdown-item fw-semibold" href="#">Rádio Assembleia</a></li>
+                                            <li><a class="dropdown-item fw-semibold" href="#">Infográficos</a></li>
+                                            <li><a class="dropdown-item fw-semibold" href="#">Fotos</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="breadcrumb-item fw-semibold active" aria-current="page">Esta página</li>
+                                </ul>
+                            </div>
+                        </nav>
+                        <h2 class="h1  fw-bold text-uppercase text-gray-800 ls--2 mb-2">
+                            Notícias
+                        </h2>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="bg-gray-200 d-block d-lg-none border-bottom border-top">
@@ -283,150 +287,200 @@
                 </div>
             </div>
         </section>
-        <div class="container my-4 my-lg-8">
-            <div class="row">
-                <div class="col-xl-7 mx-auto">
-                    <article class="article mb-4">
-                        <div class="position-absolute d-none d-xl-block" style="margin-top: 40px; margin-left: -100px;">
-                            <button aria-label="Compartilhar" class="btn btn-gray-500 rounded-0 fs-4 px-2 py-1 d-block border-bottom" data-bs-toggle="modal" data-bs-target="#modal-share">
-                                <i class="bi bi-share-fill text-white"></i><span class="d-none">Compartilhar</span>
-                            </button>
-                            <button aria-label="Gerar PDF" class="btn btn-gray-500 rounded-0 fs-4 px-2 py-1 d-block border-bottom" href="#open">
-                                <i class="bi bi-file-pdf-fill text-white"></i><span class="d-none">Gerar PDF</span>
-                            </button>
-                            <button aria-label="Imprimir" class="btn btn-gray-500 rounded-0 fs-4 px-2 py-1 d-block" href="#">
-                                <i class="bi bi-printer-fill text-white"></i><span class="d-none">Imprimir</span>
-                            </button>
-                        </div>
+    </header>
+    <!--Main content-->
+    <main>
+        <section>
 
-                        <!--Modal basic-->
-                        <div class="modal fade" id="modal-share" tabindex="-1" aria-labelledby="modalBasicLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered">
-                                <div class="modal-content border-0">
-                                    <div class="modal-header border-0 bg-gray-500">
-                                        <h5 class="modal-title text-white">Compartilhar</h5>
-                                        <!--Close button-->
-                                        <button type="button" class="btn btn-outline-gray-100 p-0 border-2 width-3x height-3x rounded-circle flex-center z-index-1" data-bs-dismiss="modal" aria-label="Close">
-                                            <i class="bx bx-x fs-5"></i>
-                                        </button>
+            <div class="container-fluid container-lg px-xl-15 py-3 py-lg-6">
+                <div class="position-absolute d-none d-xl-block" style="margin-top: 40px; margin-left: -100px;">
+                    <button aria-label="Compartilhar" class="btn btn-gray-500 rounded-0 fs-4 px-2 py-1 d-block border-bottom" data-bs-toggle="modal" data-bs-target="#modal-share">
+                        <i class="bi bi-share-fill text-white"></i><span class="d-none">Compartilhar</span>
+                    </button>
+                    <button aria-label="Gerar PDF" class="btn btn-gray-500 rounded-0 fs-4 px-2 py-1 d-block border-bottom" href="#open">
+                        <i class="bi bi-file-pdf-fill text-white"></i><span class="d-none">Gerar PDF</span>
+                    </button>
+                    <button aria-label="Imprimir" class="btn btn-gray-500 rounded-0 fs-4 px-2 py-1 d-block" href="#">
+                        <i class="bi bi-printer-fill text-white"></i><span class="d-none">Imprimir</span>
+                    </button>
+                </div>
+
+                <!--Modal basic-->
+                <div class="modal fade" id="modal-share" tabindex="-1" aria-labelledby="modalBasicLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content border-0">
+                            <div class="modal-header border-0 bg-gray-500">
+                                <h5 class="modal-title text-white">Compartilhar</h5>
+                                <!--Close button-->
+                                <button type="button" class="btn btn-outline-gray-100 p-0 border-2 width-3x height-3x rounded-circle flex-center z-index-1" data-bs-dismiss="modal" aria-label="Close">
+                                    <i class="bx bx-x fs-5"></i>
+                                </button>
+                            </div>
+                            <div class="modal-body pt-4 pb-0 border-0 bg-white">
+                                <a href="#!" class="d-inline-flex btn w-100 mb-3 position-relative si-colored-whatsapp flex-center">
+                                    <!--Main Icon-->
+                                    <div class="position-relative d-flex align-items-center">
+                                        <i class="bx bxl-whatsapp fs-5 me-2"></i>
+                                        <span>whatsapp</span>
                                     </div>
-                                    <div class="modal-body pt-4 pb-0 border-0 bg-white">
-                                        <a href="#!" class="d-inline-flex btn w-100 mb-3 position-relative si-colored-whatsapp flex-center">
-                                            <!--Main Icon-->
-                                            <div class="position-relative d-flex align-items-center">
-                                                <i class="bx bxl-whatsapp fs-5 me-2"></i>
-                                                <span>whatsapp</span>
-                                            </div>
-                                        </a>
-                                        <a href="#!" class="d-inline-flex btn w-100 mb-3 position-relative si-colored-facebook flex-center">
-                                            <!--Main Icon-->
-                                            <div class="position-relative d-flex align-items-center">
-                                                <i class="bx bxl-facebook fs-5 me-2"></i>
-                                                <span>Facebook</span>
-                                            </div>
-                                        </a>
-                                        <a href="#!" class="d-inline-flex btn w-100 mb-3 position-relative si-colored-twitter flex-center">
-                                            <!--Main Icon-->
-                                            <div class="position-relative d-flex align-items-center">
-                                                <i class="bx bxl-twitter fs-5 me-2"></i>
-                                                <span>Twitter</span>
-                                            </div>
-                                        </a>
+                                </a>
+                                <a href="#!" class="d-inline-flex btn w-100 mb-3 position-relative si-colored-facebook flex-center">
+                                    <!--Main Icon-->
+                                    <div class="position-relative d-flex align-items-center">
+                                        <i class="bx bxl-facebook fs-5 me-2"></i>
+                                        <span>Facebook</span>
                                     </div>
-                                    <div class="modal-footer bg-white border-0">
+                                </a>
+                                <a href="#!" class="d-inline-flex btn w-100 mb-3 position-relative si-colored-twitter flex-center">
+                                    <!--Main Icon-->
+                                    <div class="position-relative d-flex align-items-center">
+                                        <i class="bx bxl-twitter fs-5 me-2"></i>
+                                        <span>Twitter</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="modal-footer bg-white border-0">
                 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="col-12 px-0 px-lg-2">
+
+                        <form class="p-4 bg-gray-100 border position-relative">
+                            <div class="row gy-3 ">
+                                <div class="col-md-12">
+                                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Assunto">
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <div class=" input-group">
+                                                <span class="input-group-text">De:</span>
+                                                <input type="date" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class=" input-group">
+                                                <span class="input-group-text">Até</span>
+                                                <input type="date" class="form-control">
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
+                                <div class="col-md-12">
+                                    <select class="form-select" aria-label="">
+                                        <option selected>Temas</option>
+                                        <option value="1">Lorem Ipsum</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked="">
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                                Releases
+                                            </label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked="">
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                                Notícias
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-3 text-end">
+                                    <a href="#" class="w-100 w-lg-auto btn btn-gray-800 text-uppercase">
+                                        <i class="bi bi-search fs-6 me-2 lh-1"></i>Buscar
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                        <div>
-                            <span class="h6 text-muted">Lorem ipsum dolor </span>
-                        </div>
-                        <h1 class="mb-4 ls--2">Lorem ipsum dolor sit amet sed do eiusmod tempor
-                        </h1>
-                        <p class="lead mb-4">
-                            Harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum
-                            soluta nobis.
-                        </p>
-                        <small class="mb-6 d-block">21/03/2022 | Atualidado em 23/03/2022</small>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut
-                            labore et dolore magna aliqua. Viverra nam libero justo laoreet. Suscipit adipiscing
-                            bibendum est ultricies integer quis auctor elit. Mauris pellentesque pulvinar
-                            pellentesque
-                            habitant morbi. Sapien nec sagittis aliquam malesuada. Purus sit amet volutpat
-                            consequat
-                            mauris. Imperdiet sed euismod nisi porta lorem mollis. Risus quis varius quam
-                            quisque id
-                            diam. <mark>Habitasse platea dictumst vestibulum rhoncus</mark> est pellentesque elit. Sit amet
-                            massa
-                            vitae tortor condimentum lacinia quis vel eros. Diam vel quam elementum pulvinar
-                            etiam non.
-                            Nisl rhoncus mattis rhoncus urna. Vel elit scelerisque mauris pellentesque. Molestie
-                            a
-                            iaculis at erat pellentesque adipiscing commodo elit at. Faucibus et molestie ac
-                            feugiat sed
-                            lectus vestibulum mattis ullamcorper.
+                        </form>
+
+                    </div>
+
+                    <div class="col-12 col-lg-6 mt-4">
+                        <input class="form-control" type="text" placeholder="Filtrar" />
+                    </div>
+                    <div class="col-12 col-lg-6 text-center text-lg-end mt-4 ">
+                        <p>3 Notícias encontrados <i class="bi bi-arrow-down-short fs-5"></i>
                         </p>
 
-                        <blockquote
-                            class="blockquote mx-0 mx-xl-n15 rounded-3 rounded-0 px-4 px-lg-6 py-4 py-lg-6 bg-white shadow-lg border-primary border-start border-3 my-6">
-                            <h2 class="mb-4 fw-semibold">
-                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut"
-                            </h2>
-                            <div class="d-flex pt-4 justify-content-between align-items-center">
-                                <footer class="blockquote-footer fs-5 fw-semibold">
-                                    Lorem Ipsum
-                                </footer>
+                    </div>
+
+                    <div class="col-12">
+
+                        <article class="card align-items-stretch flex-md-row mt-4 mb-4 mb-md-7 border-0 no-gutters">
+                            <div class="col-lg-4">
+                                <a href="#!" class="d-block rounded-3 overflow-hidden">
+                                    <img src="https://mediaserver.almg.gov.br/acervo/639/221/1639221.jpg" alt="" class="img-fluid rounded-3">
+                                </a>
                             </div>
-                        </blockquote>
-                        <p>
-                            Venenatis cras sed felis eget velit aliquet. Pharetra et ultrices neque ornare
-                            aenean
-                            euismod elementum. Gravida dictum fusce ut placerat. Facilisis mauris sit amet
-                            massa. Nunc
-                            scelerisque viverra mauris in aliquam. In iaculis nunc sed augue lacus. Pellentesque
-                            habitant morbi tristique senectus et netus. Placerat duis ultricies lacus sed turpis
-                            tincidunt. Vitae congue mauris rhoncus aenean vel elit scelerisque mauris. Tincidunt
-                            lobortis feugiat vivamus at augue eget arcu dictum. Amet porttitor eget dolor morbi
-                            non arcu
-                            risus. Mi tempus imperdiet nulla malesuada pellentesque. Lectus urna duis convallis
-                            convallis. Tellus cras adipiscing enim eu turpis egestas pretium aenean pharetra.
-                        </p>
+                            <div class="card-body d-flex flex-column col-auto p-4 pt-2">
+                                <small class="mb-2">12/12/2021 - 14:30hs</small>
+                                <h3 class="h2">
+                                    <a href="#!" class="link-gray-700 flex-grow-1 d-block">
+                                        Pedofilia e violência de gênero são tema de debate
+                                    </a>
+                                </h3>
+                                <p class="d-none d-lg-block mb-0">
+                                    O promotor Casé Fortes e a vereadora de Belo Horizonte Duda Salabert vão falar sobre os temas nesta terça (19).
+                                </p>
+                            </div>
+                            <!--/.card-body-->
+                        </article>
 
-                        <h4 class="my-4">Harum quidem rerum facilis</h4>
-                        <p>
-                            Harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum
-                            soluta nobis
-                            est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere
-                            possimus,
-                            omnis voluptas
-                            assumenda est, omnis dolor repellendus.
-                        </p>
-                        <p>
-                            Suscipit adipiscing bibendum est ultricies integer quis auctor elit. Mauris
-                            pellentesque
-                            pulvinar pellentesque habitant morbi. Sapien nec sagittis aliquam malesuada. Purus
-                            sit amet
-                            volutpat consequat mauris. Imperdiet sed euismod nisi porta lorem mollis. Risus quis
-                            varius
-                            quam quisque id diam. Habitasse platea dictumst vestibulum rhoncus est pellentesque
-                            elit.
-                            Sit amet massa vitae tortor condimentum lacinia quis vel eros. Diam vel quam
-                            elementum
-                            pulvinar etiam non. Nisl rhoncus mattis rhoncus urna. Vel elit scelerisque mauris
-                            pellentesque. Molestie a iaculis at erat pellentesque adipiscing commodo elit at.
-                            Faucibus
-                            et molestie ac feugiat sed lectus vestibulum mattis ullamcorper.
-                        </p>
-                    </article>
+                        <article class="bg-gray-100 card align-items-stretch flex-md-row mt-4 mb-4 mb-md-7 border-0 no-gutters">
+                            <div class="card-body d-flex flex-column col-auto p-4">
+                                <small class="mb-2">12/12/2021 - 14:30hs</small>
+                                <h3 class="mb-3 h2">
+                                    <a href="#!" class="t d-block link-gray-700">
+                                        ALMG promulga reajustes adicionais para o Executivo
+                                    </a>
+                                </h3>
+                                <p class="d-none d-lg-block mb-0">
+                                    Com isso, entram em vigor percentuais propostos pelos deputados para servidores da educação, da saúde e da segurança.
+                                </p>
+                            </div>
+                            <!--/.card-body-->
+                        </article>
 
-                    <!--/.article-->
+                        <article class="card align-items-stretch flex-md-row mt-4 mb-4 mb-md-7 border-0 no-gutters">
+                            <div class="col-lg-4">
+                                <a href="#!" class="d-block rounded-3 overflow-hidden">
+                                    <img src="https://mediaserver.almg.gov.br/acervo/356/616/1356616.jpg" alt="" class="img-fluid rounded-3">
+                                </a>
+                            </div>
+                            <div class="card-body d-flex flex-column col-auto p-4 pt-2">
+                                <small class="mb-2">12/12/2021 - 14:30hs</small>
+                                <h3 class="h2">
+                                    <a href="#!" class="link-gray-700 flex-grow-1 d-block">
+                                        ALMG se ilumina de azul para conscientizar sobre o autismo
+                                    </a>
+                                </h3>
+                                <p class="d-none d-lg-block mb-0">
+                                    Iniciativa marca adesão do Legislativo ao Abril Azul, que tem objetivo de divulgar informações e combater preconceitos.
+                                </p>
+                            </div>
+                            <!--/.card-body-->
+                        </article>
+
+                        <nav aria-label="Page navigation example" class="d-flex justify-content-center mt-6">
+                            <ul class="pagination pagination">
+                                <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
+                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">Próxima</a></li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
 
     <aside>
@@ -434,100 +488,104 @@
             <div class="container-fluid container-lg position-relative z-index-1">
                 <div class="row grid-separator align-items-stretch">
                     <div class="col-lg-4 py-lg-6 py-4">
-                        <h3 class="h6 mb-4 text-gray-800"><i class="bi bi-arrow-right-short fs-4 align-middle"></i>
-                            Lorem Ipsum</h3>
-                        <ul class="list-unstyled ms-4 mb-1">
-                            <li class="mb-2">
-                                <a href="#" class="link-hover-move-arrow text-body">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 9"
-                                        style=" transform: rotate(-90deg);">
-                                        <path fill="currentColor"
-                                            d="M12.25 2.30062L10.8988 0.949371L6.5 5.33854L2.10125 0.949371L0.75 2.30062L6.5 8.05062L12.25 2.30062Z">
-                                        </path>
-                                    </svg>
-                                    Lorem ipsum dolar
-                                </a>
-                            </li>
-                            <li class="mb-2">
-                                <a href="#" class="link-hover-move-arrow text-body">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 9"
-                                        style=" transform: rotate(-90deg);">
-                                        <path fill="currentColor"
-                                            d="M12.25 2.30062L10.8988 0.949371L6.5 5.33854L2.10125 0.949371L0.75 2.30062L6.5 8.05062L12.25 2.30062Z">
-                                        </path>
-                                    </svg>
-                                    Consectetur adipisicing elit
-                                </a>
-                            </li>
-                            <li class="mb-2">
-                                <a href="#" class="link-hover-move-arrow text-body">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 9"
-                                        style=" transform: rotate(-90deg);">
-                                        <path fill="currentColor"
-                                            d="M12.25 2.30062L10.8988 0.949371L6.5 5.33854L2.10125 0.949371L0.75 2.30062L6.5 8.05062L12.25 2.30062Z">
-                                        </path>
-                                    </svg>
-                                    Accusantium numquam
-                                </a>
-                            </li>
-                            <li class="">
-                                <a href="#" class="link-hover-move-arrow text-body">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 9"
-                                        style=" transform: rotate(-90deg);">
-                                        <path fill="currentColor"
-                                            d="M12.25 2.30062L10.8988 0.949371L6.5 5.33854L2.10125 0.949371L0.75 2.30062L6.5 8.05062L12.25 2.30062Z">
-                                        </path>
-                                    </svg>
-                                    Sapiente atque
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-4 py-lg-6 py-4">
-                        <h3 class="h6 mb-4 text-gray-800"><i class="bi bi-arrow-right-short fs-4 align-middle"></i>
-                            Dolor sit amet</h3>
-                        <ul class="list-unstyled ms-4 mb-1">
-                            <li class="mb-2">
-                                <a href="#" class="link-hover-move-arrow text-body">
-                                    <i class="bi bi-file-earmark-pdf fs-4 align-middle lh-1"></i>
-                                    Lorem ipsum dolar
-                                </a>
-                            </li>
-                            <li class="mb-2">
-                                <a href="#" class="link-hover-move-arrow text-body">
-                                    <i class="bi bi-file-earmark-pdf fs-4 align-middle lh-1"></i>
-                                    Sed accusantium numquam doloribus
-                                </a>
-                            </li>
-                            <li class="mb-2">
-                                <a href="#" class="link-hover-move-arrow text-body">
-                                    <i class="bi bi-file-earmark-pdf fs-4 align-middle lh-1"></i>
-                                    Consectetur adipisicing elit
-                                </a>
-                            </li>
-                            <li class="">
-                                <a href="#" class="link-hover-move-arrow text-body">
-                                    <i class="bi bi-file-earmark-pdf fs-4 align-middle lh-1"></i>
-                                    Quae quia sapiente atque architecto unde
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-4 py-lg-6 py-4">
-                        <h3 class="h6 mb-2 text-gray-800"><i class="bi bi-arrow-right-short fs-4 align-middle"></i>
-                            Consectetur adipisicing elit</h3>
+                        <div class="mb-2 text-gray-800 fs-6 fw-bold">
+                            <i class="bi bi-arrow-right-short fs-4 align-middle"></i>
+                            Receba nossas notícias</div>
                         <div class="ms-4">
                             <p class="text-gray-800">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo dolor
-                                ut faucibus
-                                mollis.
+                                Escolha os tópicos de seu interesse e receba as notícias diariamente.
                             </p>
                             <div>
                                 <a href="#" class="btn btn-primary text-uppercase me-3">
-                                    Lorem Ipsum
+                                    Cadastrar
                                 </a>
                             </div>
                         </div>
+                    </div>
+                    <div class="col-lg-4 py-lg-6 py-4">
+                        <div class="mb-2 text-gray-800 fs-6 fw-bold">
+                            <i class="bi bi-arrow-right-short fs-4 align-middle"></i>
+                            Políticas públicas relacionadas</div>
+                        <ul class="list-unstyled ms-4 mb-1">
+                            <li class="mb-2">
+                                <a href="#" class="link-hover-move-arrow text-body">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 9"
+                                        style=" transform: rotate(-90deg);">
+                                        <path fill="currentColor"
+                                            d="M12.25 2.30062L10.8988 0.949371L6.5 5.33854L2.10125 0.949371L0.75 2.30062L6.5 8.05062L12.25 2.30062Z">
+                                        </path>
+                                    </svg>
+                                    Transporte e Trânsito
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#" class="link-hover-move-arrow text-body">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 9"
+                                        style=" transform: rotate(-90deg);">
+                                        <path fill="currentColor"
+                                            d="M12.25 2.30062L10.8988 0.949371L6.5 5.33854L2.10125 0.949371L0.75 2.30062L6.5 8.05062L12.25 2.30062Z">
+                                        </path>
+                                    </svg>
+                                    Administração Pública
+                                </a>
+                            </li>
+                        </ul>
+                        <div>
+                            <a href="#" class="btn btn-sm btn-primary text-uppercase ms-4 mt-2">
+                                Ir para o site de Políticas Públicas <i class="ms-2 bi bi-box-arrow-up-right align-middle"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 py-lg-6 py-4">
+                        <div class="mb-2 text-gray-800 fs-6 fw-bold">
+                            <i class="bi bi-arrow-right-short fs-4 align-middle"></i>
+                            Notícias Especiais</div>
+                        <ul class="list-unstyled ms-4 mb-1">
+                            <li class="mb-2">
+                                <a href="#" class="link-hover-move-arrow text-body">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 9"
+                                        style=" transform: rotate(-90deg);">
+                                        <path fill="currentColor"
+                                            d="M12.25 2.30062L10.8988 0.949371L6.5 5.33854L2.10125 0.949371L0.75 2.30062L6.5 8.05062L12.25 2.30062Z">
+                                        </path>
+                                    </svg>
+                                    Brumadinho - 1 ano da tragédia
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#" class="link-hover-move-arrow text-body">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 9"
+                                        style=" transform: rotate(-90deg);">
+                                        <path fill="currentColor"
+                                            d="M12.25 2.30062L10.8988 0.949371L6.5 5.33854L2.10125 0.949371L0.75 2.30062L6.5 8.05062L12.25 2.30062Z">
+                                        </path>
+                                    </svg>
+                                    Violência contra a mulher
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#" class="link-hover-move-arrow text-body">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 9"
+                                        style=" transform: rotate(-90deg);">
+                                        <path fill="currentColor"
+                                            d="M12.25 2.30062L10.8988 0.949371L6.5 5.33854L2.10125 0.949371L0.75 2.30062L6.5 8.05062L12.25 2.30062Z">
+                                        </path>
+                                    </svg>
+                                    Trem de Minas
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#" class="link-hover-move-arrow text-body">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 9"
+                                        style=" transform: rotate(-90deg);">
+                                        <path fill="currentColor"
+                                            d="M12.25 2.30062L10.8988 0.949371L6.5 5.33854L2.10125 0.949371L0.75 2.30062L6.5 8.05062L12.25 2.30062Z">
+                                        </path>
+                                    </svg>
+                                    Situação de rua
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
