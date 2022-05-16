@@ -62,9 +62,22 @@
                     <a href="#" class="btn btn-primary btn-sm text-uppercase me-3 h-0">
                         <i class="bi bi-chat-fill fs-6 me-2 lh-1"></i>Fale com a ALMG
                     </a>
-                    <a href="#" class="btn btn-primary btn-sm text-uppercase h-0 me-3">
-                        <i class="bi bi-person-fill fs-6 me-1 lh-1"></i>Entrar
-                    </a>
+                    <div class="dropdown d-none d-xl-block">
+                        <button class="btn btn-success btn-sm text-uppercase dropdown-toggle" type="button"
+                            id="areaUsuario" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="bi bi-person-lines-fill fs-5 me-1 lh-1 align-middle"></i>
+                            <span class="fs-7">Olá, Fulano</span>
+                            <!--<i class="bi bi-caret-down-fill ms-1"></i>-->
+                        </button>
+                        <div class="dropdown-menu border-1 border-gray-200" aria-labelledby="areaUsuario">
+                            <a class="dropdown-item fw-semibold" href="#">Minha Área</a>
+                            <a class="dropdown-item fw-semibold" href="#">Dados Pessoais</a>
+                            <a class="dropdown-item fw-semibold" href="#">Boletins por E-mail</a>   
+                            <a class="dropdown-item fw-semibold" href="#">Ferramentas de Participação</a>
+                            <a class="dropdown-item fw-semibold" href="#">Certificado e Declarações</a>
+                            <a class="dropdown-item fw-semibold" href="#"><span class="text-danger">Sair</span></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>
