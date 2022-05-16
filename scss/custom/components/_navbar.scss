@@ -13,8 +13,13 @@
                 //border-top-left-radius: $border-radius;
                 //border-top-right-radius: $border-radius;
             }
-            :hover {
-                background-color: $gray-100;
+            &:hover {
+                background-color: $gray-200;
+            }
+            &.active {
+                background-color: $gray-200;
+                //border-top-left-radius: $border-radius;
+                //border-top-right-radius: $border-radius;
             }
         }
     }
