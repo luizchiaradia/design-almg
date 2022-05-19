@@ -9,15 +9,15 @@
             letter-spacing: $navbar-link-letter-spacing;
             color: $gray-700;
             &.show {
-                background-color: $gray-200;
+                background-color: $gray-100;
                 //border-top-left-radius: $border-radius;
                 //border-top-right-radius: $border-radius;
             }
             &:hover {
-                background-color: $gray-200;
+                background-color: $gray-100;
             }
             &.active {
-                background-color: $gray-200;
+                background-color: $gray-100;
                 //border-top-left-radius: $border-radius;
                 //border-top-right-radius: $border-radius;
             }
