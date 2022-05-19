@@ -30396,13 +30396,13 @@ img.bg-image {
   color: #343a49;
 }
 .navbar .navbar-nav .nav-link.show {
-  background-color: #e1e0d9;
+  background-color: #f4f4ef;
 }
 .navbar .navbar-nav .nav-link:hover {
-  background-color: #e1e0d9;
+  background-color: #f4f4ef;
 }
 .navbar .navbar-nav .nav-link.active {
-  background-color: #e1e0d9;
+  background-color: #f4f4ef;
 }
 .navbar:not(.position-fixed):not(.position-absolute):not(.fixed-top) {
   position: relative;
@@ -30742,6 +30742,12 @@ header.header-transparent.sticky-fixed.is-fixed .navbar-dark .navbar-fixed-bg {
   font-size: 1rem;
   font-weight: 400;
   color: #343a49 !important;
+}
+.dropdown-item.active, .dropdown-item:active {
+  background-color: #f4f4ef;
+}
+.dropdown-item:focus, .dropdown-item:hover {
+  background-color: #f4f4ef;
 }
 
 .text-white .dropdown-divider,

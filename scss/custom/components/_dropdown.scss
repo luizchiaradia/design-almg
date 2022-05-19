@@ -18,6 +18,10 @@
     &:active {
         background-color: $gray-100;
     }
+    &:focus,
+    &:hover {
+        background-color: $gray-100;
+    }
 }
 
 .text-white,
