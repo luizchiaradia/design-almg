@@ -32980,6 +32980,23 @@ body.loaded .spinner-loader {
     align-items: center;
   }
 }
+.offcanvas.offcanvas-custom1 .accordion-button {
+  box-shadow: none !important;
+}
+.offcanvas.offcanvas-custom1 .accordion-button::after {
+  float: right;
+  margin-top: 8px !important;
+  color: #ab0000;
+}
+.offcanvas.offcanvas-custom1 .accordion-button:not(.collapsed) {
+  padding-left: 15px;
+  background-color: white;
+  color: #ab0000;
+}
+.offcanvas.offcanvas-custom1 .accordion-button:not(.collapsed)::after {
+  color: #ab0000;
+}
+
 .offcanvas {
   transition: transform 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
