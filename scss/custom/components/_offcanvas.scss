@@ -1,10 +1,11 @@
 // offcanvas 
 .offcanvas.offcanvas-custom1{
+    max-width: 90%;
     .accordion-button {
         box-shadow: none !important;
         &::after {
             float: right;
-            margin-top: 8px !important;
+            height: auto !important;
             color:$primary;
         }
     }

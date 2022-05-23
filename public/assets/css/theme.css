@@ -32985,7 +32985,7 @@ body.loaded .spinner-loader {
 }
 .offcanvas.offcanvas-custom1 .accordion-button::after {
   float: right;
-  margin-top: 8px !important;
+  height: auto !important;
   color: #ab0000;
 }
 .offcanvas.offcanvas-custom1 .accordion-button:not(.collapsed) {
