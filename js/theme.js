@@ -14,3 +14,5 @@ import './custom/jarallax';
 import './custom/smooth-scroll';
 import './custom/svgInjector';
 import './custom/typed';
+//Almg
+import './custom/almg-menu.js';

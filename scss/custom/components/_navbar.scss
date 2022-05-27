@@ -172,11 +172,13 @@
                     border-bottom-color: $border-color;
                     box-shadow: 0 16px 32px 0 rgba($dark, .06);
                     backdrop-filter: saturate(180%) blur(20px);
+                    -webkit-backdrop-filter: saturate(180%) blur(20px);
                     background-color: rgba($white, 0.95);
                 }
 
                 &.navbar-dark {
                     backdrop-filter: saturate(180%) blur(20px);
+                    -webkit-backdrop-filter: saturate(180%) blur(20px);
                     background-color: rgba($dark, 0.85);
                     animation: fadeDown 0.4s both;
                     box-shadow: 0 16px 32px 0 rgba($dark, .0975);

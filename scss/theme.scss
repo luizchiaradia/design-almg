@@ -21,3 +21,120 @@
 @import "./custom/utilities/typography";
 @import "./custom/utilities/animations";
 @import "./custom/components/components";
+
+main p {
+    font-size: 1.125rem;
+    line-height: 1.65;
+    margin-bottom: 1.65rem;
+}
+main h1, main h2, main h3 {
+    letter-spacing: -1px;
+} 
+
+main h4, main h5, main h6 {
+    letter-spacing: -.6px;
+} 
+.nav-custom2 {
+    .nav {
+        .nav-link {
+            background-color: $gray-300;
+            color: $gray-500;
+            &.active,
+            &:hover {
+                color: $white;
+                background-color: $gray-500;
+            }
+        }
+        .nav-link:hover {
+            color: $white !important;
+        }
+
+        .nav-link.active{
+            background-color: $gray-600;
+            color: $white !important;
+        }
+    }
+}
+
+.offcanvas.offcanvas-custom1{
+    max-width: 90%;
+    .accordion-button {
+        box-shadow: none !important;
+        &::after {
+            float: right;
+            height: auto !important;
+            color:$primary;
+        }
+    }
+    .accordion-button:not(.collapsed) {
+        padding-left: 15px;
+        background-color: white;
+        color:$primary;
+        &::after {
+            color:$primary;
+        }
+    }
+    li a.nav-link.active {
+        color: initial;
+    }
+    li a.nav-link.active:hover {
+        color: var(--bs-primary);
+    }
+    li.active {
+        background-color: var(--bs-gray-200) !important;
+    }
+}
+
+.nav-custom3 {
+    .nav {
+        .nav-link {
+            background-color: $gray-300;
+            color: $gray-700;
+            border-bottom: 1px solid $gray-100!important;
+            &.active,
+            &:hover {
+                color: $white;
+                background-color: $gray-500;
+            }
+        }
+            
+        .nav-link:not(.disabled) {
+            &.active,
+            &.hover{
+                color: $white !important;
+            }
+            
+        }
+        .nav-link:hover {
+            color: $white !important;
+        }
+
+        .nav-link.active{
+            background-color: $primary;
+            color: $white;
+        }
+
+        @include media-breakpoint-between(xs, lg) { 
+            ul.dropdown-menu {
+                position: relative !important;
+                transform: none !important;
+                box-shadow: none !important;
+                border-radius: 0 !important;
+                padding: 0 !important;
+                background-color: $gray-500;
+                li {
+                    background-color: $gray-100;
+                    border-bottom: 1px solid $gray-500!important;
+                    a.nav-link {
+                        color: $gray-800;
+                    }
+                }
+            }
+        }
+        @include media-breakpoint-up(lg) {
+            .nav-item:not(:last-child)  {
+                border-right: 1px solid $light;
+            }
+        }
+    }
+}

@@ -1,6 +1,7 @@
 html {
-    -ms-text-size-adjust: 100%;
+    //-ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
 }
 
 body {
@@ -277,11 +278,4 @@ strong {
         height: 3px;
         background: $gray-700;
     }
-}
-
-
-main p {
-    font-size: 1.125rem;
-    line-height: 1.65;
-    margin-bottom: 1.65rem;
 }

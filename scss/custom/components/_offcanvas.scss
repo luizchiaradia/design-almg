@@ -1,23 +1,4 @@
 // offcanvas 
-.offcanvas.offcanvas-custom1{
-    max-width: 90%;
-    .accordion-button {
-        box-shadow: none !important;
-        &::after {
-            float: right;
-            height: auto !important;
-            color:$primary;
-        }
-    }
-    .accordion-button:not(.collapsed) {
-        padding-left: 15px;
-        background-color: white;
-        color:$primary;
-        &::after {
-            color:$primary;
-        }
-    }
-}
 
 .offcanvas{
     transition:transform .25s cubic-bezier(.215,.61,.355,1),-webkit-transform .25s cubic-bezier(.215,.61,.355,1);

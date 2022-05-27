@@ -26786,8 +26786,9 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
  * @type {map}
  */
 html {
-  -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+       text-size-adjust: 100%;
 }
 
 body {
@@ -27189,12 +27190,6 @@ strong {
   margin: 0 15px 0 15px;
   height: 3px;
   background: #343a49;
-}
-
-main p {
-  font-size: 1.125rem;
-  line-height: 1.65;
-  margin-bottom: 1.65rem;
 }
 
 @-webkit-keyframes textGradientAnimation {
@@ -30262,64 +30257,6 @@ img.bg-image {
   opacity: 1;
 }
 
-.nav-custom2 .nav .nav-link {
-  background-color: #c6c5bb;
-  color: #9b9a8f;
-}
-.nav-custom2 .nav .nav-link.active, .nav-custom2 .nav .nav-link:hover {
-  color: #fff;
-  background-color: #9b9a8f;
-}
-.nav-custom2 .nav .nav-link:hover {
-  color: #fff !important;
-}
-.nav-custom2 .nav .nav-link.active {
-  background-color: #474e5f;
-  color: #fff !important;
-}
-
-.nav-custom3 .nav .nav-link {
-  background-color: #c6c5bb;
-  color: #343a49;
-  border-bottom: 1px solid #f4f4ef !important;
-}
-.nav-custom3 .nav .nav-link.active, .nav-custom3 .nav .nav-link:hover {
-  color: #fff;
-  background-color: #9b9a8f;
-}
-.nav-custom3 .nav .nav-link:not(.disabled).active, .nav-custom3 .nav .nav-link:not(.disabled).hover {
-  color: #fff !important;
-}
-.nav-custom3 .nav .nav-link:hover {
-  color: #fff !important;
-}
-.nav-custom3 .nav .nav-link.active {
-  background-color: #ab0000;
-  color: #fff;
-}
-@media (max-width: 991.98px) {
-  .nav-custom3 .nav ul.dropdown-menu {
-    position: relative !important;
-    transform: none !important;
-    box-shadow: none !important;
-    border-radius: 0 !important;
-    padding: 0 !important;
-    background-color: #9b9a8f;
-  }
-  .nav-custom3 .nav ul.dropdown-menu li {
-    background-color: #f4f4ef;
-    border-bottom: 1px solid #9b9a8f !important;
-  }
-  .nav-custom3 .nav ul.dropdown-menu li a.nav-link {
-    color: #252a36;
-  }
-}
-@media (min-width: 992px) {
-  .nav-custom3 .nav .nav-item:not(:last-child) {
-    border-right: 1px solid #f4f4ef;
-  }
-}
-
 .nav .nav-link:not(.disabled) {
   color: #252a36;
 }
@@ -30519,13 +30456,13 @@ img.bg-image {
             animation: fadeDown 0.4s both;
     border-bottom-color: #e1e0d9;
     box-shadow: 0 16px 32px 0 rgba(14, 17, 25, 0.06);
+    backdrop-filter: saturate(180%) blur(20px);
     -webkit-backdrop-filter: saturate(180%) blur(20px);
-            backdrop-filter: saturate(180%) blur(20px);
     background-color: rgba(255, 255, 255, 0.95);
   }
   header.sticky-reverse.scroll-up .navbar.navbar-expand-lg.navbar-dark, header.header-sticky.is-sticky .navbar.navbar-expand-lg.navbar-dark {
+    backdrop-filter: saturate(180%) blur(20px);
     -webkit-backdrop-filter: saturate(180%) blur(20px);
-            backdrop-filter: saturate(180%) blur(20px);
     background-color: rgba(14, 17, 25, 0.85);
     -webkit-animation: fadeDown 0.4s both;
             animation: fadeDown 0.4s both;
@@ -32980,23 +32917,6 @@ body.loaded .spinner-loader {
     align-items: center;
   }
 }
-.offcanvas.offcanvas-custom1 .accordion-button {
-  box-shadow: none !important;
-}
-.offcanvas.offcanvas-custom1 .accordion-button::after {
-  float: right;
-  height: auto !important;
-  color: #ab0000;
-}
-.offcanvas.offcanvas-custom1 .accordion-button:not(.collapsed) {
-  padding-left: 15px;
-  background-color: white;
-  color: #ab0000;
-}
-.offcanvas.offcanvas-custom1 .accordion-button:not(.collapsed)::after {
-  color: #ab0000;
-}
-
 .offcanvas {
   transition: transform 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
@@ -34261,5 +34181,106 @@ span.token.attr-name {
 
 .listing-img-preview {
   margin-right: 0.35rem;
+}
+
+main p {
+  font-size: 1.125rem;
+  line-height: 1.65;
+  margin-bottom: 1.65rem;
+}
+
+main h1, main .h1, main h2, main .h2, main h3, main .h3 {
+  letter-spacing: -1px;
+}
+
+main h4, main .h4, main h5, main .h5, main h6, main .h6 {
+  letter-spacing: -0.6px;
+}
+
+.nav-custom2 .nav .nav-link {
+  background-color: #c6c5bb;
+  color: #9b9a8f;
+}
+.nav-custom2 .nav .nav-link.active, .nav-custom2 .nav .nav-link:hover {
+  color: #fff;
+  background-color: #9b9a8f;
+}
+.nav-custom2 .nav .nav-link:hover {
+  color: #fff !important;
+}
+.nav-custom2 .nav .nav-link.active {
+  background-color: #474e5f;
+  color: #fff !important;
+}
+
+.offcanvas.offcanvas-custom1 {
+  max-width: 90%;
+}
+.offcanvas.offcanvas-custom1 .accordion-button {
+  box-shadow: none !important;
+}
+.offcanvas.offcanvas-custom1 .accordion-button::after {
+  float: right;
+  height: auto !important;
+  color: #ab0000;
+}
+.offcanvas.offcanvas-custom1 .accordion-button:not(.collapsed) {
+  padding-left: 15px;
+  background-color: white;
+  color: #ab0000;
+}
+.offcanvas.offcanvas-custom1 .accordion-button:not(.collapsed)::after {
+  color: #ab0000;
+}
+.offcanvas.offcanvas-custom1 li a.nav-link.active {
+  color: initial;
+}
+.offcanvas.offcanvas-custom1 li a.nav-link.active:hover {
+  color: var(--bs-primary);
+}
+.offcanvas.offcanvas-custom1 li.active {
+  background-color: var(--bs-gray-200) !important;
+}
+
+.nav-custom3 .nav .nav-link {
+  background-color: #c6c5bb;
+  color: #343a49;
+  border-bottom: 1px solid #f4f4ef !important;
+}
+.nav-custom3 .nav .nav-link.active, .nav-custom3 .nav .nav-link:hover {
+  color: #fff;
+  background-color: #9b9a8f;
+}
+.nav-custom3 .nav .nav-link:not(.disabled).active, .nav-custom3 .nav .nav-link:not(.disabled).hover {
+  color: #fff !important;
+}
+.nav-custom3 .nav .nav-link:hover {
+  color: #fff !important;
+}
+.nav-custom3 .nav .nav-link.active {
+  background-color: #ab0000;
+  color: #fff;
+}
+@media (max-width: 991.98px) {
+  .nav-custom3 .nav ul.dropdown-menu {
+    position: relative !important;
+    transform: none !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+    background-color: #9b9a8f;
+  }
+  .nav-custom3 .nav ul.dropdown-menu li {
+    background-color: #f4f4ef;
+    border-bottom: 1px solid #9b9a8f !important;
+  }
+  .nav-custom3 .nav ul.dropdown-menu li a.nav-link {
+    color: #252a36;
+  }
+}
+@media (min-width: 992px) {
+  .nav-custom3 .nav .nav-item:not(:last-child) {
+    border-right: 1px solid #f4f4ef;
+  }
 }
 /*# sourceMappingURL=theme.css.map */
