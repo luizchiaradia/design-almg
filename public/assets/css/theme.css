@@ -34183,20 +34183,19 @@ span.token.attr-name {
   margin-right: 0.35rem;
 }
 
-main p {
-  font-size: 1.125rem;
-  line-height: 1.65;
-  margin-bottom: 1.65rem;
-}
-
 main h1, main .h1, main h2, main .h2, main h3, main .h3 {
   letter-spacing: -1px;
 }
-
 main h4, main .h4, main h5, main .h5, main h6, main .h6 {
   letter-spacing: -0.6px;
 }
-
+main .compAlmgTexto {
+  font-size: 1.125rem;
+}
+main .compAlmgTexto p {
+  line-height: 1.65;
+  margin-bottom: 1.65rem;
+}
 main .compAlmgTexto p:last-of-type {
   margin-bottom: 0;
 }

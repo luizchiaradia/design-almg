@@ -22,22 +22,26 @@
 @import "./custom/utilities/animations";
 @import "./custom/components/components";
 
-main p {
-    font-size: 1.125rem;
-    line-height: 1.65;
-    margin-bottom: 1.65rem;
-}
-main h1, main h2, main h3 {
-    letter-spacing: -1px;
+main {
+    h1, h2, h3 {
+        letter-spacing: -1px;
+    } 
+    h4, h5, h6 {
+        letter-spacing: -.6px;
+    } 
+    .compAlmgTexto {
+        font-size: 1.125rem;
+        p {
+            line-height: 1.65;
+            margin-bottom: 1.65rem;
+        }
+        p:last-of-type {
+            margin-bottom:0;
+        }
+    } 
+    
 } 
 
-main h4, main h5, main h6 {
-    letter-spacing: -.6px;
-} 
-
-main .compAlmgTexto p:last-of-type {
-    margin-bottom:0;
-}
 .nav-custom2 {
     .nav {
         .nav-link {
