@@ -34577,16 +34577,6 @@ main .compAlmgTexto p:last-of-type {
   margin-bottom: 0;
 }
 
-.images {
-  width: 100%;
-  display: table;
-  margin: 0 auto;
-}
-.images img {
-  width: 100%;
-  vertical-align: bottom;
-}
-
 .nav-custom2 .nav .nav-link {
   background-color: #c6c5bb;
   color: #9b9a8f;
