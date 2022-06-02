@@ -1,5 +1,4 @@
 import BiggerPicture from "bigger-picture";
-import Macy from "macy";
 
 // initialize BiggerPicture
 const bp = BiggerPicture({
@@ -7,6 +6,7 @@ const bp = BiggerPicture({
 });
 
 // grab image links
+
 const imageLinks = document.querySelectorAll(".images > a");
 
 // add click listener to open BiggerPicture
@@ -22,16 +22,3 @@ function openGallery(e) {
     el: e.currentTarget
   });
 }
-
-// masonry grid
-Macy({
-  container: ".images",
-  trueOrder: true,
-  margin: 4,
-  columns: 3,
-  breakAt: {
-    520: {
-      columns: 2
-    }
-  }
-});
