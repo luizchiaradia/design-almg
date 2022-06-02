@@ -8,7 +8,7 @@ import './custom/fullscreen-elements';
 import './custom/header-sticky-reverse';
 //Third party plugins
 import './custom/aos';
-import './custom/bigpicture';
+import './custom/bigger-picture';
 import './custom/isotope-layout';
 import './custom/jarallax';
 import './custom/smooth-scroll';

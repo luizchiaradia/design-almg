@@ -13,6 +13,9 @@
 //Aos animation
 @import "./node_modules/aos/src/sass/aos.scss";
 
+//Bigger Picture
+@import "./node_modules/bigger-picture/dist/bigger-picture.scss";
+
 //Theme core style import
 //mixins
 @import "./custom/mixins/buttons";
@@ -23,71 +26,103 @@
 @import "./custom/components/components";
 
 main {
-    h1, h2, h3 {
+
+    h1,
+    h2,
+    h3 {
         letter-spacing: -1px;
-    } 
-    h4, h5, h6 {
+    }
+
+    h4,
+    h5,
+    h6 {
         letter-spacing: -.6px;
-    } 
+    }
+
     .compAlmgTexto {
         font-size: 1.125rem;
+
         p {
             line-height: 1.65;
             margin-bottom: 1.65rem;
         }
+
         p:last-of-type {
-            margin-bottom:0;
+            margin-bottom: 0;
         }
-    } 
-    
-} 
+    }
+
+}
+
+.images {
+    width: 100%;
+    //max-width: 1200px;
+    display: table;
+    margin: 0 auto;
+
+    img {
+        width: 100%;
+        vertical-align: bottom;
+    }
+}
+
+
 
 .nav-custom2 {
     .nav {
         .nav-link {
             background-color: $gray-300;
             color: $gray-500;
+
             &.active,
             &:hover {
                 color: $white;
                 background-color: $gray-500;
             }
         }
+
         .nav-link:hover {
             color: $white !important;
         }
 
-        .nav-link.active{
+        .nav-link.active {
             background-color: $gray-600;
             color: $white !important;
         }
     }
 }
 
-.offcanvas.offcanvas-custom1{
+.offcanvas.offcanvas-custom1 {
     max-width: 90%;
+
     .accordion-button {
         box-shadow: none !important;
+
         &::after {
             float: right;
             height: auto !important;
-            color:$primary;
+            color: $primary;
         }
     }
+
     .accordion-button:not(.collapsed) {
         padding-left: 15px;
         background-color: white;
-        color:$primary;
+        color: $primary;
+
         &::after {
-            color:$primary;
+            color: $primary;
         }
     }
+
     li a.nav-link.active {
         color: initial;
     }
+
     li a.nav-link.active:hover {
         color: var(--bs-primary);
     }
+
     li.active {
         background-color: var(--bs-gray-200) !important;
     }
@@ -98,31 +133,34 @@ main {
         .nav-link {
             background-color: $gray-300;
             color: $gray-700;
-            border-bottom: 1px solid $gray-100!important;
+            border-bottom: 1px solid $gray-100 !important;
+
             &.active,
             &:hover {
                 color: $white;
                 background-color: $gray-500;
             }
         }
-            
+
         .nav-link:not(.disabled) {
+
             &.active,
-            &.hover{
+            &.hover {
                 color: $white !important;
             }
-            
+
         }
+
         .nav-link:hover {
             color: $white !important;
         }
 
-        .nav-link.active{
+        .nav-link.active {
             background-color: $primary;
             color: $white;
         }
 
-        @include media-breakpoint-between(xs, lg) { 
+        @include media-breakpoint-between(xs, lg) {
             ul.dropdown-menu {
                 position: relative !important;
                 transform: none !important;
@@ -130,17 +168,20 @@ main {
                 border-radius: 0 !important;
                 padding: 0 !important;
                 background-color: $gray-500;
+
                 li {
                     background-color: $gray-100;
-                    border-bottom: 1px solid $gray-500!important;
+                    border-bottom: 1px solid $gray-500 !important;
+
                     a.nav-link {
                         color: $gray-800;
                     }
                 }
             }
         }
+
         @include media-breakpoint-up(lg) {
-            .nav-item:not(:last-child)  {
+            .nav-item:not(:last-child) {
                 border-right: 1px solid $light;
             }
         }
