@@ -34552,6 +34552,9 @@ span.token.attr-name {
   margin-right: 0.35rem;
 }
 
+main {
+  font-size: 1.075rem;
+}
 main h1, main .h1,
 main h2,
 main .h2,
@@ -34566,15 +34569,16 @@ main h6,
 main .h6 {
   letter-spacing: -0.6px;
 }
-main .compAlmgTexto {
-  font-size: 1.125rem;
-}
 main .compAlmgTexto p {
   line-height: 1.65;
   margin-bottom: 1.65rem;
 }
 main .compAlmgTexto p:last-of-type {
   margin-bottom: 0;
+}
+
+.text-white .grid-separator > * {
+  box-shadow: -1px -1px 0 0 #e1e0d9;
 }
 
 .galleyimages {

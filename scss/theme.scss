@@ -27,6 +27,8 @@
 
 main {
 
+    font-size: 1.075rem;
+
     h1,
     h2,
     h3 {
@@ -40,8 +42,6 @@ main {
     }
 
     .compAlmgTexto {
-        font-size: 1.125rem;
-
         p {
             line-height: 1.65;
             margin-bottom: 1.65rem;
@@ -52,6 +52,10 @@ main {
         }
     }
 
+}
+
+.text-white .grid-separator>* {
+    box-shadow: -1px -1px 0 0 $gray-200;
 }
 
 .galleyimages {
