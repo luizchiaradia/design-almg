@@ -10,10 +10,10 @@
     letter-spacing: $dropdown-letter-spacing;
     font-size: $dropdown-font-size;
     font-weight: $dropdown-font-weight;
-    color: $gray-700 !important;
+    color: $primary !important;
 
     //border-radius: $border-radius;
-    //white-space: normal;
+    white-space: normal;
     &.active,
     &:active {
         background-color: $gray-100;

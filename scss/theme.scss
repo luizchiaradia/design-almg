@@ -1,3 +1,5 @@
+$dropdown-min-width:                18rem !default;
+
 // Bootstrap functions
 @import './node_modules/bootstrap/scss/functions';
 // theme functions
@@ -24,6 +26,7 @@
 @import "./custom/utilities/typography";
 @import "./custom/utilities/animations";
 @import "./custom/components/components";
+
 
 main {
 

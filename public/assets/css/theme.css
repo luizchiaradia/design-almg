@@ -5519,7 +5519,7 @@ textarea.form-control-lg {
   position: absolute;
   z-index: 1000;
   display: none;
-  min-width: 13rem;
+  min-width: 18rem;
   padding: 1rem 0.75rem;
   margin: 0;
   font-size: 1rem;
@@ -30699,7 +30699,7 @@ img.bg-image {
   font-size: 1rem;
   font-family: var(--bs-font-sans-serif);
   letter-spacing: -0.011rem;
-  color: #343a49;
+  color: #ab0000;
 }
 .navbar .navbar-nav .nav-link.show {
   background-color: #f4f4ef;
@@ -31047,7 +31047,8 @@ header.header-transparent.sticky-fixed.is-fixed .navbar-dark .navbar-fixed-bg {
   letter-spacing: 0em;
   font-size: 1rem;
   font-weight: 400;
-  color: #343a49 !important;
+  color: #ab0000 !important;
+  white-space: normal;
 }
 .dropdown-item.active, .dropdown-item:active {
   background-color: #f4f4ef;
