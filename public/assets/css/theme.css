@@ -34641,7 +34641,6 @@ main .compAlmgTexto p:last-of-type {
 .nav-custom3 .nav .nav-link {
   background-color: #c6c5bb;
   color: #343a49;
-  border-bottom: 1px solid #f4f4ef !important;
 }
 .nav-custom3 .nav .nav-link.active, .nav-custom3 .nav .nav-link:hover {
   color: #fff;

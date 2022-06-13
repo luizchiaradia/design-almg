@@ -140,7 +140,7 @@ main {
         .nav-link {
             background-color: $gray-300;
             color: $gray-700;
-            border-bottom: 1px solid $gray-100 !important;
+            //border-bottom: 1px solid $gray-100 !important;
 
             &.active,
             &:hover {
@@ -189,7 +189,7 @@ main {
 
         @include media-breakpoint-up(lg) {
             .nav-item:not(:last-child) {
-                border-right: 1px solid $light;
+                border-right: 1px solid $gray-100;
             }
         }
     }
