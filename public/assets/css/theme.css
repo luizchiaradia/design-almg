@@ -34570,12 +34570,15 @@ main h6,
 main .h6 {
   letter-spacing: -0.6px;
 }
-main .compAlmgTexto p {
+main .compAlmgTexto p, main article p {
   line-height: 1.65;
   margin-bottom: 1.65rem;
 }
-main .compAlmgTexto p:last-of-type {
+main .compAlmgTexto p:last-of-type, main article p:last-of-type {
   margin-bottom: 0;
+}
+main .compAlmgTexto a, main article a {
+  text-decoration: underline;
 }
 
 .text-white .grid-separator > * {

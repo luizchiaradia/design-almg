@@ -44,7 +44,7 @@ main {
         letter-spacing: -.6px;
     }
 
-    .compAlmgTexto {
+    .compAlmgTexto, article {
         p {
             line-height: 1.65;
             margin-bottom: 1.65rem;
@@ -52,6 +52,10 @@ main {
 
         p:last-of-type {
             margin-bottom: 0;
+        }
+        
+        a {
+            text-decoration: underline;
         }
     }
 
