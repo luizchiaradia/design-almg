@@ -34577,9 +34577,6 @@ main .compAlmgTexto p, main article p {
 main .compAlmgTexto p:last-of-type, main article p:last-of-type {
   margin-bottom: 0;
 }
-main .compAlmgTexto a, main article a {
-  text-decoration: underline;
-}
 
 .text-white .grid-separator > * {
   box-shadow: -1px -1px 0 0 #e1e0d9;
