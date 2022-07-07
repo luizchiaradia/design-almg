@@ -34570,6 +34570,19 @@ main h6,
 main .h6 {
   letter-spacing: -0.6px;
 }
+main h1, main .h1,
+main h2,
+main .h2,
+main h3,
+main .h3,
+main h4,
+main .h4,
+main h5,
+main .h5,
+main h6,
+main .h6 {
+  margin-left: 1.5rem;
+}
 main .compAlmgTexto p, main article p {
   line-height: 1.65;
   margin-bottom: 1.65rem;
