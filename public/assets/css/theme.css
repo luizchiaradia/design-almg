@@ -34580,6 +34580,29 @@ main .compAlmgTexto p:last-of-type, main article p:last-of-type {
 main .compAlmgTexto p a, main article p a {
   text-decoration: underline;
 }
+main .compAlmgTexto h1, main .compAlmgTexto .h1,
+main .compAlmgTexto h2,
+main .compAlmgTexto .h2,
+main .compAlmgTexto h3,
+main .compAlmgTexto .h3,
+main .compAlmgTexto h4,
+main .compAlmgTexto .h4,
+main .compAlmgTexto h5,
+main .compAlmgTexto .h5,
+main .compAlmgTexto h6,
+main .compAlmgTexto .h6, main article h1, main article .h1,
+main article h2,
+main article .h2,
+main article h3,
+main article .h3,
+main article h4,
+main article .h4,
+main article h5,
+main article .h5,
+main article h6,
+main article .h6 {
+  margin-bottom: 1.5rem;
+}
 
 .text-white .grid-separator > * {
   box-shadow: -1px -1px 0 0 #e1e0d9;
