@@ -34584,24 +34584,23 @@ main .compAlmgTexto h1, main .compAlmgTexto .h1,
 main .compAlmgTexto h2,
 main .compAlmgTexto .h2,
 main .compAlmgTexto h3,
-main .compAlmgTexto .h3,
-main .compAlmgTexto h4,
-main .compAlmgTexto .h4,
-main .compAlmgTexto h5,
-main .compAlmgTexto .h5,
-main .compAlmgTexto h6,
-main .compAlmgTexto .h6, main article h1, main article .h1,
+main .compAlmgTexto .h3, main article h1, main article .h1,
 main article h2,
 main article .h2,
 main article h3,
-main article .h3,
-main article h4,
-main article .h4,
+main article .h3 {
+  margin-bottom: 1.5rem;
+}
+main .compAlmgTexto h4, main .compAlmgTexto .h4,
+main .compAlmgTexto h5,
+main .compAlmgTexto .h5,
+main .compAlmgTexto h6,
+main .compAlmgTexto .h6, main article h4, main article .h4,
 main article h5,
 main article .h5,
 main article h6,
 main article .h6 {
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.75rem;
 }
 
 .text-white .grid-separator > * {
