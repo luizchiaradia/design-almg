@@ -34574,7 +34574,7 @@ main .compAlmgTexto p, main article p {
   line-height: 1.65;
   margin-bottom: 1.65rem;
 }
-main .compAlmgTexto p:last-of-type, main article p:last-of-type {
+main .compAlmgTexto p:last-child, main article p:last-child {
   margin-bottom: 0;
 }
 main .compAlmgTexto p a, main article p a {
