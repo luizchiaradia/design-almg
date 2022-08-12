@@ -1,4 +1,5 @@
 $dropdown-min-width:                18rem !default;
+$breadcrumb-divider:                quote("\ee8f") !default;
 
 // Bootstrap functions
 @import './node_modules/bootstrap/scss/functions';
@@ -207,5 +208,13 @@ main {
                 border-right: 1px solid $gray-100;
             }
         }
+    }
+}
+
+.breadcrumb{
+    .breadcrumb-item{
+       + .breadcrumb-item::before{
+        font-size: 18px;
+       }
     }
 }

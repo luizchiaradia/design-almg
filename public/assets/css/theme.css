@@ -34703,4 +34703,8 @@ main article .h6 {
     border-right: 1px solid #f4f4ef;
   }
 }
+
+.breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+  font-size: 18px;
+}
 /*# sourceMappingURL=theme.css.map */
