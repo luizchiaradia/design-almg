@@ -6748,7 +6748,7 @@ textarea.form-control-lg {
   float: left;
   padding-right: 0.5rem;
   color: #474e5f;
-  content: var(--bs-breadcrumb-divider, "\ee8f") /* rtl: var(--bs-breadcrumb-divider, "\ee8f") */;
+  content: var(--bs-breadcrumb-divider, "\ea50") /* rtl: var(--bs-breadcrumb-divider, "\ea50") */;
 }
 .breadcrumb-item.active {
   color: #474e5f;
