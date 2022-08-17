@@ -45,28 +45,32 @@
 .accordion.accordion-custom {
     .accordion-item {
         border: 0px;
+        border-radius: 0;
     }
 
     .accordion-body {
         padding-top: 0;
+        border-radius: 0;
     }
 
-
+    .accordion-item:last-of-type .accordion-button.collapsed {
+        border-radius: 0;
+    }
     .accordion-button {
-        box-shadow: $box-shadow;
+        //box-shadow: $box-shadow;
         transition: all .25s;
         position: relative;
         z-index: 1;
         overflow: hidden;
-        background-color: $white;
-        border-radius: $border-radius;
+        background-color: $gray-600;
+        border-radius: 0;
         &::after {
             background-image: none;
-            font-weight: 400;
+            font-weight: 200;
             font-family: boxicons !important;
-            transform: rotate(90deg);
-            content: "\ed91";
-            font-size: $font-size-sm;
+            transform: rotate(0);
+            content: "\ea4a";
+            font-size: 2rem;
             color:currentColor;
             display: inline-flex;
             align-items: center;
@@ -79,20 +83,21 @@
         }
     }
     .accordion-collapse,.accordion-button:not(.collapsed){
-        background-color: tint-color($primary, 90%);
+        background-color: $gray-100;
+        border-radius: 0;
     }
     .accordion-collapse{
-        border-bottom-left-radius: $accordion-border-radius;
-        border-bottom-right-radius: $accordion-border-radius;
+        border-radius: 0;
     }
     .accordion-button:not(.collapsed) {
         box-shadow: none;
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
+        border-radius: 0;
+        background-color: $gray-600;
+        color: $white;
         &::after {
             background-image: none;
-            transform: rotate(0);
-            color: $primary;
+            transform: rotate(-180deg);
+            color: $white;
         }
     }
 }

@@ -94,8 +94,8 @@ main {
 .nav-custom2 {
     .nav {
         .nav-link {
-            background-color: $gray-300;
-            color: $gray-700;
+            background-color: $gray-200;
+            color: $gray-550;
 
             &.active,
             &:hover {
@@ -111,6 +111,11 @@ main {
         .nav-link.active {
             background-color: $gray-600;
             color: $white !important;
+        }
+        @include media-breakpoint-up(lg) {
+            .nav-item:not(:last-child) {
+                border-right: 1px solid $gray-100;
+            }
         }
     }
 }
@@ -154,8 +159,8 @@ main {
 .nav-custom3 {
     .nav {
         .nav-link {
-            background-color: $gray-300;
-            color: $gray-700;
+            background-color: $gray-200;
+            color: $gray-550;
             //border-bottom: 1px solid $gray-100 !important;
 
             &.active,

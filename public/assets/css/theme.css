@@ -28031,26 +28031,30 @@ strong {
 
 .accordion.accordion-custom .accordion-item {
   border: 0px;
+  border-radius: 0;
 }
 .accordion.accordion-custom .accordion-body {
   padding-top: 0;
+  border-radius: 0;
+}
+.accordion.accordion-custom .accordion-item:last-of-type .accordion-button.collapsed {
+  border-radius: 0;
 }
 .accordion.accordion-custom .accordion-button {
-  box-shadow: 0 0.5rem 1rem rgba(14, 17, 25, 0.1);
   transition: all 0.25s;
   position: relative;
   z-index: 1;
   overflow: hidden;
-  background-color: #fff;
-  border-radius: 0.375rem;
+  background-color: #474e5f;
+  border-radius: 0;
 }
 .accordion.accordion-custom .accordion-button::after {
   background-image: none;
-  font-weight: 400;
+  font-weight: 200;
   font-family: boxicons !important;
-  transform: rotate(90deg);
-  content: "\ed91";
-  font-size: 0.835rem;
+  transform: rotate(0);
+  content: "\ea4a";
+  font-size: 2rem;
   color: currentColor;
   display: inline-flex;
   align-items: center;
@@ -28062,21 +28066,22 @@ strong {
   box-sizing: content-box;
 }
 .accordion.accordion-custom .accordion-collapse, .accordion.accordion-custom .accordion-button:not(.collapsed) {
-  background-color: #f7e6e6;
+  background-color: #f4f4ef;
+  border-radius: 0;
 }
 .accordion.accordion-custom .accordion-collapse {
-  border-bottom-left-radius: 0.375rem;
-  border-bottom-right-radius: 0.375rem;
+  border-radius: 0;
 }
 .accordion.accordion-custom .accordion-button:not(.collapsed) {
   box-shadow: none;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
+  border-radius: 0;
+  background-color: #474e5f;
+  color: #fff;
 }
 .accordion.accordion-custom .accordion-button:not(.collapsed)::after {
   background-image: none;
-  transform: rotate(0);
-  color: #ab0000;
+  transform: rotate(-180deg);
+  color: #fff;
 }
 
 .avatar {
@@ -34619,8 +34624,8 @@ main article .h6 {
 }
 
 .nav-custom2 .nav .nav-link {
-  background-color: #c6c5bb;
-  color: #343a49;
+  background-color: #e1e0d9;
+  color: #6c6b64;
 }
 .nav-custom2 .nav .nav-link.active, .nav-custom2 .nav .nav-link:hover {
   color: #fff;
@@ -34632,6 +34637,11 @@ main article .h6 {
 .nav-custom2 .nav .nav-link.active {
   background-color: #474e5f;
   color: #fff !important;
+}
+@media (min-width: 992px) {
+  .nav-custom2 .nav .nav-item:not(:last-child) {
+    border-right: 1px solid #f4f4ef;
+  }
 }
 
 .offcanvas.offcanvas-custom1 {
@@ -34664,8 +34674,8 @@ main article .h6 {
 }
 
 .nav-custom3 .nav .nav-link {
-  background-color: #c6c5bb;
-  color: #343a49;
+  background-color: #e1e0d9;
+  color: #6c6b64;
 }
 .nav-custom3 .nav .nav-link.active, .nav-custom3 .nav .nav-link:hover {
   color: #fff;
