@@ -109,7 +109,7 @@ main {
         }
 
         .nav-link.active {
-            background-color: $gray-600;
+            background-color: $secondary;
             color: $white !important;
         }
         @include media-breakpoint-up(lg) {

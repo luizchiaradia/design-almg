@@ -62,7 +62,7 @@
         position: relative;
         z-index: 1;
         overflow: hidden;
-        background-color: $gray-600;
+        background-color: $secondary;
         border-radius: 0;
         &::after {
             background-image: none;
@@ -92,7 +92,7 @@
     .accordion-button:not(.collapsed) {
         box-shadow: none;
         border-radius: 0;
-        background-color: $gray-600;
+        background-color: $secondary;
         color: $white;
         &::after {
             background-image: none;

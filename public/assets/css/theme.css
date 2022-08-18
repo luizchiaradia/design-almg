@@ -28045,7 +28045,7 @@ strong {
   position: relative;
   z-index: 1;
   overflow: hidden;
-  background-color: #474e5f;
+  background-color: #007D94;
   border-radius: 0;
 }
 .accordion.accordion-custom .accordion-button::after {
@@ -28075,7 +28075,7 @@ strong {
 .accordion.accordion-custom .accordion-button:not(.collapsed) {
   box-shadow: none;
   border-radius: 0;
-  background-color: #474e5f;
+  background-color: #007D94;
   color: #fff;
 }
 .accordion.accordion-custom .accordion-button:not(.collapsed)::after {
@@ -34635,7 +34635,7 @@ main article .h6 {
   color: #fff !important;
 }
 .nav-custom2 .nav .nav-link.active {
-  background-color: #474e5f;
+  background-color: #007D94;
   color: #fff !important;
 }
 @media (min-width: 992px) {
