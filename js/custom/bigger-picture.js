@@ -1,4 +1,4 @@
-import BiggerPicture from "bigger-picture";
+import BiggerPicture from "bigger-picture/dist/bigger-picture.min.js";
 import Macy from "macy";
 
 // initialize BiggerPicture

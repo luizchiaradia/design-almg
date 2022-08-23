@@ -70,6 +70,7 @@ var paths = {
                 "./node_modules/nouislider/dist/nouislider.min.js",
                 "./node_modules/choices.js/public/assets/scripts/choices.min.js",
                 "./node_modules/dropzone/dist/dropzone-min.js",
+                "./node_modules/bigger-picture/dist/bigger-picture.min.js",
             ],
             css: [
                 "./node_modules/swiper/swiper-bundle.min.css",
